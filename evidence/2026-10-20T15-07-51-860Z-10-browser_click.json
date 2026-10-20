@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Error\nError: browserBackend.callTool: Error: strict mode violation: locator('text=\"Variables\"') resolved to 2 elements:\n    1) <div class=\"scratchCategoryMenuItemLabel\">Variables</div> aka getByText('Variables').first()\n    2) <text y=\"20\" dy=\"0\" x=\"40.984375\" text-anchor=\"middle\" dominant-baseline=\"central\" class=\"blocklyFlyoutLabelText\">Variables</text> aka locator('text').filter({ hasText: 'Variables' })\n\nCall log:\n\u001b[2m  - waiting for locator('text=\"Variables\"')\u001b[22m\n"
+    }
+  ],
+  "isError": true
+}

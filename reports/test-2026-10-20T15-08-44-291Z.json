@@ -1,0 +1,107 @@
+{
+  "runId": "2026-10-20T15-08-44-291Z",
+  "startedAt": "2026-10-20T15:08:44.293Z",
+  "transport": "stdio",
+  "browserSandbox": true,
+  "checks": [
+    {
+      "name": "SB3 structural validation",
+      "status": "PASS",
+      "detail": {
+        "targets": [
+          "Stage",
+          "Harness Robot"
+        ],
+        "blocks": 21,
+        "assets": 3,
+        "entries": [
+          "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "acdace3f155ec8b080d4f7ec78132375.svg",
+          "project.json"
+        ]
+      }
+    },
+    {
+      "name": "Editor regions",
+      "status": "PASS",
+      "detail": {
+        "canvas": true,
+        "spriteList": true,
+        "categories": [
+          "Motion",
+          "Looks",
+          "Sound",
+          "Events",
+          "Control",
+          "Sensing",
+          "Operators",
+          "Variables",
+          "My Blocks"
+        ],
+        "workspace": true,
+        "flag": true,
+        "stop": true,
+        "vm": "object",
+        "redux": "object",
+        "runtime": "Q"
+      }
+    },
+    {
+      "name": "Load .sb3 via official VM API through MCP",
+      "status": "PASS",
+      "detail": {
+        "name": "Harness Robot",
+        "costumes": 2,
+        "blocks": 21,
+        "runtimeBlocksIncludingShadows": 36
+      }
+    },
+    {
+      "name": "Editor clicks, tabs and category switching",
+      "status": "PASS",
+      "detail": "Costumes, Code and Variables selected through browser_click"
+    },
+    {
+      "name": "Current test run",
+      "status": "FAIL",
+      "detail": "Initial keyboard regression ArrowRight x\n\n0 !== 10\n"
+    }
+  ],
+  "states": [
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowRight",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 2,
+      "pageErrors": []
+    }
+  ],
+  "status": "FAIL",
+  "error": {
+    "message": "Initial keyboard regression ArrowRight x\n\n0 !== 10\n",
+    "stack": "AssertionError [ERR_ASSERTION]: Initial keyboard regression ArrowRight x\n\n0 !== 10\n\n    at keyboardCycle (file:///D:/soft/turbowarp-codex-bridge/scripts/verify-mcp.mjs:66:12)\n    at async file:///D:/soft/turbowarp-codex-bridge/scripts/verify-mcp.mjs:109:3"
+  },
+  "finishedAt": "2026-10-20T15:09:01.085Z"
+}

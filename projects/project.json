@@ -1,0 +1,533 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "var_steps": [
+          "steps",
+          -1
+        ],
+        "var_clicks": [
+          "clicks",
+          -1
+        ],
+        "var_ready": [
+          "ready",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "Test Stage",
+          "assetId": "88e4f3e5b785eab19160025d07e2acd3",
+          "dataFormat": "svg",
+          "md5ext": "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "bitmapResolution": 1,
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Harness Robot",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "flag": {
+          "opcode": "event_whenflagclicked",
+          "next": "home",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 40,
+          "y": 40
+        },
+        "home": {
+          "opcode": "motion_gotoxy",
+          "next": "resetSteps",
+          "parent": "flag",
+          "inputs": {
+            "X": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ],
+            "Y": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "resetSteps": {
+          "opcode": "data_setvariableto",
+          "next": "resetClicks",
+          "parent": "home",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "steps",
+              "var_steps"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "resetClicks": {
+          "opcode": "data_setvariableto",
+          "next": "ready",
+          "parent": "resetSteps",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "clicks",
+              "var_clicks"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "ready": {
+          "opcode": "data_setvariableto",
+          "next": "loop",
+          "parent": "resetClicks",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "ready",
+              "var_ready"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "loop": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "ready",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "wait"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "wait": {
+          "opcode": "control_wait",
+          "next": null,
+          "parent": "loop",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                4,
+                "0.05"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rightHat": {
+          "opcode": "event_whenkeypressed",
+          "next": "rightMove",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "right arrow",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 340,
+          "y": 40
+        },
+        "rightMove": {
+          "opcode": "motion_changexby",
+          "next": "rightCount",
+          "parent": "rightHat",
+          "inputs": {
+            "DX": [
+              1,
+              [
+                4,
+                "10"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rightCount": {
+          "opcode": "data_changevariableby",
+          "next": null,
+          "parent": "rightMove",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "steps",
+              "var_steps"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "leftHat": {
+          "opcode": "event_whenkeypressed",
+          "next": "leftMove",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "left arrow",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 340,
+          "y": 230
+        },
+        "leftMove": {
+          "opcode": "motion_changexby",
+          "next": "leftCount",
+          "parent": "leftHat",
+          "inputs": {
+            "DX": [
+              1,
+              [
+                4,
+                "-10"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "leftCount": {
+          "opcode": "data_changevariableby",
+          "next": null,
+          "parent": "leftMove",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "steps",
+              "var_steps"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "upHat": {
+          "opcode": "event_whenkeypressed",
+          "next": "upMove",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "up arrow",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 600,
+          "y": 40
+        },
+        "upMove": {
+          "opcode": "motion_changeyby",
+          "next": "upCount",
+          "parent": "upHat",
+          "inputs": {
+            "DY": [
+              1,
+              [
+                4,
+                "10"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "upCount": {
+          "opcode": "data_changevariableby",
+          "next": null,
+          "parent": "upMove",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "steps",
+              "var_steps"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "downHat": {
+          "opcode": "event_whenkeypressed",
+          "next": "downMove",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "down arrow",
+              null
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 600,
+          "y": 230
+        },
+        "downMove": {
+          "opcode": "motion_changeyby",
+          "next": "downCount",
+          "parent": "downHat",
+          "inputs": {
+            "DY": [
+              1,
+              [
+                4,
+                "-10"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "downCount": {
+          "opcode": "data_changevariableby",
+          "next": null,
+          "parent": "downMove",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "steps",
+              "var_steps"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "clickHat": {
+          "opcode": "event_whenthisspriteclicked",
+          "next": "clickCount",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 40,
+          "y": 420
+        },
+        "clickCount": {
+          "opcode": "data_changevariableby",
+          "next": null,
+          "parent": "clickHat",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "clicks",
+              "var_clicks"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "Robot Blue",
+          "assetId": "29e9a463b0e97f93d95eab3cc4507bc6",
+          "dataFormat": "svg",
+          "md5ext": "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "bitmapResolution": 1,
+          "rotationCenterX": 32,
+          "rotationCenterY": 36
+        },
+        {
+          "name": "Robot Green",
+          "assetId": "acdace3f155ec8b080d4f7ec78132375",
+          "dataFormat": "svg",
+          "md5ext": "acdace3f155ec8b080d4f7ec78132375.svg",
+          "bitmapResolution": 1,
+          "rotationCenterX": 32,
+          "rotationCenterY": 36
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": -80,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "var_steps",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "steps"
+      },
+      "spriteName": null,
+      "value": 0,
+      "width": 0,
+      "height": 0,
+      "x": 8,
+      "y": 8,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "var_clicks",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "clicks"
+      },
+      "spriteName": null,
+      "value": 0,
+      "width": 0,
+      "height": 0,
+      "x": 8,
+      "y": 36,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "var_ready",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "ready"
+      },
+      "spriteName": null,
+      "value": 0,
+      "width": 0,
+      "height": 0,
+      "x": 8,
+      "y": 64,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "Codex TurboWarp feasibility harness"
+  }
+}

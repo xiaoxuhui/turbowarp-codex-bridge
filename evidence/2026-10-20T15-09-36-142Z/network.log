@@ -1,0 +1,9 @@
+10. [GET] https://turbowarp.org/static/assets/cb3ac3b4a8540f50937a86af7eb4663c.woff2 => [200] 
+11. [GET] https://turbowarp.org/static/assets/5796214a21c5c1727ed7b08096ee7cff.woff2 => [200] 
+12. [GET] https://turbowarp.org/static/assets/6cd3397308e11e6d925446470b906f2a.woff2 => [200] 
+13. [GET] https://turbowarp.org/static/assets/2e6994cc7c70b524c649f60346bdcb3a.woff2 => [200] 
+14. [GET] https://turbowarp.org/static/assets/208e2134a0e95cbdd211a82d2863d88d.woff2 => [200] 
+15. [GET] https://turbowarp.org/static/assets/f108ac9d733ce5d45cdea3b7828e8658.woff2 => [200] 
+16. [GET] https://turbowarp.org/static/assets/75f5f189fdc419824a8134db6eb63881.woff2 => [200] 
+
+Note: 33 static requests not shown, run with "static" option to see them.

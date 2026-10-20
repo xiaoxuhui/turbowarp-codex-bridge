@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "sha256": "7b68413da1ce6f28295bac76e620dc2700b1452e47b973fd2c2c11a686ad5726",
+  "targets": [
+    "Stage",
+    "Harness Robot"
+  ],
+  "blocks": 21,
+  "assets": 3,
+  "entries": [
+    "88e4f3e5b785eab19160025d07e2acd3.svg",
+    "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+    "acdace3f155ec8b080d4f7ec78132375.svg",
+    "project.json"
+  ]
+}

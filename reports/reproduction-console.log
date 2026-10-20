@@ -1,0 +1,1280 @@
+Generated and validated keyboard-robot.sb3 {
+  targets: [ 'Stage', 'Harness Robot' ],
+  blocks: 21,
+  assets: 3,
+  entries: [
+    '88e4f3e5b785eab19160025d07e2acd3.svg',
+    '29e9a463b0e97f93d95eab3cc4507bc6.svg',
+    'acdace3f155ec8b080d4f7ec78132375.svg',
+    'project.json'
+  ]
+}
+browser_navigate: ### Ran Playwright code
+```js
+await page.goto('https://turbowarp.org/editor');
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-41-938Z.yml)
+browser_wait_for: ### Result
+Waited for Code
+### Ran Playwright code
+```js
+await page.getByText("Code").first().waitFor({ state: 'visible' });
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-42-050Z.yml)
+browser_evaluate: ### Result
+{
+  "canvas": true,
+  "spriteList": true,
+  "categories": [
+    "Motion",
+    "Looks",
+    "Sound",
+    "Events",
+    "Control",
+    "Sensing",
+    "Operators",
+    "Variables",
+    "My Blocks"
+  ],
+  "workspace": true,
+  "flag": true,
+  "stop": true,
+  "vm": "object",
+  "redux": "object",
+  "runtime": "Q"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({\n    canvas:!!docum
+browser_evaluate: ### Result
+{
+  "loaded": true,
+  "name": "Harness Robot",
+  "bytes": 2409
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const bytes=Uint8Array.from(atob("UEsDBAoAAAAIAHB5VF2zluix3AAAACsBAAAkAAAAODhlNGYzZTViNzg1ZWFiMTkxNjAwMjVkMDdlMmFjZDMuc3ZndZDLasMwEEV/ZZguSyL5FUyxDCGbbrIr7dq2JFv4ISNNIqf04yuX0l2XM3POvTCVv/ewzdPiBQ5E6wtjIYRjyI7W9SzlnLNIIAQjaRCYlxxhUKYfSGB24lhXTnX07xm0mSaB
+browser_evaluate: ### Result
+{
+  "name": "Harness Robot",
+  "costumes": 2,
+  "blocks": 21,
+  "runtimeBlocksIncludingShadows": 36
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const deadline=Date.now()+60000;\n    while(Date.now()<deadline) {\n      const t=window.vm?.runtime?.targets.find(t=>t.getName()===\'Harness Robot\');\n      if(t && document.querySelector(\'canvas\')?.width>0) retur
+browser_evaluate: ### Result
+{
+  "installed": true
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => {window.__harnessErrors=[];addEventListener(\'error\',e=>window.__harnessErrors.push(String(e.message)));addEventListener(\'unhandledrejection\',e=>window.__harnessErrors.push(String(e.reason)));vm.on(\'COMPILE_ERROR\',(target,error)=>window.__harnessErrors.push(`COMPILE_ERROR ${target?.getName()}: ${error}
+browser_click: ### Ran Playwright code
+```js
+await page.locator('text="Costumes"').click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 1 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-45-574Z.yml)
+### Events
+- New console entries: evidence\console-2026-10-20T15-11-34-553Z.log#L1
+browser_wait_for: ### Result
+Waited for Robot Blue
+### Ran Playwright code
+```js
+await page.getByText("Robot Blue").first().waitFor({ state: 'visible' });
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 1 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-45-629Z.yml)
+browser_click: ### Ran Playwright code
+```js
+await page.locator('text="Code"').click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 1 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-46-283Z.yml)
+browser_click: ### Ran Playwright code
+```js
+await page.locator('.scratchCategoryMenuItemLabel:text-is("Variables")').click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 1 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-46-862Z.yml)
+browser_snapshot: ### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 1 warnings
+### Snapshot
+- [Snapshot](evidence\2026-10-20T15-11-33-257Z\editor-loaded.yml)
+browser_click: ### Ran Playwright code
+```js
+await page.locator('img[class*="green-flag_green-flag"]').click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 1 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-47-505Z.yml)
+browser_evaluate: ### Result
+{
+  "x": 0,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 0,
+    "clicks": 0,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=null;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!
+browser_click: ### Ran Playwright code
+```js
+await page.locator('canvas').first().click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-48-635Z.yml)
+### Events
+- New console entries: evidence\console-2026-10-20T15-11-34-553Z.log#L2
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowRight
+await page.keyboard.press('ArrowRight');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 1,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=1;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowRight
+await page.keyboard.press('ArrowRight');
+```
+browser_evaluate: ### Result
+{
+  "x": 20,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 2,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=2;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowLeft
+await page.keyboard.press('ArrowLeft');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 3,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=3;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowUp
+await page.keyboard.press('ArrowUp');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 10,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 4,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=4;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!=
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowDown
+await page.keyboard.press('ArrowDown');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 5,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=5;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 5,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=null;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value
+browser_click: ### Ran Playwright code
+```js
+await page.locator('canvas').first().click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-52-655Z.yml)
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 5,
+    "clicks": 2,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=null;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value
+browser_take_screenshot: ### Result
+- [Screenshot of viewport](evidence\2026-10-20T15-11-33-257Z\running.png)
+### Ran Playwright code
+```js
+// Screenshot viewport and save it as evidence\2026-10-20T15-11-33-257Z\running.png
+await page.screenshot({
+  path: 'evidence\\2026-10-20T15-11-33-257Z\\running.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+browser_click: ### Ran Playwright code
+```js
+await page.locator('img[class*="stop-all_stop-all"]').click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-53-861Z.yml)
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 5,
+    "clicks": 2,
+    "ready": 1
+  },
+  "threads": 0,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=null;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value
+browser_evaluate: ### Result
+{
+  "base64": "UEsDBAoAAAAIAGu3yFDkBUGjkgQAAHIUAAAMAAAAcHJvamVjdC5qc29uvVhbU+s2EP4rjJ5dsOPc34BDW+bQQ4dLW4ZhMrK9dlRky0eSISmT/96VL0QBwjFOy0uysi7+vv12d7R+IprKBLQi09snwtSlpgmQqZYFOCSjKdqkeuaQByoZDTjg2iczmCkNudlIKsMZ3JWLZiFn4X05UVtOr56RQKOlmagMx7tbOYQzZd7/hGYgBY1Cuh5zUZ5k7FCkKWTNTFhIiaNjoXRhULpmQWlXVGrsV6D0XkMgYDql+QUowQvNREamnkMiqunPQqZU43L1kOA6qhTo0wjH4zH0Yx8GwWg8ABp4E2/our1B5I6gR8PIx8VpNI
+browser_evaluate: ### Result
+{
+  "loaded": true,
+  "name": "Harness Robot",
+  "bytes": 2350
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const bytes=Uint8Array.from(atob("UEsDBAoAAAAIAGu3yFDkBUGjkgQAAHIUAAAMAAAAcHJvamVjdC5qc29uvVhbU+s2EP4rjJ5dsOPc34BDW+bQQ4dLW4ZhMrK9dlRky0eSISmT/96VL0QBwjFOy0uysi7+vv12d7R+IprKBLQi09snwtSlpgmQqZYFOCSjKdqkeuaQByoZDTjg2iczmCkNudlIKsMZ3JWLZiFn4X05UVtOr56RQKOl
+browser_evaluate: ### Result
+{
+  "name": "Harness Robot",
+  "costumes": 2,
+  "blocks": 21,
+  "runtimeBlocksIncludingShadows": 36
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const deadline=Date.now()+60000;\n    while(Date.now()<deadline) {\n      const t=window.vm?.runtime?.targets.find(t=>t.getName()===\'Harness Robot\');\n      if(t && document.querySelector(\'canvas\')?.width>0) retur
+browser_click: ### Ran Playwright code
+```js
+await page.locator('img[class*="green-flag_green-flag"]').click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-56-570Z.yml)
+browser_evaluate: ### Result
+{
+  "x": 0,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 0,
+    "clicks": 0,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=null;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!
+browser_click: ### Ran Playwright code
+```js
+await page.locator('canvas').first().click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-11-57-701Z.yml)
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowRight
+await page.keyboard.press('ArrowRight');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 1,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=1;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowRight
+await page.keyboard.press('ArrowRight');
+```
+browser_evaluate: ### Result
+{
+  "x": 20,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 2,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=2;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowLeft
+await page.keyboard.press('ArrowLeft');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 3,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=3;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowUp
+await page.keyboard.press('ArrowUp');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 10,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 4,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=4;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!=
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowDown
+await page.keyboard.press('ArrowDown');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 5,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=5;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_evaluate: ### Result
+{
+  "loaded": true,
+  "name": "Harness Robot",
+  "bytes": 2411
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const bytes=Uint8Array.from(atob("UEsDBAoAAAAIAHB5VF2zluix3AAAACsBAAAkAAAAODhlNGYzZTViNzg1ZWFiMTkxNjAwMjVkMDdlMmFjZDMuc3ZndZDLasMwEEV/ZZguSyL5FUyxDCGbbrIr7dq2JFv4ISNNIqf04yuX0l2XM3POvTCVv/ewzdPiBQ5E6wtjIYRjyI7W9SzlnLNIIAQjaRCYlxxhUKYfSGB24lhXTnX07xm0mSaB
+browser_evaluate: ### Result
+{
+  "name": "Harness Robot",
+  "costumes": 2,
+  "blocks": 21,
+  "runtimeBlocksIncludingShadows": 36
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const deadline=Date.now()+60000;\n    while(Date.now()<deadline) {\n      const t=window.vm?.runtime?.targets.find(t=>t.getName()===\'Harness Robot\');\n      if(t && document.querySelector(\'canvas\')?.width>0) retur
+browser_click: ### Ran Playwright code
+```js
+await page.locator('img[class*="green-flag_green-flag"]').click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-12-02-171Z.yml)
+browser_evaluate: ### Result
+{
+  "x": 0,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 0,
+    "clicks": 0,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=null;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!
+browser_click: ### Ran Playwright code
+```js
+await page.locator('canvas').first().click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-12-03-312Z.yml)
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowRight
+await page.keyboard.press('ArrowRight');
+```
+browser_evaluate: ### Result
+{
+  "x": 5,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 1,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=1;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==e
+browser_evaluate: ### Result
+{
+  "loaded": true,
+  "name": "Harness Robot",
+  "bytes": 2409
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const bytes=Uint8Array.from(atob("UEsDBAoAAAAIAHB5VF2zluix3AAAACsBAAAkAAAAODhlNGYzZTViNzg1ZWFiMTkxNjAwMjVkMDdlMmFjZDMuc3ZndZDLasMwEEV/ZZguSyL5FUyxDCGbbrIr7dq2JFv4ISNNIqf04yuX0l2XM3POvTCVv/ewzdPiBQ5E6wtjIYRjyI7W9SzlnLNIIAQjaRCYlxxhUKYfSGB24lhXTnX07xm0mSaB
+browser_evaluate: ### Result
+{
+  "name": "Harness Robot",
+  "costumes": 2,
+  "blocks": 21,
+  "runtimeBlocksIncludingShadows": 36
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const deadline=Date.now()+60000;\n    while(Date.now()<deadline) {\n      const t=window.vm?.runtime?.targets.find(t=>t.getName()===\'Harness Robot\');\n      if(t && document.querySelector(\'canvas\')?.width>0) retur
+browser_click: ### Ran Playwright code
+```js
+await page.locator('img[class*="green-flag_green-flag"]').click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-12-05-530Z.yml)
+browser_evaluate: ### Result
+{
+  "x": 0,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 0,
+    "clicks": 0,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=null;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!
+browser_click: ### Ran Playwright code
+```js
+await page.locator('canvas').first().click();
+```
+### Page
+- Page URL: https://turbowarp.org/editor
+- Page Title: TurboWarp - Run Scratch projects faster
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](evidence\page-2026-10-20T15-12-06-655Z.yml)
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowRight
+await page.keyboard.press('ArrowRight');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 1,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=1;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowRight
+await page.keyboard.press('ArrowRight');
+```
+browser_evaluate: ### Result
+{
+  "x": 20,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 2,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=2;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowLeft
+await page.keyboard.press('ArrowLeft');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 3,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=3;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowUp
+await page.keyboard.press('ArrowUp');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 10,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 4,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=4;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!=
+browser_press_key: ### Ran Playwright code
+```js
+// Press ArrowDown
+await page.keyboard.press('ArrowDown');
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 5,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=5;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==
+browser_evaluate: ### Result
+{
+  "base64": "UEsDBAoAAAAIAGu3yFCBv4LekQQAAHIUAAAMAAAAcHJvamVjdC5qc29uvVhbU+s2EP4rjJ5dsOPc34BDW+bQQ4dLW4ZhMrK9dlRky0eSISmT/96VL0QBwjFOy0uyklbSt/vt7mj9RDSVCWhFprdPhKlLTRMgUy0LcEhGU5RJNeeQByoZDTig7pMZzJSG3GwkleAM7kqlWchZeF8u1JLj1SsSaLQ0C5WA8yuHcKbM/U8oBlLQKKTrMRflSUYORZpC1qyEhZQ4OhZKFwalaxRKuTKlxn4FSu81BgRMpzS/ACV4oZnIyNRzSEQ1/VnIlGpUVw8J6lGlQJ9GOB6PoR/7MAhG4wHQwJt4Q9ftDSJ3BD0aRj4qp9EAFr
+browser_take_screenshot: ### Result
+- [Screenshot of viewport](evidence\2026-10-20T15-11-33-257Z\verified.png)
+### Ran Playwright code
+```js
+// Screenshot viewport and save it as evidence\2026-10-20T15-11-33-257Z\verified.png
+await page.screenshot({
+  path: 'evidence\\2026-10-20T15-11-33-257Z\\verified.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+browser_evaluate: ### Result
+{
+  "x": 10,
+  "y": 0,
+  "visible": true,
+  "costume": 0,
+  "variables": {
+    "steps": 5,
+    "clicks": 1,
+    "ready": 1
+  },
+  "threads": 1,
+  "pageErrors": []
+}
+### Ran Playwright code
+```js
+await page.evaluate('async () => {\n    const expectedSteps=null;\n    const deadline=Date.now()+3000;\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value
+browser_console_messages: ### Result
+- [Console](evidence\2026-10-20T15-11-33-257Z\console.log)
+browser_network_requests: ### Result
+- [Network](evidence\2026-10-20T15-11-33-257Z\network.log)
+{
+  "runId": "2026-10-20T15-11-33-257Z",
+  "startedAt": "2026-10-20T15:11:33.259Z",
+  "transport": "stdio",
+  "browserSandbox": true,
+  "checks": [
+    {
+      "name": "SB3 structural validation",
+      "status": "PASS",
+      "detail": {
+        "targets": [
+          "Stage",
+          "Harness Robot"
+        ],
+        "blocks": 21,
+        "assets": 3,
+        "entries": [
+          "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "acdace3f155ec8b080d4f7ec78132375.svg",
+          "project.json"
+        ]
+      }
+    },
+    {
+      "name": "Editor regions",
+      "status": "PASS",
+      "detail": {
+        "canvas": true,
+        "spriteList": true,
+        "categories": [
+          "Motion",
+          "Looks",
+          "Sound",
+          "Events",
+          "Control",
+          "Sensing",
+          "Operators",
+          "Variables",
+          "My Blocks"
+        ],
+        "workspace": true,
+        "flag": true,
+        "stop": true,
+        "vm": "object",
+        "redux": "object",
+        "runtime": "Q"
+      }
+    },
+    {
+      "name": "Load .sb3 via official VM API through MCP",
+      "status": "PASS",
+      "detail": {
+        "name": "Harness Robot",
+        "costumes": 2,
+        "blocks": 21,
+        "runtimeBlocksIncludingShadows": 36
+      }
+    },
+    {
+      "name": "Editor clicks, tabs and category switching",
+      "status": "PASS",
+      "detail": "Costumes, Code and Variables selected through browser_click"
+    },
+    {
+      "name": "Initial keyboard regression",
+      "status": "PASS",
+      "detail": "Five real browser key presses; exact x/y and step counter assertions"
+    },
+    {
+      "name": "Real browser mouse input",
+      "status": "PASS",
+      "detail": "Click on robot increments clicks exactly once"
+    },
+    {
+      "name": "Screenshot",
+      "status": "PASS",
+      "detail": "evidence/2026-10-20T15-11-33-257Z/running.png"
+    },
+    {
+      "name": "Stop button",
+      "status": "PASS",
+      "detail": "VM threads = 0"
+    },
+    {
+      "name": "VM export saved .sb3",
+      "status": "PASS",
+      "detail": {
+        "targets": [
+          "Stage",
+          "Harness Robot"
+        ],
+        "blocks": 21,
+        "assets": 3,
+        "entries": [
+          "project.json",
+          "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "acdace3f155ec8b080d4f7ec78132375.svg"
+        ]
+      }
+    },
+    {
+      "name": "Saved project reload regression",
+      "status": "PASS",
+      "detail": "Five real browser key presses; exact x/y and step counter assertions"
+    },
+    {
+      "name": "Negative control catches logic error",
+      "status": "PASS",
+      "detail": "DX=5 produced x=5; expected x=10 rejected"
+    },
+    {
+      "name": "Repair regression",
+      "status": "PASS",
+      "detail": "Five real browser key presses; exact x/y and step counter assertions"
+    },
+    {
+      "name": "Repair feasibility",
+      "status": "PASS",
+      "detail": "Patched DX from 5 to 10 in the failed SB3; confirmed other project fields unchanged; full keyboard regression passed"
+    },
+    {
+      "name": "Runtime error listeners",
+      "status": "PASS",
+      "detail": []
+    }
+  ],
+  "states": [
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowRight",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 1,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowRight",
+      "x": 20,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 2,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowLeft",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 3,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowUp",
+      "x": 10,
+      "y": 10,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 4,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowDown",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "before click",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "after click",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 2,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "stop",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 2,
+        "ready": 1
+      },
+      "threads": 0,
+      "pageErrors": []
+    },
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowRight",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 1,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowRight",
+      "x": 20,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 2,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowLeft",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 3,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowUp",
+      "x": 10,
+      "y": 10,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 4,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowDown",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "negative control",
+      "x": 5,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 1,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowRight",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 1,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowRight",
+      "x": 20,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 2,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowLeft",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 3,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowUp",
+      "x": 10,
+      "y": 10,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 4,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowDown",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "final",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    }
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-10-20T15:12:10.642Z"
+}

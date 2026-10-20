@@ -1,0 +1,293 @@
+- generic [active]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e7] [cursor=pointer]: Settings
+          - generic [ref=e11] [cursor=pointer]: File
+          - generic [ref=e15] [cursor=pointer]: Edit
+          - generic [ref=e19] [cursor=pointer]: Addons
+          - generic [ref=e22] [cursor=pointer]: Advanced
+        - textbox "Project title here" [ref=e27]: Project
+        - button "See Project Page" [ref=e29] [cursor=pointer]
+        - link [ref=e33] [cursor=pointer]:
+          - /url: https://scratch.mit.edu/users/GarboMuffin/#comments
+          - button "TurboWarp Feedback" [ref=e34]
+      - generic [ref=e896]: Save to your computer
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - tablist [ref=e40]:
+            - tab "Code" [ref=e41] [cursor=pointer]
+            - tab "Costumes" [selected] [ref=e44] [cursor=pointer]
+            - tab "Sounds" [ref=e47] [cursor=pointer]
+            - searchbox [ref=e53]
+          - tabpanel "Costumes" [ref=e899]:
+            - generic [ref=e900]:
+              - generic [ref=e901]:
+                - generic [ref=e902]:
+                  - generic [ref=e904] [cursor=pointer]:
+                    - generic [ref=e905]: "1"
+                    - generic [ref=e908]:
+                      - generic [ref=e909]: Robot Blue
+                      - generic [ref=e910]: 59 x 74
+                    - button "Delete" [ref=e911]
+                    - menu:
+                      - menuitem "duplicate"
+                      - menuitem "export"
+                      - menuitem "delete"
+                  - generic [ref=e915] [cursor=pointer]:
+                    - generic [ref=e916]: "2"
+                    - generic [ref=e919]:
+                      - generic [ref=e920]: Robot Green
+                      - generic [ref=e921]: 59 x 74
+                    - menu:
+                      - menuitem "duplicate"
+                      - menuitem "export"
+                      - menuitem "delete"
+                - generic [ref=e923]:
+                  - button "Choose a Costume" [ref=e924] [cursor=pointer]
+                  - generic [ref=e926]:
+                    - generic:
+                      - button "Upload Costume" [ref=e928] [cursor=pointer]
+                      - button "Surprise" [ref=e931] [cursor=pointer]
+                      - button "Paint" [ref=e934] [cursor=pointer]
+                      - button "Choose a Costume" [ref=e937] [cursor=pointer]
+              - generic [ref=e940]:
+                - generic [ref=e941]:
+                  - generic [ref=e943]:
+                    - generic [ref=e945]:
+                      - generic [ref=e946]: Costume
+                      - textbox "Costume" [ref=e947]: Robot Blue
+                    - generic [ref=e949]:
+                      - button [ref=e950]:
+                        - img "Undo" [ref=e951]
+                      - button [ref=e952]:
+                        - img "Redo" [ref=e953]
+                    - generic [ref=e954]:
+                      - button "Group Group" [ref=e955]:
+                        - img "Group" [ref=e956]
+                        - generic [ref=e957]: Group
+                      - button "Ungroup Ungroup" [ref=e958]:
+                        - img "Ungroup" [ref=e959]
+                        - generic [ref=e960]: Ungroup
+                    - generic [ref=e961]:
+                      - button "Forward Forward" [ref=e962]:
+                        - img "Forward" [ref=e963]
+                        - generic [ref=e964]: Forward
+                      - button "Backward Backward" [ref=e965]:
+                        - img "Backward" [ref=e966]
+                        - generic [ref=e967]: Backward
+                    - generic [ref=e968]:
+                      - button "Front Front" [ref=e969]:
+                        - img "Front" [ref=e970]
+                        - generic [ref=e971]: Front
+                      - button "Back Back" [ref=e972]:
+                        - img "Back" [ref=e973]
+                        - generic [ref=e974]: Back
+                  - generic [ref=e975]:
+                    - generic [ref=e976]:
+                      - generic [ref=e978]:
+                        - generic [ref=e979]: Fill
+                        - generic [ref=e980]:
+                          - generic [ref=e981] [cursor=pointer]
+                          - generic [ref=e982] [cursor=pointer]: ▾
+                      - generic [ref=e984]:
+                        - generic [ref=e985]: Outline
+                        - generic [ref=e986]:
+                          - generic [ref=e987] [cursor=pointer]
+                          - generic [ref=e988] [cursor=pointer]: ▾
+                      - spinbutton [ref=e990]: "4"
+                    - generic [ref=e992]:
+                      - generic [ref=e993]:
+                        - button "Copy Copy" [ref=e994] [cursor=pointer]:
+                          - img "Copy" [ref=e995]
+                          - generic [ref=e996]: Copy
+                        - button "Paste Paste" [ref=e997]:
+                          - img "Paste" [ref=e998]
+                          - generic [ref=e999]: Paste
+                      - button "Delete Delete" [ref=e1001] [cursor=pointer]:
+                        - img "Delete" [ref=e1002]
+                        - generic [ref=e1003]: Delete
+                      - generic [ref=e1004]:
+                        - button "Flip Horizontal Flip Horizontal" [ref=e1005] [cursor=pointer]:
+                          - img "Flip Horizontal" [ref=e1006]
+                          - generic [ref=e1007]: Flip Horizontal
+                        - button "Flip Vertical Flip Vertical" [ref=e1008] [cursor=pointer]:
+                          - img "Flip Vertical" [ref=e1009]
+                          - generic [ref=e1010]: Flip Vertical
+                - generic [ref=e1011]:
+                  - generic [ref=e1012]:
+                    - button [ref=e1013] [cursor=pointer]:
+                      - img "Select" [ref=e1014]
+                    - button [ref=e1015] [cursor=pointer]:
+                      - img "Reshape" [ref=e1016]
+                    - button [ref=e1017] [cursor=pointer]:
+                      - img "Brush" [ref=e1018]
+                    - button [ref=e1019] [cursor=pointer]:
+                      - img "Eraser" [ref=e1020]
+                    - button [ref=e1021] [cursor=pointer]:
+                      - img "Fill" [ref=e1022]
+                    - button [ref=e1023] [cursor=pointer]:
+                      - img "Text" [ref=e1024]
+                    - button [ref=e1025] [cursor=pointer]:
+                      - img "Line" [ref=e1026]
+                    - button [ref=e1027] [cursor=pointer]:
+                      - img "Circle" [ref=e1028]
+                    - button [ref=e1029] [cursor=pointer]:
+                      - img "Rectangle" [ref=e1030]
+                  - generic [ref=e1031]:
+                    - generic [ref=e1032]:
+                      - generic [ref=e1034] [cursor=pointer]
+                      - generic [ref=e1036] [cursor=pointer]
+                    - generic [ref=e1038]:
+                      - button "Convert to Bitmap" [ref=e1039] [cursor=pointer]
+                      - generic [ref=e1042]:
+                        - generic [ref=e1043]:
+                          - generic [ref=e1044]:
+                            - button [ref=e1045] [cursor=pointer]:
+                              - img "Zoom Out" [ref=e1046]
+                            - button [ref=e1047] [cursor=pointer]:
+                              - img "Zoom Reset" [ref=e1048]
+                            - button [ref=e1049] [cursor=pointer]:
+                              - img "Zoom In" [ref=e1050]
+                          - button [ref=e1052] [cursor=pointer]:
+                            - img "Change theme" [ref=e1053]
+                        - generic [ref=e1054]:
+                          - generic [ref=e1055]:
+                            - generic:
+                              - generic:
+                                - generic: Previous costumes
+                                - generic:
+                                  - button
+                                  - button:
+                                    - spinbutton "Previous costumes": "1"
+                                  - button
+                              - generic:
+                                - generic: Next costumes
+                                - generic:
+                                  - button
+                                  - button:
+                                    - spinbutton "Next costumes": "0"
+                                  - button
+                              - generic:
+                                - generic: Opacity (%)
+                                - generic:
+                                  - button
+                                  - button:
+                                    - spinbutton "Opacity (%)": "25"
+                                  - button
+                              - generic:
+                                - generic: Opacity step (%)
+                                - generic:
+                                  - button
+                                  - button:
+                                    - spinbutton "Opacity step (%)": "10"
+                                  - button
+                              - generic:
+                                - generic: Mode
+                                - generic:
+                                  - button "Merge"
+                                  - button "Tint"
+                              - generic:
+                                - generic: Layering
+                                - generic:
+                                  - button "Front"
+                                  - button "Behind"
+                          - button "Toggle Onion Skinning" [ref=e1056] [cursor=pointer]
+                          - button "Onion Skinning Settings" [ref=e1058] [cursor=pointer]
+        - generic [ref=e390]: Backpack
+      - generic [ref=e392]:
+        - generic [ref=e393]:
+          - generic [ref=e395]:
+            - generic [ref=e396]:
+              - img "Go" [ref=e397] [cursor=pointer]
+              - img "Pause" [ref=e398] [cursor=pointer]
+              - img "Stop" [ref=e399] [cursor=pointer]
+            - generic [ref=e400]:
+              - generic [ref=e402]:
+                - button "Switch to small stage" [ref=e403] [cursor=pointer]
+                - button "Switch to full stage" [pressed] [ref=e405] [cursor=pointer]
+              - button [ref=e408] [cursor=pointer]:
+                - img "Switch to full stage" [ref=e410]
+          - generic [ref=e413]:
+            - generic:
+              - generic:
+                - generic [ref=e1062]:
+                  - generic [ref=e1063]: steps
+                  - generic [ref=e1064]: "-1"
+                - generic [ref=e1067]:
+                  - generic [ref=e1068]: clicks
+                  - generic [ref=e1069]: "-1"
+                - generic [ref=e1072]:
+                  - generic [ref=e1073]: ready
+                  - generic [ref=e1074]: "0"
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - generic [ref=e419]:
+              - generic [ref=e420]:
+                - generic [ref=e422]:
+                  - generic [ref=e423]: Sprite
+                  - textbox "Sprite" [ref=e424]:
+                    - /placeholder: Name
+                    - text: Harness Robot
+                - generic [ref=e427]:
+                  - generic [ref=e428]: x
+                  - spinbutton "x" [ref=e429]: "-80"
+                - generic [ref=e432]:
+                  - generic [ref=e433]: "y"
+                  - spinbutton "y" [ref=e434]: "0"
+              - generic [ref=e435]:
+                - generic [ref=e436]:
+                  - generic [ref=e437]: Show
+                  - generic [ref=e439]:
+                    - button "Show sprite" [pressed] [ref=e440] [cursor=pointer]
+                    - button "Hide sprite" [ref=e442] [cursor=pointer]
+                - generic [ref=e445]:
+                  - generic [ref=e446]: Size
+                  - spinbutton "Size" [ref=e447]: "100"
+                - generic [ref=e449]:
+                  - generic [ref=e450]: Direction
+                  - spinbutton "Direction" [ref=e451]: "90"
+            - generic [ref=e1076] [cursor=pointer]:
+              - generic [ref=e1079]: Harness Robot
+              - button "Delete" [ref=e1081]
+              - menu:
+                - menuitem "duplicate"
+                - menuitem "export"
+                - menuitem "delete"
+            - generic [ref=e462]:
+              - button "Choose a Sprite" [ref=e463] [cursor=pointer]
+              - generic [ref=e465]:
+                - generic:
+                  - button "Upload Sprite" [ref=e467] [cursor=pointer]
+                  - button "Surprise" [ref=e470] [cursor=pointer]
+                  - button "Paint" [ref=e473] [cursor=pointer]
+                  - button "Choose a Sprite" [ref=e476] [cursor=pointer]
+          - generic [ref=e1084] [cursor=pointer]:
+            - generic [ref=e1085]: Stage
+            - generic [ref=e1088]: Backdrops
+            - generic [ref=e1089]: "1"
+            - generic [ref=e1090]:
+              - button "Choose a Backdrop" [ref=e1091]
+              - generic [ref=e1093]:
+                - generic:
+                  - button "Upload Backdrop" [ref=e1095]
+                  - button "Surprise" [ref=e1098]
+                  - button "Paint" [ref=e1101]
+                  - button "Choose a Backdrop" [ref=e1104]
+  - menu:
+    - menuitem "normal readout"
+    - menuitem "large readout"
+    - menuitem "slider"
+    - menuitem "hide"
+  - menu:
+    - menuitem "normal readout"
+    - menuitem "large readout"
+    - menuitem "slider"
+    - menuitem "hide"
+  - menu:
+    - menuitem "normal readout"
+    - menuitem "large readout"
+    - menuitem "slider"
+    - menuitem "hide"

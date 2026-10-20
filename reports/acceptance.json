@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-10-20T15:16:48.321Z",
+  "timezone": "Asia/Shanghai",
+  "scope": "P0-P3 integration and restricted P4 feasibility; Desktop native tool activation pending",
+  "latestRun": "2026-10-20T15-11-33-257Z",
+  "checks": [
+    {
+      "item": "Node.js 可靠运行",
+      "status": "PASS",
+      "evidence": "Node 24.19.0 执行官方 MCP、项目生成、两次完整 GUI 测试；未重装"
+    },
+    {
+      "item": "Playwright MCP 安装和启动",
+      "status": "PASS",
+      "evidence": "固定 0.0.83；STDIO initialize/tools/list 和实际 tools/call 成功；25 个服务端工具"
+    },
+    {
+      "item": "Codex 配置发现服务",
+      "status": "PASS",
+      "evidence": "codex mcp get 返回 enabled=true；绝对命令、cwd 和超时已读取"
+    },
+    {
+      "item": "Codex Desktop 原生工具发现与调用",
+      "status": "BLOCKED",
+      "evidence": "用户已关闭并重新打开服务开关，enabled=true 已核实；本会话原生工具目录仍无 Playwright。官方 app-server proxy 控制连接失败，SDK 调用成功不能替代本项"
+    },
+    {
+      "item": "自动打开 TurboWarp 编辑器",
+      "status": "PASS",
+      "evidence": "通过官方 MCP browser_navigate 加载 https://turbowarp.org/editor"
+    },
+    {
+      "item": "基础编辑器自动操作",
+      "status": "PASS",
+      "evidence": "DOM 识别舞台/角色/分类/积木区/绿旗/停止；Costumes、Code、Variables 点击与截图"
+    },
+    {
+      "item": "创建有效 TurboWarp 项目",
+      "status": "PASS",
+      "evidence": "21 主体积木、一个角色、两套角色造型、一个背景、三个变量；ZIP CRC/引用/素材 MD5 验证"
+    },
+    {
+      "item": "自动加载并运行 SB3",
+      "status": "PASS",
+      "evidence": "MCP browser_evaluate 调用官方 vm.loadProject；真实点击绿旗；ready=1，x/y=0，存活线程>0"
+    },
+    {
+      "item": "可重复逻辑测试",
+      "status": "PASS",
+      "evidence": "2 次独立完整运行 PASS；每轮 3 组五键回归与 1 次故障按键，断言坐标和 steps"
+    },
+    {
+      "item": "鼠标与停止控制",
+      "status": "PASS",
+      "evidence": "点击机器人 clicks 增加 1；真实点击停止后 VM threads=0"
+    },
+    {
+      "item": "保存并重新加载项目",
+      "status": "PASS",
+      "evidence": "vm.saveProjectSb3 导出到磁盘，再由同一官方 VM 加载，重复五键回归"
+    },
+    {
+      "item": "截图、日志和运行证据",
+      "status": "PASS",
+      "evidence": "evidence/2026-10-20T15-11-33-257Z/verified.png、console.log、network.log 与 24 个状态快照"
+    },
+    {
+      "item": "逻辑错误检测与最小修复实验",
+      "status": "PASS",
+      "evidence": "右移 5 的故障件实际 x=5，x=10 断言拒绝；仅修复 DX 为 10，其余 JSON 完全一致，回归通过"
+    },
+    {
+      "item": "运行异常收集通道",
+      "status": "PASS",
+      "evidence": "error/unhandledrejection/COMPILE_ERROR 监听已安装，当前样例无记录；console 0 errors"
+    },
+    {
+      "item": "运行异常故障注入检测",
+      "status": "NOT TESTED",
+      "evidence": "没有注入 JS/扩展/编译异常；不能宣称所有异常都能被捕获"
+    },
+    {
+      "item": "项目与报告落盘",
+      "status": "PASS",
+      "evidence": "projects/*.sb3、reports/test-*.json、artifact-manifest.json 和截图已保存"
+    },
+    {
+      "item": "原有 Codex 配置保全",
+      "status": "PASS",
+      "evidence": "原 3709 字节逐字节保留；修改前备份及前后 SHA-256 已记录"
+    },
+    {
+      "item": "依赖质量门禁",
+      "status": "PASS",
+      "evidence": "锁文件离线重建成功；本轮 pnpm audit 107 依赖、已知漏洞 0"
+    },
+    {
+      "item": "后续专用 Bridge 方案",
+      "status": "PASS",
+      "evidence": "docs/bridge-architecture.md 完成选型、接口、文件事务、测试和阶段计划"
+    },
+    {
+      "item": "完整专用 TurboWarp MCP Bridge",
+      "status": "NOT TESTED",
+      "evidence": "未实现；按用户范围限制只交付有限实验与架构设计"
+    },
+    {
+      "item": "任意已有项目/自定义扩展自动修复",
+      "status": "NOT TESTED",
+      "evidence": "本轮只生成并修改独立样例，未触碰原有用户作品"
+    },
+    {
+      "item": "GUI 文件菜单上传",
+      "status": "FAIL",
+      "evidence": "File System Access API 原生文件选择器未形成 MCP 可处理的 file chooser modal；已采用 VM API 成功替代"
+    },
+    {
+      "item": "GUI 文件拖放",
+      "status": "FAIL",
+      "evidence": "body 无可见盒模型，舞台 canvas 不接受 drop；未将其标记为成功"
+    },
+    {
+      "item": "完整离线 GUI 与 VM 固定版本",
+      "status": "NOT TESTED",
+      "evidence": "当前依赖在线 TurboWarp；后续可自托管固定版本，尚未实施"
+    },
+    {
+      "item": "实际恢复全局配置",
+      "status": "NOT TESTED",
+      "evidence": "已验证备份哈希与复制恢复结果；未执行真实回滚以免撤销已安装服务"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "turbowarp-codex-bridge-feasibility",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local Playwright MCP integration and TurboWarp feasibility tests; not a full custom bridge",
+  "engines": { "node": ">=24 <25" },
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "generate": "node scripts/generate-project.mjs",
+    "test": "node scripts/verify-mcp.mjs",
+    "mcp": "node node_modules/@playwright/mcp/cli.js --config config/playwright.json"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "@playwright/mcp": "0.0.83",
+    "jszip": "3.10.1"
+  }
+}

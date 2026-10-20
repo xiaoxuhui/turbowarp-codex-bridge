@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Ran Playwright code\n```js\nawait page.goto('https://turbowarp.org/editor');\n```\n### Page\n- Page URL: https://turbowarp.org/editor\n- Page Title: TurboWarp - Run Scratch projects faster\n### Snapshot\n- [Snapshot](evidence\\page-2026-10-20T15-05-51-240Z.yml)"
+    }
+  ]
+}

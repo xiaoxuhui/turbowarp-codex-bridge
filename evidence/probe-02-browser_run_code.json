@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Error\nTool \"browser_run_code\" not found"
+    }
+  ],
+  "isError": true
+}

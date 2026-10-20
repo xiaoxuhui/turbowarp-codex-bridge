@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Result\nWaited for Code\n### Ran Playwright code\n```js\nawait page.getByText(\"Code\").first().waitFor({ state: 'visible' });\n```\n### Page\n- Page URL: https://turbowarp.org/editor\n- Page Title: TurboWarp - Run Scratch projects faster\n### Snapshot\n- [Snapshot](evidence\\page-2026-10-20T15-08-00-398Z.yml)"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Result\n- [Screenshot of viewport](evidence\\2026-10-20T15-05-08-022Z\\failure.png)\n### Ran Playwright code\n```js\n// Screenshot viewport and save it as evidence\\2026-10-20T15-05-08-022Z\\failure.png\nawait page.screenshot({\n  path: 'evidence\\\\2026-10-20T15-05-08-022Z\\\\failure.png',\n  scale: 'css',\n  type: 'png'\n});\n```"
+    }
+  ]
+}

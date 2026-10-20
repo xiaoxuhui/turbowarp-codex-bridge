@@ -1,0 +1,9 @@
+{
+  "changedAt": "2026-10-20T23:04:47.2744098+08:00",
+  "config": "C:\\Users\\25133\\.codex\\config.toml",
+  "backup": "D:\\soft\\turbowarp-codex-bridge\\backups\\config.before-20261020-230447.toml",
+  "beforeSha256": "AFF5BE7C4E98550645D1704A81C371A34E5BD65B0C0DC4A50AE01D7309A6B228",
+  "afterSha256": "7DC5DA3A9089DE0B0E31D0BA2DC3063AAB92565144159188AE8EED94F1112B4D",
+  "server": "playwright",
+  "method": "append-only official config.toml STDIO stanza"
+}

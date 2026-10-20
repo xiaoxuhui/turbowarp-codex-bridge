@@ -1,0 +1,21 @@
+{
+  "canvas": true,
+  "spriteList": true,
+  "categories": [
+    "Motion",
+    "Looks",
+    "Sound",
+    "Events",
+    "Control",
+    "Sensing",
+    "Operators",
+    "Variables",
+    "My Blocks"
+  ],
+  "workspace": true,
+  "flag": true,
+  "stop": true,
+  "vm": "object",
+  "redux": "object",
+  "runtime": "Q"
+}

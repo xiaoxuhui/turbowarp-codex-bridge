@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Error\nError: locator.drop: Drop target did not accept the drop — its dragover handler did not call preventDefault()\nCall log:\n\u001b[2m  - waiting for locator('canvas').first()\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"480\" height=\"360\"></canvas>\u001b[22m\n\u001b[2m  - attempting drop action\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing drop action\u001b[22m\n"
+    }
+  ],
+  "isError": true
+}

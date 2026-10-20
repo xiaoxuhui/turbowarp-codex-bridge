@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Error\nError: The tool \"browser_file_upload\" can only be used when there is related modal state present."
+    }
+  ],
+  "isError": true
+}

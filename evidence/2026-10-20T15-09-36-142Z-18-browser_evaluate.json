@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Result\n{\n  \"x\": 20,\n  \"y\": 0,\n  \"visible\": true,\n  \"costume\": 0,\n  \"variables\": {\n    \"steps\": 2,\n    \"clicks\": 1,\n    \"ready\": 1\n  },\n  \"threads\": 1,\n  \"pageErrors\": []\n}\n### Ran Playwright code\n```js\nawait page.evaluate('async () => {\\n    const expectedSteps=2;\\n    const deadline=Date.now()+3000;\\n    while(expectedSteps!==null && vm.runtime.getTargetForStage().variables.var_steps.value!==expectedSteps && Date.now()<deadline) {\\n      await new Promise(r=>setTimeout(r,16));\\n    }\\n    const t=vm.runtime.targets.find(t=>t.getName()===\\'Harness Robot\\');\\n    const stage=vm.runtime.getTargetForStage();\\n    return {x:t.x,y:t.y,visible:t.visible,costume:t.currentCostume,variables:Object.fromEntries(Object.values(stage.variables).map(v=>[v.name,v.value])),threads:vm.runtime.threads.length,pageErrors:window.__harnessErrors||[]};\\n  }');\n```"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Result\n{\n  \"canvas\": true,\n  \"spriteList\": true,\n  \"categories\": [\n    \"Motion\",\n    \"Looks\",\n    \"Sound\",\n    \"Events\",\n    \"Control\",\n    \"Sensing\",\n    \"Operators\",\n    \"Variables\",\n    \"My Blocks\"\n  ],\n  \"workspace\": true,\n  \"flag\": true,\n  \"stop\": true,\n  \"vm\": \"object\",\n  \"redux\": \"object\",\n  \"runtime\": \"Q\"\n}\n### Ran Playwright code\n```js\nawait page.evaluate('() => ({\\n    canvas:!!document.querySelector(\\'canvas\\'),\\n    spriteList:!!document.querySelector(\\'[class*=\"sprite-selector_sprite-selector\"]\\'),\\n    categories:Array.from(document.querySelectorAll(\\'.scratchCategoryMenuItemLabel\\')).map(e=>e.textContent),\\n    workspace:!!document.querySelector(\\'.blocklyWorkspace\\'),\\n    flag:!!document.querySelector(\\'img[class*=\"green-flag_green-flag\"]\\'),\\n    stop:!!document.querySelector(\\'img[class*=\"stop-all_stop-all\"]\\'),\\n    vm:typeof window.vm,redux:typeof window.ReduxStore,\\n    runtime:vm.runtime.constructor.name\\n  })');\n```"
+    }
+  ]
+}

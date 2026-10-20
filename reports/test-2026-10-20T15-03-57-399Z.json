@@ -1,0 +1,63 @@
+{
+  "runId": "2026-10-20T15-03-57-399Z",
+  "startedAt": "2026-10-20T15:03:57.401Z",
+  "transport": "stdio",
+  "browserSandbox": true,
+  "checks": [
+    {
+      "name": "SB3 structural validation",
+      "status": "PASS",
+      "detail": {
+        "targets": [
+          "Stage",
+          "Harness Robot"
+        ],
+        "blocks": 21,
+        "assets": 3,
+        "entries": [
+          "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "acdace3f155ec8b080d4f7ec78132375.svg",
+          "project.json"
+        ]
+      }
+    },
+    {
+      "name": "Editor regions",
+      "status": "PASS",
+      "detail": {
+        "canvas": true,
+        "spriteList": true,
+        "categories": [
+          "Motion",
+          "Looks",
+          "Sound",
+          "Events",
+          "Control",
+          "Sensing",
+          "Operators",
+          "Variables",
+          "My Blocks"
+        ],
+        "workspace": true,
+        "flag": true,
+        "stop": true,
+        "vm": "object",
+        "redux": "object",
+        "runtime": "Q"
+      }
+    },
+    {
+      "name": "Current test run",
+      "status": "FAIL",
+      "detail": "browser_drop: ### Error\nTimeoutError: locator.drop: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('body')\u001b[22m\n\u001b[2m    - locator resolved to <body class=\"sa-body-editor\">…</body>\u001b[22m\n\u001b[2m  - attempting drop action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying drop action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying drop action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    28 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying drop action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+    }
+  ],
+  "states": [],
+  "status": "FAIL",
+  "error": {
+    "message": "browser_drop: ### Error\nTimeoutError: locator.drop: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('body')\u001b[22m\n\u001b[2m    - locator resolved to <body class=\"sa-body-editor\">…</body>\u001b[22m\n\u001b[2m  - attempting drop action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying drop action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying drop action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    28 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying drop action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+    "stack": "Error: browser_drop: ### Error\nTimeoutError: locator.drop: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('body')\u001b[22m\n\u001b[2m    - locator resolved to <body class=\"sa-body-editor\">…</body>\u001b[22m\n\u001b[2m  - attempting drop action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying drop action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying drop action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    28 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying drop action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at Object.call (file:///D:/soft/turbowarp-codex-bridge/scripts/mcp-client.mjs:31:31)\n    at async file:///D:/soft/turbowarp-codex-bridge/scripts/verify-mcp.mjs:87:3"
+  },
+  "finishedAt": "2026-10-20T15:04:21.446Z"
+}

@@ -1,0 +1,21 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "executablePath": "C:/Users/25133/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe",
+      "headless": false,
+      "chromiumSandbox": true,
+      "ignoreDefaultArgs": ["--unsafely-disable-devtools-self-xss-warnings", "--enable-unsafe-swiftshader"]
+    },
+    "contextOptions": {
+      "viewport": { "width": 1440, "height": 1000 },
+      "locale": "en-US"
+    }
+  },
+  "outputDir": "D:/soft/turbowarp-codex-bridge/evidence",
+  "saveSession": true,
+  "webmcp": false,
+  "timeouts": { "action": 15000, "navigation": 90000 },
+  "console": { "level": "info" }
+}

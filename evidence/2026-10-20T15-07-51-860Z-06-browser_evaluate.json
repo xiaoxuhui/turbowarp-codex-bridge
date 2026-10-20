@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Result\n{\n  \"installed\": true\n}\n### Ran Playwright code\n```js\nawait page.evaluate('() => {window.__harnessErrors=[];addEventListener(\\'error\\',e=>window.__harnessErrors.push(String(e.message)));addEventListener(\\'unhandledrejection\\',e=>window.__harnessErrors.push(String(e.reason)));return {installed:true};}');\n```"
+    }
+  ]
+}

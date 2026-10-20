@@ -1,0 +1,63 @@
+{
+  "runId": "2026-10-20T15-05-08-022Z",
+  "startedAt": "2026-10-20T15:05:08.023Z",
+  "transport": "stdio",
+  "browserSandbox": true,
+  "checks": [
+    {
+      "name": "SB3 structural validation",
+      "status": "PASS",
+      "detail": {
+        "targets": [
+          "Stage",
+          "Harness Robot"
+        ],
+        "blocks": 21,
+        "assets": 3,
+        "entries": [
+          "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "acdace3f155ec8b080d4f7ec78132375.svg",
+          "project.json"
+        ]
+      }
+    },
+    {
+      "name": "Editor regions",
+      "status": "PASS",
+      "detail": {
+        "canvas": true,
+        "spriteList": true,
+        "categories": [
+          "Motion",
+          "Looks",
+          "Sound",
+          "Events",
+          "Control",
+          "Sensing",
+          "Operators",
+          "Variables",
+          "My Blocks"
+        ],
+        "workspace": true,
+        "flag": true,
+        "stop": true,
+        "vm": "object",
+        "redux": "object",
+        "runtime": "Q"
+      }
+    },
+    {
+      "name": "Current test run",
+      "status": "FAIL",
+      "detail": "browser_drop: ### Error\nError: locator.drop: Drop target did not accept the drop — its dragover handler did not call preventDefault()\nCall log:\n\u001b[2m  - waiting for locator('canvas').first()\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"480\" height=\"360\"></canvas>\u001b[22m\n\u001b[2m  - attempting drop action\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing drop action\u001b[22m\n"
+    }
+  ],
+  "states": [],
+  "status": "FAIL",
+  "error": {
+    "message": "browser_drop: ### Error\nError: locator.drop: Drop target did not accept the drop — its dragover handler did not call preventDefault()\nCall log:\n\u001b[2m  - waiting for locator('canvas').first()\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"480\" height=\"360\"></canvas>\u001b[22m\n\u001b[2m  - attempting drop action\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing drop action\u001b[22m\n",
+    "stack": "Error: browser_drop: ### Error\nError: locator.drop: Drop target did not accept the drop — its dragover handler did not call preventDefault()\nCall log:\n\u001b[2m  - waiting for locator('canvas').first()\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"480\" height=\"360\"></canvas>\u001b[22m\n\u001b[2m  - attempting drop action\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing drop action\u001b[22m\n\n    at Object.call (file:///D:/soft/turbowarp-codex-bridge/scripts/mcp-client.mjs:31:31)\n    at async file:///D:/soft/turbowarp-codex-bridge/scripts/verify-mcp.mjs:87:3"
+  },
+  "finishedAt": "2026-10-20T15:05:17.756Z"
+}

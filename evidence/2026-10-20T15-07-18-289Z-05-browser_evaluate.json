@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Result\n{\n  \"name\": \"Harness Robot\",\n  \"costumes\": 2,\n  \"blocks\": 36\n}\n### Ran Playwright code\n```js\nawait page.evaluate('async () => {\\n    const deadline=Date.now()+60000;\\n    while(Date.now()<deadline) {\\n      const t=window.vm?.runtime?.targets.find(t=>t.getName()===\\'Harness Robot\\');\\n      if(t && document.querySelector(\\'canvas\\')?.width>0) return {name:t.getName(),costumes:t.getCostumes().length,blocks:Object.keys(t.blocks._blocks).length};\\n      await new Promise(r=>setTimeout(r,100));\\n    }\\n    throw Error(\\'Harness Robot did not load\\');\\n  }');\n```"
+    }
+  ]
+}

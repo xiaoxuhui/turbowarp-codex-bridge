@@ -1,0 +1,28 @@
+[
+  {
+    "name": "turbowarp-codex-bridge-feasibility",
+    "version": "0.1.0",
+    "path": "D:\\soft\\turbowarp-codex-bridge",
+    "private": true,
+    "dependencies": {
+      "@modelcontextprotocol/sdk": {
+        "from": "@modelcontextprotocol/sdk",
+        "version": "1.32.1",
+        "resolved": "https://registry.npmjs.org/@modelcontextprotocol/sdk/-/sdk-1.32.1.tgz",
+        "path": "D:\\soft\\turbowarp-codex-bridge\\node_modules\\.pnpm\\@modelcontextprotocol+sdk@1.32.1_zod@4.6.7\\node_modules\\@modelcontextprotocol\\sdk"
+      },
+      "@playwright/mcp": {
+        "from": "@playwright/mcp",
+        "version": "0.0.83",
+        "resolved": "https://registry.npmjs.org/@playwright/mcp/-/mcp-0.0.83.tgz",
+        "path": "D:\\soft\\turbowarp-codex-bridge\\node_modules\\.pnpm\\@playwright+mcp@0.0.83\\node_modules\\@playwright\\mcp"
+      },
+      "jszip": {
+        "from": "jszip",
+        "version": "3.10.1",
+        "resolved": "https://registry.npmjs.org/jszip/-/jszip-3.10.1.tgz",
+        "path": "D:\\soft\\turbowarp-codex-bridge\\node_modules\\.pnpm\\jszip@3.10.1\\node_modules\\jszip"
+      }
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "registry": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\chrome.exe",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "exists": true
+  },
+  {
+    "registry": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\chrome.exe",
+    "executable": null,
+    "exists": null
+  },
+  {
+    "registry": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\msedge.exe",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "exists": true
+  },
+  {
+    "registry": "HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\App Paths\\msedge.exe",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "exists": true
+  }
+]

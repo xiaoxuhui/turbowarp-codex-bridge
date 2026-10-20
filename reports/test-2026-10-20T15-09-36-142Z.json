@@ -1,0 +1,469 @@
+{
+  "runId": "2026-10-20T15-09-36-142Z",
+  "startedAt": "2026-10-20T15:09:36.145Z",
+  "transport": "stdio",
+  "browserSandbox": true,
+  "checks": [
+    {
+      "name": "SB3 structural validation",
+      "status": "PASS",
+      "detail": {
+        "targets": [
+          "Stage",
+          "Harness Robot"
+        ],
+        "blocks": 21,
+        "assets": 3,
+        "entries": [
+          "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "acdace3f155ec8b080d4f7ec78132375.svg",
+          "project.json"
+        ]
+      }
+    },
+    {
+      "name": "Editor regions",
+      "status": "PASS",
+      "detail": {
+        "canvas": true,
+        "spriteList": true,
+        "categories": [
+          "Motion",
+          "Looks",
+          "Sound",
+          "Events",
+          "Control",
+          "Sensing",
+          "Operators",
+          "Variables",
+          "My Blocks"
+        ],
+        "workspace": true,
+        "flag": true,
+        "stop": true,
+        "vm": "object",
+        "redux": "object",
+        "runtime": "Q"
+      }
+    },
+    {
+      "name": "Load .sb3 via official VM API through MCP",
+      "status": "PASS",
+      "detail": {
+        "name": "Harness Robot",
+        "costumes": 2,
+        "blocks": 21,
+        "runtimeBlocksIncludingShadows": 36
+      }
+    },
+    {
+      "name": "Editor clicks, tabs and category switching",
+      "status": "PASS",
+      "detail": "Costumes, Code and Variables selected through browser_click"
+    },
+    {
+      "name": "Initial keyboard regression",
+      "status": "PASS",
+      "detail": "Five real browser key presses; exact x/y and step counter assertions"
+    },
+    {
+      "name": "Real browser mouse input",
+      "status": "PASS",
+      "detail": "Click on robot increments clicks exactly once"
+    },
+    {
+      "name": "Screenshot",
+      "status": "PASS",
+      "detail": "evidence/2026-10-20T15-09-36-142Z/running.png"
+    },
+    {
+      "name": "Stop button",
+      "status": "PASS",
+      "detail": "VM threads = 0"
+    },
+    {
+      "name": "VM export saved .sb3",
+      "status": "PASS",
+      "detail": {
+        "targets": [
+          "Stage",
+          "Harness Robot"
+        ],
+        "blocks": 21,
+        "assets": 3,
+        "entries": [
+          "project.json",
+          "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "acdace3f155ec8b080d4f7ec78132375.svg"
+        ]
+      }
+    },
+    {
+      "name": "Saved project reload regression",
+      "status": "PASS",
+      "detail": "Five real browser key presses; exact x/y and step counter assertions"
+    },
+    {
+      "name": "Negative control catches logic error",
+      "status": "PASS",
+      "detail": "DX=5 produced x=5; expected x=10 rejected"
+    },
+    {
+      "name": "Repair regression",
+      "status": "PASS",
+      "detail": "Five real browser key presses; exact x/y and step counter assertions"
+    },
+    {
+      "name": "Repair feasibility",
+      "status": "PASS",
+      "detail": "Patched DX from 5 to 10 in the failed SB3; confirmed other project fields unchanged; full keyboard regression passed"
+    },
+    {
+      "name": "Runtime error listeners",
+      "status": "PASS",
+      "detail": []
+    }
+  ],
+  "states": [
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowRight",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 1,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowRight",
+      "x": 20,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 2,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowLeft",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 3,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowUp",
+      "x": 10,
+      "y": 10,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 4,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Initial keyboard regression ArrowDown",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "before click",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "after click",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 2,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "stop",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 2,
+        "ready": 1
+      },
+      "threads": 0,
+      "pageErrors": []
+    },
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowRight",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 1,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowRight",
+      "x": 20,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 2,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowLeft",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 3,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowUp",
+      "x": 10,
+      "y": 10,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 4,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Saved project reload regression ArrowDown",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "negative control",
+      "x": 5,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 1,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowRight",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 1,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowRight",
+      "x": 20,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 2,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowLeft",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 3,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowUp",
+      "x": 10,
+      "y": 10,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 4,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "Repair regression ArrowDown",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    },
+    {
+      "label": "final",
+      "x": 10,
+      "y": 0,
+      "visible": true,
+      "costume": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "pageErrors": []
+    }
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-10-20T15:10:13.674Z"
+}

@@ -1,0 +1,4 @@
+node_modules/
+.pnpm-store/
+backups/
+evidence/**/trace*.zip

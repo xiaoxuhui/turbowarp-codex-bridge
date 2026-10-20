@@ -1,0 +1,63 @@
+{
+  "runId": "2026-10-20T15-06-34-649Z",
+  "startedAt": "2026-10-20T15:06:34.650Z",
+  "transport": "stdio",
+  "browserSandbox": true,
+  "checks": [
+    {
+      "name": "SB3 structural validation",
+      "status": "PASS",
+      "detail": {
+        "targets": [
+          "Stage",
+          "Harness Robot"
+        ],
+        "blocks": 21,
+        "assets": 3,
+        "entries": [
+          "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "acdace3f155ec8b080d4f7ec78132375.svg",
+          "project.json"
+        ]
+      }
+    },
+    {
+      "name": "Editor regions",
+      "status": "PASS",
+      "detail": {
+        "canvas": true,
+        "spriteList": true,
+        "categories": [
+          "Motion",
+          "Looks",
+          "Sound",
+          "Events",
+          "Control",
+          "Sensing",
+          "Operators",
+          "Variables",
+          "My Blocks"
+        ],
+        "workspace": true,
+        "flag": true,
+        "stop": true,
+        "vm": "object",
+        "redux": "object",
+        "runtime": "Q"
+      }
+    },
+    {
+      "name": "Current test run",
+      "status": "FAIL",
+      "detail": "browser_file_upload: ### Error\nError: The tool \"browser_file_upload\" can only be used when there is related modal state present."
+    }
+  ],
+  "states": [],
+  "status": "FAIL",
+  "error": {
+    "message": "browser_file_upload: ### Error\nError: The tool \"browser_file_upload\" can only be used when there is related modal state present.",
+    "stack": "Error: browser_file_upload: ### Error\nError: The tool \"browser_file_upload\" can only be used when there is related modal state present.\n    at Object.call (file:///D:/soft/turbowarp-codex-bridge/scripts/mcp-client.mjs:31:31)\n    at async load (file:///D:/soft/turbowarp-codex-bridge/scripts/verify-mcp.mjs:44:3)\n    at async file:///D:/soft/turbowarp-codex-bridge/scripts/verify-mcp.mjs:93:16"
+  },
+  "finishedAt": "2026-10-20T15:06:45.162Z"
+}

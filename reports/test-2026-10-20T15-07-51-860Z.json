@@ -1,0 +1,73 @@
+{
+  "runId": "2026-10-20T15-07-51-860Z",
+  "startedAt": "2026-10-20T15:07:51.862Z",
+  "transport": "stdio",
+  "browserSandbox": true,
+  "checks": [
+    {
+      "name": "SB3 structural validation",
+      "status": "PASS",
+      "detail": {
+        "targets": [
+          "Stage",
+          "Harness Robot"
+        ],
+        "blocks": 21,
+        "assets": 3,
+        "entries": [
+          "88e4f3e5b785eab19160025d07e2acd3.svg",
+          "29e9a463b0e97f93d95eab3cc4507bc6.svg",
+          "acdace3f155ec8b080d4f7ec78132375.svg",
+          "project.json"
+        ]
+      }
+    },
+    {
+      "name": "Editor regions",
+      "status": "PASS",
+      "detail": {
+        "canvas": true,
+        "spriteList": true,
+        "categories": [
+          "Motion",
+          "Looks",
+          "Sound",
+          "Events",
+          "Control",
+          "Sensing",
+          "Operators",
+          "Variables",
+          "My Blocks"
+        ],
+        "workspace": true,
+        "flag": true,
+        "stop": true,
+        "vm": "object",
+        "redux": "object",
+        "runtime": "Q"
+      }
+    },
+    {
+      "name": "Load .sb3 via official VM API through MCP",
+      "status": "PASS",
+      "detail": {
+        "name": "Harness Robot",
+        "costumes": 2,
+        "blocks": 21,
+        "runtimeBlocksIncludingShadows": 36
+      }
+    },
+    {
+      "name": "Current test run",
+      "status": "FAIL",
+      "detail": "browser_click: ### Error\nError: browserBackend.callTool: Error: strict mode violation: locator('text=\"Variables\"') resolved to 2 elements:\n    1) <div class=\"scratchCategoryMenuItemLabel\">Variables</div> aka getByText('Variables').first()\n    2) <text y=\"20\" dy=\"0\" x=\"40.984375\" text-anchor=\"middle\" dominant-baseline=\"central\" class=\"blocklyFlyoutLabelText\">Variables</text> aka locator('text').filter({ hasText: 'Variables' })\n\nCall log:\n\u001b[2m  - waiting for locator('text=\"Variables\"')\u001b[22m\n"
+    }
+  ],
+  "states": [],
+  "status": "FAIL",
+  "error": {
+    "message": "browser_click: ### Error\nError: browserBackend.callTool: Error: strict mode violation: locator('text=\"Variables\"') resolved to 2 elements:\n    1) <div class=\"scratchCategoryMenuItemLabel\">Variables</div> aka getByText('Variables').first()\n    2) <text y=\"20\" dy=\"0\" x=\"40.984375\" text-anchor=\"middle\" dominant-baseline=\"central\" class=\"blocklyFlyoutLabelText\">Variables</text> aka locator('text').filter({ hasText: 'Variables' })\n\nCall log:\n\u001b[2m  - waiting for locator('text=\"Variables\"')\u001b[22m\n",
+    "stack": "Error: browser_click: ### Error\nError: browserBackend.callTool: Error: strict mode violation: locator('text=\"Variables\"') resolved to 2 elements:\n    1) <div class=\"scratchCategoryMenuItemLabel\">Variables</div> aka getByText('Variables').first()\n    2) <text y=\"20\" dy=\"0\" x=\"40.984375\" text-anchor=\"middle\" dominant-baseline=\"central\" class=\"blocklyFlyoutLabelText\">Variables</text> aka locator('text').filter({ hasText: 'Variables' })\n\nCall log:\n\u001b[2m  - waiting for locator('text=\"Variables\"')\u001b[22m\n\n    at Object.call (file:///D:/soft/turbowarp-codex-bridge/scripts/mcp-client.mjs:31:31)\n    at async file:///D:/soft/turbowarp-codex-bridge/scripts/verify-mcp.mjs:106:3"
+  },
+  "finishedAt": "2026-10-20T15:08:04.769Z"
+}
