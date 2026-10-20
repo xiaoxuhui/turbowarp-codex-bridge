@@ -13,6 +13,10 @@ const audit=await read('reports/dependency-audit.json');
 const registry=await read('reports/codex-mcp-registration.json');
 const toolProof=await read(`evidence/${latest.runId}-tools.json`);
 const original=await read('reports/project-validation.json');
+let native=null;
+try { native=await read('reports/desktop-native-test.json'); }
+catch(error) { if(error.code!=='ENOENT') throw error; }
+const nativePass=native?.status==='PASS' && native.checks.length>0 && native.checks.every(c=>c.status==='PASS');
 const artifacts=[];
 for(const name of (await fs.readdir(path.join(root,'projects'))).filter(n=>n.endsWith('.sb3'))) {
   const bytes=await fs.readFile(path.join(root,'projects',name));
@@ -24,7 +28,7 @@ const checks=[
  ['Node.js 可靠运行','PASS','Node 24.19.0 执行官方 MCP、项目生成、两次完整 GUI 测试；未重装'],
  ['Playwright MCP 安装和启动','PASS',`固定 0.0.83；STDIO initialize/tools/list 和实际 tools/call 成功；${toolProof.tools.length} 个服务端工具`],
  ['Codex 配置发现服务','PASS',`codex mcp get 返回 enabled=${registry.enabled}；绝对命令、cwd 和超时已读取`],
- ['Codex Desktop 原生工具发现与调用','BLOCKED','用户已关闭并重新打开服务开关，enabled=true 已核实；本会话原生工具目录仍无 Playwright。官方 app-server proxy 控制连接失败，SDK 调用成功不能替代本项'],
+ ['Codex Desktop 原生工具发现与调用',nativePass?'PASS':'BLOCKED',nativePass?`当前聊天直接暴露 ${native.tools.length} 个 mcp__playwright__* 工具；实际原生调用 ${native.callCount} 次，${native.checks.length} 项检查通过；见 desktop-native-test.json`:'用户已关闭并重新打开服务开关，enabled=true 已核实；原生工具调用仍待验证'],
  ['自动打开 TurboWarp 编辑器','PASS','通过官方 MCP browser_navigate 加载 https://turbowarp.org/editor'],
  ['基础编辑器自动操作','PASS','DOM 识别舞台/角色/分类/积木区/绿旗/停止；Costumes、Code、Variables 点击与截图'],
  ['创建有效 TurboWarp 项目','PASS',`${original.blocks} 主体积木、一个角色、两套角色造型、一个背景、三个变量；ZIP CRC/引用/素材 MD5 验证`],
@@ -47,14 +51,14 @@ const checks=[
  ['完整离线 GUI 与 VM 固定版本','NOT TESTED','当前依赖在线 TurboWarp；后续可自托管固定版本，尚未实施'],
  ['实际恢复全局配置','NOT TESTED','已验证备份哈希与复制恢复结果；未执行真实回滚以免撤销已安装服务']
 ].map(([item,status,evidence])=>({item,status,evidence}));
-await fs.writeFile(path.join(root,'reports/acceptance.json'),JSON.stringify({generatedAt:now,timezone:'Asia/Shanghai',scope:'P0-P3 integration and restricted P4 feasibility; Desktop native tool activation pending',latestRun:latest.runId,checks},null,2));
+await fs.writeFile(path.join(root,'reports/acceptance.json'),JSON.stringify({generatedAt:now,timezone:'Asia/Shanghai',scope:nativePass?'P0-P3 local integration and Desktop native calls verified; P4 restricted feasibility only':'P0-P3 integration and restricted P4 feasibility; Desktop native tool activation pending',latestRun:latest.runId,nativeVerification:nativePass?'desktop-native-test.json':null,checks},null,2));
 const localTime=iso=>new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'short',timeStyle:'medium',hour12:false}).format(new Date(iso));
 const rows=checks.map(c=>`| ${c.item} | **${c.status}** | ${c.evidence.replaceAll('|','/')} |`).join('\n');
 const report=`# TurboWarp + Codex Desktop 最终验收报告
 
 生成时间：${localTime(now)}（Asia/Shanghai）。证据文件名采用 UTC；全部文件位于 D:\\soft\\turbowarp-codex-bridge。
 
-**已完成本地官方 MCP 的真实调用与 TurboWarp 样例闭环；Desktop 当前聊天的原生 MCP 工具激活仍为 BLOCKED，不能宣称全部验收通过。**
+**${nativePass?'Codex Desktop 原生 Playwright MCP 接入已实际验证为 PASS，TurboWarp 样例的加载、键鼠、状态断言、截图、保存重载均成功。完整专用 Bridge 仍仅有架构方案与有限修复实验。':'已完成本地官方 MCP 的真实调用与 TurboWarp 样例闭环；Desktop 当前聊天的原生 MCP 工具激活仍为 BLOCKED，不能宣称全部验收通过。'}**
 
 ## 逐项验收
 
@@ -82,7 +86,13 @@ Codex CLI 为 0.163.0-alpha.10.2。原有配置包含 node_repl 与多个内置�
 
 ${toolProof.server.name} ${toolProof.server.version} 已通过同一已注册启动器完成 MCP initialize、tools/list、browser_navigate、browser_click、browser_press_key、browser_evaluate、browser_take_screenshot、日志与快照调用。调用客户端是此聊天启动的标准 MCP SDK 测试进程。原始响应见 evidence/${latest.runId}-*.json。
 
-codex mcp get 只证明配置可被 Codex 读取。用户未看到 Restart 按钮，已关闭并重新打开服务开关；配置中 enabled=true 已核实。本聊天当前暴露的原生工具目录仍未出现 Playwright；没有把 SDK 调用替代 Desktop 原生发现和调用验收。进一步调查了官方 Codex app-server 的 reload/status/tool call 协议，但其公开控制 socket 在本机返回 os error 10050；未启用远程控制或改动安全设置。需要重新打开聊天或重启应用后进行原生工具调用验证，这是剩余接入阻断项。
+codex mcp get 只证明配置可被 Codex 读取，SDK 调用证据也与 Desktop 原生调用分开保存。此前聊天工具目录未刷新且公开 app-server 控制 socket 返回 os error 10050，未启用远程控制或改动安全设置。
+
+${nativePass?`本次恢复聊天后，Desktop 直接暴露 ${native.tools.length} 个 mcp__playwright__* 原生工具，并通过这些工具完成 ${native.callCount} 次调用、${native.checks.length} 项检查。原生入口包括 browser_tabs、browser_navigate、browser_snapshot、browser_click、browser_press_key、browser_evaluate、browser_take_screenshot 和 browser_console_messages。完成时间：${localTime(native.finishedAt)}。此项已由 BLOCKED 更新为 PASS，无需再次重启或重装。
+
+原生验证加载了原有已验证 SB3，按 Right、Right、Left、Up、Down 校验坐标与 steps 1..5；点击后 clicks 精确增加 1；停止后线程为 0。通过 VM 保存 SB3、重载相同字节，绿旗复位后真实 ArrowRight 再次得到 x=10、y=0、steps=1。导出件通过 ZIP CRC、积木引用与素材哈希检查。页面和编译错误记录为空，console 为 0 errors、1 条 Canvas2D 性能建议。
+
+原生报告：[desktop-native-test.json](desktop-native-test.json)；原始调用：[desktop-native-tool-calls.json](../evidence/desktop-native-tool-calls.json)；截图：[desktop-native-verified.png](../evidence/desktop-native-verified.png)；导出作品：[keyboard-robot-desktop-native.sb3](../projects/keyboard-robot-desktop-native.sb3)。`:'用户已关闭并重新打开服务开关，enabled=true 已核实；本聊天原生调用尚无证据，仍需刷新后验证。'}
 
 ## 实际项目与运行验证
 
@@ -111,7 +121,7 @@ ${passed.map(p=>`- ${localTime(p.startedAt)} → ${localTime(p.finishedAt)}：[$
 
 推荐架构：Codex → 类型化 STDIO Bridge → 事务化 SB3 模型/快照 → 固定版本 VM；Playwright 负责真实输入、GUI 验收和证据，结构化断言负责多数逻辑。TextToScratch 作为可选编译前端进一步评估，现阶段未安装、未验证。详细接口、边界和计划见 [bridge-architecture.md](../docs/bridge-architecture.md)。完整 Bridge 的新建/修改/测试工具尚未开发，须另行授权。
 
-当前已经能够通过本地脚本及官方 MCP 自动生成、加载、运行、测试样例并修复一个已定义错误；尚不能报告“Codex Desktop 已原生接入并可通用自动制作和修复任意 TurboWarp 作品”。优先完成 Desktop Restart 后的真实工具调用，再按架构计划实施专用 Bridge。
+${nativePass?'当前 Codex Desktop 已能够直接通过自然语言调用原生 Playwright MCP，控制 TurboWarp、加载保存项目、执行真实键鼠测试并读取 VM 断言；本地样例生成和单一已定义错误的修复也已验证。通用项目编辑与自动修复仍需下一阶段专用 Bridge，不能据此承诺任意作品均能自动制作或修复。':'当前已经能够通过本地脚本及官方 MCP 自动生成、加载、运行、测试样例并修复一个已定义错误；Desktop 原生接入仍待验证。'}
 
 官方依据：[Codex MCP](https://learn.chatgpt.com/docs/extend/mcp?surface=cli)、[Microsoft Playwright MCP](https://github.com/microsoft/playwright-mcp)、[TurboWarp VM](https://github.com/TurboWarp/scratch-vm)。
 `;

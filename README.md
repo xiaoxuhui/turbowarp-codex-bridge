@@ -2,7 +2,7 @@
 
 独立工作区：`D:\soft\turbowarp-codex-bridge`。已安装 Microsoft Playwright MCP，建立生成 SB3 → MCP 加载 TurboWarp → 真实键鼠输入 → VM 断言 → 保存重载 → 故障检测与最小修复的有限样例闭环。
 
-完整验收见 [最终报告](reports/final-report.md) 和 [逐项状态](reports/acceptance.json)。完整专用 Bridge 仅有 [架构设计](docs/bridge-architecture.md)。Desktop 原生工具注册后的刷新验收须与 SDK 端到端调用分开看。
+完整验收见 [最终报告](reports/final-report.md) 和 [逐项状态](reports/acceptance.json)。**Desktop 原生 Playwright MCP 调用现已验证 PASS**，证据见 [原生调用报告](reports/desktop-native-test.json)。完整专用 Bridge 仅有 [架构设计](docs/bridge-architecture.md)，原生接入不代表已实现通用 Bridge。
 
 ## 运行
 
@@ -56,7 +56,7 @@ disabled_tools = ["browser_run_code_unsafe", "browser_install"]
 
 启动器固定 cwd 与配置文件，直接运行官方本地包，不在启动时下载。浏览器隔离、沙箱及输出目录见 config/playwright.json。未增加站点权限、使用用户 profile、放开文件访问或忽略证书错误。服务使用 STDIO，无开放 TCP 监听端口。
 
-[官方 Codex MCP 文档](https://learn.chatgpt.com/docs/extend/mcp?surface=cli) 说明客户端共享配置，Desktop 保存后需要 Restart。若当前 chat 未出现 Playwright 工具，在设置 → MCP servers 对 playwright 执行 Restart；如工具目录仍未更新，重新打开聊天后调用 browser_navigate/browser_snapshot。只有成功取得原生工具响应，才能将 Desktop 原生调用项标为 PASS。
+[官方 Codex MCP 文档](https://learn.chatgpt.com/docs/extend/mcp?surface=cli) 说明客户端共享配置，Desktop 保存后需要 Restart。本机曾通过开关关闭再打开启用服务，恢复聊天后原生工具目录已刷新；已直接成功调用 browser_navigate、browser_snapshot、真实键鼠、状态读取、截图与保存重载。当前无需再次重启。未来若工具消失，应先核验配置和原生响应，再考虑刷新聊天或重启应用。
 
 ## 文件
 

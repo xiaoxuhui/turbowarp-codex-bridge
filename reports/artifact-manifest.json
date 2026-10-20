@@ -1,5 +1,10 @@
 [
   {
+    "path": "projects/keyboard-robot-desktop-native.sb3",
+    "bytes": 2350,
+    "sha256": "bfdb05836bbc22a23cdee6ee90f7cd648d993b54659bedb6c0875a22eb519ea7"
+  },
+  {
     "path": "projects/keyboard-robot-repaired.sb3",
     "bytes": 2409,
     "sha256": "9bc3e27e397ba498be0fbf0ebfa64b7118c50591c25e51772bb435f01fd8a44e"

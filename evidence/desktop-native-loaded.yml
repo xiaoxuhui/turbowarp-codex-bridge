@@ -1,0 +1,23 @@
+- generic [active]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]
+      - generic [ref=e588]: Save to your computer
+    - generic [ref=e37]:
+      - generic [ref=e38]
+      - generic [ref=e478]
+  - menu:
+    - menuitem "normal readout"
+    - menuitem "large readout"
+    - menuitem "slider"
+    - menuitem "hide"
+  - menu:
+    - menuitem "normal readout"
+    - menuitem "large readout"
+    - menuitem "slider"
+    - menuitem "hide"
+  - menu:
+    - menuitem "normal readout"
+    - menuitem "large readout"
+    - menuitem "slider"
+    - menuitem "hide"

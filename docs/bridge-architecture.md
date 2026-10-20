@@ -77,7 +77,7 @@ flowchart LR
 
 ## 下一阶段实施计划
 
-1. 先完成当前 Desktop 原生工具目录刷新与实际调用验收；保持当前 MCP 注册名唯一。
+1. Desktop 原生工具发现与实际调用已验证 PASS（见 reports/desktop-native-test.json）；保留该基线，保持当前 MCP 注册名唯一。
 2. 单独授权完整 Bridge 后，固定 GUI/VM 版本，建立本地离线 fixture 与能力探针，复用官方 schema。
 3. 实现 project.open/inspect 与只读状态，随后实现事务化 apply_patch、快照和回滚。
 4. 实现有界键鼠输入与 test.run，覆盖变量作用域、克隆、广播、自定义积木、造型和存档重载；定义未知扩展策略。

@@ -1,0 +1,188 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]: Settings
+      - generic [ref=e11] [cursor=pointer]: File
+      - generic [ref=e15] [cursor=pointer]: Edit
+      - generic [ref=e19] [cursor=pointer]: Addons
+      - generic [ref=e22] [cursor=pointer]: Advanced
+    - textbox "Project title here" [ref=e27]: Project
+    - button "See Project Page" [ref=e29] [cursor=pointer]
+    - link [ref=e33] [cursor=pointer]:
+      - /url: https://scratch.mit.edu/users/GarboMuffin/#comments
+      - button "TurboWarp Feedback" [ref=e34]
+  - generic [ref=e37]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - tablist [ref=e40]:
+          - tab "Code" [selected] [ref=e41] [cursor=pointer]
+          - tab "Costumes" [ref=e44] [cursor=pointer]
+          - tab "Sounds" [ref=e47] [cursor=pointer]
+        - tabpanel "Code" [ref=e50]:
+          - generic [ref=e53]:
+            - generic [ref=e55]:
+              - generic [ref=e56]: Motion
+              - generic [ref=e60]: Looks
+              - generic [ref=e64]: Sound
+              - generic [ref=e68]: Events
+              - generic [ref=e72]: Control
+              - generic [ref=e76]: Sensing
+              - generic [ref=e80]: Operators
+              - generic [ref=e84]: Variables
+              - generic [ref=e88]: My Blocks
+            - img [ref=e108]:
+              - generic [ref=e111]:
+                - generic [ref=e113]:
+                  - generic [ref=e115]: "10"
+                  - generic [ref=e119]: move
+                  - generic [ref=e120]: steps
+                - generic [ref=e122]:
+                  - generic [ref=e124]: "15"
+                  - generic [ref=e128]: turn
+                  - generic [ref=e131]: degrees
+                - generic [ref=e133]:
+                  - generic [ref=e135]: "15"
+                  - generic [ref=e139]: turn
+                  - generic [ref=e142]: degrees
+                - generic [ref=e144]:
+                  - generic [ref=e146]: random position
+                  - generic [ref=e151]: go to
+                - generic [ref=e153]:
+                  - generic [ref=e155]: "0"
+                  - generic [ref=e159]: "0"
+                  - generic [ref=e163]: "go to x:"
+                  - generic [ref=e164]: "y:"
+                - generic [ref=e166]:
+                  - generic [ref=e168]: "1"
+                  - generic [ref=e172]: random position
+                  - generic [ref=e177]: glide
+                  - generic [ref=e178]: secs to
+                - generic [ref=e180]:
+                  - generic [ref=e182]: "1"
+                  - generic [ref=e186]: "0"
+                  - generic [ref=e190]: "0"
+                  - generic [ref=e194]: glide
+                  - generic [ref=e195]: "secs to x:"
+                  - generic [ref=e196]: "y:"
+                - generic [ref=e198]:
+                  - generic [ref=e200]: "90"
+                  - generic [ref=e204]: point in direction
+                - generic [ref=e206]:
+                  - generic [ref=e208]: mouse-pointer
+                  - generic [ref=e213]: point towards
+                - generic [ref=e215]:
+                  - generic [ref=e217]: "10"
+                  - generic [ref=e221]: change x by
+                - generic [ref=e223]:
+                  - generic [ref=e225]: "0"
+                  - generic [ref=e229]: set x to
+                - generic [ref=e231]:
+                  - generic [ref=e233]: "10"
+                  - generic [ref=e237]: change y by
+                - generic [ref=e239]:
+                  - generic [ref=e241]: "0"
+                  - generic [ref=e245]: set y to
+                - generic [ref=e247]: if on edge, bounce
+                - generic [ref=e251]:
+                  - generic [ref=e253]: set rotation style
+                  - generic [ref=e254]: left-right
+                - generic [ref=e261] [cursor=pointer]
+                - generic [ref=e263]: x position
+                - generic [ref=e269] [cursor=pointer]
+                - generic [ref=e271]: y position
+                - generic [ref=e277] [cursor=pointer]
+                - generic [ref=e299] [cursor=pointer]
+                - generic [ref=e304] [cursor=pointer]
+                - generic [ref=e309] [cursor=pointer]
+                - generic [ref=e322] [cursor=pointer]
+                - generic [ref=e352] [cursor=pointer]
+                - generic [ref=e358] [cursor=pointer]
+                - generic [ref=e363] [cursor=pointer]
+                - generic [ref=e368] [cursor=pointer]
+                - generic [ref=e374] [cursor=pointer]
+                - generic [ref=e379] [cursor=pointer]
+                - generic [ref=e386] [cursor=pointer]
+                - generic [ref=e391] [cursor=pointer]
+                - generic [ref=e396] [cursor=pointer]
+                - generic [ref=e401] [cursor=pointer]
+                - generic [ref=e424] [cursor=pointer]
+                - generic [ref=e430]: Motion
+                - generic [ref=e433]: Looks
+                - generic [ref=e436]: Sound
+                - generic [ref=e439]: Events
+                - generic [ref=e442]: Control
+                - generic [ref=e445]: Sensing
+                - generic [ref=e448]: Operators
+                - generic [ref=e451]: Variables
+                - generic [ref=e454]: Make a Variable
+                - generic [ref=e458]: Make a List
+                - generic [ref=e462]: My Blocks
+                - generic [ref=e465]: Make a Block
+          - button "Add Extension" [ref=e474] [cursor=pointer]
+      - generic [ref=e476]: Backpack
+    - generic [ref=e478]:
+      - generic [ref=e481]:
+        - generic [ref=e482]:
+          - img "Go" [ref=e483] [cursor=pointer]
+          - img "Pause" [ref=e484] [cursor=pointer]
+          - img "Stop" [ref=e485] [cursor=pointer]
+        - generic [ref=e486]:
+          - generic [ref=e488]:
+            - button "Switch to small stage" [ref=e489] [cursor=pointer]
+            - button "Switch to full stage" [pressed] [ref=e491] [cursor=pointer]
+          - button [ref=e494] [cursor=pointer]:
+            - img "Switch to full stage" [ref=e496]
+      - generic [ref=e503]:
+        - generic [ref=e504]:
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - generic [ref=e508]:
+                - generic [ref=e509]: Sprite
+                - textbox "Sprite" [ref=e510]:
+                  - /placeholder: Name
+                  - text: Sprite1
+              - generic [ref=e513]:
+                - generic [ref=e514]: x
+                - spinbutton "x" [ref=e515]: "0"
+              - generic [ref=e518]:
+                - generic [ref=e519]: "y"
+                - spinbutton "y" [ref=e520]: "0"
+            - generic [ref=e521]:
+              - generic [ref=e522]:
+                - generic [ref=e523]: Show
+                - generic [ref=e525]:
+                  - button "Show sprite" [pressed] [ref=e526] [cursor=pointer]
+                  - button "Hide sprite" [ref=e528] [cursor=pointer]
+              - generic [ref=e531]:
+                - generic [ref=e532]: Size
+                - spinbutton "Size" [ref=e533]: "100"
+              - generic [ref=e535]:
+                - generic [ref=e536]: Direction
+                - spinbutton "Direction" [ref=e537]: "90"
+          - generic [ref=e541] [cursor=pointer]:
+            - generic [ref=e544]: Sprite1
+            - button "Delete" [ref=e546]
+            - menu:
+              - menuitem "duplicate"
+              - menuitem "export"
+              - menuitem "delete"
+          - generic [ref=e549]:
+            - button "Choose a Sprite" [ref=e550] [cursor=pointer]
+            - generic [ref=e552]:
+              - generic:
+                - button "Upload Sprite" [ref=e554] [cursor=pointer]
+                - button "Surprise" [ref=e557] [cursor=pointer]
+                - button "Paint" [ref=e560] [cursor=pointer]
+                - button "Choose a Sprite" [ref=e563] [cursor=pointer]
+        - generic [ref=e566] [cursor=pointer]:
+          - generic [ref=e567]: Stage
+          - generic [ref=e570]: Backdrops
+          - generic [ref=e571]: "1"
+          - generic [ref=e572]:
+            - button "Choose a Backdrop" [ref=e573]
+            - generic [ref=e575]:
+              - generic:
+                - button "Upload Backdrop" [ref=e577]
+                - button "Surprise" [ref=e580]
+                - button "Paint" [ref=e583]
+                - button "Choose a Backdrop" [ref=e586]

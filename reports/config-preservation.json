@@ -6,5 +6,6 @@
   "InitialAfterSha256": "7DC5DA3A9089DE0B0E31D0BA2DC3063AAB92565144159188AE8EED94F1112B4D",
   "CurrentSha256": "1C6ECBD8498444393AB966FC6E46CF4353A3FE9C495E6A024F0537A77356E08F",
   "UserToggledServer": true,
-  "NativeToolAvailable": false
+  "NativeToolAvailable": true,
+  "NativeVerification": "reports/desktop-native-test.json"
 }

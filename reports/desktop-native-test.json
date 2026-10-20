@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-20T15:24:43.982Z",
+  "entryPoint": "Codex Desktop exposed mcp__playwright__* tools",
+  "tools": [
+    "mcp__playwright__browser_click",
+    "mcp__playwright__browser_close",
+    "mcp__playwright__browser_console_messages",
+    "mcp__playwright__browser_drag",
+    "mcp__playwright__browser_drop",
+    "mcp__playwright__browser_emulate_media",
+    "mcp__playwright__browser_evaluate",
+    "mcp__playwright__browser_file_upload",
+    "mcp__playwright__browser_fill_form",
+    "mcp__playwright__browser_find",
+    "mcp__playwright__browser_handle_dialog",
+    "mcp__playwright__browser_hover",
+    "mcp__playwright__browser_navigate",
+    "mcp__playwright__browser_navigate_back",
+    "mcp__playwright__browser_network_request",
+    "mcp__playwright__browser_network_requests",
+    "mcp__playwright__browser_press_key",
+    "mcp__playwright__browser_resize",
+    "mcp__playwright__browser_select_option",
+    "mcp__playwright__browser_snapshot",
+    "mcp__playwright__browser_tabs",
+    "mcp__playwright__browser_take_screenshot",
+    "mcp__playwright__browser_type",
+    "mcp__playwright__browser_wait_for"
+  ],
+  "states": [
+    {
+      "label": "green flag",
+      "x": 0,
+      "y": 0,
+      "variables": {
+        "steps": 0,
+        "clicks": 0,
+        "ready": 1
+      },
+      "threads": 1,
+      "errors": []
+    },
+    {
+      "label": "ArrowRight",
+      "x": 10,
+      "y": 0,
+      "variables": {
+        "steps": 1,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "errors": []
+    },
+    {
+      "label": "ArrowRight",
+      "x": 20,
+      "y": 0,
+      "variables": {
+        "steps": 2,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "errors": []
+    },
+    {
+      "label": "ArrowLeft",
+      "x": 10,
+      "y": 0,
+      "variables": {
+        "steps": 3,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "errors": []
+    },
+    {
+      "label": "ArrowUp",
+      "x": 10,
+      "y": 10,
+      "variables": {
+        "steps": 4,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "errors": []
+    },
+    {
+      "label": "ArrowDown",
+      "x": 10,
+      "y": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "errors": []
+    },
+    {
+      "label": "before robot click",
+      "x": 10,
+      "y": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 1,
+        "ready": 1
+      },
+      "threads": 1,
+      "errors": []
+    },
+    {
+      "label": "after robot click",
+      "x": 10,
+      "y": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 2,
+        "ready": 1
+      },
+      "threads": 1,
+      "errors": []
+    },
+    {
+      "label": "stopped",
+      "x": 10,
+      "y": 0,
+      "variables": {
+        "steps": 5,
+        "clicks": 2,
+        "ready": 1
+      },
+      "threads": 0,
+      "errors": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "Green flag resets saved project",
+      "status": "PASS"
+    },
+    {
+      "name": "ArrowRight: x=10, y=0, steps=1",
+      "status": "PASS"
+    },
+    {
+      "name": "ArrowRight: x=20, y=0, steps=2",
+      "status": "PASS"
+    },
+    {
+      "name": "ArrowLeft: x=10, y=0, steps=3",
+      "status": "PASS"
+    },
+    {
+      "name": "ArrowUp: x=10, y=10, steps=4",
+      "status": "PASS"
+    },
+    {
+      "name": "ArrowDown: x=10, y=0, steps=5",
+      "status": "PASS"
+    },
+    {
+      "name": "Real mouse click increments clicks exactly once",
+      "status": "PASS"
+    },
+    {
+      "name": "Stop leaves zero active VM threads",
+      "status": "PASS"
+    },
+    {
+      "name": "VM saved SB3 reloaded with original targets, costumes and state",
+      "status": "PASS"
+    },
+    {
+      "name": "Saved project green flag and real ArrowRight regression",
+      "status": "PASS"
+    },
+    {
+      "name": "Codex Desktop exposes native Playwright tools and opens TurboWarp",
+      "status": "PASS"
+    },
+    {
+      "name": "Desktop exported SB3 passes CRC, block reference and asset hash validation",
+      "status": "PASS"
+    },
+    {
+      "name": "Native screenshot and console evidence saved",
+      "status": "PASS"
+    }
+  ],
+  "finishedAt": "2026-10-20T15:29:45.366Z",
+  "artifact": "projects/keyboard-robot-desktop-native.sb3",
+  "screenshot": "evidence/desktop-native-verified.png",
+  "console": "evidence/desktop-native-console.log",
+  "toolCallsEvidence": "evidence/desktop-native-tool-calls.json",
+  "callCount": 32
+}

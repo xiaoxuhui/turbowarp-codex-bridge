@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-10-20T15:16:48.321Z",
+  "generatedAt": "2026-10-20T15:29:57.719Z",
   "timezone": "Asia/Shanghai",
-  "scope": "P0-P3 integration and restricted P4 feasibility; Desktop native tool activation pending",
+  "scope": "P0-P3 local integration and Desktop native calls verified; P4 restricted feasibility only",
   "latestRun": "2026-10-20T15-11-33-257Z",
+  "nativeVerification": "desktop-native-test.json",
   "checks": [
     {
       "item": "Node.js 可靠运行",
@@ -21,8 +22,8 @@
     },
     {
       "item": "Codex Desktop 原生工具发现与调用",
-      "status": "BLOCKED",
-      "evidence": "用户已关闭并重新打开服务开关，enabled=true 已核实；本会话原生工具目录仍无 Playwright。官方 app-server proxy 控制连接失败，SDK 调用成功不能替代本项"
+      "status": "PASS",
+      "evidence": "当前聊天直接暴露 24 个 mcp__playwright__* 工具；实际原生调用 32 次，13 项检查通过；见 desktop-native-test.json"
     },
     {
       "item": "自动打开 TurboWarp 编辑器",
