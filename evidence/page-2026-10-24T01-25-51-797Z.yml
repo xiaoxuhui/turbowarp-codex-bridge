@@ -1,0 +1,1847 @@
+- generic [ref=f15e3]:
+  - banner [ref=f15e4]:
+    - generic [ref=f15e5]:
+      - generic [ref=f15e6]: TM
+      - generic [ref=f15e7]:
+        - heading "图灵机实验台" [level=1] [ref=f15e8]
+        - paragraph [ref=f15e9]: 单纸带 · 确定性 · 可编程
+    - generic [ref=f15e10]:
+      - link "进入关卡" [ref=f15e11] [cursor=pointer]:
+        - /url: ./campaign.html
+      - button "导出项目" [ref=f15e12] [cursor=pointer]
+      - button "导入项目" [ref=f15e13] [cursor=pointer]
+      - button "导出记录" [ref=f15e14] [cursor=pointer]
+  - main [ref=f15e15]:
+    - generic [ref=f15e16]:
+      - generic [ref=f15e17]:
+        - generic [ref=f15e18]:
+          - generic [ref=f15e19]: 运行状态
+          - strong [ref=f15e20]: 就绪
+        - generic [ref=f15e21]:
+          - generic [ref=f15e22]: 当前状态
+          - strong [ref=f15e23]: BOOT
+        - generic [ref=f15e24]:
+          - generic [ref=f15e25]: 读取符号
+          - strong [ref=f15e26]: "1"
+        - generic [ref=f15e27]:
+          - generic [ref=f15e28]: 读写头位置
+          - strong [ref=f15e29]: "0"
+        - generic [ref=f15e30]:
+          - generic [ref=f15e31]: 已执行步数
+          - strong [ref=f15e32]: "0"
+      - generic [ref=f15e33]:
+        - generic [ref=f15e34]:
+          - generic [ref=f15e35]:
+            - generic [ref=f15e36]: "-8"
+            - generic [ref=f15e37]: □
+          - generic [ref=f15e38]:
+            - generic [ref=f15e39]: "-7"
+            - generic [ref=f15e40]: □
+          - generic [ref=f15e41]:
+            - generic [ref=f15e42]: "-6"
+            - generic [ref=f15e43]: □
+          - generic [ref=f15e44]:
+            - generic [ref=f15e45]: "-5"
+            - generic [ref=f15e46]: □
+          - generic [ref=f15e47]:
+            - generic [ref=f15e48]: "-4"
+            - generic [ref=f15e49]: □
+          - generic [ref=f15e50]:
+            - generic [ref=f15e51]: "-3"
+            - generic [ref=f15e52]: □
+          - generic [ref=f15e53]:
+            - generic [ref=f15e54]: "-2"
+            - generic [ref=f15e55]: □
+          - generic [ref=f15e56]:
+            - generic [ref=f15e57]: "-1"
+            - generic [ref=f15e58]: □
+          - generic [ref=f15e59]:
+            - generic [ref=f15e60]: "0"
+            - generic [ref=f15e61]: "1"
+            - text: ▲
+          - generic [ref=f15e62]:
+            - generic [ref=f15e63]: "1"
+            - generic [ref=f15e64]: "1"
+          - generic [ref=f15e65]:
+            - generic [ref=f15e66]: "2"
+            - generic [ref=f15e67]: ^
+          - generic [ref=f15e68]:
+            - generic [ref=f15e69]: "3"
+            - generic [ref=f15e70]: ^
+          - generic [ref=f15e71]:
+            - generic [ref=f15e72]: "4"
+            - generic [ref=f15e73]: ^
+          - generic [ref=f15e74]:
+            - generic [ref=f15e75]: "5"
+            - generic [ref=f15e76]: □
+          - generic [ref=f15e77]:
+            - generic [ref=f15e78]: "6"
+            - generic [ref=f15e79]: □
+          - generic [ref=f15e80]:
+            - generic [ref=f15e81]: "7"
+            - generic [ref=f15e82]: □
+          - generic [ref=f15e83]:
+            - generic [ref=f15e84]: "8"
+            - generic [ref=f15e85]: □
+        - generic [ref=f15e86]: 读写头 · BOOT
+      - generic [ref=f15e87]:
+        - button "单步" [ref=f15e88] [cursor=pointer]
+        - button "运行" [ref=f15e89] [cursor=pointer]
+        - button "暂停" [ref=f15e90] [cursor=pointer]
+        - button "重置" [ref=f15e91] [cursor=pointer]
+        - generic [ref=f15e92]:
+          - text: 纸带视角
+          - combobox "纸带视角" [ref=f15e93]:
+            - option "跟随读写头" [selected]
+            - option "固定在 0"
+            - option "随意拖动"
+        - generic [ref=f15e94]:
+          - generic [ref=f15e95]: 目标速度
+          - slider [ref=f15e96]: "25"
+          - spinbutton "手动输入目标速度（步/秒）" [ref=f15e97]: "25"
+          - generic [ref=f15e98]: 25 步/秒
+          - strong [ref=f15e99]: 实际 0 步/秒
+    - region [ref=f15e100]:
+      - generic [ref=f15e101]:
+        - heading "吉斯维杰特数列" [level=2] [ref=f15e102]
+        - generic [ref=f15e103]:
+          - text: 计算模式
+          - combobox "计算模式" [ref=f15e104]:
+            - option "图灵机计算 · 规则与单步" [selected]
+            - option "直接计算 · 快速生成"
+      - generic [ref=f15e105]:
+        - generic [ref=f15e106]:
+          - paragraph [ref=f15e108]: 输入阈值，转换后的规则会显示在下方。点击上方“运行”开始计算；新项严格超过阈值时写出并停机，等于时继续。
+          - generic [ref=f15e109]:
+            - generic [ref=f15e110]:
+              - text: 整数阈值（0–16）
+              - spinbutton "整数阈值（0–16）" [ref=f15e111]: "2"
+            - button "开始转换" [ref=f15e112] [cursor=pointer]
+        - paragraph [ref=f15e113]: 0 表示未写入；数字表示数列项。计算时 |O、S、A、B 为比较标记，#数字记录本轮最大重复次数，停机时会清除。建议先试 2；阈值越大，运行可能极长。
+        - status [ref=f15e114]
+    - generic [ref=f15e115]:
+      - generic [ref=f15e116]:
+        - generic [ref=f15e117]:
+          - heading "机器定义" [level=2] [ref=f15e118]
+          - generic [ref=f15e119]: 每行一条规则：状态,符号 → 状态,符号,方向
+        - generic [ref=f15e120]:
+          - generic [ref=f15e121]:
+            - text: 初始输入
+            - textbox "初始输入" [ref=f15e122]: 11^^^
+          - generic [ref=f15e123]:
+            - text: 空白符
+            - textbox "空白符" [ref=f15e124]: □
+          - generic [ref=f15e125]:
+            - text: 初始状态
+            - textbox "初始状态" [ref=f15e126]: BOOT
+          - generic [ref=f15e127]:
+            - generic [ref=f15e128]: 最大步数
+            - generic [ref=f15e129]:
+              - spinbutton "最大步数" [disabled] [ref=f15e130]: "10000"
+              - generic [ref=f15e131] [cursor=pointer]:
+                - checkbox "Max" [checked] [ref=f15e132]
+                - text: Max
+          - generic [ref=f15e133]:
+            - text: 接受状态
+            - textbox "接受状态" [ref=f15e134]:
+              - /placeholder: 逗号分隔
+          - generic [ref=f15e135]:
+            - text: 拒绝状态
+            - textbox "拒绝状态" [ref=f15e136]:
+              - /placeholder: 逗号分隔
+              - text: REJECT
+          - generic [ref=f15e137]:
+            - text: 普通停机状态
+            - textbox "普通停机状态" [ref=f15e138]:
+              - /placeholder: 逗号分隔
+              - text: HALT
+        - generic [ref=f15e139]:
+          - text: 转移规则
+          - textbox "转移规则" [ref=f15e140]: "# 一进制寄存器程序展开为普通单纸带规则；运行时才计算数值。 # 输入右侧清空；左侧 | 分隔寄存器、# 为原点；停机后只留下答案。 I.done,# -> clean.0.0,#,L I.reject,# -> REJECT,#,N I.p2,# -> I.p2.seek2,#,L I.p2.seek2,1 -> I.p2.seek2,1,L I.p2.seek2,| -> I.p2.seek1,|,L I.p2.seek1,1 -> I.p2.seek1,1,L I.p2.seek1,| -> I.p2.op,|,L I.p2.op,1 -> I.p2.op,1,L I.p2.op,| -> I.p2.carryBar,1,L I.p2.carryOne,1 -> I.p2.carryOne,1,L I.p2.carryOne,| -> I.p2.carryBar,1,L return.0,1 -> return.0,1,R return.0,| -> return.0,|,R return.0,□ -> return.0,□,R return.0,# -> I.p1,#,N I.p2.carryOne,□ -> return.0,1,R I.p2.carryBar,1 -> I.p2.carryOne,|,L I.p2.carryBar,| -> I.p2.carryBar,|,L I.p2.carryBar,□ -> return.0,|,R I.p1,# -> I.p1.seek5,#,L I.p1.seek5,1 -> I.p1.seek5,1,L I.p1.seek5,| -> I.p1.seek4,|,L I.p1.seek4,1 -> I.p1.seek4,1,L I.p1.seek4,| -> I.p1.seek3,|,L I.p1.seek3,1 -> I.p1.seek3,1,L I.p1.seek3,| -> I.p1.seek2,|,L I.p1.seek2,1 -> I.p1.seek2,1,L I.p1.seek2,| -> I.p1.seek1,|,L I.p1.seek1,1 -> I.p1.seek1,1,L I.p1.seek1,| -> I.p1.op,|,L return.1,1 -> return.1,1,R return.1,| -> return.1,|,R return.1,□ -> return.1,□,R return.1,# -> I.p0,#,N I.p1.op,| -> return.1,|,N I.p1.op,1 -> I.p1.take,□,L I.p1.take,1 -> I.p1.putOne,□,R I.p1.putOne,□ -> I.p1.skipHole,1,L I.p1.take,| -> I.p1.putBar,□,R I.p1.putBar,□ -> I.p1.skipHole,|,L I.p1.skipHole,□ -> I.p1.take,□,L return.2,1 -> return.2,1,R return.2,| -> return.2,|,R return.2,□ -> return.2,□,R return.2,# -> I.p2,#,N I.p1.take,□ -> return.2,□,R I.p3,# -> I.p3.seek2,#,L I.p3.seek2,1 -> I.p3.seek2,1,L I.p3.seek2,| -> I.p3.seek1,|,L I.p3.seek1,1 -> I.p3.seek1,1,L I.p3.seek1,| -> I.p3.op,|,L I.p3.op,| -> return.0,|,N I.p3.op,1 -> I.p3.take,□,L I.p3.take,1 -> I.p3.putOne,□,R I.p3.putOne,□ -> I.p3.skipHole,1,L I.p3.take,| -> I.p3.putBar,□,R I.p3.putBar,□ -> I.p3.skipHole,|,L I.p3.skipHole,□ -> I.p3.take,□,L return.3,1 -> return.3,1,R return.3,| -> return.3,|,R return.3,□ -> return.3,□,R return.3,# -> I.p3,#,N I.p3.take,□ -> return.3,□,R I.p6,# -> I.p6.seek5,#,L I.p6.seek5,1 -> I.p6.seek5,1,L I.p6.seek5,| -> I.p6.seek4,|,L I.p6.seek4,1 -> I.p6.seek4,1,L I.p6.seek4,| -> I.p6.seek3,|,L I.p6.seek3,1 -> I.p6.seek3,1,L I.p6.seek3,| -> I.p6.seek2,|,L I.p6.seek2,1 -> I.p6.seek2,1,L I.p6.seek2,| -> I.p6.seek1,|,L I.p6.seek1,1 -> I.p6.seek1,1,L I.p6.seek1,| -> I.p6.op,|,L I.p6.op,1 -> I.p6.op,1,L I.p6.op,| -> I.p6.carryBar,1,L I.p6.carryOne,1 -> I.p6.carryOne,1,L I.p6.carryOne,| -> I.p6.carryBar,1,L return.4,1 -> return.4,1,R return.4,| -> return.4,|,R return.4,□ -> return.4,□,R return.4,# -> I.p5,#,N I.p6.carryOne,□ -> return.4,1,R I.p6.carryBar,1 -> I.p6.carryOne,|,L I.p6.carryBar,| -> I.p6.carryBar,|,L I.p6.carryBar,□ -> return.4,|,R I.p5,# -> I.p5.seek8,#,L I.p5.seek8,1 -> I.p5.seek8,1,L I.p5.seek8,| -> I.p5.seek7,|,L I.p5.seek7,1 -> I.p5.seek7,1,L I.p5.seek7,| -> I.p5.seek6,|,L I.p5.seek6,1 -> I.p5.seek6,1,L I.p5.seek6,| -> I.p5.seek5,|,L I.p5.seek5,1 -> I.p5.seek5,1,L I.p5.seek5,| -> I.p5.seek4,|,L I.p5.seek4,1 -> I.p5.seek4,1,L I.p5.seek4,| -> I.p5.seek3,|,L I.p5.seek3,1 -> I.p5.seek3,1,L I.p5.seek3,| -> I.p5.seek2,|,L I.p5.seek2,1 -> I.p5.seek2,1,L I.p5.seek2,| -> I.p5.seek1,|,L I.p5.seek1,1 -> I.p5.seek1,1,L I.p5.seek1,| -> I.p5.op,|,L return.5,1 -> return.5,1,R return.5,| -> return.5,|,R return.5,□ -> return.5,□,R return.5,# -> I.p4,#,N I.p5.op,| -> return.5,|,N I.p5.op,1 -> I.p5.take,□,L I.p5.take,1 -> I.p5.putOne,□,R I.p5.putOne,□ -> I.p5.skipHole,1,L I.p5.take,| -> I.p5.putBar,□,R I.p5.putBar,□ -> I.p5.skipHole,|,L I.p5.skipHole,□ -> I.p5.take,□,L return.6,1 -> return.6,1,R return.6,| -> return.6,|,R return.6,□ -> return.6,□,R return.6,# -> I.p6,#,N I.p5.take,□ -> return.6,□,R I.p7,# -> I.p7.seek5,#,L I.p7.seek5,1 -> I.p7.seek5,1,L I.p7.seek5,| -> I.p7.seek4,|,L I.p7.seek4,1 -> I.p7.seek4,1,L I.p7.seek4,| -> I.p7.seek3,|,L I.p7.seek3,1 -> I.p7.seek3,1,L I.p7.seek3,| -> I.p7.seek2,|,L I.p7.seek2,1 -> I.p7.seek2,1,L I.p7.seek2,| -> I.p7.seek1,|,L I.p7.seek1,1 -> I.p7.seek1,1,L I.p7.seek1,| -> I.p7.op,|,L I.p7.op,| -> return.4,|,N I.p7.op,1 -> I.p7.take,□,L I.p7.take,1 -> I.p7.putOne,□,R I.p7.putOne,□ -> I.p7.skipHole,1,L I.p7.take,| -> I.p7.putBar,□,R I.p7.putBar,□ -> I.p7.skipHole,|,L I.p7.skipHole,□ -> I.p7.take,□,L return.7,1 -> return.7,1,R return.7,| -> return.7,|,R return.7,□ -> return.7,□,R return.7,# -> I.p7,#,N I.p7.take,□ -> return.7,□,R I.p10,# -> I.p10.seek8,#,L I.p10.seek8,1 -> I.p10.seek8,1,L I.p10.seek8,| -> I.p10.seek7,|,L I.p10.seek7,1 -> I.p10.seek7,1,L I.p10.seek7,| -> I.p10.seek6,|,L I.p10.seek6,1 -> I.p10.seek6,1,L I.p10.seek6,| -> I.p10.seek5,|,L I.p10.seek5,1 -> I.p10.seek5,1,L I.p10.seek5,| -> I.p10.seek4,|,L I.p10.seek4,1 -> I.p10.seek4,1,L I.p10.seek4,| -> I.p10.seek3,|,L I.p10.seek3,1 -> I.p10.seek3,1,L I.p10.seek3,| -> I.p10.seek2,|,L I.p10.seek2,1 -> I.p10.seek2,1,L I.p10.seek2,| -> I.p10.seek1,|,L I.p10.seek1,1 -> I.p10.seek1,1,L I.p10.seek1,| -> I.p10.op,|,L I.p10.op,1 -> I.p10.op,1,L I.p10.op,| -> I.p10.carryBar,1,L I.p10.carryOne,1 -> I.p10.carryOne,1,L I.p10.carryOne,| -> I.p10.carryBar,1,L return.8,1 -> return.8,1,R return.8,| -> return.8,|,R return.8,□ -> return.8,□,R return.8,# -> I.p9,#,N I.p10.carryOne,□ -> return.8,1,R I.p10.carryBar,1 -> I.p10.carryOne,|,L I.p10.carryBar,| -> I.p10.carryBar,|,L I.p10.carryBar,□ -> return.8,|,R I.p9,# -> I.p9.seek11,#,L I.p9.seek11,1 -> I.p9.seek11,1,L I.p9.seek11,| -> I.p9.seek10,|,L I.p9.seek10,1 -> I.p9.seek10,1,L I.p9.seek10,| -> I.p9.seek9,|,L I.p9.seek9,1 -> I.p9.seek9,1,L I.p9.seek9,| -> I.p9.seek8,|,L I.p9.seek8,1 -> I.p9.seek8,1,L I.p9.seek8,| -> I.p9.seek7,|,L I.p9.seek7,1 -> I.p9.seek7,1,L I.p9.seek7,| -> I.p9.seek6,|,L I.p9.seek6,1 -> I.p9.seek6,1,L I.p9.seek6,| -> I.p9.seek5,|,L I.p9.seek5,1 -> I.p9.seek5,1,L I.p9.seek5,| -> I.p9.seek4,|,L I.p9.seek4,1 -> I.p9.seek4,1,L I.p9.seek4,| -> I.p9.seek3,|,L I.p9.seek3,1 -> I.p9.seek3,1,L I.p9.seek3,| -> I.p9.seek2,|,L I.p9.seek2,1 -> I.p9.seek2,1,L I.p9.seek2,| -> I.p9.seek1,|,L I.p9.seek1,1 -> I.p9.seek1,1,L I.p9.seek1,| -> I.p9.op,|,L return.9,1 -> return.9,1,R return.9,| -> return.9,|,R return.9,□ -> return.9,□,R return.9,# -> I.p8,#,N I.p9.op,| -> return.9,|,N I.p9.op,1 -> I.p9.take,□,L I.p9.take,1 -> I.p9.putOne,□,R I.p9.putOne,□ -> I.p9.skipHole,1,L I.p9.take,| -> I.p9.putBar,□,R I.p9.putBar,□ -> I.p9.skipHole,|,L I.p9.skipHole,□ -> I.p9.take,□,L return.10,1 -> return.10,1,R return.10,| -> return.10,|,R return.10,□ -> return.10,□,R return.10,# -> I.p10,#,N I.p9.take,□ -> return.10,□,R I.p11,# -> I.p11.seek8,#,L I.p11.seek8,1 -> I.p11.seek8,1,L I.p11.seek8,| -> I.p11.seek7,|,L I.p11.seek7,1 -> I.p11.seek7,1,L I.p11.seek7,| -> I.p11.seek6,|,L I.p11.seek6,1 -> I.p11.seek6,1,L I.p11.seek6,| -> I.p11.seek5,|,L I.p11.seek5,1 -> I.p11.seek5,1,L I.p11.seek5,| -> I.p11.seek4,|,L I.p11.seek4,1 -> I.p11.seek4,1,L I.p11.seek4,| -> I.p11.seek3,|,L I.p11.seek3,1 -> I.p11.seek3,1,L I.p11.seek3,| -> I.p11.seek2,|,L I.p11.seek2,1 -> I.p11.seek2,1,L I.p11.seek2,| -> I.p11.seek1,|,L I.p11.seek1,1 -> I.p11.seek1,1,L I.p11.seek1,| -> I.p11.op,|,L I.p11.op,| -> return.8,|,N I.p11.op,1 -> I.p11.take,□,L I.p11.take,1 -> I.p11.putOne,□,R I.p11.putOne,□ -> I.p11.skipHole,1,L I.p11.take,| -> I.p11.putBar,□,R I.p11.putBar,□ -> I.p11.skipHole,|,L I.p11.skipHole,□ -> I.p11.take,□,L return.11,1 -> return.11,1,R return.11,| -> return.11,|,R return.11,□ -> return.11,□,R return.11,# -> I.p11,#,N I.p11.take,□ -> return.11,□,R I.p14,# -> I.p14.seek11,#,L I.p14.seek11,1 -> I.p14.seek11,1,L I.p14.seek11,| -> I.p14.seek10,|,L I.p14.seek10,1 -> I.p14.seek10,1,L I.p14.seek10,| -> I.p14.seek9,|,L I.p14.seek9,1 -> I.p14.seek9,1,L I.p14.seek9,| -> I.p14.seek8,|,L I.p14.seek8,1 -> I.p14.seek8,1,L I.p14.seek8,| -> I.p14.seek7,|,L I.p14.seek7,1 -> I.p14.seek7,1,L I.p14.seek7,| -> I.p14.seek6,|,L I.p14.seek6,1 -> I.p14.seek6,1,L I.p14.seek6,| -> I.p14.seek5,|,L I.p14.seek5,1 -> I.p14.seek5,1,L I.p14.seek5,| -> I.p14.seek4,|,L I.p14.seek4,1 -> I.p14.seek4,1,L I.p14.seek4,| -> I.p14.seek3,|,L I.p14.seek3,1 -> I.p14.seek3,1,L I.p14.seek3,| -> I.p14.seek2,|,L I.p14.seek2,1 -> I.p14.seek2,1,L I.p14.seek2,| -> I.p14.seek1,|,L I.p14.seek1,1 -> I.p14.seek1,1,L I.p14.seek1,| -> I.p14.op,|,L I.p14.op,1 -> I.p14.op,1,L I.p14.op,| -> I.p14.carryBar,1,L I.p14.carryOne,1 -> I.p14.carryOne,1,L I.p14.carryOne,| -> I.p14.carryBar,1,L return.12,1 -> return.12,1,R return.12,| -> return.12,|,R return.12,□ -> return.12,□,R return.12,# -> I.p13,#,N I.p14.carryOne,□ -> return.12,1,R I.p14.carryBar,1 -> I.p14.carryOne,|,L I.p14.carryBar,| -> I.p14.carryBar,|,L I.p14.carryBar,□ -> return.12,|,R I.p13,# -> I.p13.seek13,#,L I.p13.seek13,1 -> I.p13.seek13,1,L I.p13.seek13,| -> I.p13.seek12,|,L I.p13.seek12,1 -> I.p13.seek12,1,L I.p13.seek12,| -> I.p13.seek11,|,L I.p13.seek11,1 -> I.p13.seek11,1,L I.p13.seek11,| -> I.p13.seek10,|,L I.p13.seek10,1 -> I.p13.seek10,1,L I.p13.seek10,| -> I.p13.seek9,|,L I.p13.seek9,1 -> I.p13.seek9,1,L I.p13.seek9,| -> I.p13.seek8,|,L I.p13.seek8,1 -> I.p13.seek8,1,L I.p13.seek8,| -> I.p13.seek7,|,L I.p13.seek7,1 -> I.p13.seek7,1,L I.p13.seek7,| -> I.p13.seek6,|,L I.p13.seek6,1 -> I.p13.seek6,1,L I.p13.seek6,| -> I.p13.seek5,|,L I.p13.seek5,1 -> I.p13.seek5,1,L I.p13.seek5,| -> I.p13.seek4,|,L I.p13.seek4,1 -> I.p13.seek4,1,L I.p13.seek4,| -> I.p13.seek3,|,L I.p13.seek3,1 -> I.p13.seek3,1,L I.p13.seek3,| -> I.p13.seek2,|,L I.p13.seek2,1 -> I.p13.seek2,1,L I.p13.seek2,| -> I.p13.seek1,|,L I.p13.seek1,1 -> I.p13.seek1,1,L I.p13.seek1,| -> I.p13.op,|,L return.13,1 -> return.13,1,R return.13,| -> return.13,|,R return.13,□ -> return.13,□,R return.13,# -> I.p12,#,N I.p13.op,| -> return.13,|,N I.p13.op,1 -> I.p13.take,□,L I.p13.take,1 -> I.p13.putOne,□,R I.p13.putOne,□ -> I.p13.skipHole,1,L I.p13.take,| -> I.p13.putBar,□,R I.p13.putBar,□ -> I.p13.skipHole,|,L I.p13.skipHole,□ -> I.p13.take,□,L return.14,1 -> return.14,1,R return.14,| -> return.14,|,R return.14,□ -> return.14,□,R return.14,# -> I.p14,#,N I.p13.take,□ -> return.14,□,R I.p17,# -> I.p17.seek8,#,L I.p17.seek8,1 -> I.p17.seek8,1,L I.p17.seek8,| -> I.p17.seek7,|,L I.p17.seek7,1 -> I.p17.seek7,1,L I.p17.seek7,| -> I.p17.seek6,|,L I.p17.seek6,1 -> I.p17.seek6,1,L I.p17.seek6,| -> I.p17.seek5,|,L I.p17.seek5,1 -> I.p17.seek5,1,L I.p17.seek5,| -> I.p17.seek4,|,L I.p17.seek4,1 -> I.p17.seek4,1,L I.p17.seek4,| -> I.p17.seek3,|,L I.p17.seek3,1 -> I.p17.seek3,1,L I.p17.seek3,| -> I.p17.seek2,|,L I.p17.seek2,1 -> I.p17.seek2,1,L I.p17.seek2,| -> I.p17.seek1,|,L I.p17.seek1,1 -> I.p17.seek1,1,L I.p17.seek1,| -> I.p17.op,|,L I.p17.op,1 -> I.p17.op,1,L I.p17.op,| -> I.p17.carryBar,1,L I.p17.carryOne,1 -> I.p17.carryOne,1,L I.p17.carryOne,| -> I.p17.carryBar,1,L return.15,1 -> return.15,1,R return.15,| -> return.15,|,R return.15,□ -> return.15,□,R return.15,# -> I.p16,#,N I.p17.carryOne,□ -> return.15,1,R I.p17.carryBar,1 -> I.p17.carryOne,|,L I.p17.carryBar,| -> I.p17.carryBar,|,L I.p17.carryBar,□ -> return.15,|,R I.p16,# -> I.p16.seek14,#,L I.p16.seek14,1 -> I.p16.seek14,1,L I.p16.seek14,| -> I.p16.seek13,|,L I.p16.seek13,1 -> I.p16.seek13,1,L I.p16.seek13,| -> I.p16.seek12,|,L I.p16.seek12,1 -> I.p16.seek12,1,L I.p16.seek12,| -> I.p16.seek11,|,L I.p16.seek11,1 -> I.p16.seek11,1,L I.p16.seek11,| -> I.p16.seek10,|,L I.p16.seek10,1 -> I.p16.seek10,1,L I.p16.seek10,| -> I.p16.seek9,|,L I.p16.seek9,1 -> I.p16.seek9,1,L I.p16.seek9,| -> I.p16.seek8,|,L I.p16.seek8,1 -> I.p16.seek8,1,L I.p16.seek8,| -> I.p16.seek7,|,L I.p16.seek7,1 -> I.p16.seek7,1,L I.p16.seek7,| -> I.p16.seek6,|,L I.p16.seek6,1 -> I.p16.seek6,1,L I.p16.seek6,| -> I.p16.seek5,|,L I.p16.seek5,1 -> I.p16.seek5,1,L I.p16.seek5,| -> I.p16.seek4,|,L I.p16.seek4,1 -> I.p16.seek4,1,L I.p16.seek4,| -> I.p16.seek3,|,L I.p16.seek3,1 -> I.p16.seek3,1,L I.p16.seek3,| -> I.p16.seek2,|,L I.p16.seek2,1 -> I.p16.seek2,1,L I.p16.seek2,| -> I.p16.seek1,|,L I.p16.seek1,1 -> I.p16.seek1,1,L I.p16.seek1,| -> I.p16.op,|,L I.p16.op,| -> return.12,|,N I.p16.op,1 -> I.p16.take,□,L I.p16.take,1 -> I.p16.putOne,□,R I.p16.putOne,□ -> I.p16.skipHole,1,L I.p16.take,| -> I.p16.putBar,□,R I.p16.putBar,□ -> I.p16.skipHole,|,L I.p16.skipHole,□ -> I.p16.take,□,L return.16,1 -> return.16,1,R return.16,| -> return.16,|,R return.16,□ -> return.16,□,R return.16,# -> I.p17,#,N I.p16.take,□ -> return.16,□,R I.p18,# -> I.p18.seek14,#,L I.p18.seek14,1 -> I.p18.seek14,1,L I.p18.seek14,| -> I.p18.seek13,|,L I.p18.seek13,1 -> I.p18.seek13,1,L I.p18.seek13,| -> I.p18.seek12,|,L I.p18.seek12,1 -> I.p18.seek12,1,L I.p18.seek12,| -> I.p18.seek11,|,L I.p18.seek11,1 -> I.p18.seek11,1,L I.p18.seek11,| -> I.p18.seek10,|,L I.p18.seek10,1 -> I.p18.seek10,1,L I.p18.seek10,| -> I.p18.seek9,|,L I.p18.seek9,1 -> I.p18.seek9,1,L I.p18.seek9,| -> I.p18.seek8,|,L I.p18.seek8,1 -> I.p18.seek8,1,L I.p18.seek8,| -> I.p18.seek7,|,L I.p18.seek7,1 -> I.p18.seek7,1,L I.p18.seek7,| -> I.p18.seek6,|,L I.p18.seek6,1 -> I.p18.seek6,1,L I.p18.seek6,| -> I.p18.seek5,|,L I.p18.seek5,1 -> I.p18.seek5,1,L I.p18.seek5,| -> I.p18.seek4,|,L I.p18.seek4,1 -> I.p18.seek4,1,L I.p18.seek4,| -> I.p18.seek3,|,L I.p18.seek3,1 -> I.p18.seek3,1,L I.p18.seek3,| -> I.p18.seek2,|,L I.p18.seek2,1 -> I.p18.seek2,1,L I.p18.seek2,| -> I.p18.seek1,|,L I.p18.seek1,1 -> I.p18.seek1,1,L I.p18.seek1,| -> I.p18.op,|,L I.p18.op,1 -> I.p18.op,1,L I.p18.op,| -> I.p18.carryBar,1,L I.p18.carryOne,1 -> I.p18.carryOne,1,L I.p18.carryOne,| -> I.p18.carryBar,1,L return.17,1 -> return.17,1,R return.17,| -> return.17,|,R return.17,□ -> return.17,□,R return.17,# -> I.p15,#,N I.p18.carryOne,□ -> return.17,1,R I.p18.carryBar,1 -> I.p18.carryOne,|,L I.p18.carryBar,| -> I.p18.carryBar,|,L I.p18.carryBar,□ -> return.17,|,R I.p19,# -> I.p19.seek13,#,L I.p19.seek13,1 -> I.p19.seek13,1,L I.p19.seek13,| -> I.p19.seek12,|,L I.p19.seek12,1 -> I.p19.seek12,1,L I.p19.seek12,| -> I.p19.seek11,|,L I.p19.seek11,1 -> I.p19.seek11,1,L I.p19.seek11,| -> I.p19.seek10,|,L I.p19.seek10,1 -> I.p19.seek10,1,L I.p19.seek10,| -> I.p19.seek9,|,L I.p19.seek9,1 -> I.p19.seek9,1,L I.p19.seek9,| -> I.p19.seek8,|,L I.p19.seek8,1 -> I.p19.seek8,1,L I.p19.seek8,| -> I.p19.seek7,|,L I.p19.seek7,1 -> I.p19.seek7,1,L I.p19.seek7,| -> I.p19.seek6,|,L I.p19.seek6,1 -> I.p19.seek6,1,L I.p19.seek6,| -> I.p19.seek5,|,L I.p19.seek5,1 -> I.p19.seek5,1,L I.p19.seek5,| -> I.p19.seek4,|,L I.p19.seek4,1 -> I.p19.seek4,1,L I.p19.seek4,| -> I.p19.seek3,|,L I.p19.seek3,1 -> I.p19.seek3,1,L I.p19.seek3,| -> I.p19.seek2,|,L I.p19.seek2,1 -> I.p19.seek2,1,L I.p19.seek2,| -> I.p19.seek1,|,L I.p19.seek1,1 -> I.p19.seek1,1,L I.p19.seek1,| -> I.p19.op,|,L I.p19.op,1 -> I.p19.op,1,L I.p19.op,| -> I.p19.carryBar,1,L I.p19.carryOne,1 -> I.p19.carryOne,1,L I.p19.carryOne,| -> I.p19.carryBar,1,L return.18,1 -> return.18,1,R return.18,| -> return.18,|,R return.18,□ -> return.18,□,R return.18,# -> I.p18,#,N I.p19.carryOne,□ -> return.18,1,R I.p19.carryBar,1 -> I.p19.carryOne,|,L I.p19.carryBar,| -> I.p19.carryBar,|,L I.p19.carryBar,□ -> return.18,|,R I.p15,# -> I.p15.seek8,#,L I.p15.seek8,1 -> I.p15.seek8,1,L I.p15.seek8,| -> I.p15.seek7,|,L I.p15.seek7,1 -> I.p15.seek7,1,L I.p15.seek7,| -> I.p15.seek6,|,L I.p15.seek6,1 -> I.p15.seek6,1,L I.p15.seek6,| -> I.p15.seek5,|,L I.p15.seek5,1 -> I.p15.seek5,1,L I.p15.seek5,| -> I.p15.seek4,|,L I.p15.seek4,1 -> I.p15.seek4,1,L I.p15.seek4,| -> I.p15.seek3,|,L I.p15.seek3,1 -> I.p15.seek3,1,L I.p15.seek3,| -> I.p15.seek2,|,L I.p15.seek2,1 -> I.p15.seek2,1,L I.p15.seek2,| -> I.p15.seek1,|,L I.p15.seek1,1 -> I.p15.seek1,1,L I.p15.seek1,| -> I.p15.op,|,L I.p15.op,| -> return.15,|,N I.p15.op,1 -> I.p15.take,□,L I.p15.take,1 -> I.p15.putOne,□,R I.p15.putOne,□ -> I.p15.skipHole,1,L I.p15.take,| -> I.p15.putBar,□,R I.p15.putBar,□ -> I.p15.skipHole,|,L I.p15.skipHole,□ -> I.p15.take,□,L return.19,1 -> return.19,1,R return.19,| -> return.19,|,R return.19,□ -> return.19,□,R return.19,# -> I.p19,#,N I.p15.take,□ -> return.19,□,R I.p20,# -> I.p20.seek13,#,L I.p20.seek13,1 -> I.p20.seek13,1,L I.p20.seek13,| -> I.p20.seek12,|,L I.p20.seek12,1 -> I.p20.seek12,1,L I.p20.seek12,| -> I.p20.seek11,|,L I.p20.seek11,1 -> I.p20.seek11,1,L I.p20.seek11,| -> I.p20.seek10,|,L I.p20.seek10,1 -> I.p20.seek10,1,L I.p20.seek10,| -> I.p20.seek9,|,L I.p20.seek9,1 -> I.p20.seek9,1,L I.p20.seek9,| -> I.p20.seek8,|,L I.p20.seek8,1 -> I.p20.seek8,1,L I.p20.seek8,| -> I.p20.seek7,|,L I.p20.seek7,1 -> I.p20.seek7,1,L I.p20.seek7,| -> I.p20.seek6,|,L I.p20.seek6,1 -> I.p20.seek6,1,L I.p20.seek6,| -> I.p20.seek5,|,L I.p20.seek5,1 -> I.p20.seek5,1,L I.p20.seek5,| -> I.p20.seek4,|,L I.p20.seek4,1 -> I.p20.seek4,1,L I.p20.seek4,| -> I.p20.seek3,|,L I.p20.seek3,1 -> I.p20.seek3,1,L I.p20.seek3,| -> I.p20.seek2,|,L I.p20.seek2,1 -> I.p20.seek2,1,L I.p20.seek2,| -> I.p20.seek1,|,L I.p20.seek1,1 -> I.p20.seek1,1,L I.p20.seek1,| -> I.p20.op,|,L I.p20.op,| -> return.17,|,N I.p20.op,1 -> I.p20.take,□,L I.p20.take,1 -> I.p20.putOne,□,R I.p20.putOne,□ -> I.p20.skipHole,1,L I.p20.take,| -> I.p20.putBar,□,R I.p20.putBar,□ -> I.p20.skipHole,|,L I.p20.skipHole,□ -> I.p20.take,□,L return.20,1 -> return.20,1,R return.20,| -> return.20,|,R return.20,□ -> return.20,□,R return.20,# -> I.p20,#,N I.p20.take,□ -> return.20,□,R I.p12,# -> I.p12.seek12,#,L I.p12.seek12,1 -> I.p12.seek12,1,L I.p12.seek12,| -> I.p12.seek11,|,L I.p12.seek11,1 -> I.p12.seek11,1,L I.p12.seek11,| -> I.p12.seek10,|,L I.p12.seek10,1 -> I.p12.seek10,1,L I.p12.seek10,| -> I.p12.seek9,|,L I.p12.seek9,1 -> I.p12.seek9,1,L I.p12.seek9,| -> I.p12.seek8,|,L I.p12.seek8,1 -> I.p12.seek8,1,L I.p12.seek8,| -> I.p12.seek7,|,L I.p12.seek7,1 -> I.p12.seek7,1,L I.p12.seek7,| -> I.p12.seek6,|,L I.p12.seek6,1 -> I.p12.seek6,1,L I.p12.seek6,| -> I.p12.seek5,|,L I.p12.seek5,1 -> I.p12.seek5,1,L I.p12.seek5,| -> I.p12.seek4,|,L I.p12.seek4,1 -> I.p12.seek4,1,L I.p12.seek4,| -> I.p12.seek3,|,L I.p12.seek3,1 -> I.p12.seek3,1,L I.p12.seek3,| -> I.p12.seek2,|,L I.p12.seek2,1 -> I.p12.seek2,1,L I.p12.seek2,| -> I.p12.seek1,|,L I.p12.seek1,1 -> I.p12.seek1,1,L I.p12.seek1,| -> I.p12.op,|,L I.p12.op,| -> return.11,|,N I.p12.op,1 -> I.p12.take,□,L I.p12.take,1 -> I.p12.putOne,□,R I.p12.putOne,□ -> I.p12.skipHole,1,L I.p12.take,| -> I.p12.putBar,□,R I.p12.putBar,□ -> I.p12.skipHole,|,L I.p12.skipHole,□ -> I.p12.take,□,L I.p12.take,□ -> return.20,□,R I.p23,# -> I.p23.op,#,L I.p23.op,1 -> I.p23.op,1,L I.p23.op,| -> I.p23.carryBar,1,L I.p23.carryOne,1 -> I.p23.carryOne,1,L I.p23.carryOne,| -> I.p23.carryBar,1,L return.21,1 -> return.21,1,R return.21,| -> return.21,|,R return.21,□ -> return.21,□,R return.21,# -> I.p22,#,N I.p23.carryOne,□ -> return.21,1,R I.p23.carryBar,1 -> I.p23.carryOne,|,L I.p23.carryBar,| -> I.p23.carryBar,|,L I.p23.carryBar,□ -> return.21,|,R I.p22,# -> I.p22.seek14,#,L I.p22.seek14,1 -> I.p22.seek14,1,L I.p22.seek14,| -> I.p22.seek13,|,L I.p22.seek13,1 -> I.p22.seek13,1,L I.p22.seek13,| -> I.p22.seek12,|,L I.p22.seek12,1 -> I.p22.seek12,1,L I.p22.seek12,| -> I.p22.seek11,|,L I.p22.seek11,1 -> I.p22.seek11,1,L I.p22.seek11,| -> I.p22.seek10,|,L I.p22.seek10,1 -> I.p22.seek10,1,L I.p22.seek10,| -> I.p22.seek9,|,L I.p22.seek9,1 -> I.p22.seek9,1,L I.p22.seek9,| -> I.p22.seek8,|,L I.p22.seek8,1 -> I.p22.seek8,1,L I.p22.seek8,| -> I.p22.seek7,|,L I.p22.seek7,1 -> I.p22.seek7,1,L I.p22.seek7,| -> I.p22.seek6,|,L I.p22.seek6,1 -> I.p22.seek6,1,L I.p22.seek6,| -> I.p22.seek5,|,L I.p22.seek5,1 -> I.p22.seek5,1,L I.p22.seek5,| -> I.p22.seek4,|,L I.p22.seek4,1 -> I.p22.seek4,1,L I.p22.seek4,| -> I.p22.seek3,|,L I.p22.seek3,1 -> I.p22.seek3,1,L I.p22.seek3,| -> I.p22.seek2,|,L I.p22.seek2,1 -> I.p22.seek2,1,L I.p22.seek2,| -> I.p22.seek1,|,L I.p22.seek1,1 -> I.p22.seek1,1,L I.p22.seek1,| -> I.p22.op,|,L I.p22.op,| -> return.13,|,N I.p22.op,1 -> I.p22.take,□,L I.p22.take,1 -> I.p22.putOne,□,R I.p22.putOne,□ -> I.p22.skipHole,1,L I.p22.take,| -> I.p22.putBar,□,R I.p22.putBar,□ -> I.p22.skipHole,|,L I.p22.skipHole,□ -> I.p22.take,□,L return.22,1 -> return.22,1,R return.22,| -> return.22,|,R return.22,□ -> return.22,□,R return.22,# -> I.p23,#,N I.p22.take,□ -> return.22,□,R I.p24,# -> I.p24.seek14,#,L I.p24.seek14,1 -> I.p24.seek14,1,L I.p24.seek14,| -> I.p24.seek13,|,L I.p24.seek13,1 -> I.p24.seek13,1,L I.p24.seek13,| -> I.p24.seek12,|,L I.p24.seek12,1 -> I.p24.seek12,1,L I.p24.seek12,| -> I.p24.seek11,|,L I.p24.seek11,1 -> I.p24.seek11,1,L I.p24.seek11,| -> I.p24.seek10,|,L I.p24.seek10,1 -> I.p24.seek10,1,L I.p24.seek10,| -> I.p24.seek9,|,L I.p24.seek9,1 -> I.p24.seek9,1,L I.p24.seek9,| -> I.p24.seek8,|,L I.p24.seek8,1 -> I.p24.seek8,1,L I.p24.seek8,| -> I.p24.seek7,|,L I.p24.seek7,1 -> I.p24.seek7,1,L I.p24.seek7,| -> I.p24.seek6,|,L I.p24.seek6,1 -> I.p24.seek6,1,L I.p24.seek6,| -> I.p24.seek5,|,L I.p24.seek5,1 -> I.p24.seek5,1,L I.p24.seek5,| -> I.p24.seek4,|,L I.p24.seek4,1 -> I.p24.seek4,1,L I.p24.seek4,| -> I.p24.seek3,|,L I.p24.seek3,1 -> I.p24.seek3,1,L I.p24.seek3,| -> I.p24.seek2,|,L I.p24.seek2,1 -> I.p24.seek2,1,L I.p24.seek2,| -> I.p24.seek1,|,L I.p24.seek1,1 -> I.p24.seek1,1,L I.p24.seek1,| -> I.p24.op,|,L I.p24.op,1 -> I.p24.op,1,L I.p24.op,| -> I.p24.carryBar,1,L I.p24.carryOne,1 -> I.p24.carryOne,1,L I.p24.carryOne,| -> I.p24.carryBar,1,L return.23,1 -> return.23,1,R return.23,| -> return.23,|,R return.23,□ -> return.23,□,R return.23,# -> I.p21,#,N I.p24.carryOne,□ -> return.23,1,R I.p24.carryBar,1 -> I.p24.carryOne,|,L I.p24.carryBar,| -> I.p24.carryBar,|,L I.p24.carryBar,□ -> return.23,|,R I.p25,# -> I.p25.seek12,#,L I.p25.seek12,1 -> I.p25.seek12,1,L I.p25.seek12,| -> I.p25.seek11,|,L I.p25.seek11,1 -> I.p25.seek11,1,L I.p25.seek11,| -> I.p25.seek10,|,L I.p25.seek10,1 -> I.p25.seek10,1,L I.p25.seek10,| -> I.p25.seek9,|,L I.p25.seek9,1 -> I.p25.seek9,1,L I.p25.seek9,| -> I.p25.seek8,|,L I.p25.seek8,1 -> I.p25.seek8,1,L I.p25.seek8,| -> I.p25.seek7,|,L I.p25.seek7,1 -> I.p25.seek7,1,L I.p25.seek7,| -> I.p25.seek6,|,L I.p25.seek6,1 -> I.p25.seek6,1,L I.p25.seek6,| -> I.p25.seek5,|,L I.p25.seek5,1 -> I.p25.seek5,1,L I.p25.seek5,| -> I.p25.seek4,|,L I.p25.seek4,1 -> I.p25.seek4,1,L I.p25.seek4,| -> I.p25.seek3,|,L I.p25.seek3,1 -> I.p25.seek3,1,L I.p25.seek3,| -> I.p25.seek2,|,L I.p25.seek2,1 -> I.p25.seek2,1,L I.p25.seek2,| -> I.p25.seek1,|,L I.p25.seek1,1 -> I.p25.seek1,1,L I.p25.seek1,| -> I.p25.op,|,L I.p25.op,1 -> I.p25.op,1,L I.p25.op,| -> I.p25.carryBar,1,L I.p25.carryOne,1 -> I.p25.carryOne,1,L I.p25.carryOne,| -> I.p25.carryBar,1,L return.24,1 -> return.24,1,R return.24,| -> return.24,|,R return.24,□ -> return.24,□,R return.24,# -> I.p24,#,N I.p25.carryOne,□ -> return.24,1,R I.p25.carryBar,1 -> I.p25.carryOne,|,L I.p25.carryBar,| -> I.p25.carryBar,|,L I.p25.carryBar,□ -> return.24,|,R I.p21,# -> I.p21.op,#,L I.p21.op,| -> return.21,|,N I.p21.op,1 -> I.p21.take,□,L I.p21.take,1 -> I.p21.putOne,□,R I.p21.putOne,□ -> I.p21.skipHole,1,L I.p21.take,| -> I.p21.putBar,□,R I.p21.putBar,□ -> I.p21.skipHole,|,L I.p21.skipHole,□ -> I.p21.take,□,L return.25,1 -> return.25,1,R return.25,| -> return.25,|,R return.25,□ -> return.25,□,R return.25,# -> I.p25,#,N I.p21.take,□ -> return.25,□,R I.p26,# -> I.p26.seek12,#,L I.p26.seek12,1 -> I.p26.seek12,1,L I.p26.seek12,| -> I.p26.seek11,|,L I.p26.seek11,1 -> I.p26.seek11,1,L I.p26.seek11,| -> I.p26.seek10,|,L I.p26.seek10,1 -> I.p26.seek10,1,L I.p26.seek10,| -> I.p26.seek9,|,L I.p26.seek9,1 -> I.p26.seek9,1,L I.p26.seek9,| -> I.p26.seek8,|,L I.p26.seek8,1 -> I.p26.seek8,1,L I.p26.seek8,| -> I.p26.seek7,|,L I.p26.seek7,1 -> I.p26.seek7,1,L I.p26.seek7,| -> I.p26.seek6,|,L I.p26.seek6,1 -> I.p26.seek6,1,L I.p26.seek6,| -> I.p26.seek5,|,L I.p26.seek5,1 -> I.p26.seek5,1,L I.p26.seek5,| -> I.p26.seek4,|,L I.p26.seek4,1 -> I.p26.seek4,1,L I.p26.seek4,| -> I.p26.seek3,|,L I.p26.seek3,1 -> I.p26.seek3,1,L I.p26.seek3,| -> I.p26.seek2,|,L I.p26.seek2,1 -> I.p26.seek2,1,L I.p26.seek2,| -> I.p26.seek1,|,L I.p26.seek1,1 -> I.p26.seek1,1,L I.p26.seek1,| -> I.p26.op,|,L I.p26.op,| -> return.23,|,N I.p26.op,1 -> I.p26.take,□,L I.p26.take,1 -> I.p26.putOne,□,R I.p26.putOne,□ -> I.p26.skipHole,1,L I.p26.take,| -> I.p26.putBar,□,R I.p26.putBar,□ -> I.p26.skipHole,|,L I.p26.skipHole,□ -> I.p26.take,□,L return.26,1 -> return.26,1,R return.26,| -> return.26,|,R return.26,□ -> return.26,□,R return.26,# -> I.p26,#,N I.p26.take,□ -> return.26,□,R I.p27,# -> I.p27.seek11,#,L I.p27.seek11,1 -> I.p27.seek11,1,L I.p27.seek11,| -> I.p27.seek10,|,L I.p27.seek10,1 -> I.p27.seek10,1,L I.p27.seek10,| -> I.p27.seek9,|,L I.p27.seek9,1 -> I.p27.seek9,1,L I.p27.seek9,| -> I.p27.seek8,|,L I.p27.seek8,1 -> I.p27.seek8,1,L I.p27.seek8,| -> I.p27.seek7,|,L I.p27.seek7,1 -> I.p27.seek7,1,L I.p27.seek7,| -> I.p27.seek6,|,L I.p27.seek6,1 -> I.p27.seek6,1,L I.p27.seek6,| -> I.p27.seek5,|,L I.p27.seek5,1 -> I.p27.seek5,1,L I.p27.seek5,| -> I.p27.seek4,|,L I.p27.seek4,1 -> I.p27.seek4,1,L I.p27.seek4,| -> I.p27.seek3,|,L I.p27.seek3,1 -> I.p27.seek3,1,L I.p27.seek3,| -> I.p27.seek2,|,L I.p27.seek2,1 -> I.p27.seek2,1,L I.p27.seek2,| -> I.p27.seek1,|,L I.p27.seek1,1 -> I.p27.seek1,1,L I.p27.seek1,| -> I.p27.op,|,L I.p27.op,| -> return.26,|,N I.p27.op,1 -> I.p27.take,□,L I.p27.take,1 -> I.p27.putOne,□,R I.p27.putOne,□ -> I.p27.skipHole,1,L I.p27.take,| -> I.p27.putBar,□,R I.p27.putBar,□ -> I.p27.skipHole,|,L I.p27.skipHole,□ -> I.p27.take,□,L return.27,1 -> return.27,1,R return.27,| -> return.27,|,R return.27,□ -> return.27,□,R return.27,# -> I.p27,#,N I.p27.take,□ -> return.27,□,R I.p8,# -> I.p8.seek9,#,L I.p8.seek9,1 -> I.p8.seek9,1,L I.p8.seek9,| -> I.p8.seek8,|,L I.p8.seek8,1 -> I.p8.seek8,1,L I.p8.seek8,| -> I.p8.seek7,|,L I.p8.seek7,1 -> I.p8.seek7,1,L I.p8.seek7,| -> I.p8.seek6,|,L I.p8.seek6,1 -> I.p8.seek6,1,L I.p8.seek6,| -> I.p8.seek5,|,L I.p8.seek5,1 -> I.p8.seek5,1,L I.p8.seek5,| -> I.p8.seek4,|,L I.p8.seek4,1 -> I.p8.seek4,1,L I.p8.seek4,| -> I.p8.seek3,|,L I.p8.seek3,1 -> I.p8.seek3,1,L I.p8.seek3,| -> I.p8.seek2,|,L I.p8.seek2,1 -> I.p8.seek2,1,L I.p8.seek2,| -> I.p8.seek1,|,L I.p8.seek1,1 -> I.p8.seek1,1,L I.p8.seek1,| -> I.p8.op,|,L I.p8.op,| -> return.7,|,N I.p8.op,1 -> I.p8.take,□,L I.p8.take,1 -> I.p8.putOne,□,R I.p8.putOne,□ -> I.p8.skipHole,1,L I.p8.take,| -> I.p8.putBar,□,R I.p8.putBar,□ -> I.p8.skipHole,|,L I.p8.skipHole,□ -> I.p8.take,□,L I.p8.take,□ -> return.27,□,R I.p30,# -> I.p30.seek5,#,L I.p30.seek5,1 -> I.p30.seek5,1,L I.p30.seek5,| -> I.p30.seek4,|,L I.p30.seek4,1 -> I.p30.seek4,1,L I.p30.seek4,| -> I.p30.seek3,|,L I.p30.seek3,1 -> I.p30.seek3,1,L I.p30.seek3,| -> I.p30.seek2,|,L I.p30.seek2,1 -> I.p30.seek2,1,L I.p30.seek2,| -> I.p30.seek1,|,L I.p30.seek1,1 -> I.p30.seek1,1,L I.p30.seek1,| -> I.p30.op,|,L I.p30.op,1 -> I.p30.op,1,L I.p30.op,| -> I.p30.carryBar,1,L I.p30.carryOne,1 -> I.p30.carryOne,1,L I.p30.carryOne,| -> I.p30.carryBar,1,L return.28,1 -> return.28,1,R return.28,| -> return.28,|,R return.28,□ -> return.28,□,R return.28,# -> I.p29,#,N I.p30.carryOne,□ -> return.28,1,R I.p30.carryBar,1 -> I.p30.carryOne,|,L I.p30.carryBar,| -> I.p30.carryBar,|,L I.p30.carryBar,□ -> return.28,|,R I.p29,# -> I.p29.seek10,#,L I.p29.seek10,1 -> I.p29.seek10,1,L I.p29.seek10,| -> I.p29.seek9,|,L I.p29.seek9,1 -> I.p29.seek9,1,L I.p29.seek9,| -> I.p29.seek8,|,L I.p29.seek8,1 -> I.p29.seek8,1,L I.p29.seek8,| -> I.p29.seek7,|,L I.p29.seek7,1 -> I.p29.seek7,1,L I.p29.seek7,| -> I.p29.seek6,|,L I.p29.seek6,1 -> I.p29.seek6,1,L I.p29.seek6,| -> I.p29.seek5,|,L I.p29.seek5,1 -> I.p29.seek5,1,L I.p29.seek5,| -> I.p29.seek4,|,L I.p29.seek4,1 -> I.p29.seek4,1,L I.p29.seek4,| -> I.p29.seek3,|,L I.p29.seek3,1 -> I.p29.seek3,1,L I.p29.seek3,| -> I.p29.seek2,|,L I.p29.seek2,1 -> I.p29.seek2,1,L I.p29.seek2,| -> I.p29.seek1,|,L I.p29.seek1,1 -> I.p29.seek1,1,L I.p29.seek1,| -> I.p29.op,|,L I.p29.op,| -> return.9,|,N I.p29.op,1 -> I.p29.take,□,L I.p29.take,1 -> I.p29.putOne,□,R I.p29.putOne,□ -> I.p29.skipHole,1,L I.p29.take,| -> I.p29.putBar,□,R I.p29.putBar,□ -> I.p29.skipHole,|,L I.p29.skipHole,□ -> I.p29.take,□,L return.29,1 -> return.29,1,R return.29,| -> return.29,|,R return.29,□ -> return.29,□,R return.29,# -> I.p30,#,N I.p29.take,□ -> return.29,□,R I.p31,# -> I.p31.seek10,#,L I.p31.seek10,1 -> I.p31.seek10,1,L I.p31.seek10,| -> I.p31.seek9,|,L I.p31.seek9,1 -> I.p31.seek9,1,L I.p31.seek9,| -> I.p31.seek8,|,L I.p31.seek8,1 -> I.p31.seek8,1,L I.p31.seek8,| -> I.p31.seek7,|,L I.p31.seek7,1 -> I.p31.seek7,1,L I.p31.seek7,| -> I.p31.seek6,|,L I.p31.seek6,1 -> I.p31.seek6,1,L I.p31.seek6,| -> I.p31.seek5,|,L I.p31.seek5,1 -> I.p31.seek5,1,L I.p31.seek5,| -> I.p31.seek4,|,L I.p31.seek4,1 -> I.p31.seek4,1,L I.p31.seek4,| -> I.p31.seek3,|,L I.p31.seek3,1 -> I.p31.seek3,1,L I.p31.seek3,| -> I.p31.seek2,|,L I.p31.seek2,1 -> I.p31.seek2,1,L I.p31.seek2,| -> I.p31.seek1,|,L I.p31.seek1,1 -> I.p31.seek1,1,L I.p31.seek1,| -> I.p31.op,|,L I.p31.op,1 -> I.p31.op,1,L I.p31.op,| -> I.p31.carryBar,1,L I.p31.carryOne,1 -> I.p31.carryOne,1,L I.p31.carryOne,| -> I.p31.carryBar,1,L return.30,1 -> return.30,1,R return.30,| -> return.30,|,R return.30,□ -> return.30,□,R return.30,# -> I.p28,#,N I.p31.carryOne,□ -> return.30,1,R I.p31.carryBar,1 -> I.p31.carryOne,|,L I.p31.carryBar,| -> I.p31.carryBar,|,L I.p31.carryBar,□ -> return.30,|,R I.p32,# -> I.p32.seek9,#,L I.p32.seek9,1 -> I.p32.seek9,1,L I.p32.seek9,| -> I.p32.seek8,|,L I.p32.seek8,1 -> I.p32.seek8,1,L I.p32.seek8,| -> I.p32.seek7,|,L I.p32.seek7,1 -> I.p32.seek7,1,L I.p32.seek7,| -> I.p32.seek6,|,L I.p32.seek6,1 -> I.p32.seek6,1,L I.p32.seek6,| -> I.p32.seek5,|,L I.p32.seek5,1 -> I.p32.seek5,1,L I.p32.seek5,| -> I.p32.seek4,|,L I.p32.seek4,1 -> I.p32.seek4,1,L I.p32.seek4,| -> I.p32.seek3,|,L I.p32.seek3,1 -> I.p32.seek3,1,L I.p32.seek3,| -> I.p32.seek2,|,L I.p32.seek2,1 -> I.p32.seek2,1,L I.p32.seek2,| -> I.p32.seek1,|,L I.p32.seek1,1 -> I.p32.seek1,1,L I.p32.seek1,| -> I.p32.op,|,L I.p32.op,1 -> I.p32.op,1,L I.p32.op,| -> I.p32.carryBar,1,L I.p32.carryOne,1 -> I.p32.carryOne,1,L I.p32.carryOne,| -> I.p32.carryBar,1,L return.31,1 -> return.31,1,R return.31,| -> return.31,|,R return.31,□ -> return.31,□,R return.31,# -> I.p31,#,N I.p32.carryOne,□ -> return.31,1,R I.p32.carryBar,1 -> I.p32.carryOne,|,L I.p32.carryBar,| -> I.p32.carryBar,|,L I.p32.carryBar,□ -> return.31,|,R I.p28,# -> I.p28.seek5,#,L I.p28.seek5,1 -> I.p28.seek5,1,L I.p28.seek5,| -> I.p28.seek4,|,L I.p28.seek4,1 -> I.p28.seek4,1,L I.p28.seek4,| -> I.p28.seek3,|,L I.p28.seek3,1 -> I.p28.seek3,1,L I.p28.seek3,| -> I.p28.seek2,|,L I.p28.seek2,1 -> I.p28.seek2,1,L I.p28.seek2,| -> I.p28.seek1,|,L I.p28.seek1,1 -> I.p28.seek1,1,L I.p28.seek1,| -> I.p28.op,|,L I.p28.op,| -> return.28,|,N I.p28.op,1 -> I.p28.take,□,L I.p28.take,1 -> I.p28.putOne,□,R I.p28.putOne,□ -> I.p28.skipHole,1,L I.p28.take,| -> I.p28.putBar,□,R I.p28.putBar,□ -> I.p28.skipHole,|,L I.p28.skipHole,□ -> I.p28.take,□,L return.32,1 -> return.32,1,R return.32,| -> return.32,|,R return.32,□ -> return.32,□,R return.32,# -> I.p32,#,N I.p28.take,□ -> return.32,□,R I.p33,# -> I.p33.seek9,#,L I.p33.seek9,1 -> I.p33.seek9,1,L I.p33.seek9,| -> I.p33.seek8,|,L I.p33.seek8,1 -> I.p33.seek8,1,L I.p33.seek8,| -> I.p33.seek7,|,L I.p33.seek7,1 -> I.p33.seek7,1,L I.p33.seek7,| -> I.p33.seek6,|,L I.p33.seek6,1 -> I.p33.seek6,1,L I.p33.seek6,| -> I.p33.seek5,|,L I.p33.seek5,1 -> I.p33.seek5,1,L I.p33.seek5,| -> I.p33.seek4,|,L I.p33.seek4,1 -> I.p33.seek4,1,L I.p33.seek4,| -> I.p33.seek3,|,L I.p33.seek3,1 -> I.p33.seek3,1,L I.p33.seek3,| -> I.p33.seek2,|,L I.p33.seek2,1 -> I.p33.seek2,1,L I.p33.seek2,| -> I.p33.seek1,|,L I.p33.seek1,1 -> I.p33.seek1,1,L I.p33.seek1,| -> I.p33.op,|,L I.p33.op,| -> return.30,|,N I.p33.op,1 -> I.p33.take,□,L I.p33.take,1 -> I.p33.putOne,□,R I.p33.putOne,□ -> I.p33.skipHole,1,L I.p33.take,| -> I.p33.putBar,□,R I.p33.putBar,□ -> I.p33.skipHole,|,L I.p33.skipHole,□ -> I.p33.take,□,L return.33,1 -> return.33,1,R return.33,| -> return.33,|,R return.33,□ -> return.33,□,R return.33,# -> I.p33,#,N I.p33.take,□ -> return.33,□,R I.p34,# -> I.p34.seek8,#,L I.p34.seek8,1 -> I.p34.seek8,1,L I.p34.seek8,| -> I.p34.seek7,|,L I.p34.seek7,1 -> I.p34.seek7,1,L I.p34.seek7,| -> I.p34.seek6,|,L I.p34.seek6,1 -> I.p34.seek6,1,L I.p34.seek6,| -> I.p34.seek5,|,L I.p34.seek5,1 -> I.p34.seek5,1,L I.p34.seek5,| -> I.p34.seek4,|,L I.p34.seek4,1 -> I.p34.seek4,1,L I.p34.seek4,| -> I.p34.seek3,|,L I.p34.seek3,1 -> I.p34.seek3,1,L I.p34.seek3,| -> I.p34.seek2,|,L I.p34.seek2,1 -> I.p34.seek2,1,L I.p34.seek2,| -> I.p34.seek1,|,L I.p34.seek1,1 -> I.p34.seek1,1,L I.p34.seek1,| -> I.p34.op,|,L I.p34.op,1 -> I.p34.op,1,L I.p34.op,| -> I.p34.carryBar,1,L I.p34.carryOne,1 -> I.p34.carryOne,1,L I.p34.carryOne,| -> I.p34.carryBar,1,L I.p34.carryOne,□ -> return.33,1,R I.p34.carryBar,1 -> I.p34.carryOne,|,L I.p34.carryBar,| -> I.p34.carryBar,|,L I.p34.carryBar,□ -> return.33,|,R I.p35,# -> I.p35.seek8,#,L I.p35.seek8,1 -> I.p35.seek8,1,L I.p35.seek8,| -> I.p35.seek7,|,L I.p35.seek7,1 -> I.p35.seek7,1,L I.p35.seek7,| -> I.p35.seek6,|,L I.p35.seek6,1 -> I.p35.seek6,1,L I.p35.seek6,| -> I.p35.seek5,|,L I.p35.seek5,1 -> I.p35.seek5,1,L I.p35.seek5,| -> I.p35.seek4,|,L I.p35.seek4,1 -> I.p35.seek4,1,L I.p35.seek4,| -> I.p35.seek3,|,L I.p35.seek3,1 -> I.p35.seek3,1,L I.p35.seek3,| -> I.p35.seek2,|,L I.p35.seek2,1 -> I.p35.seek2,1,L I.p35.seek2,| -> I.p35.seek1,|,L I.p35.seek1,1 -> I.p35.seek1,1,L I.p35.seek1,| -> I.p35.op,|,L return.34,1 -> return.34,1,R return.34,| -> return.34,|,R return.34,□ -> return.34,□,R return.34,# -> I.p34,#,N I.p35.op,| -> return.34,|,N I.p35.op,1 -> I.p35.take,□,L I.p35.take,1 -> I.p35.putOne,□,R I.p35.putOne,□ -> I.p35.skipHole,1,L I.p35.take,| -> I.p35.putBar,□,R I.p35.putBar,□ -> I.p35.skipHole,|,L I.p35.skipHole,□ -> I.p35.take,□,L return.35,1 -> return.35,1,R return.35,| -> return.35,|,R return.35,□ -> return.35,□,R return.35,# -> I.p35,#,N I.p35.take,□ -> return.35,□,R I.p4,# -> I.p4.seek6,#,L I.p4.seek6,1 -> I.p4.seek6,1,L I.p4.seek6,| -> I.p4.seek5,|,L I.p4.seek5,1 -> I.p4.seek5,1,L I.p4.seek5,| -> I.p4.seek4,|,L I.p4.seek4,1 -> I.p4.seek4,1,L I.p4.seek4,| -> I.p4.seek3,|,L I.p4.seek3,1 -> I.p4.seek3,1,L I.p4.seek3,| -> I.p4.seek2,|,L I.p4.seek2,1 -> I.p4.seek2,1,L I.p4.seek2,| -> I.p4.seek1,|,L I.p4.seek1,1 -> I.p4.seek1,1,L I.p4.seek1,| -> I.p4.op,|,L I.p4.op,| -> return.3,|,N I.p4.op,1 -> I.p4.take,□,L I.p4.take,1 -> I.p4.putOne,□,R I.p4.putOne,□ -> I.p4.skipHole,1,L I.p4.take,| -> I.p4.putBar,□,R I.p4.putBar,□ -> I.p4.skipHole,|,L I.p4.skipHole,□ -> I.p4.take,□,L I.p4.take,□ -> return.35,□,R I.p38,# -> I.p38.seek2,#,L I.p38.seek2,1 -> I.p38.seek2,1,L I.p38.seek2,| -> I.p38.seek1,|,L I.p38.seek1,1 -> I.p38.seek1,1,L I.p38.seek1,| -> I.p38.op,|,L I.p38.op,1 -> I.p38.op,1,L I.p38.op,| -> I.p38.carryBar,1,L I.p38.carryOne,1 -> I.p38.carryOne,1,L I.p38.carryOne,| -> I.p38.carryBar,1,L return.36,1 -> return.36,1,R return.36,| -> return.36,|,R return.36,□ -> return.36,□,R return.36,# -> I.p37,#,N I.p38.carryOne,□ -> return.36,1,R I.p38.carryBar,1 -> I.p38.carryOne,|,L I.p38.carryBar,| -> I.p38.carryBar,|,L I.p38.carryBar,□ -> return.36,|,R I.p37,# -> I.p37.seek7,#,L I.p37.seek7,1 -> I.p37.seek7,1,L I.p37.seek7,| -> I.p37.seek6,|,L I.p37.seek6,1 -> I.p37.seek6,1,L I.p37.seek6,| -> I.p37.seek5,|,L I.p37.seek5,1 -> I.p37.seek5,1,L I.p37.seek5,| -> I.p37.seek4,|,L I.p37.seek4,1 -> I.p37.seek4,1,L I.p37.seek4,| -> I.p37.seek3,|,L I.p37.seek3,1 -> I.p37.seek3,1,L I.p37.seek3,| -> I.p37.seek2,|,L I.p37.seek2,1 -> I.p37.seek2,1,L I.p37.seek2,| -> I.p37.seek1,|,L I.p37.seek1,1 -> I.p37.seek1,1,L I.p37.seek1,| -> I.p37.op,|,L I.p37.op,| -> return.5,|,N I.p37.op,1 -> I.p37.take,□,L I.p37.take,1 -> I.p37.putOne,□,R I.p37.putOne,□ -> I.p37.skipHole,1,L I.p37.take,| -> I.p37.putBar,□,R I.p37.putBar,□ -> I.p37.skipHole,|,L I.p37.skipHole,□ -> I.p37.take,□,L return.37,1 -> return.37,1,R return.37,| -> return.37,|,R return.37,□ -> return.37,□,R return.37,# -> I.p38,#,N I.p37.take,□ -> return.37,□,R I.p39,# -> I.p39.seek7,#,L I.p39.seek7,1 -> I.p39.seek7,1,L I.p39.seek7,| -> I.p39.seek6,|,L I.p39.seek6,1 -> I.p39.seek6,1,L I.p39.seek6,| -> I.p39.seek5,|,L I.p39.seek5,1 -> I.p39.seek5,1,L I.p39.seek5,| -> I.p39.seek4,|,L I.p39.seek4,1 -> I.p39.seek4,1,L I.p39.seek4,| -> I.p39.seek3,|,L I.p39.seek3,1 -> I.p39.seek3,1,L I.p39.seek3,| -> I.p39.seek2,|,L I.p39.seek2,1 -> I.p39.seek2,1,L I.p39.seek2,| -> I.p39.seek1,|,L I.p39.seek1,1 -> I.p39.seek1,1,L I.p39.seek1,| -> I.p39.op,|,L I.p39.op,1 -> I.p39.op,1,L I.p39.op,| -> I.p39.carryBar,1,L I.p39.carryOne,1 -> I.p39.carryOne,1,L I.p39.carryOne,| -> I.p39.carryBar,1,L return.38,1 -> return.38,1,R return.38,| -> return.38,|,R return.38,□ -> return.38,□,R return.38,# -> I.p36,#,N I.p39.carryOne,□ -> return.38,1,R I.p39.carryBar,1 -> I.p39.carryOne,|,L I.p39.carryBar,| -> I.p39.carryBar,|,L I.p39.carryBar,□ -> return.38,|,R I.p40,# -> I.p40.seek6,#,L I.p40.seek6,1 -> I.p40.seek6,1,L I.p40.seek6,| -> I.p40.seek5,|,L I.p40.seek5,1 -> I.p40.seek5,1,L I.p40.seek5,| -> I.p40.seek4,|,L I.p40.seek4,1 -> I.p40.seek4,1,L I.p40.seek4,| -> I.p40.seek3,|,L I.p40.seek3,1 -> I.p40.seek3,1,L I.p40.seek3,| -> I.p40.seek2,|,L I.p40.seek2,1 -> I.p40.seek2,1,L I.p40.seek2,| -> I.p40.seek1,|,L I.p40.seek1,1 -> I.p40.seek1,1,L I.p40.seek1,| -> I.p40.op,|,L I.p40.op,1 -> I.p40.op,1,L I.p40.op,| -> I.p40.carryBar,1,L I.p40.carryOne,1 -> I.p40.carryOne,1,L I.p40.carryOne,| -> I.p40.carryBar,1,L return.39,1 -> return.39,1,R return.39,| -> return.39,|,R return.39,□ -> return.39,□,R return.39,# -> I.p39,#,N I.p40.carryOne,□ -> return.39,1,R I.p40.carryBar,1 -> I.p40.carryOne,|,L I.p40.carryBar,| -> I.p40.carryBar,|,L I.p40.carryBar,□ -> return.39,|,R I.p36,# -> I.p36.seek2,#,L I.p36.seek2,1 -> I.p36.seek2,1,L I.p36.seek2,| -> I.p36.seek1,|,L I.p36.seek1,1 -> I.p36.seek1,1,L I.p36.seek1,| -> I.p36.op,|,L I.p36.op,| -> return.36,|,N I.p36.op,1 -> I.p36.take,□,L I.p36.take,1 -> I.p36.putOne,□,R I.p36.putOne,□ -> I.p36.skipHole,1,L I.p36.take,| -> I.p36.putBar,□,R I.p36.putBar,□ -> I.p36.skipHole,|,L I.p36.skipHole,□ -> I.p36.take,□,L return.40,1 -> return.40,1,R return.40,| -> return.40,|,R return.40,□ -> return.40,□,R return.40,# -> I.p40,#,N I.p36.take,□ -> return.40,□,R I.p41,# -> I.p41.seek6,#,L I.p41.seek6,1 -> I.p41.seek6,1,L I.p41.seek6,| -> I.p41.seek5,|,L I.p41.seek5,1 -> I.p41.seek5,1,L I.p41.seek5,| -> I.p41.seek4,|,L I.p41.seek4,1 -> I.p41.seek4,1,L I.p41.seek4,| -> I.p41.seek3,|,L I.p41.seek3,1 -> I.p41.seek3,1,L I.p41.seek3,| -> I.p41.seek2,|,L I.p41.seek2,1 -> I.p41.seek2,1,L I.p41.seek2,| -> I.p41.seek1,|,L I.p41.seek1,1 -> I.p41.seek1,1,L I.p41.seek1,| -> I.p41.op,|,L I.p41.op,| -> return.38,|,N I.p41.op,1 -> I.p41.take,□,L I.p41.take,1 -> I.p41.putOne,□,R I.p41.putOne,□ -> I.p41.skipHole,1,L I.p41.take,| -> I.p41.putBar,□,R I.p41.putBar,□ -> I.p41.skipHole,|,L I.p41.skipHole,□ -> I.p41.take,□,L return.41,1 -> return.41,1,R return.41,| -> return.41,|,R return.41,□ -> return.41,□,R return.41,# -> I.p41,#,N I.p41.take,□ -> return.41,□,R I.p42,# -> I.p42.seek5,#,L I.p42.seek5,1 -> I.p42.seek5,1,L I.p42.seek5,| -> I.p42.seek4,|,L I.p42.seek4,1 -> I.p42.seek4,1,L I.p42.seek4,| -> I.p42.seek3,|,L I.p42.seek3,1 -> I.p42.seek3,1,L I.p42.seek3,| -> I.p42.seek2,|,L I.p42.seek2,1 -> I.p42.seek2,1,L I.p42.seek2,| -> I.p42.seek1,|,L I.p42.seek1,1 -> I.p42.seek1,1,L I.p42.seek1,| -> I.p42.op,|,L I.p42.op,1 -> I.p42.op,1,L I.p42.op,| -> I.p42.carryBar,1,L I.p42.carryOne,1 -> I.p42.carryOne,1,L I.p42.carryOne,| -> I.p42.carryBar,1,L I.p42.carryOne,□ -> return.41,1,R I.p42.carryBar,1 -> I.p42.carryOne,|,L I.p42.carryBar,| -> I.p42.carryBar,|,L I.p42.carryBar,□ -> return.41,|,R I.p43,# -> I.p43.seek5,#,L I.p43.seek5,1 -> I.p43.seek5,1,L I.p43.seek5,| -> I.p43.seek4,|,L I.p43.seek4,1 -> I.p43.seek4,1,L I.p43.seek4,| -> I.p43.seek3,|,L I.p43.seek3,1 -> I.p43.seek3,1,L I.p43.seek3,| -> I.p43.seek2,|,L I.p43.seek2,1 -> I.p43.seek2,1,L I.p43.seek2,| -> I.p43.seek1,|,L I.p43.seek1,1 -> I.p43.seek1,1,L I.p43.seek1,| -> I.p43.op,|,L return.42,1 -> return.42,1,R return.42,| -> return.42,|,R return.42,□ -> return.42,□,R return.42,# -> I.p42,#,N I.p43.op,| -> return.42,|,N I.p43.op,1 -> I.p43.take,□,L I.p43.take,1 -> I.p43.putOne,□,R I.p43.putOne,□ -> I.p43.skipHole,1,L I.p43.take,| -> I.p43.putBar,□,R I.p43.putBar,□ -> I.p43.skipHole,|,L I.p43.skipHole,□ -> I.p43.take,□,L return.43,1 -> return.43,1,R return.43,| -> return.43,|,R return.43,□ -> return.43,□,R return.43,# -> I.p43,#,N I.p43.take,□ -> return.43,□,R I.p0,# -> I.p0.seek3,#,L I.p0.seek3,1 -> I.p0.seek3,1,L I.p0.seek3,| -> I.p0.seek2,|,L I.p0.seek2,1 -> I.p0.seek2,1,L I.p0.seek2,| -> I.p0.seek1,|,L I.p0.seek1,1 -> I.p0.seek1,1,L I.p0.seek1,| -> I.p0.op,|,L return.44,1 -> return.44,1,R return.44,| -> return.44,|,R return.44,□ -> return.44,□,R return.44,# -> I.done,#,N I.p0.op,| -> return.44,|,N I.p0.op,1 -> I.p0.take,□,L I.p0.take,1 -> I.p0.putOne,□,R I.p0.putOne,□ -> I.p0.skipHole,1,L I.p0.take,| -> I.p0.putBar,□,R I.p0.putBar,□ -> I.p0.skipHole,|,L I.p0.skipHole,□ -> I.p0.take,□,L I.p0.take,□ -> return.43,□,R I.p46,# -> I.p46.seek1,#,L I.p46.seek1,1 -> I.p46.seek1,1,L I.p46.seek1,| -> I.p46.op,|,L I.p46.op,1 -> I.p46.op,1,L I.p46.op,| -> I.p46.carryBar,1,L I.p46.carryOne,1 -> I.p46.carryOne,1,L I.p46.carryOne,| -> I.p46.carryBar,1,L return.45,1 -> return.45,1,R return.45,| -> return.45,|,R return.45,□ -> return.45,□,R return.45,# -> I.p45,#,N I.p46.carryOne,□ -> return.45,1,R I.p46.carryBar,1 -> I.p46.carryOne,|,L I.p46.carryBar,| -> I.p46.carryBar,|,L I.p46.carryBar,□ -> return.45,|,R I.p45,# -> I.p45.seek4,#,L I.p45.seek4,1 -> I.p45.seek4,1,L I.p45.seek4,| -> I.p45.seek3,|,L I.p45.seek3,1 -> I.p45.seek3,1,L I.p45.seek3,| -> I.p45.seek2,|,L I.p45.seek2,1 -> I.p45.seek2,1,L I.p45.seek2,| -> I.p45.seek1,|,L I.p45.seek1,1 -> I.p45.seek1,1,L I.p45.seek1,| -> I.p45.op,|,L I.p45.op,| -> return.1,|,N I.p45.op,1 -> I.p45.take,□,L I.p45.take,1 -> I.p45.putOne,□,R I.p45.putOne,□ -> I.p45.skipHole,1,L I.p45.take,| -> I.p45.putBar,□,R I.p45.putBar,□ -> I.p45.skipHole,|,L I.p45.skipHole,□ -> I.p45.take,□,L return.46,1 -> return.46,1,R return.46,| -> return.46,|,R return.46,□ -> return.46,□,R return.46,# -> I.p46,#,N I.p45.take,□ -> return.46,□,R I.p47,# -> I.p47.seek4,#,L I.p47.seek4,1 -> I.p47.seek4,1,L I.p47.seek4,| -> I.p47.seek3,|,L I.p47.seek3,1 -> I.p47.seek3,1,L I.p47.seek3,| -> I.p47.seek2,|,L I.p47.seek2,1 -> I.p47.seek2,1,L I.p47.seek2,| -> I.p47.seek1,|,L I.p47.seek1,1 -> I.p47.seek1,1,L I.p47.seek1,| -> I.p47.op,|,L I.p47.op,1 -> I.p47.op,1,L I.p47.op,| -> I.p47.carryBar,1,L I.p47.carryOne,1 -> I.p47.carryOne,1,L I.p47.carryOne,| -> I.p47.carryBar,1,L return.47,1 -> return.47,1,R return.47,| -> return.47,|,R return.47,□ -> return.47,□,R return.47,# -> I.p44,#,N I.p47.carryOne,□ -> return.47,1,R I.p47.carryBar,1 -> I.p47.carryOne,|,L I.p47.carryBar,| -> I.p47.carryBar,|,L I.p47.carryBar,□ -> return.47,|,R I.p48,# -> I.p48.seek3,#,L I.p48.seek3,1 -> I.p48.seek3,1,L I.p48.seek3,| -> I.p48.seek2,|,L I.p48.seek2,1 -> I.p48.seek2,1,L I.p48.seek2,| -> I.p48.seek1,|,L I.p48.seek1,1 -> I.p48.seek1,1,L I.p48.seek1,| -> I.p48.op,|,L I.p48.op,1 -> I.p48.op,1,L I.p48.op,| -> I.p48.carryBar,1,L I.p48.carryOne,1 -> I.p48.carryOne,1,L I.p48.carryOne,| -> I.p48.carryBar,1,L return.48,1 -> return.48,1,R return.48,| -> return.48,|,R return.48,□ -> return.48,□,R return.48,# -> I.p47,#,N I.p48.carryOne,□ -> return.48,1,R I.p48.carryBar,1 -> I.p48.carryOne,|,L I.p48.carryBar,| -> I.p48.carryBar,|,L I.p48.carryBar,□ -> return.48,|,R I.p44,# -> I.p44.seek1,#,L I.p44.seek1,1 -> I.p44.seek1,1,L I.p44.seek1,| -> I.p44.op,|,L I.p44.op,| -> return.45,|,N I.p44.op,1 -> I.p44.take,□,L I.p44.take,1 -> I.p44.putOne,□,R I.p44.putOne,□ -> I.p44.skipHole,1,L I.p44.take,| -> I.p44.putBar,□,R I.p44.putBar,□ -> I.p44.skipHole,|,L I.p44.skipHole,□ -> I.p44.take,□,L return.49,1 -> return.49,1,R return.49,| -> return.49,|,R return.49,□ -> return.49,□,R return.49,# -> I.p48,#,N I.p44.take,□ -> return.49,□,R I.p49,# -> I.p49.seek3,#,L I.p49.seek3,1 -> I.p49.seek3,1,L I.p49.seek3,| -> I.p49.seek2,|,L I.p49.seek2,1 -> I.p49.seek2,1,L I.p49.seek2,| -> I.p49.seek1,|,L I.p49.seek1,1 -> I.p49.seek1,1,L I.p49.seek1,| -> I.p49.op,|,L I.p49.op,| -> return.47,|,N I.p49.op,1 -> I.p49.take,□,L I.p49.take,1 -> I.p49.putOne,□,R I.p49.putOne,□ -> I.p49.skipHole,1,L I.p49.take,| -> I.p49.putBar,□,R I.p49.putBar,□ -> I.p49.skipHole,|,L I.p49.skipHole,□ -> I.p49.take,□,L return.50,1 -> return.50,1,R return.50,| -> return.50,|,R return.50,□ -> return.50,□,R return.50,# -> I.p49,#,N I.p49.take,□ -> return.50,□,R I.p50,# -> I.p50.seek2,#,L I.p50.seek2,1 -> I.p50.seek2,1,L I.p50.seek2,| -> I.p50.seek1,|,L I.p50.seek1,1 -> I.p50.seek1,1,L I.p50.seek1,| -> I.p50.op,|,L I.p50.op,1 -> I.p50.op,1,L I.p50.op,| -> I.p50.carryBar,1,L I.p50.carryOne,1 -> I.p50.carryOne,1,L I.p50.carryOne,| -> I.p50.carryBar,1,L I.p50.carryOne,□ -> return.50,1,R I.p50.carryBar,1 -> I.p50.carryOne,|,L I.p50.carryBar,| -> I.p50.carryBar,|,L I.p50.carryBar,□ -> return.50,|,R I.p51,# -> I.p51.seek2,#,L I.p51.seek2,1 -> I.p51.seek2,1,L I.p51.seek2,| -> I.p51.seek1,|,L I.p51.seek1,1 -> I.p51.seek1,1,L I.p51.seek1,| -> I.p51.op,|,L return.51,1 -> return.51,1,R return.51,| -> return.51,|,R return.51,□ -> return.51,□,R return.51,# -> I.p50,#,N I.p51.op,| -> return.51,|,N I.p51.op,1 -> I.p51.take,□,L I.p51.take,1 -> I.p51.putOne,□,R I.p51.putOne,□ -> I.p51.skipHole,1,L I.p51.take,| -> I.p51.putBar,□,R I.p51.putBar,□ -> I.p51.skipHole,|,L I.p51.skipHole,□ -> I.p51.take,□,L return.52,1 -> return.52,1,R return.52,| -> return.52,|,R return.52,□ -> return.52,□,R return.52,# -> I.p51,#,N I.p51.take,□ -> return.52,□,R I.p53,# -> I.p53.op,#,L I.p53.op,1 -> I.p53.op,1,L I.p53.op,| -> I.p53.carryBar,1,L I.p53.carryOne,1 -> I.p53.carryOne,1,L I.p53.carryOne,| -> I.p53.carryBar,1,L I.p53.carryOne,□ -> return.52,1,R I.p53.carryBar,1 -> I.p53.carryOne,|,L I.p53.carryBar,| -> I.p53.carryBar,|,L I.p53.carryBar,□ -> return.52,|,R I.p52,# -> I.p52.op,#,L return.53,1 -> return.53,1,R return.53,| -> return.53,|,R return.53,□ -> return.53,□,R return.53,# -> I.reject,#,N I.p52.op,| -> return.53,|,N I.p52.op,1 -> I.p52.take,□,L I.p52.take,1 -> I.p52.putOne,□,R I.p52.putOne,□ -> I.p52.skipHole,1,L I.p52.take,| -> I.p52.putBar,□,R I.p52.putBar,□ -> I.p52.skipHole,|,L I.p52.skipHole,□ -> I.p52.take,□,L return.54,1 -> return.54,1,R return.54,| -> return.54,|,R return.54,□ -> return.54,□,R return.54,# -> I.p53,#,N I.p52.take,□ -> return.54,□,R BOOT,1 -> init.fence,1,L BOOT,0 -> init.fence,0,L BOOT,+ -> init.fence,+,L BOOT,- -> init.fence,-,L BOOT,* -> init.fence,*,L BOOT,/ -> init.fence,/,L BOOT,^ -> init.fence,^,L BOOT,? -> init.fence,?,L BOOT,□ -> init.fence,□,L BOOT,# -> init.fence,#,L BOOT,| -> init.fence,|,L BOOT,a -> init.fence,a,L BOOT,b -> init.fence,b,L init.fence,□ -> init.0,#,L init.0,□ -> init.1,|,L init.1,□ -> init.2,|,L init.2,□ -> init.3,|,L init.3,□ -> init.4,|,L init.4,□ -> init.5,|,L init.5,□ -> init.6,|,L init.6,□ -> init.7,|,L init.7,□ -> init.8,|,L init.8,□ -> init.9,|,L init.9,□ -> init.10,|,L init.10,□ -> init.11,|,L init.11,□ -> init.12,|,L init.12,□ -> init.13,|,L init.13,□ -> init.14,|,L init.14,□ -> init.back,|,R init.back,| -> init.back,|,R init.back,# -> validate.a,#,R validate.a,1 -> validate.a,1,R validate.a,0 -> REJECT,0,N validate.a,+ -> REJECT,+,N validate.a,- -> REJECT,-,N validate.a,* -> REJECT,*,N validate.a,/ -> REJECT,/,N validate.a,^ -> validate.op1,^,R validate.a,? -> REJECT,?,N validate.a,□ -> REJECT,□,N validate.a,# -> REJECT,#,N validate.a,| -> REJECT,|,N validate.a,a -> REJECT,a,N validate.a,b -> REJECT,b,N validate.op1,1 -> REJECT,1,N validate.op1,0 -> REJECT,0,N validate.op1,+ -> REJECT,+,N validate.op1,- -> REJECT,-,N validate.op1,* -> REJECT,*,N validate.op1,/ -> REJECT,/,N validate.op1,^ -> validate.op2,^,R validate.op1,? -> REJECT,?,N validate.op1,□ -> REJECT,□,N validate.op1,# -> REJECT,#,N validate.op1,| -> REJECT,|,N validate.op1,a -> REJECT,a,N validate.op1,b -> REJECT,b,N validate.op2,1 -> REJECT,1,N validate.op2,0 -> REJECT,0,N validate.op2,+ -> REJECT,+,N validate.op2,- -> REJECT,-,N validate.op2,* -> REJECT,*,N validate.op2,/ -> REJECT,/,N validate.op2,^ -> validate.b,^,R validate.op2,? -> REJECT,?,N validate.op2,□ -> REJECT,□,N validate.op2,# -> REJECT,#,N validate.op2,| -> REJECT,|,N validate.op2,a -> REJECT,a,N validate.op2,b -> REJECT,b,N validate.b,1 -> validate.b,1,R validate.b,0 -> REJECT,0,N validate.b,+ -> REJECT,+,N validate.b,- -> REJECT,-,N validate.b,* -> REJECT,*,N validate.b,/ -> REJECT,/,N validate.b,^ -> REJECT,^,N validate.b,? -> REJECT,?,N validate.b,□ -> validate.rewind,□,L validate.b,# -> REJECT,#,N validate.b,| -> REJECT,|,N validate.b,a -> REJECT,a,N validate.b,b -> REJECT,b,N validate.rewind,1 -> validate.rewind,1,L validate.rewind,^ -> validate.rewind,^,L validate.rewind,# -> parse.A,#,N parse.A,# -> parse.scanA,#,R parse.scanA,1 -> parse.seekA,a,L parse.seekA,1 -> parse.seekA,1,L parse.seekA,a -> parse.seekA,a,L parse.seekA,b -> parse.seekA,b,L parse.seekA,^ -> parse.seekA,^,L parse.seekA,# -> parse.incA,#,N parse.incA,# -> parse.incA.op,#,L parse.incA.op,1 -> parse.incA.op,1,L parse.incA.op,| -> parse.incA.carryBar,1,L parse.incA.carryOne,1 -> parse.incA.carryOne,1,L parse.incA.carryOne,| -> parse.incA.carryBar,1,L return.55,1 -> return.55,1,R return.55,| -> return.55,|,R return.55,□ -> return.55,□,R return.55,# -> parse.A,#,N parse.incA.carryOne,□ -> return.55,1,R parse.incA.carryBar,1 -> parse.incA.carryOne,|,L parse.incA.carryBar,| -> parse.incA.carryBar,|,L parse.incA.carryBar,□ -> return.55,|,R parse.B,# -> parse.scanB,#,R parse.scanB,1 -> parse.seekB,b,L parse.seekB,1 -> parse.seekB,1,L parse.seekB,a -> parse.seekB,a,L parse.seekB,b -> parse.seekB,b,L parse.seekB,^ -> parse.seekB,^,L parse.seekB,# -> parse.incB,#,N parse.incB,# -> parse.incB.seek1,#,L parse.incB.seek1,1 -> parse.incB.seek1,1,L parse.incB.seek1,| -> parse.incB.op,|,L parse.incB.op,1 -> parse.incB.op,1,L parse.incB.op,| -> parse.incB.carryBar,1,L parse.incB.carryOne,1 -> parse.incB.carryOne,1,L parse.incB.carryOne,| -> parse.incB.carryBar,1,L return.56,1 -> return.56,1,R return.56,| -> return.56,|,R return.56,□ -> return.56,□,R return.56,# -> parse.B,#,N parse.incB.carryOne,□ -> return.56,1,R parse.incB.carryBar,1 -> parse.incB.carryOne,|,L parse.incB.carryBar,| -> parse.incB.carryBar,|,L parse.incB.carryBar,□ -> return.56,|,R parse.scanA,a -> parse.scanA,a,R parse.scanA,^ -> parse.scanB,^,N parse.scanB,a -> parse.scanB,a,R parse.scanB,b -> parse.scanB,b,R parse.scanB,^ -> parse.scanB,^,R parse.scanB,□ -> parse.erase,□,L parse.erase,a -> parse.erase,□,L parse.erase,b -> parse.erase,□,L parse.erase,^ -> parse.erase,□,L parse.erase,# -> I.p52,#,N clean.0.0,1 -> clean.0.0,□,L clean.0.0,| -> clean.1.0,□,L clean.0.1,1 -> clean.0.1,□,L clean.0.1,| -> clean.1.1,□,L clean.1.0,1 -> clean.1.0,□,L clean.1.0,| -> clean.2.0,□,L clean.1.1,1 -> clean.1.1,□,L clean.1.1,| -> clean.2.1,□,L clean.2.0,1 -> clean.2.1,1,L clean.2.0,| -> clean.3.0,□,L clean.2.1,1 -> clean.2.1,1,L clean.2.1,| -> clean.3.1,□,L clean.3.0,1 -> clean.3.0,□,L clean.3.0,| -> clean.4.0,□,L clean.3.1,1 -> clean.3.1,□,L clean.3.1,| -> clean.4.1,□,L clean.4.0,1 -> clean.4.0,□,L clean.4.0,| -> clean.5.0,□,L clean.4.1,1 -> clean.4.1,□,L clean.4.1,| -> clean.5.1,□,L clean.5.0,1 -> clean.5.0,□,L clean.5.0,| -> clean.6.0,□,L clean.5.1,1 -> clean.5.1,□,L clean.5.1,| -> clean.6.1,□,L clean.6.0,1 -> clean.6.0,□,L clean.6.0,| -> clean.7.0,□,L clean.6.1,1 -> clean.6.1,□,L clean.6.1,| -> clean.7.1,□,L clean.7.0,1 -> clean.7.0,□,L clean.7.0,| -> clean.8.0,□,L clean.7.1,1 -> clean.7.1,□,L clean.7.1,| -> clean.8.1,□,L clean.8.0,1 -> clean.8.0,□,L clean.8.0,| -> clean.9.0,□,L clean.8.1,1 -> clean.8.1,□,L clean.8.1,| -> clean.9.1,□,L clean.9.0,1 -> clean.9.0,□,L clean.9.0,| -> clean.10.0,□,L clean.9.1,1 -> clean.9.1,□,L clean.9.1,| -> clean.10.1,□,L clean.10.0,1 -> clean.10.0,□,L clean.10.0,| -> clean.11.0,□,L clean.10.1,1 -> clean.10.1,□,L clean.10.1,| -> clean.11.1,□,L clean.11.0,1 -> clean.11.0,□,L clean.11.0,| -> clean.12.0,□,L clean.11.1,1 -> clean.11.1,□,L clean.11.1,| -> clean.12.1,□,L clean.12.0,1 -> clean.12.0,□,L clean.12.0,| -> clean.13.0,□,L clean.12.1,1 -> clean.12.1,□,L clean.12.1,| -> clean.13.1,□,L clean.13.0,1 -> clean.13.0,□,L clean.13.0,| -> clean.14.0,□,L clean.13.1,1 -> clean.13.1,□,L clean.13.1,| -> clean.14.1,□,L clean.14.0,1 -> clean.14.0,□,L clean.14.0,| -> clean.return.0,□,L clean.14.1,1 -> clean.14.1,□,L clean.14.1,| -> clean.return.1,□,L clean.return.0,1 -> clean.return.0,1,R clean.return.0,□ -> clean.return.0,□,R clean.return.0,# -> HALT,□,N clean.return.1,1 -> clean.return.1,1,R clean.return.1,□ -> clean.return.1,□,R clean.return.1,# -> clean.find,□,L clean.find,□ -> clean.find,□,L clean.find,1 -> clean.start,1,L clean.start,1 -> clean.start,1,L clean.start,□ -> HALT,□,R"
+        - generic [ref=f15e141]:
+          - strong [ref=f15e142]: 结构化规则表
+          - button "＋ 新增规则" [ref=f15e143] [cursor=pointer]
+        - generic [ref=f15e144]:
+          - generic [ref=f15e145]:
+            - generic [ref=f15e146]: 当前状态
+            - generic [ref=f15e147]: 读取
+            - generic [ref=f15e148]: 下一状态
+            - generic [ref=f15e149]: 写入
+            - generic [ref=f15e150]: 移动
+          - generic [ref=f15e151]:
+            - textbox "规则 1 当前状态" [ref=f15e152]: I.done
+            - textbox "规则 1 读取符号" [ref=f15e153]: "#"
+            - textbox "规则 1 下一状态" [ref=f15e154]: clean.0.0
+            - textbox "规则 1 写入符号" [ref=f15e155]: "#"
+            - combobox "规则 1 移动方向" [ref=f15e156]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 1" [ref=f15e157] [cursor=pointer]: ×
+          - generic [ref=f15e158]:
+            - textbox "规则 2 当前状态" [ref=f15e159]: I.reject
+            - textbox "规则 2 读取符号" [ref=f15e160]: "#"
+            - textbox "规则 2 下一状态" [ref=f15e161]: REJECT
+            - textbox "规则 2 写入符号" [ref=f15e162]: "#"
+            - combobox "规则 2 移动方向" [ref=f15e163]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 2" [ref=f15e164] [cursor=pointer]: ×
+          - generic [ref=f15e165]:
+            - textbox "规则 3 当前状态" [ref=f15e166]: I.p2
+            - textbox "规则 3 读取符号" [ref=f15e167]: "#"
+            - textbox "规则 3 下一状态" [ref=f15e168]: I.p2.seek2
+            - textbox "规则 3 写入符号" [ref=f15e169]: "#"
+            - combobox "规则 3 移动方向" [ref=f15e170]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 3" [ref=f15e171] [cursor=pointer]: ×
+          - generic [ref=f15e172]:
+            - textbox "规则 4 当前状态" [ref=f15e173]: I.p2.seek2
+            - textbox "规则 4 读取符号" [ref=f15e174]: "1"
+            - textbox "规则 4 下一状态" [ref=f15e175]: I.p2.seek2
+            - textbox "规则 4 写入符号" [ref=f15e176]: "1"
+            - combobox "规则 4 移动方向" [ref=f15e177]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 4" [ref=f15e178] [cursor=pointer]: ×
+          - generic [ref=f15e179]:
+            - textbox "规则 5 当前状态" [ref=f15e180]: I.p2.seek2
+            - textbox "规则 5 读取符号" [ref=f15e181]: "|"
+            - textbox "规则 5 下一状态" [ref=f15e182]: I.p2.seek1
+            - textbox "规则 5 写入符号" [ref=f15e183]: "|"
+            - combobox "规则 5 移动方向" [ref=f15e184]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 5" [ref=f15e185] [cursor=pointer]: ×
+          - generic [ref=f15e186]:
+            - textbox "规则 6 当前状态" [ref=f15e187]: I.p2.seek1
+            - textbox "规则 6 读取符号" [ref=f15e188]: "1"
+            - textbox "规则 6 下一状态" [ref=f15e189]: I.p2.seek1
+            - textbox "规则 6 写入符号" [ref=f15e190]: "1"
+            - combobox "规则 6 移动方向" [ref=f15e191]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 6" [ref=f15e192] [cursor=pointer]: ×
+          - generic [ref=f15e193]:
+            - textbox "规则 7 当前状态" [ref=f15e194]: I.p2.seek1
+            - textbox "规则 7 读取符号" [ref=f15e195]: "|"
+            - textbox "规则 7 下一状态" [ref=f15e196]: I.p2.op
+            - textbox "规则 7 写入符号" [ref=f15e197]: "|"
+            - combobox "规则 7 移动方向" [ref=f15e198]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 7" [ref=f15e199] [cursor=pointer]: ×
+          - generic [ref=f15e200]:
+            - textbox "规则 8 当前状态" [ref=f15e201]: I.p2.op
+            - textbox "规则 8 读取符号" [ref=f15e202]: "1"
+            - textbox "规则 8 下一状态" [ref=f15e203]: I.p2.op
+            - textbox "规则 8 写入符号" [ref=f15e204]: "1"
+            - combobox "规则 8 移动方向" [ref=f15e205]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 8" [ref=f15e206] [cursor=pointer]: ×
+          - generic [ref=f15e207]:
+            - textbox "规则 9 当前状态" [ref=f15e208]: I.p2.op
+            - textbox "规则 9 读取符号" [ref=f15e209]: "|"
+            - textbox "规则 9 下一状态" [ref=f15e210]: I.p2.carryBar
+            - textbox "规则 9 写入符号" [ref=f15e211]: "1"
+            - combobox "规则 9 移动方向" [ref=f15e212]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 9" [ref=f15e213] [cursor=pointer]: ×
+          - generic [ref=f15e214]:
+            - textbox "规则 10 当前状态" [ref=f15e215]: I.p2.carryOne
+            - textbox "规则 10 读取符号" [ref=f15e216]: "1"
+            - textbox "规则 10 下一状态" [ref=f15e217]: I.p2.carryOne
+            - textbox "规则 10 写入符号" [ref=f15e218]: "1"
+            - combobox "规则 10 移动方向" [ref=f15e219]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 10" [ref=f15e220] [cursor=pointer]: ×
+          - generic [ref=f15e221]:
+            - textbox "规则 11 当前状态" [ref=f15e222]: I.p2.carryOne
+            - textbox "规则 11 读取符号" [ref=f15e223]: "|"
+            - textbox "规则 11 下一状态" [ref=f15e224]: I.p2.carryBar
+            - textbox "规则 11 写入符号" [ref=f15e225]: "1"
+            - combobox "规则 11 移动方向" [ref=f15e226]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 11" [ref=f15e227] [cursor=pointer]: ×
+          - generic [ref=f15e228]:
+            - textbox "规则 12 当前状态" [ref=f15e229]: return.0
+            - textbox "规则 12 读取符号" [ref=f15e230]: "1"
+            - textbox "规则 12 下一状态" [ref=f15e231]: return.0
+            - textbox "规则 12 写入符号" [ref=f15e232]: "1"
+            - combobox "规则 12 移动方向" [ref=f15e233]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 12" [ref=f15e234] [cursor=pointer]: ×
+          - generic [ref=f15e235]:
+            - textbox "规则 13 当前状态" [ref=f15e236]: return.0
+            - textbox "规则 13 读取符号" [ref=f15e237]: "|"
+            - textbox "规则 13 下一状态" [ref=f15e238]: return.0
+            - textbox "规则 13 写入符号" [ref=f15e239]: "|"
+            - combobox "规则 13 移动方向" [ref=f15e240]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 13" [ref=f15e241] [cursor=pointer]: ×
+          - generic [ref=f15e242]:
+            - textbox "规则 14 当前状态" [ref=f15e243]: return.0
+            - textbox "规则 14 读取符号" [ref=f15e244]: □
+            - textbox "规则 14 下一状态" [ref=f15e245]: return.0
+            - textbox "规则 14 写入符号" [ref=f15e246]: □
+            - combobox "规则 14 移动方向" [ref=f15e247]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 14" [ref=f15e248] [cursor=pointer]: ×
+          - generic [ref=f15e249]:
+            - textbox "规则 15 当前状态" [ref=f15e250]: return.0
+            - textbox "规则 15 读取符号" [ref=f15e251]: "#"
+            - textbox "规则 15 下一状态" [ref=f15e252]: I.p1
+            - textbox "规则 15 写入符号" [ref=f15e253]: "#"
+            - combobox "规则 15 移动方向" [ref=f15e254]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 15" [ref=f15e255] [cursor=pointer]: ×
+          - generic [ref=f15e256]:
+            - textbox "规则 16 当前状态" [ref=f15e257]: I.p2.carryOne
+            - textbox "规则 16 读取符号" [ref=f15e258]: □
+            - textbox "规则 16 下一状态" [ref=f15e259]: return.0
+            - textbox "规则 16 写入符号" [ref=f15e260]: "1"
+            - combobox "规则 16 移动方向" [ref=f15e261]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 16" [ref=f15e262] [cursor=pointer]: ×
+          - generic [ref=f15e263]:
+            - textbox "规则 17 当前状态" [ref=f15e264]: I.p2.carryBar
+            - textbox "规则 17 读取符号" [ref=f15e265]: "1"
+            - textbox "规则 17 下一状态" [ref=f15e266]: I.p2.carryOne
+            - textbox "规则 17 写入符号" [ref=f15e267]: "|"
+            - combobox "规则 17 移动方向" [ref=f15e268]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 17" [ref=f15e269] [cursor=pointer]: ×
+          - generic [ref=f15e270]:
+            - textbox "规则 18 当前状态" [ref=f15e271]: I.p2.carryBar
+            - textbox "规则 18 读取符号" [ref=f15e272]: "|"
+            - textbox "规则 18 下一状态" [ref=f15e273]: I.p2.carryBar
+            - textbox "规则 18 写入符号" [ref=f15e274]: "|"
+            - combobox "规则 18 移动方向" [ref=f15e275]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 18" [ref=f15e276] [cursor=pointer]: ×
+          - generic [ref=f15e277]:
+            - textbox "规则 19 当前状态" [ref=f15e278]: I.p2.carryBar
+            - textbox "规则 19 读取符号" [ref=f15e279]: □
+            - textbox "规则 19 下一状态" [ref=f15e280]: return.0
+            - textbox "规则 19 写入符号" [ref=f15e281]: "|"
+            - combobox "规则 19 移动方向" [ref=f15e282]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 19" [ref=f15e283] [cursor=pointer]: ×
+          - generic [ref=f15e284]:
+            - textbox "规则 20 当前状态" [ref=f15e285]: I.p1
+            - textbox "规则 20 读取符号" [ref=f15e286]: "#"
+            - textbox "规则 20 下一状态" [ref=f15e287]: I.p1.seek5
+            - textbox "规则 20 写入符号" [ref=f15e288]: "#"
+            - combobox "规则 20 移动方向" [ref=f15e289]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 20" [ref=f15e290] [cursor=pointer]: ×
+          - generic [ref=f15e291]:
+            - textbox "规则 21 当前状态" [ref=f15e292]: I.p1.seek5
+            - textbox "规则 21 读取符号" [ref=f15e293]: "1"
+            - textbox "规则 21 下一状态" [ref=f15e294]: I.p1.seek5
+            - textbox "规则 21 写入符号" [ref=f15e295]: "1"
+            - combobox "规则 21 移动方向" [ref=f15e296]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 21" [ref=f15e297] [cursor=pointer]: ×
+          - generic [ref=f15e298]:
+            - textbox "规则 22 当前状态" [ref=f15e299]: I.p1.seek5
+            - textbox "规则 22 读取符号" [ref=f15e300]: "|"
+            - textbox "规则 22 下一状态" [ref=f15e301]: I.p1.seek4
+            - textbox "规则 22 写入符号" [ref=f15e302]: "|"
+            - combobox "规则 22 移动方向" [ref=f15e303]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 22" [ref=f15e304] [cursor=pointer]: ×
+          - generic [ref=f15e305]:
+            - textbox "规则 23 当前状态" [ref=f15e306]: I.p1.seek4
+            - textbox "规则 23 读取符号" [ref=f15e307]: "1"
+            - textbox "规则 23 下一状态" [ref=f15e308]: I.p1.seek4
+            - textbox "规则 23 写入符号" [ref=f15e309]: "1"
+            - combobox "规则 23 移动方向" [ref=f15e310]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 23" [ref=f15e311] [cursor=pointer]: ×
+          - generic [ref=f15e312]:
+            - textbox "规则 24 当前状态" [ref=f15e313]: I.p1.seek4
+            - textbox "规则 24 读取符号" [ref=f15e314]: "|"
+            - textbox "规则 24 下一状态" [ref=f15e315]: I.p1.seek3
+            - textbox "规则 24 写入符号" [ref=f15e316]: "|"
+            - combobox "规则 24 移动方向" [ref=f15e317]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 24" [ref=f15e318] [cursor=pointer]: ×
+          - generic [ref=f15e319]:
+            - textbox "规则 25 当前状态" [ref=f15e320]: I.p1.seek3
+            - textbox "规则 25 读取符号" [ref=f15e321]: "1"
+            - textbox "规则 25 下一状态" [ref=f15e322]: I.p1.seek3
+            - textbox "规则 25 写入符号" [ref=f15e323]: "1"
+            - combobox "规则 25 移动方向" [ref=f15e324]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 25" [ref=f15e325] [cursor=pointer]: ×
+          - generic [ref=f15e326]:
+            - textbox "规则 26 当前状态" [ref=f15e327]: I.p1.seek3
+            - textbox "规则 26 读取符号" [ref=f15e328]: "|"
+            - textbox "规则 26 下一状态" [ref=f15e329]: I.p1.seek2
+            - textbox "规则 26 写入符号" [ref=f15e330]: "|"
+            - combobox "规则 26 移动方向" [ref=f15e331]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 26" [ref=f15e332] [cursor=pointer]: ×
+          - generic [ref=f15e333]:
+            - textbox "规则 27 当前状态" [ref=f15e334]: I.p1.seek2
+            - textbox "规则 27 读取符号" [ref=f15e335]: "1"
+            - textbox "规则 27 下一状态" [ref=f15e336]: I.p1.seek2
+            - textbox "规则 27 写入符号" [ref=f15e337]: "1"
+            - combobox "规则 27 移动方向" [ref=f15e338]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 27" [ref=f15e339] [cursor=pointer]: ×
+          - generic [ref=f15e340]:
+            - textbox "规则 28 当前状态" [ref=f15e341]: I.p1.seek2
+            - textbox "规则 28 读取符号" [ref=f15e342]: "|"
+            - textbox "规则 28 下一状态" [ref=f15e343]: I.p1.seek1
+            - textbox "规则 28 写入符号" [ref=f15e344]: "|"
+            - combobox "规则 28 移动方向" [ref=f15e345]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 28" [ref=f15e346] [cursor=pointer]: ×
+          - generic [ref=f15e347]:
+            - textbox "规则 29 当前状态" [ref=f15e348]: I.p1.seek1
+            - textbox "规则 29 读取符号" [ref=f15e349]: "1"
+            - textbox "规则 29 下一状态" [ref=f15e350]: I.p1.seek1
+            - textbox "规则 29 写入符号" [ref=f15e351]: "1"
+            - combobox "规则 29 移动方向" [ref=f15e352]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 29" [ref=f15e353] [cursor=pointer]: ×
+          - generic [ref=f15e354]:
+            - textbox "规则 30 当前状态" [ref=f15e355]: I.p1.seek1
+            - textbox "规则 30 读取符号" [ref=f15e356]: "|"
+            - textbox "规则 30 下一状态" [ref=f15e357]: I.p1.op
+            - textbox "规则 30 写入符号" [ref=f15e358]: "|"
+            - combobox "规则 30 移动方向" [ref=f15e359]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 30" [ref=f15e360] [cursor=pointer]: ×
+          - generic [ref=f15e361]:
+            - textbox "规则 31 当前状态" [ref=f15e362]: return.1
+            - textbox "规则 31 读取符号" [ref=f15e363]: "1"
+            - textbox "规则 31 下一状态" [ref=f15e364]: return.1
+            - textbox "规则 31 写入符号" [ref=f15e365]: "1"
+            - combobox "规则 31 移动方向" [ref=f15e366]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 31" [ref=f15e367] [cursor=pointer]: ×
+          - generic [ref=f15e368]:
+            - textbox "规则 32 当前状态" [ref=f15e369]: return.1
+            - textbox "规则 32 读取符号" [ref=f15e370]: "|"
+            - textbox "规则 32 下一状态" [ref=f15e371]: return.1
+            - textbox "规则 32 写入符号" [ref=f15e372]: "|"
+            - combobox "规则 32 移动方向" [ref=f15e373]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 32" [ref=f15e374] [cursor=pointer]: ×
+          - generic [ref=f15e375]:
+            - textbox "规则 33 当前状态" [ref=f15e376]: return.1
+            - textbox "规则 33 读取符号" [ref=f15e377]: □
+            - textbox "规则 33 下一状态" [ref=f15e378]: return.1
+            - textbox "规则 33 写入符号" [ref=f15e379]: □
+            - combobox "规则 33 移动方向" [ref=f15e380]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 33" [ref=f15e381] [cursor=pointer]: ×
+          - generic [ref=f15e382]:
+            - textbox "规则 34 当前状态" [ref=f15e383]: return.1
+            - textbox "规则 34 读取符号" [ref=f15e384]: "#"
+            - textbox "规则 34 下一状态" [ref=f15e385]: I.p0
+            - textbox "规则 34 写入符号" [ref=f15e386]: "#"
+            - combobox "规则 34 移动方向" [ref=f15e387]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 34" [ref=f15e388] [cursor=pointer]: ×
+          - generic [ref=f15e389]:
+            - textbox "规则 35 当前状态" [ref=f15e390]: I.p1.op
+            - textbox "规则 35 读取符号" [ref=f15e391]: "|"
+            - textbox "规则 35 下一状态" [ref=f15e392]: return.1
+            - textbox "规则 35 写入符号" [ref=f15e393]: "|"
+            - combobox "规则 35 移动方向" [ref=f15e394]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 35" [ref=f15e395] [cursor=pointer]: ×
+          - generic [ref=f15e396]:
+            - textbox "规则 36 当前状态" [ref=f15e397]: I.p1.op
+            - textbox "规则 36 读取符号" [ref=f15e398]: "1"
+            - textbox "规则 36 下一状态" [ref=f15e399]: I.p1.take
+            - textbox "规则 36 写入符号" [ref=f15e400]: □
+            - combobox "规则 36 移动方向" [ref=f15e401]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 36" [ref=f15e402] [cursor=pointer]: ×
+          - generic [ref=f15e403]:
+            - textbox "规则 37 当前状态" [ref=f15e404]: I.p1.take
+            - textbox "规则 37 读取符号" [ref=f15e405]: "1"
+            - textbox "规则 37 下一状态" [ref=f15e406]: I.p1.putOne
+            - textbox "规则 37 写入符号" [ref=f15e407]: □
+            - combobox "规则 37 移动方向" [ref=f15e408]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 37" [ref=f15e409] [cursor=pointer]: ×
+          - generic [ref=f15e410]:
+            - textbox "规则 38 当前状态" [ref=f15e411]: I.p1.putOne
+            - textbox "规则 38 读取符号" [ref=f15e412]: □
+            - textbox "规则 38 下一状态" [ref=f15e413]: I.p1.skipHole
+            - textbox "规则 38 写入符号" [ref=f15e414]: "1"
+            - combobox "规则 38 移动方向" [ref=f15e415]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 38" [ref=f15e416] [cursor=pointer]: ×
+          - generic [ref=f15e417]:
+            - textbox "规则 39 当前状态" [ref=f15e418]: I.p1.take
+            - textbox "规则 39 读取符号" [ref=f15e419]: "|"
+            - textbox "规则 39 下一状态" [ref=f15e420]: I.p1.putBar
+            - textbox "规则 39 写入符号" [ref=f15e421]: □
+            - combobox "规则 39 移动方向" [ref=f15e422]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 39" [ref=f15e423] [cursor=pointer]: ×
+          - generic [ref=f15e424]:
+            - textbox "规则 40 当前状态" [ref=f15e425]: I.p1.putBar
+            - textbox "规则 40 读取符号" [ref=f15e426]: □
+            - textbox "规则 40 下一状态" [ref=f15e427]: I.p1.skipHole
+            - textbox "规则 40 写入符号" [ref=f15e428]: "|"
+            - combobox "规则 40 移动方向" [ref=f15e429]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 40" [ref=f15e430] [cursor=pointer]: ×
+          - generic [ref=f15e431]:
+            - textbox "规则 41 当前状态" [ref=f15e432]: I.p1.skipHole
+            - textbox "规则 41 读取符号" [ref=f15e433]: □
+            - textbox "规则 41 下一状态" [ref=f15e434]: I.p1.take
+            - textbox "规则 41 写入符号" [ref=f15e435]: □
+            - combobox "规则 41 移动方向" [ref=f15e436]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 41" [ref=f15e437] [cursor=pointer]: ×
+          - generic [ref=f15e438]:
+            - textbox "规则 42 当前状态" [ref=f15e439]: return.2
+            - textbox "规则 42 读取符号" [ref=f15e440]: "1"
+            - textbox "规则 42 下一状态" [ref=f15e441]: return.2
+            - textbox "规则 42 写入符号" [ref=f15e442]: "1"
+            - combobox "规则 42 移动方向" [ref=f15e443]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 42" [ref=f15e444] [cursor=pointer]: ×
+          - generic [ref=f15e445]:
+            - textbox "规则 43 当前状态" [ref=f15e446]: return.2
+            - textbox "规则 43 读取符号" [ref=f15e447]: "|"
+            - textbox "规则 43 下一状态" [ref=f15e448]: return.2
+            - textbox "规则 43 写入符号" [ref=f15e449]: "|"
+            - combobox "规则 43 移动方向" [ref=f15e450]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 43" [ref=f15e451] [cursor=pointer]: ×
+          - generic [ref=f15e452]:
+            - textbox "规则 44 当前状态" [ref=f15e453]: return.2
+            - textbox "规则 44 读取符号" [ref=f15e454]: □
+            - textbox "规则 44 下一状态" [ref=f15e455]: return.2
+            - textbox "规则 44 写入符号" [ref=f15e456]: □
+            - combobox "规则 44 移动方向" [ref=f15e457]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 44" [ref=f15e458] [cursor=pointer]: ×
+          - generic [ref=f15e459]:
+            - textbox "规则 45 当前状态" [ref=f15e460]: return.2
+            - textbox "规则 45 读取符号" [ref=f15e461]: "#"
+            - textbox "规则 45 下一状态" [ref=f15e462]: I.p2
+            - textbox "规则 45 写入符号" [ref=f15e463]: "#"
+            - combobox "规则 45 移动方向" [ref=f15e464]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 45" [ref=f15e465] [cursor=pointer]: ×
+          - generic [ref=f15e466]:
+            - textbox "规则 46 当前状态" [ref=f15e467]: I.p1.take
+            - textbox "规则 46 读取符号" [ref=f15e468]: □
+            - textbox "规则 46 下一状态" [ref=f15e469]: return.2
+            - textbox "规则 46 写入符号" [ref=f15e470]: □
+            - combobox "规则 46 移动方向" [ref=f15e471]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 46" [ref=f15e472] [cursor=pointer]: ×
+          - generic [ref=f15e473]:
+            - textbox "规则 47 当前状态" [ref=f15e474]: I.p3
+            - textbox "规则 47 读取符号" [ref=f15e475]: "#"
+            - textbox "规则 47 下一状态" [ref=f15e476]: I.p3.seek2
+            - textbox "规则 47 写入符号" [ref=f15e477]: "#"
+            - combobox "规则 47 移动方向" [ref=f15e478]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 47" [ref=f15e479] [cursor=pointer]: ×
+          - generic [ref=f15e480]:
+            - textbox "规则 48 当前状态" [ref=f15e481]: I.p3.seek2
+            - textbox "规则 48 读取符号" [ref=f15e482]: "1"
+            - textbox "规则 48 下一状态" [ref=f15e483]: I.p3.seek2
+            - textbox "规则 48 写入符号" [ref=f15e484]: "1"
+            - combobox "规则 48 移动方向" [ref=f15e485]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 48" [ref=f15e486] [cursor=pointer]: ×
+          - generic [ref=f15e487]:
+            - textbox "规则 49 当前状态" [ref=f15e488]: I.p3.seek2
+            - textbox "规则 49 读取符号" [ref=f15e489]: "|"
+            - textbox "规则 49 下一状态" [ref=f15e490]: I.p3.seek1
+            - textbox "规则 49 写入符号" [ref=f15e491]: "|"
+            - combobox "规则 49 移动方向" [ref=f15e492]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 49" [ref=f15e493] [cursor=pointer]: ×
+          - generic [ref=f15e494]:
+            - textbox "规则 50 当前状态" [ref=f15e495]: I.p3.seek1
+            - textbox "规则 50 读取符号" [ref=f15e496]: "1"
+            - textbox "规则 50 下一状态" [ref=f15e497]: I.p3.seek1
+            - textbox "规则 50 写入符号" [ref=f15e498]: "1"
+            - combobox "规则 50 移动方向" [ref=f15e499]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 50" [ref=f15e500] [cursor=pointer]: ×
+          - generic [ref=f15e501]:
+            - textbox "规则 51 当前状态" [ref=f15e502]: I.p3.seek1
+            - textbox "规则 51 读取符号" [ref=f15e503]: "|"
+            - textbox "规则 51 下一状态" [ref=f15e504]: I.p3.op
+            - textbox "规则 51 写入符号" [ref=f15e505]: "|"
+            - combobox "规则 51 移动方向" [ref=f15e506]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 51" [ref=f15e507] [cursor=pointer]: ×
+          - generic [ref=f15e508]:
+            - textbox "规则 52 当前状态" [ref=f15e509]: I.p3.op
+            - textbox "规则 52 读取符号" [ref=f15e510]: "|"
+            - textbox "规则 52 下一状态" [ref=f15e511]: return.0
+            - textbox "规则 52 写入符号" [ref=f15e512]: "|"
+            - combobox "规则 52 移动方向" [ref=f15e513]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 52" [ref=f15e514] [cursor=pointer]: ×
+          - generic [ref=f15e515]:
+            - textbox "规则 53 当前状态" [ref=f15e516]: I.p3.op
+            - textbox "规则 53 读取符号" [ref=f15e517]: "1"
+            - textbox "规则 53 下一状态" [ref=f15e518]: I.p3.take
+            - textbox "规则 53 写入符号" [ref=f15e519]: □
+            - combobox "规则 53 移动方向" [ref=f15e520]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 53" [ref=f15e521] [cursor=pointer]: ×
+          - generic [ref=f15e522]:
+            - textbox "规则 54 当前状态" [ref=f15e523]: I.p3.take
+            - textbox "规则 54 读取符号" [ref=f15e524]: "1"
+            - textbox "规则 54 下一状态" [ref=f15e525]: I.p3.putOne
+            - textbox "规则 54 写入符号" [ref=f15e526]: □
+            - combobox "规则 54 移动方向" [ref=f15e527]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 54" [ref=f15e528] [cursor=pointer]: ×
+          - generic [ref=f15e529]:
+            - textbox "规则 55 当前状态" [ref=f15e530]: I.p3.putOne
+            - textbox "规则 55 读取符号" [ref=f15e531]: □
+            - textbox "规则 55 下一状态" [ref=f15e532]: I.p3.skipHole
+            - textbox "规则 55 写入符号" [ref=f15e533]: "1"
+            - combobox "规则 55 移动方向" [ref=f15e534]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 55" [ref=f15e535] [cursor=pointer]: ×
+          - generic [ref=f15e536]:
+            - textbox "规则 56 当前状态" [ref=f15e537]: I.p3.take
+            - textbox "规则 56 读取符号" [ref=f15e538]: "|"
+            - textbox "规则 56 下一状态" [ref=f15e539]: I.p3.putBar
+            - textbox "规则 56 写入符号" [ref=f15e540]: □
+            - combobox "规则 56 移动方向" [ref=f15e541]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 56" [ref=f15e542] [cursor=pointer]: ×
+          - generic [ref=f15e543]:
+            - textbox "规则 57 当前状态" [ref=f15e544]: I.p3.putBar
+            - textbox "规则 57 读取符号" [ref=f15e545]: □
+            - textbox "规则 57 下一状态" [ref=f15e546]: I.p3.skipHole
+            - textbox "规则 57 写入符号" [ref=f15e547]: "|"
+            - combobox "规则 57 移动方向" [ref=f15e548]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 57" [ref=f15e549] [cursor=pointer]: ×
+          - generic [ref=f15e550]:
+            - textbox "规则 58 当前状态" [ref=f15e551]: I.p3.skipHole
+            - textbox "规则 58 读取符号" [ref=f15e552]: □
+            - textbox "规则 58 下一状态" [ref=f15e553]: I.p3.take
+            - textbox "规则 58 写入符号" [ref=f15e554]: □
+            - combobox "规则 58 移动方向" [ref=f15e555]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 58" [ref=f15e556] [cursor=pointer]: ×
+          - generic [ref=f15e557]:
+            - textbox "规则 59 当前状态" [ref=f15e558]: return.3
+            - textbox "规则 59 读取符号" [ref=f15e559]: "1"
+            - textbox "规则 59 下一状态" [ref=f15e560]: return.3
+            - textbox "规则 59 写入符号" [ref=f15e561]: "1"
+            - combobox "规则 59 移动方向" [ref=f15e562]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 59" [ref=f15e563] [cursor=pointer]: ×
+          - generic [ref=f15e564]:
+            - textbox "规则 60 当前状态" [ref=f15e565]: return.3
+            - textbox "规则 60 读取符号" [ref=f15e566]: "|"
+            - textbox "规则 60 下一状态" [ref=f15e567]: return.3
+            - textbox "规则 60 写入符号" [ref=f15e568]: "|"
+            - combobox "规则 60 移动方向" [ref=f15e569]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 60" [ref=f15e570] [cursor=pointer]: ×
+          - generic [ref=f15e571]:
+            - textbox "规则 61 当前状态" [ref=f15e572]: return.3
+            - textbox "规则 61 读取符号" [ref=f15e573]: □
+            - textbox "规则 61 下一状态" [ref=f15e574]: return.3
+            - textbox "规则 61 写入符号" [ref=f15e575]: □
+            - combobox "规则 61 移动方向" [ref=f15e576]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 61" [ref=f15e577] [cursor=pointer]: ×
+          - generic [ref=f15e578]:
+            - textbox "规则 62 当前状态" [ref=f15e579]: return.3
+            - textbox "规则 62 读取符号" [ref=f15e580]: "#"
+            - textbox "规则 62 下一状态" [ref=f15e581]: I.p3
+            - textbox "规则 62 写入符号" [ref=f15e582]: "#"
+            - combobox "规则 62 移动方向" [ref=f15e583]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 62" [ref=f15e584] [cursor=pointer]: ×
+          - generic [ref=f15e585]:
+            - textbox "规则 63 当前状态" [ref=f15e586]: I.p3.take
+            - textbox "规则 63 读取符号" [ref=f15e587]: □
+            - textbox "规则 63 下一状态" [ref=f15e588]: return.3
+            - textbox "规则 63 写入符号" [ref=f15e589]: □
+            - combobox "规则 63 移动方向" [ref=f15e590]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 63" [ref=f15e591] [cursor=pointer]: ×
+          - generic [ref=f15e592]:
+            - textbox "规则 64 当前状态" [ref=f15e593]: I.p6
+            - textbox "规则 64 读取符号" [ref=f15e594]: "#"
+            - textbox "规则 64 下一状态" [ref=f15e595]: I.p6.seek5
+            - textbox "规则 64 写入符号" [ref=f15e596]: "#"
+            - combobox "规则 64 移动方向" [ref=f15e597]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 64" [ref=f15e598] [cursor=pointer]: ×
+          - generic [ref=f15e599]:
+            - textbox "规则 65 当前状态" [ref=f15e600]: I.p6.seek5
+            - textbox "规则 65 读取符号" [ref=f15e601]: "1"
+            - textbox "规则 65 下一状态" [ref=f15e602]: I.p6.seek5
+            - textbox "规则 65 写入符号" [ref=f15e603]: "1"
+            - combobox "规则 65 移动方向" [ref=f15e604]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 65" [ref=f15e605] [cursor=pointer]: ×
+          - generic [ref=f15e606]:
+            - textbox "规则 66 当前状态" [ref=f15e607]: I.p6.seek5
+            - textbox "规则 66 读取符号" [ref=f15e608]: "|"
+            - textbox "规则 66 下一状态" [ref=f15e609]: I.p6.seek4
+            - textbox "规则 66 写入符号" [ref=f15e610]: "|"
+            - combobox "规则 66 移动方向" [ref=f15e611]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 66" [ref=f15e612] [cursor=pointer]: ×
+          - generic [ref=f15e613]:
+            - textbox "规则 67 当前状态" [ref=f15e614]: I.p6.seek4
+            - textbox "规则 67 读取符号" [ref=f15e615]: "1"
+            - textbox "规则 67 下一状态" [ref=f15e616]: I.p6.seek4
+            - textbox "规则 67 写入符号" [ref=f15e617]: "1"
+            - combobox "规则 67 移动方向" [ref=f15e618]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 67" [ref=f15e619] [cursor=pointer]: ×
+          - generic [ref=f15e620]:
+            - textbox "规则 68 当前状态" [ref=f15e621]: I.p6.seek4
+            - textbox "规则 68 读取符号" [ref=f15e622]: "|"
+            - textbox "规则 68 下一状态" [ref=f15e623]: I.p6.seek3
+            - textbox "规则 68 写入符号" [ref=f15e624]: "|"
+            - combobox "规则 68 移动方向" [ref=f15e625]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 68" [ref=f15e626] [cursor=pointer]: ×
+          - generic [ref=f15e627]:
+            - textbox "规则 69 当前状态" [ref=f15e628]: I.p6.seek3
+            - textbox "规则 69 读取符号" [ref=f15e629]: "1"
+            - textbox "规则 69 下一状态" [ref=f15e630]: I.p6.seek3
+            - textbox "规则 69 写入符号" [ref=f15e631]: "1"
+            - combobox "规则 69 移动方向" [ref=f15e632]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 69" [ref=f15e633] [cursor=pointer]: ×
+          - generic [ref=f15e634]:
+            - textbox "规则 70 当前状态" [ref=f15e635]: I.p6.seek3
+            - textbox "规则 70 读取符号" [ref=f15e636]: "|"
+            - textbox "规则 70 下一状态" [ref=f15e637]: I.p6.seek2
+            - textbox "规则 70 写入符号" [ref=f15e638]: "|"
+            - combobox "规则 70 移动方向" [ref=f15e639]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 70" [ref=f15e640] [cursor=pointer]: ×
+          - generic [ref=f15e641]:
+            - textbox "规则 71 当前状态" [ref=f15e642]: I.p6.seek2
+            - textbox "规则 71 读取符号" [ref=f15e643]: "1"
+            - textbox "规则 71 下一状态" [ref=f15e644]: I.p6.seek2
+            - textbox "规则 71 写入符号" [ref=f15e645]: "1"
+            - combobox "规则 71 移动方向" [ref=f15e646]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 71" [ref=f15e647] [cursor=pointer]: ×
+          - generic [ref=f15e648]:
+            - textbox "规则 72 当前状态" [ref=f15e649]: I.p6.seek2
+            - textbox "规则 72 读取符号" [ref=f15e650]: "|"
+            - textbox "规则 72 下一状态" [ref=f15e651]: I.p6.seek1
+            - textbox "规则 72 写入符号" [ref=f15e652]: "|"
+            - combobox "规则 72 移动方向" [ref=f15e653]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 72" [ref=f15e654] [cursor=pointer]: ×
+          - generic [ref=f15e655]:
+            - textbox "规则 73 当前状态" [ref=f15e656]: I.p6.seek1
+            - textbox "规则 73 读取符号" [ref=f15e657]: "1"
+            - textbox "规则 73 下一状态" [ref=f15e658]: I.p6.seek1
+            - textbox "规则 73 写入符号" [ref=f15e659]: "1"
+            - combobox "规则 73 移动方向" [ref=f15e660]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 73" [ref=f15e661] [cursor=pointer]: ×
+          - generic [ref=f15e662]:
+            - textbox "规则 74 当前状态" [ref=f15e663]: I.p6.seek1
+            - textbox "规则 74 读取符号" [ref=f15e664]: "|"
+            - textbox "规则 74 下一状态" [ref=f15e665]: I.p6.op
+            - textbox "规则 74 写入符号" [ref=f15e666]: "|"
+            - combobox "规则 74 移动方向" [ref=f15e667]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 74" [ref=f15e668] [cursor=pointer]: ×
+          - generic [ref=f15e669]:
+            - textbox "规则 75 当前状态" [ref=f15e670]: I.p6.op
+            - textbox "规则 75 读取符号" [ref=f15e671]: "1"
+            - textbox "规则 75 下一状态" [ref=f15e672]: I.p6.op
+            - textbox "规则 75 写入符号" [ref=f15e673]: "1"
+            - combobox "规则 75 移动方向" [ref=f15e674]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 75" [ref=f15e675] [cursor=pointer]: ×
+          - generic [ref=f15e676]:
+            - textbox "规则 76 当前状态" [ref=f15e677]: I.p6.op
+            - textbox "规则 76 读取符号" [ref=f15e678]: "|"
+            - textbox "规则 76 下一状态" [ref=f15e679]: I.p6.carryBar
+            - textbox "规则 76 写入符号" [ref=f15e680]: "1"
+            - combobox "规则 76 移动方向" [ref=f15e681]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 76" [ref=f15e682] [cursor=pointer]: ×
+          - generic [ref=f15e683]:
+            - textbox "规则 77 当前状态" [ref=f15e684]: I.p6.carryOne
+            - textbox "规则 77 读取符号" [ref=f15e685]: "1"
+            - textbox "规则 77 下一状态" [ref=f15e686]: I.p6.carryOne
+            - textbox "规则 77 写入符号" [ref=f15e687]: "1"
+            - combobox "规则 77 移动方向" [ref=f15e688]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 77" [ref=f15e689] [cursor=pointer]: ×
+          - generic [ref=f15e690]:
+            - textbox "规则 78 当前状态" [ref=f15e691]: I.p6.carryOne
+            - textbox "规则 78 读取符号" [ref=f15e692]: "|"
+            - textbox "规则 78 下一状态" [ref=f15e693]: I.p6.carryBar
+            - textbox "规则 78 写入符号" [ref=f15e694]: "1"
+            - combobox "规则 78 移动方向" [ref=f15e695]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 78" [ref=f15e696] [cursor=pointer]: ×
+          - generic [ref=f15e697]:
+            - textbox "规则 79 当前状态" [ref=f15e698]: return.4
+            - textbox "规则 79 读取符号" [ref=f15e699]: "1"
+            - textbox "规则 79 下一状态" [ref=f15e700]: return.4
+            - textbox "规则 79 写入符号" [ref=f15e701]: "1"
+            - combobox "规则 79 移动方向" [ref=f15e702]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 79" [ref=f15e703] [cursor=pointer]: ×
+          - generic [ref=f15e704]:
+            - textbox "规则 80 当前状态" [ref=f15e705]: return.4
+            - textbox "规则 80 读取符号" [ref=f15e706]: "|"
+            - textbox "规则 80 下一状态" [ref=f15e707]: return.4
+            - textbox "规则 80 写入符号" [ref=f15e708]: "|"
+            - combobox "规则 80 移动方向" [ref=f15e709]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 80" [ref=f15e710] [cursor=pointer]: ×
+          - generic [ref=f15e711]:
+            - textbox "规则 81 当前状态" [ref=f15e712]: return.4
+            - textbox "规则 81 读取符号" [ref=f15e713]: □
+            - textbox "规则 81 下一状态" [ref=f15e714]: return.4
+            - textbox "规则 81 写入符号" [ref=f15e715]: □
+            - combobox "规则 81 移动方向" [ref=f15e716]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 81" [ref=f15e717] [cursor=pointer]: ×
+          - generic [ref=f15e718]:
+            - textbox "规则 82 当前状态" [ref=f15e719]: return.4
+            - textbox "规则 82 读取符号" [ref=f15e720]: "#"
+            - textbox "规则 82 下一状态" [ref=f15e721]: I.p5
+            - textbox "规则 82 写入符号" [ref=f15e722]: "#"
+            - combobox "规则 82 移动方向" [ref=f15e723]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 82" [ref=f15e724] [cursor=pointer]: ×
+          - generic [ref=f15e725]:
+            - textbox "规则 83 当前状态" [ref=f15e726]: I.p6.carryOne
+            - textbox "规则 83 读取符号" [ref=f15e727]: □
+            - textbox "规则 83 下一状态" [ref=f15e728]: return.4
+            - textbox "规则 83 写入符号" [ref=f15e729]: "1"
+            - combobox "规则 83 移动方向" [ref=f15e730]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 83" [ref=f15e731] [cursor=pointer]: ×
+          - generic [ref=f15e732]:
+            - textbox "规则 84 当前状态" [ref=f15e733]: I.p6.carryBar
+            - textbox "规则 84 读取符号" [ref=f15e734]: "1"
+            - textbox "规则 84 下一状态" [ref=f15e735]: I.p6.carryOne
+            - textbox "规则 84 写入符号" [ref=f15e736]: "|"
+            - combobox "规则 84 移动方向" [ref=f15e737]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 84" [ref=f15e738] [cursor=pointer]: ×
+          - generic [ref=f15e739]:
+            - textbox "规则 85 当前状态" [ref=f15e740]: I.p6.carryBar
+            - textbox "规则 85 读取符号" [ref=f15e741]: "|"
+            - textbox "规则 85 下一状态" [ref=f15e742]: I.p6.carryBar
+            - textbox "规则 85 写入符号" [ref=f15e743]: "|"
+            - combobox "规则 85 移动方向" [ref=f15e744]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 85" [ref=f15e745] [cursor=pointer]: ×
+          - generic [ref=f15e746]:
+            - textbox "规则 86 当前状态" [ref=f15e747]: I.p6.carryBar
+            - textbox "规则 86 读取符号" [ref=f15e748]: □
+            - textbox "规则 86 下一状态" [ref=f15e749]: return.4
+            - textbox "规则 86 写入符号" [ref=f15e750]: "|"
+            - combobox "规则 86 移动方向" [ref=f15e751]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 86" [ref=f15e752] [cursor=pointer]: ×
+          - generic [ref=f15e753]:
+            - textbox "规则 87 当前状态" [ref=f15e754]: I.p5
+            - textbox "规则 87 读取符号" [ref=f15e755]: "#"
+            - textbox "规则 87 下一状态" [ref=f15e756]: I.p5.seek8
+            - textbox "规则 87 写入符号" [ref=f15e757]: "#"
+            - combobox "规则 87 移动方向" [ref=f15e758]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 87" [ref=f15e759] [cursor=pointer]: ×
+          - generic [ref=f15e760]:
+            - textbox "规则 88 当前状态" [ref=f15e761]: I.p5.seek8
+            - textbox "规则 88 读取符号" [ref=f15e762]: "1"
+            - textbox "规则 88 下一状态" [ref=f15e763]: I.p5.seek8
+            - textbox "规则 88 写入符号" [ref=f15e764]: "1"
+            - combobox "规则 88 移动方向" [ref=f15e765]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 88" [ref=f15e766] [cursor=pointer]: ×
+          - generic [ref=f15e767]:
+            - textbox "规则 89 当前状态" [ref=f15e768]: I.p5.seek8
+            - textbox "规则 89 读取符号" [ref=f15e769]: "|"
+            - textbox "规则 89 下一状态" [ref=f15e770]: I.p5.seek7
+            - textbox "规则 89 写入符号" [ref=f15e771]: "|"
+            - combobox "规则 89 移动方向" [ref=f15e772]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 89" [ref=f15e773] [cursor=pointer]: ×
+          - generic [ref=f15e774]:
+            - textbox "规则 90 当前状态" [ref=f15e775]: I.p5.seek7
+            - textbox "规则 90 读取符号" [ref=f15e776]: "1"
+            - textbox "规则 90 下一状态" [ref=f15e777]: I.p5.seek7
+            - textbox "规则 90 写入符号" [ref=f15e778]: "1"
+            - combobox "规则 90 移动方向" [ref=f15e779]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 90" [ref=f15e780] [cursor=pointer]: ×
+          - generic [ref=f15e781]:
+            - textbox "规则 91 当前状态" [ref=f15e782]: I.p5.seek7
+            - textbox "规则 91 读取符号" [ref=f15e783]: "|"
+            - textbox "规则 91 下一状态" [ref=f15e784]: I.p5.seek6
+            - textbox "规则 91 写入符号" [ref=f15e785]: "|"
+            - combobox "规则 91 移动方向" [ref=f15e786]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 91" [ref=f15e787] [cursor=pointer]: ×
+          - generic [ref=f15e788]:
+            - textbox "规则 92 当前状态" [ref=f15e789]: I.p5.seek6
+            - textbox "规则 92 读取符号" [ref=f15e790]: "1"
+            - textbox "规则 92 下一状态" [ref=f15e791]: I.p5.seek6
+            - textbox "规则 92 写入符号" [ref=f15e792]: "1"
+            - combobox "规则 92 移动方向" [ref=f15e793]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 92" [ref=f15e794] [cursor=pointer]: ×
+          - generic [ref=f15e795]:
+            - textbox "规则 93 当前状态" [ref=f15e796]: I.p5.seek6
+            - textbox "规则 93 读取符号" [ref=f15e797]: "|"
+            - textbox "规则 93 下一状态" [ref=f15e798]: I.p5.seek5
+            - textbox "规则 93 写入符号" [ref=f15e799]: "|"
+            - combobox "规则 93 移动方向" [ref=f15e800]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 93" [ref=f15e801] [cursor=pointer]: ×
+          - generic [ref=f15e802]:
+            - textbox "规则 94 当前状态" [ref=f15e803]: I.p5.seek5
+            - textbox "规则 94 读取符号" [ref=f15e804]: "1"
+            - textbox "规则 94 下一状态" [ref=f15e805]: I.p5.seek5
+            - textbox "规则 94 写入符号" [ref=f15e806]: "1"
+            - combobox "规则 94 移动方向" [ref=f15e807]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 94" [ref=f15e808] [cursor=pointer]: ×
+          - generic [ref=f15e809]:
+            - textbox "规则 95 当前状态" [ref=f15e810]: I.p5.seek5
+            - textbox "规则 95 读取符号" [ref=f15e811]: "|"
+            - textbox "规则 95 下一状态" [ref=f15e812]: I.p5.seek4
+            - textbox "规则 95 写入符号" [ref=f15e813]: "|"
+            - combobox "规则 95 移动方向" [ref=f15e814]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 95" [ref=f15e815] [cursor=pointer]: ×
+          - generic [ref=f15e816]:
+            - textbox "规则 96 当前状态" [ref=f15e817]: I.p5.seek4
+            - textbox "规则 96 读取符号" [ref=f15e818]: "1"
+            - textbox "规则 96 下一状态" [ref=f15e819]: I.p5.seek4
+            - textbox "规则 96 写入符号" [ref=f15e820]: "1"
+            - combobox "规则 96 移动方向" [ref=f15e821]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 96" [ref=f15e822] [cursor=pointer]: ×
+          - generic [ref=f15e823]:
+            - textbox "规则 97 当前状态" [ref=f15e824]: I.p5.seek4
+            - textbox "规则 97 读取符号" [ref=f15e825]: "|"
+            - textbox "规则 97 下一状态" [ref=f15e826]: I.p5.seek3
+            - textbox "规则 97 写入符号" [ref=f15e827]: "|"
+            - combobox "规则 97 移动方向" [ref=f15e828]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 97" [ref=f15e829] [cursor=pointer]: ×
+          - generic [ref=f15e830]:
+            - textbox "规则 98 当前状态" [ref=f15e831]: I.p5.seek3
+            - textbox "规则 98 读取符号" [ref=f15e832]: "1"
+            - textbox "规则 98 下一状态" [ref=f15e833]: I.p5.seek3
+            - textbox "规则 98 写入符号" [ref=f15e834]: "1"
+            - combobox "规则 98 移动方向" [ref=f15e835]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 98" [ref=f15e836] [cursor=pointer]: ×
+          - generic [ref=f15e837]:
+            - textbox "规则 99 当前状态" [ref=f15e838]: I.p5.seek3
+            - textbox "规则 99 读取符号" [ref=f15e839]: "|"
+            - textbox "规则 99 下一状态" [ref=f15e840]: I.p5.seek2
+            - textbox "规则 99 写入符号" [ref=f15e841]: "|"
+            - combobox "规则 99 移动方向" [ref=f15e842]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 99" [ref=f15e843] [cursor=pointer]: ×
+          - generic [ref=f15e844]:
+            - textbox "规则 100 当前状态" [ref=f15e845]: I.p5.seek2
+            - textbox "规则 100 读取符号" [ref=f15e846]: "1"
+            - textbox "规则 100 下一状态" [ref=f15e847]: I.p5.seek2
+            - textbox "规则 100 写入符号" [ref=f15e848]: "1"
+            - combobox "规则 100 移动方向" [ref=f15e849]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 100" [ref=f15e850] [cursor=pointer]: ×
+        - generic [ref=f15e851]:
+          - generic [ref=f15e852]: 共 1646 条 · 第 1/17 页
+          - button "上一页" [disabled] [ref=f15e853] [cursor=pointer]
+          - button "下一页" [ref=f15e854] [cursor=pointer]
+        - generic [ref=f15e855]:
+          - button "应用并重置" [ref=f15e856] [cursor=pointer]
+          - button "清空规则" [ref=f15e857] [cursor=pointer]
+        - generic [ref=f15e858]: 快捷键：空格运行/暂停，Alt + → 单步，Ctrl + R 重置（输入框聚焦时不触发）。
+      - complementary [ref=f15e859]:
+        - generic [ref=f15e860]:
+          - generic [ref=f15e861]:
+            - heading "示例程序" [level=2] [ref=f15e862]
+            - generic [ref=f15e863]: 20 个
+          - combobox [ref=f15e864]:
+            - option "一进制加一" [selected]
+            - option "一进制加法"
+            - option "一进制减法"
+            - option "一进制乘法"
+            - option "一进制大小比较"
+            - option "一进制整除判断（÷2）"
+            - option "一进制除法（取商）"
+            - option "一进制乘方（幂）"
+            - option "一进制超幂（幂塔）"
+            - option "一进制超超幂"
+            - option "二进制加一"
+            - option "二进制回文判断"
+            - option "2 状态忙碌海狸"
+            - option "3 状态 2 符号忙碌海狸（步数冠军）"
+            - option "3 状态 2 符号忙碌海狸（写 1 冠军）"
+            - option "4 状态 2 符号忙碌海狸"
+            - option "2 状态 3 符号忙碌海狸"
+            - option "2 状态 4 符号忙碌海狸（长运行）"
+            - option "哥德巴赫验证（单个偶数 ≤100）"
+            - option "考拉兹验证（3n+1，二进制）"
+          - paragraph [ref=f15e865]: 越过所有 1，在末尾写入一个 1。
+          - button "加载此示例" [ref=f15e866] [cursor=pointer]
+        - generic [ref=f15e867]:
+          - heading "执行记录" [level=2] [ref=f15e869]
+          - generic [ref=f15e870]: 单步或运行后，这里会显示执行过程
+    - generic [ref=f15e872]:
+      - generic [ref=f15e873]:
+        - generic [ref=f15e874]:
+          - heading "全路线总览" [level=2] [ref=f15e875]
+          - paragraph [ref=f15e876]: 后台计算整段运行轨迹并压缩成一张时空图；生成时仍可继续使用上面的模拟器和瓷砖游戏。
+        - generic [ref=f15e877]:
+          - generic [ref=f15e878]:
+            - text: 运行步数
+            - spinbutton "运行步数" [ref=f15e879]: "10000"
+          - button "后台生成" [ref=f15e880] [cursor=pointer]
+          - button "取消" [disabled] [ref=f15e881] [cursor=pointer]
+      - generic [ref=f15e882]:
+        - progressbar [ref=f15e883]
+        - generic [ref=f15e884]: 等待生成
+      - generic [ref=f15e885]: 读写头 非空纸带 空白；纵向为时间，横向为纸带位置
+      - generic [ref=f15e889]: 输入步数后点击“后台生成”
+    - generic [ref=f15e892]:
+      - generic [ref=f15e893]:
+        - generic [ref=f15e894]:
+          - heading "计算瓷砖拼图" [level=2] [ref=f15e895]
+          - paragraph [ref=f15e896]: 每一行是一个时刻；相邻边必须同色。点击或拖动瓷砖，把它放入上方空格。
+        - generic [ref=f15e897]:
+          - generic [ref=f15e898]:
+            - text: 生成步数
+            - spinbutton "生成步数" [ref=f15e899]: "10"
+          - button "生成瓷砖" [ref=f15e900] [cursor=pointer]
+          - button "检查拼法" [ref=f15e901] [cursor=pointer]
+          - button "查看正确拼法" [ref=f15e902] [cursor=pointer]
+      - generic [ref=f15e903]: 未发现循环；计算结果：到达 10 步上限。 棋盘 11 × 17，共 187 块。
+      - generic [ref=f15e905]:
+        - button "第 1 行第 1 列" [ref=f15e906] [cursor=pointer]:
+          - generic [ref=f15e907]: "-11"
+        - button "第 1 行第 2 列" [ref=f15e908] [cursor=pointer]:
+          - generic [ref=f15e909]: "-10"
+        - button "第 1 行第 3 列" [ref=f15e910] [cursor=pointer]:
+          - generic [ref=f15e911]: "-9"
+        - button "第 1 行第 4 列" [ref=f15e912] [cursor=pointer]:
+          - generic [ref=f15e913]: "-8"
+        - button "第 1 行第 5 列" [ref=f15e914] [cursor=pointer]:
+          - generic [ref=f15e915]: "-7"
+        - button "第 1 行第 6 列" [ref=f15e916] [cursor=pointer]:
+          - generic [ref=f15e917]: "-6"
+        - button "第 1 行第 7 列" [ref=f15e918] [cursor=pointer]:
+          - generic [ref=f15e919]: "-5"
+        - button "第 1 行第 8 列" [ref=f15e920] [cursor=pointer]:
+          - generic [ref=f15e921]: "-4"
+        - button "第 1 行第 9 列" [ref=f15e922] [cursor=pointer]:
+          - generic [ref=f15e923]: "-3"
+        - button "第 1 行第 10 列" [ref=f15e924] [cursor=pointer]:
+          - generic [ref=f15e925]: "-2"
+        - button "第 1 行第 11 列" [ref=f15e926] [cursor=pointer]:
+          - generic [ref=f15e927]: "-1"
+        - button "第 1 行第 12 列" [ref=f15e928] [cursor=pointer]:
+          - generic [ref=f15e929]: "0"
+        - button "第 1 行第 13 列" [ref=f15e930] [cursor=pointer]:
+          - generic [ref=f15e931]: "1"
+        - button "第 1 行第 14 列" [ref=f15e932] [cursor=pointer]:
+          - generic [ref=f15e933]: "2"
+        - button "第 1 行第 15 列" [ref=f15e934] [cursor=pointer]:
+          - generic [ref=f15e935]: "3"
+        - button "第 1 行第 16 列" [ref=f15e936] [cursor=pointer]:
+          - generic [ref=f15e937]: "4"
+        - button "第 1 行第 17 列" [ref=f15e938] [cursor=pointer]:
+          - generic [ref=f15e939]: "5"
+        - button "第 2 行第 1 列" [ref=f15e940] [cursor=pointer]:
+          - generic [ref=f15e941]: "-11"
+        - button "第 2 行第 2 列" [ref=f15e942] [cursor=pointer]:
+          - generic [ref=f15e943]: "-10"
+        - button "第 2 行第 3 列" [ref=f15e944] [cursor=pointer]:
+          - generic [ref=f15e945]: "-9"
+        - button "第 2 行第 4 列" [ref=f15e946] [cursor=pointer]:
+          - generic [ref=f15e947]: "-8"
+        - button "第 2 行第 5 列" [ref=f15e948] [cursor=pointer]:
+          - generic [ref=f15e949]: "-7"
+        - button "第 2 行第 6 列" [ref=f15e950] [cursor=pointer]:
+          - generic [ref=f15e951]: "-6"
+        - button "第 2 行第 7 列" [ref=f15e952] [cursor=pointer]:
+          - generic [ref=f15e953]: "-5"
+        - button "第 2 行第 8 列" [ref=f15e954] [cursor=pointer]:
+          - generic [ref=f15e955]: "-4"
+        - button "第 2 行第 9 列" [ref=f15e956] [cursor=pointer]:
+          - generic [ref=f15e957]: "-3"
+        - button "第 2 行第 10 列" [ref=f15e958] [cursor=pointer]:
+          - generic [ref=f15e959]: "-2"
+        - button "第 2 行第 11 列" [ref=f15e960] [cursor=pointer]:
+          - generic [ref=f15e961]: "-1"
+        - button "第 2 行第 12 列" [ref=f15e962] [cursor=pointer]:
+          - generic [ref=f15e963]: "0"
+        - button "第 2 行第 13 列" [ref=f15e964] [cursor=pointer]:
+          - generic [ref=f15e965]: "1"
+        - button "第 2 行第 14 列" [ref=f15e966] [cursor=pointer]:
+          - generic [ref=f15e967]: "2"
+        - button "第 2 行第 15 列" [ref=f15e968] [cursor=pointer]:
+          - generic [ref=f15e969]: "3"
+        - button "第 2 行第 16 列" [ref=f15e970] [cursor=pointer]:
+          - generic [ref=f15e971]: "4"
+        - button "第 2 行第 17 列" [ref=f15e972] [cursor=pointer]:
+          - generic [ref=f15e973]: "5"
+        - button "第 3 行第 1 列" [ref=f15e974] [cursor=pointer]:
+          - generic [ref=f15e975]: "-11"
+        - button "第 3 行第 2 列" [ref=f15e976] [cursor=pointer]:
+          - generic [ref=f15e977]: "-10"
+        - button "第 3 行第 3 列" [ref=f15e978] [cursor=pointer]:
+          - generic [ref=f15e979]: "-9"
+        - button "第 3 行第 4 列" [ref=f15e980] [cursor=pointer]:
+          - generic [ref=f15e981]: "-8"
+        - button "第 3 行第 5 列" [ref=f15e982] [cursor=pointer]:
+          - generic [ref=f15e983]: "-7"
+        - button "第 3 行第 6 列" [ref=f15e984] [cursor=pointer]:
+          - generic [ref=f15e985]: "-6"
+        - button "第 3 行第 7 列" [ref=f15e986] [cursor=pointer]:
+          - generic [ref=f15e987]: "-5"
+        - button "第 3 行第 8 列" [ref=f15e988] [cursor=pointer]:
+          - generic [ref=f15e989]: "-4"
+        - button "第 3 行第 9 列" [ref=f15e990] [cursor=pointer]:
+          - generic [ref=f15e991]: "-3"
+        - button "第 3 行第 10 列" [ref=f15e992] [cursor=pointer]:
+          - generic [ref=f15e993]: "-2"
+        - button "第 3 行第 11 列" [ref=f15e994] [cursor=pointer]:
+          - generic [ref=f15e995]: "-1"
+        - button "第 3 行第 12 列" [ref=f15e996] [cursor=pointer]:
+          - generic [ref=f15e997]: "0"
+        - button "第 3 行第 13 列" [ref=f15e998] [cursor=pointer]:
+          - generic [ref=f15e999]: "1"
+        - button "第 3 行第 14 列" [ref=f15e1000] [cursor=pointer]:
+          - generic [ref=f15e1001]: "2"
+        - button "第 3 行第 15 列" [ref=f15e1002] [cursor=pointer]:
+          - generic [ref=f15e1003]: "3"
+        - button "第 3 行第 16 列" [ref=f15e1004] [cursor=pointer]:
+          - generic [ref=f15e1005]: "4"
+        - button "第 3 行第 17 列" [ref=f15e1006] [cursor=pointer]:
+          - generic [ref=f15e1007]: "5"
+        - button "第 4 行第 1 列" [ref=f15e1008] [cursor=pointer]:
+          - generic [ref=f15e1009]: "-11"
+        - button "第 4 行第 2 列" [ref=f15e1010] [cursor=pointer]:
+          - generic [ref=f15e1011]: "-10"
+        - button "第 4 行第 3 列" [ref=f15e1012] [cursor=pointer]:
+          - generic [ref=f15e1013]: "-9"
+        - button "第 4 行第 4 列" [ref=f15e1014] [cursor=pointer]:
+          - generic [ref=f15e1015]: "-8"
+        - button "第 4 行第 5 列" [ref=f15e1016] [cursor=pointer]:
+          - generic [ref=f15e1017]: "-7"
+        - button "第 4 行第 6 列" [ref=f15e1018] [cursor=pointer]:
+          - generic [ref=f15e1019]: "-6"
+        - button "第 4 行第 7 列" [ref=f15e1020] [cursor=pointer]:
+          - generic [ref=f15e1021]: "-5"
+        - button "第 4 行第 8 列" [ref=f15e1022] [cursor=pointer]:
+          - generic [ref=f15e1023]: "-4"
+        - button "第 4 行第 9 列" [ref=f15e1024] [cursor=pointer]:
+          - generic [ref=f15e1025]: "-3"
+        - button "第 4 行第 10 列" [ref=f15e1026] [cursor=pointer]:
+          - generic [ref=f15e1027]: "-2"
+        - button "第 4 行第 11 列" [ref=f15e1028] [cursor=pointer]:
+          - generic [ref=f15e1029]: "-1"
+        - button "第 4 行第 12 列" [ref=f15e1030] [cursor=pointer]:
+          - generic [ref=f15e1031]: "0"
+        - button "第 4 行第 13 列" [ref=f15e1032] [cursor=pointer]:
+          - generic [ref=f15e1033]: "1"
+        - button "第 4 行第 14 列" [ref=f15e1034] [cursor=pointer]:
+          - generic [ref=f15e1035]: "2"
+        - button "第 4 行第 15 列" [ref=f15e1036] [cursor=pointer]:
+          - generic [ref=f15e1037]: "3"
+        - button "第 4 行第 16 列" [ref=f15e1038] [cursor=pointer]:
+          - generic [ref=f15e1039]: "4"
+        - button "第 4 行第 17 列" [ref=f15e1040] [cursor=pointer]:
+          - generic [ref=f15e1041]: "5"
+        - button "第 5 行第 1 列" [ref=f15e1042] [cursor=pointer]:
+          - generic [ref=f15e1043]: "-11"
+        - button "第 5 行第 2 列" [ref=f15e1044] [cursor=pointer]:
+          - generic [ref=f15e1045]: "-10"
+        - button "第 5 行第 3 列" [ref=f15e1046] [cursor=pointer]:
+          - generic [ref=f15e1047]: "-9"
+        - button "第 5 行第 4 列" [ref=f15e1048] [cursor=pointer]:
+          - generic [ref=f15e1049]: "-8"
+        - button "第 5 行第 5 列" [ref=f15e1050] [cursor=pointer]:
+          - generic [ref=f15e1051]: "-7"
+        - button "第 5 行第 6 列" [ref=f15e1052] [cursor=pointer]:
+          - generic [ref=f15e1053]: "-6"
+        - button "第 5 行第 7 列" [ref=f15e1054] [cursor=pointer]:
+          - generic [ref=f15e1055]: "-5"
+        - button "第 5 行第 8 列" [ref=f15e1056] [cursor=pointer]:
+          - generic [ref=f15e1057]: "-4"
+        - button "第 5 行第 9 列" [ref=f15e1058] [cursor=pointer]:
+          - generic [ref=f15e1059]: "-3"
+        - button "第 5 行第 10 列" [ref=f15e1060] [cursor=pointer]:
+          - generic [ref=f15e1061]: "-2"
+        - button "第 5 行第 11 列" [ref=f15e1062] [cursor=pointer]:
+          - generic [ref=f15e1063]: "-1"
+        - button "第 5 行第 12 列" [ref=f15e1064] [cursor=pointer]:
+          - generic [ref=f15e1065]: "0"
+        - button "第 5 行第 13 列" [ref=f15e1066] [cursor=pointer]:
+          - generic [ref=f15e1067]: "1"
+        - button "第 5 行第 14 列" [ref=f15e1068] [cursor=pointer]:
+          - generic [ref=f15e1069]: "2"
+        - button "第 5 行第 15 列" [ref=f15e1070] [cursor=pointer]:
+          - generic [ref=f15e1071]: "3"
+        - button "第 5 行第 16 列" [ref=f15e1072] [cursor=pointer]:
+          - generic [ref=f15e1073]: "4"
+        - button "第 5 行第 17 列" [ref=f15e1074] [cursor=pointer]:
+          - generic [ref=f15e1075]: "5"
+        - button "第 6 行第 1 列" [ref=f15e1076] [cursor=pointer]:
+          - generic [ref=f15e1077]: "-11"
+        - button "第 6 行第 2 列" [ref=f15e1078] [cursor=pointer]:
+          - generic [ref=f15e1079]: "-10"
+        - button "第 6 行第 3 列" [ref=f15e1080] [cursor=pointer]:
+          - generic [ref=f15e1081]: "-9"
+        - button "第 6 行第 4 列" [ref=f15e1082] [cursor=pointer]:
+          - generic [ref=f15e1083]: "-8"
+        - button "第 6 行第 5 列" [ref=f15e1084] [cursor=pointer]:
+          - generic [ref=f15e1085]: "-7"
+        - button "第 6 行第 6 列" [ref=f15e1086] [cursor=pointer]:
+          - generic [ref=f15e1087]: "-6"
+        - button "第 6 行第 7 列" [ref=f15e1088] [cursor=pointer]:
+          - generic [ref=f15e1089]: "-5"
+        - button "第 6 行第 8 列" [ref=f15e1090] [cursor=pointer]:
+          - generic [ref=f15e1091]: "-4"
+        - button "第 6 行第 9 列" [ref=f15e1092] [cursor=pointer]:
+          - generic [ref=f15e1093]: "-3"
+        - button "第 6 行第 10 列" [ref=f15e1094] [cursor=pointer]:
+          - generic [ref=f15e1095]: "-2"
+        - button "第 6 行第 11 列" [ref=f15e1096] [cursor=pointer]:
+          - generic [ref=f15e1097]: "-1"
+        - button "第 6 行第 12 列" [ref=f15e1098] [cursor=pointer]:
+          - generic [ref=f15e1099]: "0"
+        - button "第 6 行第 13 列" [ref=f15e1100] [cursor=pointer]:
+          - generic [ref=f15e1101]: "1"
+        - button "第 6 行第 14 列" [ref=f15e1102] [cursor=pointer]:
+          - generic [ref=f15e1103]: "2"
+        - button "第 6 行第 15 列" [ref=f15e1104] [cursor=pointer]:
+          - generic [ref=f15e1105]: "3"
+        - button "第 6 行第 16 列" [ref=f15e1106] [cursor=pointer]:
+          - generic [ref=f15e1107]: "4"
+        - button "第 6 行第 17 列" [ref=f15e1108] [cursor=pointer]:
+          - generic [ref=f15e1109]: "5"
+        - button "第 7 行第 1 列" [ref=f15e1110] [cursor=pointer]:
+          - generic [ref=f15e1111]: "-11"
+        - button "第 7 行第 2 列" [ref=f15e1112] [cursor=pointer]:
+          - generic [ref=f15e1113]: "-10"
+        - button "第 7 行第 3 列" [ref=f15e1114] [cursor=pointer]:
+          - generic [ref=f15e1115]: "-9"
+        - button "第 7 行第 4 列" [ref=f15e1116] [cursor=pointer]:
+          - generic [ref=f15e1117]: "-8"
+        - button "第 7 行第 5 列" [ref=f15e1118] [cursor=pointer]:
+          - generic [ref=f15e1119]: "-7"
+        - button "第 7 行第 6 列" [ref=f15e1120] [cursor=pointer]:
+          - generic [ref=f15e1121]: "-6"
+        - button "第 7 行第 7 列" [ref=f15e1122] [cursor=pointer]:
+          - generic [ref=f15e1123]: "-5"
+        - button "第 7 行第 8 列" [ref=f15e1124] [cursor=pointer]:
+          - generic [ref=f15e1125]: "-4"
+        - button "第 7 行第 9 列" [ref=f15e1126] [cursor=pointer]:
+          - generic [ref=f15e1127]: "-3"
+        - button "第 7 行第 10 列" [ref=f15e1128] [cursor=pointer]:
+          - generic [ref=f15e1129]: "-2"
+        - button "第 7 行第 11 列" [ref=f15e1130] [cursor=pointer]:
+          - generic [ref=f15e1131]: "-1"
+        - button "第 7 行第 12 列" [ref=f15e1132] [cursor=pointer]:
+          - generic [ref=f15e1133]: "0"
+        - button "第 7 行第 13 列" [ref=f15e1134] [cursor=pointer]:
+          - generic [ref=f15e1135]: "1"
+        - button "第 7 行第 14 列" [ref=f15e1136] [cursor=pointer]:
+          - generic [ref=f15e1137]: "2"
+        - button "第 7 行第 15 列" [ref=f15e1138] [cursor=pointer]:
+          - generic [ref=f15e1139]: "3"
+        - button "第 7 行第 16 列" [ref=f15e1140] [cursor=pointer]:
+          - generic [ref=f15e1141]: "4"
+        - button "第 7 行第 17 列" [ref=f15e1142] [cursor=pointer]:
+          - generic [ref=f15e1143]: "5"
+        - button "第 8 行第 1 列" [ref=f15e1144] [cursor=pointer]:
+          - generic [ref=f15e1145]: "-11"
+        - button "第 8 行第 2 列" [ref=f15e1146] [cursor=pointer]:
+          - generic [ref=f15e1147]: "-10"
+        - button "第 8 行第 3 列" [ref=f15e1148] [cursor=pointer]:
+          - generic [ref=f15e1149]: "-9"
+        - button "第 8 行第 4 列" [ref=f15e1150] [cursor=pointer]:
+          - generic [ref=f15e1151]: "-8"
+        - button "第 8 行第 5 列" [ref=f15e1152] [cursor=pointer]:
+          - generic [ref=f15e1153]: "-7"
+        - button "第 8 行第 6 列" [ref=f15e1154] [cursor=pointer]:
+          - generic [ref=f15e1155]: "-6"
+        - button "第 8 行第 7 列" [ref=f15e1156] [cursor=pointer]:
+          - generic [ref=f15e1157]: "-5"
+        - button "第 8 行第 8 列" [ref=f15e1158] [cursor=pointer]:
+          - generic [ref=f15e1159]: "-4"
+        - button "第 8 行第 9 列" [ref=f15e1160] [cursor=pointer]:
+          - generic [ref=f15e1161]: "-3"
+        - button "第 8 行第 10 列" [ref=f15e1162] [cursor=pointer]:
+          - generic [ref=f15e1163]: "-2"
+        - button "第 8 行第 11 列" [ref=f15e1164] [cursor=pointer]:
+          - generic [ref=f15e1165]: "-1"
+        - button "第 8 行第 12 列" [ref=f15e1166] [cursor=pointer]:
+          - generic [ref=f15e1167]: "0"
+        - button "第 8 行第 13 列" [ref=f15e1168] [cursor=pointer]:
+          - generic [ref=f15e1169]: "1"
+        - button "第 8 行第 14 列" [ref=f15e1170] [cursor=pointer]:
+          - generic [ref=f15e1171]: "2"
+        - button "第 8 行第 15 列" [ref=f15e1172] [cursor=pointer]:
+          - generic [ref=f15e1173]: "3"
+        - button "第 8 行第 16 列" [ref=f15e1174] [cursor=pointer]:
+          - generic [ref=f15e1175]: "4"
+        - button "第 8 行第 17 列" [ref=f15e1176] [cursor=pointer]:
+          - generic [ref=f15e1177]: "5"
+        - button "第 9 行第 1 列" [ref=f15e1178] [cursor=pointer]:
+          - generic [ref=f15e1179]: "-11"
+        - button "第 9 行第 2 列" [ref=f15e1180] [cursor=pointer]:
+          - generic [ref=f15e1181]: "-10"
+        - button "第 9 行第 3 列" [ref=f15e1182] [cursor=pointer]:
+          - generic [ref=f15e1183]: "-9"
+        - button "第 9 行第 4 列" [ref=f15e1184] [cursor=pointer]:
+          - generic [ref=f15e1185]: "-8"
+        - button "第 9 行第 5 列" [ref=f15e1186] [cursor=pointer]:
+          - generic [ref=f15e1187]: "-7"
+        - button "第 9 行第 6 列" [ref=f15e1188] [cursor=pointer]:
+          - generic [ref=f15e1189]: "-6"
+        - button "第 9 行第 7 列" [ref=f15e1190] [cursor=pointer]:
+          - generic [ref=f15e1191]: "-5"
+        - button "第 9 行第 8 列" [ref=f15e1192] [cursor=pointer]:
+          - generic [ref=f15e1193]: "-4"
+        - button "第 9 行第 9 列" [ref=f15e1194] [cursor=pointer]:
+          - generic [ref=f15e1195]: "-3"
+        - button "第 9 行第 10 列" [ref=f15e1196] [cursor=pointer]:
+          - generic [ref=f15e1197]: "-2"
+        - button "第 9 行第 11 列" [ref=f15e1198] [cursor=pointer]:
+          - generic [ref=f15e1199]: "-1"
+        - button "第 9 行第 12 列" [ref=f15e1200] [cursor=pointer]:
+          - generic [ref=f15e1201]: "0"
+        - button "第 9 行第 13 列" [ref=f15e1202] [cursor=pointer]:
+          - generic [ref=f15e1203]: "1"
+        - button "第 9 行第 14 列" [ref=f15e1204] [cursor=pointer]:
+          - generic [ref=f15e1205]: "2"
+        - button "第 9 行第 15 列" [ref=f15e1206] [cursor=pointer]:
+          - generic [ref=f15e1207]: "3"
+        - button "第 9 行第 16 列" [ref=f15e1208] [cursor=pointer]:
+          - generic [ref=f15e1209]: "4"
+        - button "第 9 行第 17 列" [ref=f15e1210] [cursor=pointer]:
+          - generic [ref=f15e1211]: "5"
+        - button "第 10 行第 1 列" [ref=f15e1212] [cursor=pointer]:
+          - generic [ref=f15e1213]: "-11"
+        - button "第 10 行第 2 列" [ref=f15e1214] [cursor=pointer]:
+          - generic [ref=f15e1215]: "-10"
+        - button "第 10 行第 3 列" [ref=f15e1216] [cursor=pointer]:
+          - generic [ref=f15e1217]: "-9"
+        - button "第 10 行第 4 列" [ref=f15e1218] [cursor=pointer]:
+          - generic [ref=f15e1219]: "-8"
+        - button "第 10 行第 5 列" [ref=f15e1220] [cursor=pointer]:
+          - generic [ref=f15e1221]: "-7"
+        - button "第 10 行第 6 列" [ref=f15e1222] [cursor=pointer]:
+          - generic [ref=f15e1223]: "-6"
+        - button "第 10 行第 7 列" [ref=f15e1224] [cursor=pointer]:
+          - generic [ref=f15e1225]: "-5"
+        - button "第 10 行第 8 列" [ref=f15e1226] [cursor=pointer]:
+          - generic [ref=f15e1227]: "-4"
+        - button "第 10 行第 9 列" [ref=f15e1228] [cursor=pointer]:
+          - generic [ref=f15e1229]: "-3"
+        - button "第 10 行第 10 列" [ref=f15e1230] [cursor=pointer]:
+          - generic [ref=f15e1231]: "-2"
+        - button "第 10 行第 11 列" [ref=f15e1232] [cursor=pointer]:
+          - generic [ref=f15e1233]: "-1"
+        - button "第 10 行第 12 列" [ref=f15e1234] [cursor=pointer]:
+          - generic [ref=f15e1235]: "0"
+        - button "第 10 行第 13 列" [ref=f15e1236] [cursor=pointer]:
+          - generic [ref=f15e1237]: "1"
+        - button "第 10 行第 14 列" [ref=f15e1238] [cursor=pointer]:
+          - generic [ref=f15e1239]: "2"
+        - button "第 10 行第 15 列" [ref=f15e1240] [cursor=pointer]:
+          - generic [ref=f15e1241]: "3"
+        - button "第 10 行第 16 列" [ref=f15e1242] [cursor=pointer]:
+          - generic [ref=f15e1243]: "4"
+        - button "第 10 行第 17 列" [ref=f15e1244] [cursor=pointer]:
+          - generic [ref=f15e1245]: "5"
+        - button "第 11 行第 1 列" [ref=f15e1246] [cursor=pointer]:
+          - generic [ref=f15e1247]: "-11"
+        - button "第 11 行第 2 列" [ref=f15e1248] [cursor=pointer]:
+          - generic [ref=f15e1249]: "-10"
+        - button "第 11 行第 3 列" [ref=f15e1250] [cursor=pointer]:
+          - generic [ref=f15e1251]: "-9"
+        - button "第 11 行第 4 列" [ref=f15e1252] [cursor=pointer]:
+          - generic [ref=f15e1253]: "-8"
+        - button "第 11 行第 5 列" [ref=f15e1254] [cursor=pointer]:
+          - generic [ref=f15e1255]: "-7"
+        - button "第 11 行第 6 列" [ref=f15e1256] [cursor=pointer]:
+          - generic [ref=f15e1257]: "-6"
+        - button "第 11 行第 7 列" [ref=f15e1258] [cursor=pointer]:
+          - generic [ref=f15e1259]: "-5"
+        - button "第 11 行第 8 列" [ref=f15e1260] [cursor=pointer]:
+          - generic [ref=f15e1261]: "-4"
+        - button "第 11 行第 9 列" [ref=f15e1262] [cursor=pointer]:
+          - generic [ref=f15e1263]: "-3"
+        - button "第 11 行第 10 列" [ref=f15e1264] [cursor=pointer]:
+          - generic [ref=f15e1265]: "-2"
+        - button "第 11 行第 11 列" [ref=f15e1266] [cursor=pointer]:
+          - generic [ref=f15e1267]: "-1"
+        - button "第 11 行第 12 列" [ref=f15e1268] [cursor=pointer]:
+          - generic [ref=f15e1269]: "0"
+        - button "第 11 行第 13 列" [ref=f15e1270] [cursor=pointer]:
+          - generic [ref=f15e1271]: "1"
+        - button "第 11 行第 14 列" [ref=f15e1272] [cursor=pointer]:
+          - generic [ref=f15e1273]: "2"
+        - button "第 11 行第 15 列" [ref=f15e1274] [cursor=pointer]:
+          - generic [ref=f15e1275]: "3"
+        - button "第 11 行第 16 列" [ref=f15e1276] [cursor=pointer]:
+          - generic [ref=f15e1277]: "4"
+        - button "第 11 行第 17 列" [ref=f15e1278] [cursor=pointer]:
+          - generic [ref=f15e1279]: "5"
+      - heading "待拼瓷砖 点击一块，再点击空格；也支持拖放" [level=3] [ref=f15e1280]
+      - generic [ref=f15e1281]:
+        - button "^" [ref=f15e1282] [cursor=pointer]
+        - button "□" [ref=f15e1289] [cursor=pointer]
+        - button "|" [ref=f15e1296] [cursor=pointer]
+        - button "|" [ref=f15e1303] [cursor=pointer]
+        - button "□" [ref=f15e1310] [cursor=pointer]
+        - button "^" [ref=f15e1317] [cursor=pointer]
+        - button "□" [ref=f15e1324] [cursor=pointer]
+        - button "□" [ref=f15e1331] [cursor=pointer]
+        - button "□" [ref=f15e1338] [cursor=pointer]
+        - button "□" [ref=f15e1345] [cursor=pointer]
+        - button "#" [ref=f15e1352] [cursor=pointer]
+        - button "□" [ref=f15e1359] [cursor=pointer]
+        - button "□" [ref=f15e1366] [cursor=pointer]
+        - button "^" [ref=f15e1373] [cursor=pointer]
+        - button "|" [ref=f15e1380] [cursor=pointer]
+        - button "□" [ref=f15e1387] [cursor=pointer]
+        - button "1" [ref=f15e1394] [cursor=pointer]
+        - button "□" [ref=f15e1401] [cursor=pointer]
+        - button "□" [ref=f15e1408] [cursor=pointer]
+        - button "□" [ref=f15e1415] [cursor=pointer]
+        - button "^" [ref=f15e1422] [cursor=pointer]
+        - button "|" [ref=f15e1429] [cursor=pointer]
+        - button "□" [ref=f15e1436] [cursor=pointer]
+        - button "|" [ref=f15e1443] [cursor=pointer]
+        - button "|" [ref=f15e1450] [cursor=pointer]
+        - button "#" [ref=f15e1457] [cursor=pointer]
+        - button "|" [ref=f15e1464] [cursor=pointer]
+        - button "□" [ref=f15e1471] [cursor=pointer]
+        - button "□" [ref=f15e1478] [cursor=pointer]
+        - button "□" [ref=f15e1485] [cursor=pointer]
+        - button "□" [ref=f15e1492] [cursor=pointer]
+        - button "|" [ref=f15e1499] [cursor=pointer]
+        - button "#" [ref=f15e1506] [cursor=pointer]
+        - button "□" [ref=f15e1513] [cursor=pointer]
+        - button "|" [ref=f15e1520] [cursor=pointer]
+        - button "|" [ref=f15e1527] [cursor=pointer]
+        - button "^" [ref=f15e1534] [cursor=pointer]
+        - button "^" [ref=f15e1541] [cursor=pointer]
+        - button "^" [ref=f15e1548] [cursor=pointer]
+        - button "|" [ref=f15e1555] [cursor=pointer]
+        - button "^" [ref=f15e1562] [cursor=pointer]
+        - button "^" [ref=f15e1569] [cursor=pointer]
+        - button "|" [ref=f15e1576] [cursor=pointer]
+        - button "|" [ref=f15e1583] [cursor=pointer]
+        - button "□" [ref=f15e1590] [cursor=pointer]
+        - button "□" [ref=f15e1597] [cursor=pointer]
+        - button "□" [ref=f15e1604] [cursor=pointer]
+        - button "□" [ref=f15e1611] [cursor=pointer]
+        - button "^" [ref=f15e1618] [cursor=pointer]
+        - button "1" [ref=f15e1625] [cursor=pointer]
+        - button "|" [ref=f15e1632] [cursor=pointer]
+        - button "1" [ref=f15e1639] [cursor=pointer]
+        - button "□" [ref=f15e1646] [cursor=pointer]
+        - button "|" [ref=f15e1653] [cursor=pointer]
+        - button "□" [ref=f15e1660] [cursor=pointer]
+        - button "^" [ref=f15e1667] [cursor=pointer]
+        - button "□" [ref=f15e1674] [cursor=pointer]
+        - button "□" [ref=f15e1681] [cursor=pointer]
+        - button "^" [ref=f15e1688] [cursor=pointer]
+        - button "|" [ref=f15e1695] [cursor=pointer]
+        - button "init.8 □" [ref=f15e1702] [cursor=pointer]:
+          - generic "init.8 · □" [ref=f15e1703]:
+            - generic [ref=f15e1708]:
+              - generic [ref=f15e1709]: init.8
+              - text: □
+        - button "□" [ref=f15e1710] [cursor=pointer]
+        - button "□" [ref=f15e1717] [cursor=pointer]
+        - button "^" [ref=f15e1724] [cursor=pointer]
+        - button "□" [ref=f15e1731] [cursor=pointer]
+        - button "□" [ref=f15e1738] [cursor=pointer]
+        - button "|" [ref=f15e1745] [cursor=pointer]
+        - button "1" [ref=f15e1752] [cursor=pointer]
+        - button "1" [ref=f15e1759] [cursor=pointer]
+        - button "□" [ref=f15e1766] [cursor=pointer]
+        - button "□" [ref=f15e1773] [cursor=pointer]
+        - button "#" [ref=f15e1780] [cursor=pointer]
+        - button "^" [ref=f15e1787] [cursor=pointer]
+        - button "|" [ref=f15e1794] [cursor=pointer]
+        - button "□" [ref=f15e1801] [cursor=pointer]
+        - button "1" [ref=f15e1808] [cursor=pointer]
+        - button "^" [ref=f15e1815] [cursor=pointer]
+        - button "□" [ref=f15e1822] [cursor=pointer]
+        - button "|" [ref=f15e1829] [cursor=pointer]
+        - button "□" [ref=f15e1836] [cursor=pointer]
+        - button "□" [ref=f15e1843] [cursor=pointer]
+        - button "init.3 □" [ref=f15e1850] [cursor=pointer]:
+          - generic "init.3 · □" [ref=f15e1851]:
+            - generic [ref=f15e1856]:
+              - generic [ref=f15e1857]: init.3
+              - text: □
+        - button "^" [ref=f15e1858] [cursor=pointer]
+        - button "□" [ref=f15e1865] [cursor=pointer]
+        - button "|" [ref=f15e1872] [cursor=pointer]
+        - button "1" [ref=f15e1879] [cursor=pointer]
+        - button "□" [ref=f15e1886] [cursor=pointer]
+        - button "|" [ref=f15e1893] [cursor=pointer]
+        - button "^" [ref=f15e1900] [cursor=pointer]
+        - button "□" [ref=f15e1907] [cursor=pointer]
+        - button "□" [ref=f15e1914] [cursor=pointer]
+        - button "|" [ref=f15e1921] [cursor=pointer]
+        - button "1" [ref=f15e1928] [cursor=pointer]
+        - button "|" [ref=f15e1935] [cursor=pointer]
+        - button "□" [ref=f15e1942] [cursor=pointer]
+        - button "□" [ref=f15e1949] [cursor=pointer]
+        - button "#" [ref=f15e1956] [cursor=pointer]
+        - button "1" [ref=f15e1963] [cursor=pointer]
+        - button "□" [ref=f15e1970] [cursor=pointer]
+        - button "□" [ref=f15e1977] [cursor=pointer]
+        - button "#" [ref=f15e1984] [cursor=pointer]
+        - button "^" [ref=f15e1991] [cursor=pointer]
+        - button "^" [ref=f15e1998] [cursor=pointer]
+        - button "#" [ref=f15e2005] [cursor=pointer]
+        - button "□" [ref=f15e2012] [cursor=pointer]
+        - button "^" [ref=f15e2019] [cursor=pointer]
+        - button "□" [ref=f15e2026] [cursor=pointer]
+        - button "□" [ref=f15e2033] [cursor=pointer]
+        - button "1" [ref=f15e2040] [cursor=pointer]
+        - button "|" [ref=f15e2047] [cursor=pointer]
+        - button "|" [ref=f15e2054] [cursor=pointer]
+        - button "1" [ref=f15e2061] [cursor=pointer]
+        - button "□" [ref=f15e2068] [cursor=pointer]
+        - button "|" [ref=f15e2075] [cursor=pointer]
+        - button "init.6 □" [ref=f15e2082] [cursor=pointer]:
+          - generic "init.6 · □" [ref=f15e2083]:
+            - generic [ref=f15e2088]:
+              - generic [ref=f15e2089]: init.6
+              - text: □
+        - button "□" [ref=f15e2090] [cursor=pointer]
+        - button "^" [ref=f15e2097] [cursor=pointer]
+        - button "|" [ref=f15e2104] [cursor=pointer]
+        - button "□" [ref=f15e2111] [cursor=pointer]
+        - button "□" [ref=f15e2118] [cursor=pointer]
+        - button "□" [ref=f15e2125] [cursor=pointer]
+        - button "^" [ref=f15e2132] [cursor=pointer]
+        - button "|" [ref=f15e2139] [cursor=pointer]
+        - button "□" [ref=f15e2146] [cursor=pointer]
+        - button "□" [ref=f15e2153] [cursor=pointer]
+        - button "□" [ref=f15e2160] [cursor=pointer]
+        - button "^" [ref=f15e2167] [cursor=pointer]
+        - button "1" [ref=f15e2174] [cursor=pointer]
+        - button "1" [ref=f15e2181] [cursor=pointer]
+        - button "init.4 □" [ref=f15e2188] [cursor=pointer]:
+          - generic "init.4 · □" [ref=f15e2189]:
+            - generic [ref=f15e2194]:
+              - generic [ref=f15e2195]: init.4
+              - text: □
+        - button "□" [ref=f15e2196] [cursor=pointer]
+        - button "□" [ref=f15e2203] [cursor=pointer]
+        - button "1" [ref=f15e2210] [cursor=pointer]
+        - button "□" [ref=f15e2217] [cursor=pointer]
+        - button "init.5 □" [ref=f15e2224] [cursor=pointer]:
+          - generic "init.5 · □" [ref=f15e2225]:
+            - generic [ref=f15e2230]:
+              - generic [ref=f15e2231]: init.5
+              - text: □
+        - button "□" [ref=f15e2232] [cursor=pointer]
+        - button "□" [ref=f15e2239] [cursor=pointer]
+        - button "|" [ref=f15e2246] [cursor=pointer]
+        - button "□" [ref=f15e2253] [cursor=pointer]
+        - button "^" [ref=f15e2260] [cursor=pointer]
+        - button "^" [ref=f15e2267] [cursor=pointer]
+        - button "1" [ref=f15e2274] [cursor=pointer]
+        - button "1" [ref=f15e2281] [cursor=pointer]
+        - button "□" [ref=f15e2288] [cursor=pointer]
+        - button "^" [ref=f15e2295] [cursor=pointer]
+        - button "|" [ref=f15e2302] [cursor=pointer]
+        - button "□" [ref=f15e2309] [cursor=pointer]
+        - button "1" [ref=f15e2316] [cursor=pointer]
+        - button "init.1 □" [ref=f15e2323] [cursor=pointer]:
+          - generic "init.1 · □" [ref=f15e2324]:
+            - generic [ref=f15e2329]:
+              - generic [ref=f15e2330]: init.1
+              - text: □
+        - button "□" [ref=f15e2331] [cursor=pointer]
+        - button "init.2 □" [ref=f15e2338] [cursor=pointer]:
+          - generic "init.2 · □" [ref=f15e2339]:
+            - generic [ref=f15e2344]:
+              - generic [ref=f15e2345]: init.2
+              - text: □
+        - button "#" [ref=f15e2346] [cursor=pointer]
+        - button "□" [ref=f15e2353] [cursor=pointer]
+        - button "|" [ref=f15e2360] [cursor=pointer]
+        - button "□" [ref=f15e2367] [cursor=pointer]
+        - button "^" [ref=f15e2374] [cursor=pointer]
+        - button "□" [ref=f15e2381] [cursor=pointer]
+        - button "□" [ref=f15e2388] [cursor=pointer]
+        - button "□" [ref=f15e2395] [cursor=pointer]
+        - button "^" [ref=f15e2402] [cursor=pointer]
+        - button "^" [ref=f15e2409] [cursor=pointer]
+        - button "#" [ref=f15e2416] [cursor=pointer]
+        - button "1" [ref=f15e2423] [cursor=pointer]
+        - button "1" [ref=f15e2430] [cursor=pointer]
+        - button "□" [ref=f15e2437] [cursor=pointer]
+        - button "|" [ref=f15e2444] [cursor=pointer]
+        - button "□" [ref=f15e2451] [cursor=pointer]
+        - button "^" [ref=f15e2458] [cursor=pointer]
+        - button "□" [ref=f15e2465] [cursor=pointer]
+        - button "|" [ref=f15e2472] [cursor=pointer]
+        - button "□" [ref=f15e2479] [cursor=pointer]
+        - button "init.7 □" [ref=f15e2486] [cursor=pointer]:
+          - generic "init.7 · □" [ref=f15e2487]:
+            - generic [ref=f15e2492]:
+              - generic [ref=f15e2493]: init.7
+              - text: □
+        - button "^" [ref=f15e2494] [cursor=pointer]
+        - button "^" [ref=f15e2501] [cursor=pointer]
+        - button "□" [ref=f15e2508] [cursor=pointer]
+        - button "|" [ref=f15e2515] [cursor=pointer]
+        - button "1" [ref=f15e2522] [cursor=pointer]
+        - button "□" [ref=f15e2529] [cursor=pointer]
+        - button "init.0 □" [ref=f15e2536] [cursor=pointer]:
+          - generic "init.0 · □" [ref=f15e2537]:
+            - generic [ref=f15e2542]:
+              - generic [ref=f15e2543]: init.0
+              - text: □
+        - button "|" [ref=f15e2544] [cursor=pointer]
+        - button "□" [ref=f15e2551] [cursor=pointer]
+        - button "^" [ref=f15e2558] [cursor=pointer]
+        - button "|" [ref=f15e2565] [cursor=pointer]
+        - button "init.fence □" [ref=f15e2572] [cursor=pointer]:
+          - generic "init.fence · □" [ref=f15e2573]:
+            - generic [ref=f15e2578]:
+              - generic [ref=f15e2579]: init.fence
+              - text: □
+        - button "1" [ref=f15e2580] [cursor=pointer]
+        - button "BOOT 1" [ref=f15e2587] [cursor=pointer]:
+          - generic "BOOT · 1" [ref=f15e2588]:
+            - generic [ref=f15e2593]:
+              - generic [ref=f15e2594]: BOOT
+              - text: "1"
+        - button "□" [ref=f15e2595] [cursor=pointer]
+      - generic [ref=f15e2602]: 瓷砖已打乱。先找带状态名的读写头瓷砖。

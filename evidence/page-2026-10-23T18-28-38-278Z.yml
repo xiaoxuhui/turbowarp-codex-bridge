@@ -1,0 +1,347 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: TM
+      - generic [ref=e7]:
+        - heading "图灵机实验台" [level=1] [ref=e8]
+        - paragraph [ref=e9]: 单纸带 · 确定性 · 可编程
+    - generic [ref=e10]:
+      - link "进入关卡" [ref=e11] [cursor=pointer]:
+        - /url: ./campaign.html
+      - button "导出项目" [ref=e12] [cursor=pointer]
+      - button "导入项目" [ref=e13] [cursor=pointer]
+      - button "导出记录" [ref=e14] [cursor=pointer]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: 运行状态
+          - strong [ref=e20]: 就绪
+        - generic [ref=e21]:
+          - generic [ref=e22]: 当前状态
+          - strong [ref=e23]: q0
+        - generic [ref=e24]:
+          - generic [ref=e25]: 读取符号
+          - strong [ref=e26]: "1"
+        - generic [ref=e27]:
+          - generic [ref=e28]: 读写头位置
+          - strong [ref=e29]: "0"
+        - generic [ref=e30]:
+          - generic [ref=e31]: 已执行步数
+          - strong [ref=e32]: "0"
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: "-8"
+            - generic [ref=e37]: □
+          - generic [ref=e38]:
+            - generic [ref=e39]: "-7"
+            - generic [ref=e40]: □
+          - generic [ref=e41]:
+            - generic [ref=e42]: "-6"
+            - generic [ref=e43]: □
+          - generic [ref=e44]:
+            - generic [ref=e45]: "-5"
+            - generic [ref=e46]: □
+          - generic [ref=e47]:
+            - generic [ref=e48]: "-4"
+            - generic [ref=e49]: □
+          - generic [ref=e50]:
+            - generic [ref=e51]: "-3"
+            - generic [ref=e52]: □
+          - generic [ref=e53]:
+            - generic [ref=e54]: "-2"
+            - generic [ref=e55]: □
+          - generic [ref=e56]:
+            - generic [ref=e57]: "-1"
+            - generic [ref=e58]: □
+          - generic [ref=e59]:
+            - generic [ref=e60]: "0"
+            - generic [ref=e61]: "1"
+            - text: ▲
+          - generic [ref=e62]:
+            - generic [ref=e63]: "1"
+            - generic [ref=e64]: "1"
+          - generic [ref=e65]:
+            - generic [ref=e66]: "2"
+            - generic [ref=e67]: "1"
+          - generic [ref=e68]:
+            - generic [ref=e69]: "3"
+            - generic [ref=e70]: □
+          - generic [ref=e71]:
+            - generic [ref=e72]: "4"
+            - generic [ref=e73]: □
+          - generic [ref=e74]:
+            - generic [ref=e75]: "5"
+            - generic [ref=e76]: □
+          - generic [ref=e77]:
+            - generic [ref=e78]: "6"
+            - generic [ref=e79]: □
+          - generic [ref=e80]:
+            - generic [ref=e81]: "7"
+            - generic [ref=e82]: □
+          - generic [ref=e83]:
+            - generic [ref=e84]: "8"
+            - generic [ref=e85]: □
+        - generic [ref=e86]: 读写头 · q0
+      - generic [ref=e87]:
+        - button "单步" [ref=e88] [cursor=pointer]
+        - button "运行" [ref=e89] [cursor=pointer]
+        - button "暂停" [ref=e90] [cursor=pointer]
+        - button "重置" [ref=e91] [cursor=pointer]
+        - generic [ref=e92]:
+          - text: 纸带视角
+          - combobox "纸带视角" [ref=e93]:
+            - option "跟随读写头" [selected]
+            - option "固定在 0"
+            - option "随意拖动"
+        - generic [ref=e94]:
+          - generic [ref=e95]: 目标速度
+          - slider [ref=e96]: "5"
+          - spinbutton "手动输入目标速度（步/秒）" [ref=e97]: "5"
+          - generic [ref=e98]: 5 步/秒
+          - strong [ref=e99]: 实际 0 步/秒
+    - region [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - heading "吉斯维杰特数列 → 图灵机" [level=2] [ref=e103]
+          - paragraph [ref=e104]: 输入阈值，转换后的规则会显示在下方。点击上方“运行”开始计算；新项严格超过阈值时写出并停机，等于时继续。
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - text: 整数阈值（0–16）
+            - spinbutton "整数阈值（0–16）" [ref=e107]: "2"
+          - button "开始转换" [ref=e108] [cursor=pointer]
+      - paragraph [ref=e109]: 0 表示未写入；数字表示数列项。计算时 |O、S、A、B 为比较标记，#数字记录本轮最大重复次数，停机时会清除。建议先试 2；阈值越大，运行可能极长。
+      - status [ref=e110]
+    - generic [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - heading "机器定义" [level=2] [ref=e114]
+          - generic [ref=e115]: 每行一条规则：状态,符号 → 状态,符号,方向
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - text: 初始输入
+            - textbox "初始输入" [ref=e118]: "111"
+          - generic [ref=e119]:
+            - text: 空白符
+            - textbox "空白符" [ref=e120]: □
+          - generic [ref=e121]:
+            - text: 初始状态
+            - textbox "初始状态" [ref=e122]: q0
+          - generic [ref=e123]:
+            - generic [ref=e124]: 最大步数
+            - generic [ref=e125]:
+              - spinbutton "最大步数" [ref=e126]: "10000"
+              - generic [ref=e127] [cursor=pointer]:
+                - checkbox "Max" [ref=e128]
+                - text: Max
+          - generic [ref=e129]:
+            - text: 接受状态
+            - textbox "接受状态" [ref=e130]:
+              - /placeholder: 逗号分隔
+          - generic [ref=e131]:
+            - text: 拒绝状态
+            - textbox "拒绝状态" [ref=e132]:
+              - /placeholder: 逗号分隔
+          - generic [ref=e133]:
+            - text: 普通停机状态
+            - textbox "普通停机状态" [ref=e134]:
+              - /placeholder: 逗号分隔
+              - text: HALT
+        - generic [ref=e135]:
+          - text: 转移规则
+          - textbox "转移规则" [ref=e136]: q0,1 -> q0,1,R q0,□ -> HALT,1,N
+        - generic [ref=e137]:
+          - strong [ref=e138]: 结构化规则表
+          - button "＋ 新增规则" [ref=e139] [cursor=pointer]
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e142]: 当前状态
+            - generic [ref=e143]: 读取
+            - generic [ref=e144]: 下一状态
+            - generic [ref=e145]: 写入
+            - generic [ref=e146]: 移动
+          - generic [ref=e147]:
+            - textbox "规则 1 当前状态" [ref=e148]: q0
+            - textbox "规则 1 读取符号" [ref=e149]: "1"
+            - textbox "规则 1 下一状态" [ref=e150]: q0
+            - textbox "规则 1 写入符号" [ref=e151]: "1"
+            - combobox "规则 1 移动方向" [ref=e152]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 1" [ref=e153] [cursor=pointer]: ×
+          - generic [ref=e154]:
+            - textbox "规则 2 当前状态" [ref=e155]: q0
+            - textbox "规则 2 读取符号" [ref=e156]: □
+            - textbox "规则 2 下一状态" [ref=e157]: HALT
+            - textbox "规则 2 写入符号" [ref=e158]: "1"
+            - combobox "规则 2 移动方向" [ref=e159]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 2" [ref=e160] [cursor=pointer]: ×
+        - generic [ref=e161]:
+          - generic [ref=e162]: 共 2 条 · 第 1/1 页
+          - button "上一页" [disabled] [ref=e163] [cursor=pointer]
+          - button "下一页" [disabled] [ref=e164] [cursor=pointer]
+        - generic [ref=e165]:
+          - button "应用并重置" [ref=e166] [cursor=pointer]
+          - button "清空规则" [ref=e167] [cursor=pointer]
+        - generic [ref=e168]: 快捷键：空格运行/暂停，Alt + → 单步，Ctrl + R 重置（输入框聚焦时不触发）。
+      - complementary [ref=e169]:
+        - generic [ref=e170]:
+          - heading "示例程序" [level=2] [ref=e172]
+          - combobox [ref=e173]:
+            - option "一进制加一" [selected]
+            - option "二进制加一"
+            - option "二进制回文判断"
+            - option "2 状态忙碌海狸"
+          - paragraph [ref=e174]: 越过所有 1，在末尾写入一个 1。
+          - button "加载此示例" [ref=e175] [cursor=pointer]
+        - generic [ref=e176]:
+          - heading "执行记录" [level=2] [ref=e178]
+          - generic [ref=e179]: 单步或运行后，这里会显示执行过程
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - heading "全路线总览" [level=2] [ref=e184]
+          - paragraph [ref=e185]: 后台计算整段运行轨迹并压缩成一张时空图；生成时仍可继续使用上面的模拟器和瓷砖游戏。
+        - generic [ref=e186]:
+          - generic [ref=e187]:
+            - text: 运行步数
+            - spinbutton "运行步数" [ref=e188]: "10000"
+          - button "后台生成" [ref=e189] [cursor=pointer]
+          - button "取消" [disabled] [ref=e190] [cursor=pointer]
+      - generic [ref=e191]:
+        - progressbar [ref=e192]
+        - generic [ref=e193]: 等待生成
+      - generic [ref=e194]: 读写头 非空纸带 空白；纵向为时间，横向为纸带位置
+      - generic [ref=e198]: 输入步数后点击“后台生成”
+    - generic [ref=e201]:
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - heading "计算瓷砖拼图" [level=2] [ref=e204]
+          - paragraph [ref=e205]: 每一行是一个时刻；相邻边必须同色。点击或拖动瓷砖，把它放入上方空格。
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - text: 生成步数
+            - spinbutton "生成步数" [ref=e208]: "10"
+          - button "生成瓷砖" [ref=e209] [cursor=pointer]
+          - button "检查拼法" [ref=e210] [cursor=pointer]
+          - button "查看正确拼法" [ref=e211] [cursor=pointer]
+      - generic [ref=e212]: 未发现循环；计算结果：已停机。 棋盘 5 × 6，共 30 块。
+      - generic [ref=e214]:
+        - button "第 1 行第 1 列" [ref=e215] [cursor=pointer]:
+          - generic [ref=e216]: "-1"
+        - button "第 1 行第 2 列" [ref=e217] [cursor=pointer]:
+          - generic [ref=e218]: "0"
+        - button "第 1 行第 3 列" [ref=e219] [cursor=pointer]:
+          - generic [ref=e220]: "1"
+        - button "第 1 行第 4 列" [ref=e221] [cursor=pointer]:
+          - generic [ref=e222]: "2"
+        - button "第 1 行第 5 列" [ref=e223] [cursor=pointer]:
+          - generic [ref=e224]: "3"
+        - button "第 1 行第 6 列" [ref=e225] [cursor=pointer]:
+          - generic [ref=e226]: "4"
+        - button "第 2 行第 1 列" [ref=e227] [cursor=pointer]:
+          - generic [ref=e228]: "-1"
+        - button "第 2 行第 2 列" [ref=e229] [cursor=pointer]:
+          - generic [ref=e230]: "0"
+        - button "第 2 行第 3 列" [ref=e231] [cursor=pointer]:
+          - generic [ref=e232]: "1"
+        - button "第 2 行第 4 列" [ref=e233] [cursor=pointer]:
+          - generic [ref=e234]: "2"
+        - button "第 2 行第 5 列" [ref=e235] [cursor=pointer]:
+          - generic [ref=e236]: "3"
+        - button "第 2 行第 6 列" [ref=e237] [cursor=pointer]:
+          - generic [ref=e238]: "4"
+        - button "第 3 行第 1 列" [ref=e239] [cursor=pointer]:
+          - generic [ref=e240]: "-1"
+        - button "第 3 行第 2 列" [ref=e241] [cursor=pointer]:
+          - generic [ref=e242]: "0"
+        - button "第 3 行第 3 列" [ref=e243] [cursor=pointer]:
+          - generic [ref=e244]: "1"
+        - button "第 3 行第 4 列" [ref=e245] [cursor=pointer]:
+          - generic [ref=e246]: "2"
+        - button "第 3 行第 5 列" [ref=e247] [cursor=pointer]:
+          - generic [ref=e248]: "3"
+        - button "第 3 行第 6 列" [ref=e249] [cursor=pointer]:
+          - generic [ref=e250]: "4"
+        - button "第 4 行第 1 列" [ref=e251] [cursor=pointer]:
+          - generic [ref=e252]: "-1"
+        - button "第 4 行第 2 列" [ref=e253] [cursor=pointer]:
+          - generic [ref=e254]: "0"
+        - button "第 4 行第 3 列" [ref=e255] [cursor=pointer]:
+          - generic [ref=e256]: "1"
+        - button "第 4 行第 4 列" [ref=e257] [cursor=pointer]:
+          - generic [ref=e258]: "2"
+        - button "第 4 行第 5 列" [ref=e259] [cursor=pointer]:
+          - generic [ref=e260]: "3"
+        - button "第 4 行第 6 列" [ref=e261] [cursor=pointer]:
+          - generic [ref=e262]: "4"
+        - button "第 5 行第 1 列" [ref=e263] [cursor=pointer]:
+          - generic [ref=e264]: "-1"
+        - button "第 5 行第 2 列" [ref=e265] [cursor=pointer]:
+          - generic [ref=e266]: "0"
+        - button "第 5 行第 3 列" [ref=e267] [cursor=pointer]:
+          - generic [ref=e268]: "1"
+        - button "第 5 行第 4 列" [ref=e269] [cursor=pointer]:
+          - generic [ref=e270]: "2"
+        - button "第 5 行第 5 列" [ref=e271] [cursor=pointer]:
+          - generic [ref=e272]: "3"
+        - button "第 5 行第 6 列" [ref=e273] [cursor=pointer]:
+          - generic [ref=e274]: "4"
+      - heading "待拼瓷砖 点击一块，再点击空格；也支持拖放" [level=3] [ref=e275]
+      - generic [ref=e276]:
+        - button "1" [ref=e277] [cursor=pointer]
+        - button "1" [ref=e284] [cursor=pointer]
+        - button "□" [ref=e291] [cursor=pointer]
+        - button "□" [ref=e298] [cursor=pointer]
+        - button "1" [ref=e305] [cursor=pointer]
+        - button "□" [ref=e312] [cursor=pointer]
+        - button "q0 1" [ref=e319] [cursor=pointer]:
+          - generic "q0 · 1" [ref=e320]:
+            - generic [ref=e325]:
+              - generic [ref=e326]: q0
+              - text: "1"
+        - button "□" [ref=e327] [cursor=pointer]
+        - button "1" [ref=e334] [cursor=pointer]
+        - button "□" [ref=e341] [cursor=pointer]
+        - button "1" [ref=e348] [cursor=pointer]
+        - button "1" [ref=e355] [cursor=pointer]
+        - button "1" [ref=e362] [cursor=pointer]
+        - button "1" [ref=e369] [cursor=pointer]
+        - button "□" [ref=e376] [cursor=pointer]
+        - button "□" [ref=e383] [cursor=pointer]
+        - button "1" [ref=e390] [cursor=pointer]
+        - button "q0 1" [ref=e397] [cursor=pointer]:
+          - generic "q0 · 1" [ref=e398]:
+            - generic [ref=e403]:
+              - generic [ref=e404]: q0
+              - text: "1"
+        - button "1" [ref=e405] [cursor=pointer]
+        - button "q0 □" [ref=e412] [cursor=pointer]:
+          - generic "q0 · □" [ref=e413]:
+            - generic [ref=e418]:
+              - generic [ref=e419]: q0
+              - text: □
+        - button "□" [ref=e420] [cursor=pointer]
+        - button "q0 1" [ref=e427] [cursor=pointer]:
+          - generic "q0 · 1" [ref=e428]:
+            - generic [ref=e433]:
+              - generic [ref=e434]: q0
+              - text: "1"
+        - button "HALT 1" [ref=e435] [cursor=pointer]:
+          - generic "HALT · 1" [ref=e436]:
+            - generic [ref=e441]:
+              - generic [ref=e442]: HALT
+              - text: "1"
+        - button "1" [ref=e443] [cursor=pointer]
+        - button "□" [ref=e450] [cursor=pointer]
+        - button "1" [ref=e457] [cursor=pointer]
+        - button "□" [ref=e464] [cursor=pointer]
+        - button "□" [ref=e471] [cursor=pointer]
+        - button "□" [ref=e478] [cursor=pointer]
+        - button "□" [ref=e485] [cursor=pointer]
+      - generic [ref=e492]: 瓷砖已打乱。先找带状态名的读写头瓷砖。

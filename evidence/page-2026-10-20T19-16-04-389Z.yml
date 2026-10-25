@@ -1,0 +1,598 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - link "路流首页" [ref=e3] [cursor=pointer]:
+      - /url: ./index.html
+      - generic [ref=e7]:
+        - text: 路流 FLOW
+        - generic [ref=e8]: 交通规划沙盒
+    - generic [ref=e9]:
+      - generic [ref=e11]: 城市实验场
+      - generic [ref=e12]: v0.1.0
+    - generic [ref=e13]:
+      - generic [ref=e14]: ✓ 已保存到本地
+      - button "玩法指南 ?" [ref=e15] [cursor=pointer]:
+        - text: 玩法指南
+        - generic [ref=e16]: "?"
+      - button "保存方案" [ref=e17] [cursor=pointer]
+  - main [ref=e20]:
+    - complementary [ref=e21]:
+      - generic [ref=e22]:
+        - text: 建造工具
+        - generic [ref=e23]: BUILD
+      - heading "让城市， 流动起来。" [level=1] [ref=e24]: 让城市，流动起来。
+      - paragraph [ref=e25]: 一条路，一个路口。构建属于你的交通网络。
+      - navigation "建造工具" [ref=e26]:
+        - button "选择 / 查看 1" [ref=e27] [cursor=pointer]:
+          - generic [ref=e30]: 选择 / 查看
+          - generic [ref=e31]: "1"
+        - button "绘制道路 2" [ref=e32] [cursor=pointer]:
+          - generic [ref=e35]: 绘制道路
+          - generic [ref=e36]: "2"
+        - button "行驶方向 3" [ref=e37] [cursor=pointer]:
+          - generic [ref=e40]: 行驶方向
+          - generic [ref=e41]: "3"
+        - button "红绿灯 4" [ref=e42] [cursor=pointer]:
+          - generic [ref=e45]: 红绿灯
+          - generic [ref=e46]: "4"
+        - button "车辆入口 5" [ref=e48] [cursor=pointer]:
+          - generic [ref=e51]: 车辆入口
+          - generic [ref=e52]: "5"
+        - button "车辆出口 6" [active] [pressed] [ref=e53] [cursor=pointer]:
+          - generic [ref=e56]: 车辆出口
+          - generic [ref=e57]: "6"
+        - button "拆除设施 7" [ref=e58] [cursor=pointer]:
+          - generic [ref=e61]: 拆除设施
+          - generic [ref=e62]: "7"
+      - generic [ref=e66]:
+        - generic [ref=e67]: i
+        - paragraph [ref=e68]: 点击道路节点设置出口。车辆到达这里后离开路网。
+      - generic [ref=e69]:
+        - button "新建空白地图" [ref=e70] [cursor=pointer]
+        - button "载入示例路网" [ref=e73] [cursor=pointer]
+    - region "规划工作台" [ref=e76]:
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e79]: ◈
+          - generic [ref=e80]:
+            - heading "城市实验场" [level=2] [ref=e81]
+            - text: 自由建造 · 网格 25 × 17
+        - generic [ref=e82]:
+          - button "撤销" [ref=e83] [cursor=pointer]
+          - button "重做" [disabled] [ref=e86]
+          - button "显示网格" [pressed] [ref=e90] [cursor=pointer]
+      - generic [ref=e93]:
+        - generic: 规划模式
+        - generic:
+          - text: "N"
+          - generic: ↑
+        - application "交通规划地图，方向键移动，回车操作" [ref=e94]:
+          - generic [ref=e96]:
+            - generic [ref=e132]: CENTRAL BLOCK
+            - generic [ref=e133]: GREEN QUARTER
+          - generic:
+            - generic:
+              - generic: A
+              - generic: 入口 A
+          - generic [ref=e303]:
+            - button "道路 2,8 至 3,8"
+            - button "道路 3,8 至 4,8"
+            - button "道路 4,8 至 5,8"
+            - button "道路 5,8 至 6,8"
+            - button "道路 6,8 至 7,8"
+            - button "道路 7,8 至 8,8"
+            - button "道路 8,8 至 9,8"
+            - button "道路 10,8 至 9,8"
+            - button "道路 10,8 至 11,8"
+            - button "道路 11,8 至 12,8"
+            - button "道路 12,8 至 13,8"
+            - button "道路 13,8 至 14,8"
+            - button "道路 14,8 至 15,8"
+            - button "道路 15,8 至 16,8"
+            - button "道路 16,8 至 17,8"
+            - button "道路 17,8 至 18,8"
+            - button "道路 18,8 至 19,8"
+            - button "道路 19,8 至 20,8"
+            - button "道路 20,8 至 21,8"
+            - button "道路 21,8 至 22,8"
+            - button "网格 0,0" [ref=e1749]
+            - button "网格 1,0" [ref=e1750]
+            - button "网格 2,0" [ref=e1751]
+            - button "网格 3,0" [ref=e1752]
+            - button "网格 4,0" [ref=e1753]
+            - button "网格 5,0" [ref=e1754]
+            - button "网格 6,0" [ref=e1755]
+            - button "网格 7,0" [ref=e1756]
+            - button "网格 8,0" [ref=e1757]
+            - button "网格 9,0" [ref=e1758]
+            - button "网格 10,0" [ref=e1759]
+            - button "网格 11,0" [ref=e1760]
+            - button "网格 12,0" [ref=e1761]
+            - button "网格 13,0" [ref=e1762]
+            - button "网格 14,0" [ref=e1763]
+            - button "网格 15,0" [ref=e1764]
+            - button "网格 16,0" [ref=e1765]
+            - button "网格 17,0" [ref=e1766]
+            - button "网格 18,0" [ref=e1767]
+            - button "网格 19,0" [ref=e1768]
+            - button "网格 20,0" [ref=e1769]
+            - button "网格 21,0" [ref=e1770]
+            - button "网格 22,0" [ref=e1771]
+            - button "网格 23,0" [ref=e1772]
+            - button "网格 24,0" [ref=e1773]
+            - button "网格 0,1" [ref=e1774]
+            - button "网格 1,1" [ref=e1775]
+            - button "网格 2,1" [ref=e1776]
+            - button "网格 3,1" [ref=e1777]
+            - button "网格 4,1" [ref=e1778]
+            - button "网格 5,1" [ref=e1779]
+            - button "网格 6,1" [ref=e1780]
+            - button "网格 7,1" [ref=e1781]
+            - button "网格 8,1" [ref=e1782]
+            - button "网格 9,1" [ref=e1783]
+            - button "网格 10,1" [ref=e1784]
+            - button "网格 11,1" [ref=e1785]
+            - button "网格 12,1" [ref=e1786]
+            - button "网格 13,1" [ref=e1787]
+            - button "网格 14,1" [ref=e1788]
+            - button "网格 15,1" [ref=e1789]
+            - button "网格 16,1" [ref=e1790]
+            - button "网格 17,1" [ref=e1791]
+            - button "网格 18,1" [ref=e1792]
+            - button "网格 19,1" [ref=e1793]
+            - button "网格 20,1" [ref=e1794]
+            - button "网格 21,1" [ref=e1795]
+            - button "网格 22,1" [ref=e1796]
+            - button "网格 23,1" [ref=e1797]
+            - button "网格 24,1" [ref=e1798]
+            - button "网格 0,2" [ref=e1799]
+            - button "网格 1,2" [ref=e1800]
+            - button "网格 2,2" [ref=e1801]
+            - button "网格 3,2" [ref=e1802]
+            - button "网格 4,2" [ref=e1803]
+            - button "网格 5,2" [ref=e1804]
+            - button "网格 6,2" [ref=e1805]
+            - button "网格 7,2" [ref=e1806]
+            - button "网格 8,2" [ref=e1807]
+            - button "网格 9,2" [ref=e1808]
+            - button "网格 10,2" [ref=e1809]
+            - button "网格 11,2" [ref=e1810]
+            - button "网格 12,2" [ref=e1811]
+            - button "网格 13,2" [ref=e1812]
+            - button "网格 14,2" [ref=e1813]
+            - button "网格 15,2" [ref=e1814]
+            - button "网格 16,2" [ref=e1815]
+            - button "网格 17,2" [ref=e1816]
+            - button "网格 18,2" [ref=e1817]
+            - button "网格 19,2" [ref=e1818]
+            - button "网格 20,2" [ref=e1819]
+            - button "网格 21,2" [ref=e1820]
+            - button "网格 22,2" [ref=e1821]
+            - button "网格 23,2" [ref=e1822]
+            - button "网格 24,2" [ref=e1823]
+            - button "网格 0,3" [ref=e1824]
+            - button "网格 1,3" [ref=e1825]
+            - button "网格 2,3" [ref=e1826]
+            - button "网格 3,3" [ref=e1827]
+            - button "网格 4,3" [ref=e1828]
+            - button "网格 5,3" [ref=e1829]
+            - button "网格 6,3" [ref=e1830]
+            - button "网格 7,3" [ref=e1831]
+            - button "网格 8,3" [ref=e1832]
+            - button "网格 9,3" [ref=e1833]
+            - button "网格 10,3" [ref=e1834]
+            - button "网格 11,3" [ref=e1835]
+            - button "网格 12,3" [ref=e1836]
+            - button "网格 13,3" [ref=e1837]
+            - button "网格 14,3" [ref=e1838]
+            - button "网格 15,3" [ref=e1839]
+            - button "网格 16,3" [ref=e1840]
+            - button "网格 17,3" [ref=e1841]
+            - button "网格 18,3" [ref=e1842]
+            - button "网格 19,3" [ref=e1843]
+            - button "网格 20,3" [ref=e1844]
+            - button "网格 21,3" [ref=e1845]
+            - button "网格 22,3" [ref=e1846]
+            - button "网格 23,3" [ref=e1847]
+            - button "网格 24,3" [ref=e1848]
+            - button "网格 0,4" [ref=e1849]
+            - button "网格 1,4" [ref=e1850]
+            - button "网格 2,4" [ref=e1851]
+            - button "网格 3,4" [ref=e1852]
+            - button "网格 4,4" [ref=e1853]
+            - button "网格 5,4" [ref=e1854]
+            - button "网格 6,4" [ref=e1855]
+            - button "网格 7,4" [ref=e1856]
+            - button "网格 8,4" [ref=e1857]
+            - button "网格 9,4" [ref=e1858]
+            - button "网格 10,4" [ref=e1859]
+            - button "网格 11,4" [ref=e1860]
+            - button "网格 12,4" [ref=e1861]
+            - button "网格 13,4" [ref=e1862]
+            - button "网格 14,4" [ref=e1863]
+            - button "网格 15,4" [ref=e1864]
+            - button "网格 16,4" [ref=e1865]
+            - button "网格 17,4" [ref=e1866]
+            - button "网格 18,4" [ref=e1867]
+            - button "网格 19,4" [ref=e1868]
+            - button "网格 20,4" [ref=e1869]
+            - button "网格 21,4" [ref=e1870]
+            - button "网格 22,4" [ref=e1871]
+            - button "网格 23,4" [ref=e1872]
+            - button "网格 24,4" [ref=e1873]
+            - button "网格 0,5" [ref=e1874]
+            - button "网格 1,5" [ref=e1875]
+            - button "网格 2,5" [ref=e1876]
+            - button "网格 3,5" [ref=e1877]
+            - button "网格 4,5" [ref=e1878]
+            - button "网格 5,5" [ref=e1879]
+            - button "网格 6,5" [ref=e1880]
+            - button "网格 7,5" [ref=e1881]
+            - button "网格 8,5" [ref=e1882]
+            - button "网格 9,5" [ref=e1883]
+            - button "网格 10,5" [ref=e1884]
+            - button "网格 11,5" [ref=e1885]
+            - button "网格 12,5" [ref=e1886]
+            - button "网格 13,5" [ref=e1887]
+            - button "网格 14,5" [ref=e1888]
+            - button "网格 15,5" [ref=e1889]
+            - button "网格 16,5" [ref=e1890]
+            - button "网格 17,5" [ref=e1891]
+            - button "网格 18,5" [ref=e1892]
+            - button "网格 19,5" [ref=e1893]
+            - button "网格 20,5" [ref=e1894]
+            - button "网格 21,5" [ref=e1895]
+            - button "网格 22,5" [ref=e1896]
+            - button "网格 23,5" [ref=e1897]
+            - button "网格 24,5" [ref=e1898]
+            - button "网格 0,6" [ref=e1899]
+            - button "网格 1,6" [ref=e1900]
+            - button "网格 2,6" [ref=e1901]
+            - button "网格 3,6" [ref=e1902]
+            - button "网格 4,6" [ref=e1903]
+            - button "网格 5,6" [ref=e1904]
+            - button "网格 6,6" [ref=e1905]
+            - button "网格 7,6" [ref=e1906]
+            - button "网格 8,6" [ref=e1907]
+            - button "网格 9,6" [ref=e1908]
+            - button "网格 10,6" [ref=e1909]
+            - button "网格 11,6" [ref=e1910]
+            - button "网格 12,6" [ref=e1911]
+            - button "网格 13,6" [ref=e1912]
+            - button "网格 14,6" [ref=e1913]
+            - button "网格 15,6" [ref=e1914]
+            - button "网格 16,6" [ref=e1915]
+            - button "网格 17,6" [ref=e1916]
+            - button "网格 18,6" [ref=e1917]
+            - button "网格 19,6" [ref=e1918]
+            - button "网格 20,6" [ref=e1919]
+            - button "网格 21,6" [ref=e1920]
+            - button "网格 22,6" [ref=e1921]
+            - button "网格 23,6" [ref=e1922]
+            - button "网格 24,6" [ref=e1923]
+            - button "网格 0,7" [ref=e1924]
+            - button "网格 1,7" [ref=e1925]
+            - button "网格 2,7" [ref=e1926]
+            - button "网格 3,7" [ref=e1927]
+            - button "网格 4,7" [ref=e1928]
+            - button "网格 5,7" [ref=e1929]
+            - button "网格 6,7" [ref=e1930]
+            - button "网格 7,7" [ref=e1931]
+            - button "网格 8,7" [ref=e1932]
+            - button "网格 9,7" [ref=e1933]
+            - button "网格 10,7" [ref=e1934]
+            - button "网格 11,7" [ref=e1935]
+            - button "网格 12,7" [ref=e1936]
+            - button "网格 13,7" [ref=e1937]
+            - button "网格 14,7" [ref=e1938]
+            - button "网格 15,7" [ref=e1939]
+            - button "网格 16,7" [ref=e1940]
+            - button "网格 17,7" [ref=e1941]
+            - button "网格 18,7" [ref=e1942]
+            - button "网格 19,7" [ref=e1943]
+            - button "网格 20,7" [ref=e1944]
+            - button "网格 21,7" [ref=e1945]
+            - button "网格 22,7" [ref=e1946]
+            - button "网格 23,7" [ref=e1947]
+            - button "网格 24,7" [ref=e1948]
+            - button "网格 0,8" [ref=e1949]
+            - button "网格 1,8" [ref=e1950]
+            - button "网格 2,8，入口 A" [ref=e1951]
+            - button "网格 3,8" [ref=e1952]
+            - button "网格 4,8" [ref=e1953]
+            - button "网格 5,8" [ref=e1954]
+            - button "网格 6,8" [ref=e1955]
+            - button "网格 7,8" [ref=e1956]
+            - button "网格 8,8" [ref=e1957]
+            - button "网格 9,8" [ref=e1958]
+            - button "网格 10,8" [ref=e1959]
+            - button "网格 11,8" [ref=e1960]
+            - button "网格 12,8" [ref=e1961]
+            - button "网格 13,8" [ref=e1962]
+            - button "网格 14,8" [ref=e1963]
+            - button "网格 15,8" [ref=e1964]
+            - button "网格 16,8" [ref=e1965]
+            - button "网格 17,8" [ref=e1966]
+            - button "网格 18,8" [ref=e1967]
+            - button "网格 19,8" [ref=e1968]
+            - button "网格 20,8" [ref=e1969]
+            - button "网格 21,8" [ref=e1970]
+            - button "网格 22,8" [ref=e1971]
+            - button "网格 23,8" [ref=e1972]
+            - button "网格 24,8" [ref=e1973]
+            - button "网格 0,9" [ref=e1974]
+            - button "网格 1,9" [ref=e1975]
+            - button "网格 2,9" [ref=e1976]
+            - button "网格 3,9" [ref=e1977]
+            - button "网格 4,9" [ref=e1978]
+            - button "网格 5,9" [ref=e1979]
+            - button "网格 6,9" [ref=e1980]
+            - button "网格 7,9" [ref=e1981]
+            - button "网格 8,9" [ref=e1982]
+            - button "网格 9,9" [ref=e1983]
+            - button "网格 10,9" [ref=e1984]
+            - button "网格 11,9" [ref=e1985]
+            - button "网格 12,9" [ref=e1986]
+            - button "网格 13,9" [ref=e1987]
+            - button "网格 14,9" [ref=e1988]
+            - button "网格 15,9" [ref=e1989]
+            - button "网格 16,9" [ref=e1990]
+            - button "网格 17,9" [ref=e1991]
+            - button "网格 18,9" [ref=e1992]
+            - button "网格 19,9" [ref=e1993]
+            - button "网格 20,9" [ref=e1994]
+            - button "网格 21,9" [ref=e1995]
+            - button "网格 22,9" [ref=e1996]
+            - button "网格 23,9" [ref=e1997]
+            - button "网格 24,9" [ref=e1998]
+            - button "网格 0,10" [ref=e1999]
+            - button "网格 1,10" [ref=e2000]
+            - button "网格 2,10" [ref=e2001]
+            - button "网格 3,10" [ref=e2002]
+            - button "网格 4,10" [ref=e2003]
+            - button "网格 5,10" [ref=e2004]
+            - button "网格 6,10" [ref=e2005]
+            - button "网格 7,10" [ref=e2006]
+            - button "网格 8,10" [ref=e2007]
+            - button "网格 9,10" [ref=e2008]
+            - button "网格 10,10" [ref=e2009]
+            - button "网格 11,10" [ref=e2010]
+            - button "网格 12,10" [ref=e2011]
+            - button "网格 13,10" [ref=e2012]
+            - button "网格 14,10" [ref=e2013]
+            - button "网格 15,10" [ref=e2014]
+            - button "网格 16,10" [ref=e2015]
+            - button "网格 17,10" [ref=e2016]
+            - button "网格 18,10" [ref=e2017]
+            - button "网格 19,10" [ref=e2018]
+            - button "网格 20,10" [ref=e2019]
+            - button "网格 21,10" [ref=e2020]
+            - button "网格 22,10" [ref=e2021]
+            - button "网格 23,10" [ref=e2022]
+            - button "网格 24,10" [ref=e2023]
+            - button "网格 0,11" [ref=e2024]
+            - button "网格 1,11" [ref=e2025]
+            - button "网格 2,11" [ref=e2026]
+            - button "网格 3,11" [ref=e2027]
+            - button "网格 4,11" [ref=e2028]
+            - button "网格 5,11" [ref=e2029]
+            - button "网格 6,11" [ref=e2030]
+            - button "网格 7,11" [ref=e2031]
+            - button "网格 8,11" [ref=e2032]
+            - button "网格 9,11" [ref=e2033]
+            - button "网格 10,11" [ref=e2034]
+            - button "网格 11,11" [ref=e2035]
+            - button "网格 12,11" [ref=e2036]
+            - button "网格 13,11" [ref=e2037]
+            - button "网格 14,11" [ref=e2038]
+            - button "网格 15,11" [ref=e2039]
+            - button "网格 16,11" [ref=e2040]
+            - button "网格 17,11" [ref=e2041]
+            - button "网格 18,11" [ref=e2042]
+            - button "网格 19,11" [ref=e2043]
+            - button "网格 20,11" [ref=e2044]
+            - button "网格 21,11" [ref=e2045]
+            - button "网格 22,11" [ref=e2046]
+            - button "网格 23,11" [ref=e2047]
+            - button "网格 24,11" [ref=e2048]
+            - button "网格 0,12" [ref=e2049]
+            - button "网格 1,12" [ref=e2050]
+            - button "网格 2,12" [ref=e2051]
+            - button "网格 3,12" [ref=e2052]
+            - button "网格 4,12" [ref=e2053]
+            - button "网格 5,12" [ref=e2054]
+            - button "网格 6,12" [ref=e2055]
+            - button "网格 7,12" [ref=e2056]
+            - button "网格 8,12" [ref=e2057]
+            - button "网格 9,12" [ref=e2058]
+            - button "网格 10,12" [ref=e2059]
+            - button "网格 11,12" [ref=e2060]
+            - button "网格 12,12" [ref=e2061]
+            - button "网格 13,12" [ref=e2062]
+            - button "网格 14,12" [ref=e2063]
+            - button "网格 15,12" [ref=e2064]
+            - button "网格 16,12" [ref=e2065]
+            - button "网格 17,12" [ref=e2066]
+            - button "网格 18,12" [ref=e2067]
+            - button "网格 19,12" [ref=e2068]
+            - button "网格 20,12" [ref=e2069]
+            - button "网格 21,12" [ref=e2070]
+            - button "网格 22,12" [ref=e2071]
+            - button "网格 23,12" [ref=e2072]
+            - button "网格 24,12" [ref=e2073]
+            - button "网格 0,13" [ref=e2074]
+            - button "网格 1,13" [ref=e2075]
+            - button "网格 2,13" [ref=e2076]
+            - button "网格 3,13" [ref=e2077]
+            - button "网格 4,13" [ref=e2078]
+            - button "网格 5,13" [ref=e2079]
+            - button "网格 6,13" [ref=e2080]
+            - button "网格 7,13" [ref=e2081]
+            - button "网格 8,13" [ref=e2082]
+            - button "网格 9,13" [ref=e2083]
+            - button "网格 10,13" [ref=e2084]
+            - button "网格 11,13" [ref=e2085]
+            - button "网格 12,13" [ref=e2086]
+            - button "网格 13,13" [ref=e2087]
+            - button "网格 14,13" [ref=e2088]
+            - button "网格 15,13" [ref=e2089]
+            - button "网格 16,13" [ref=e2090]
+            - button "网格 17,13" [ref=e2091]
+            - button "网格 18,13" [ref=e2092]
+            - button "网格 19,13" [ref=e2093]
+            - button "网格 20,13" [ref=e2094]
+            - button "网格 21,13" [ref=e2095]
+            - button "网格 22,13" [ref=e2096]
+            - button "网格 23,13" [ref=e2097]
+            - button "网格 24,13" [ref=e2098]
+            - button "网格 0,14" [ref=e2099]
+            - button "网格 1,14" [ref=e2100]
+            - button "网格 2,14" [ref=e2101]
+            - button "网格 3,14" [ref=e2102]
+            - button "网格 4,14" [ref=e2103]
+            - button "网格 5,14" [ref=e2104]
+            - button "网格 6,14" [ref=e2105]
+            - button "网格 7,14" [ref=e2106]
+            - button "网格 8,14" [ref=e2107]
+            - button "网格 9,14" [ref=e2108]
+            - button "网格 10,14" [ref=e2109]
+            - button "网格 11,14" [ref=e2110]
+            - button "网格 12,14" [ref=e2111]
+            - button "网格 13,14" [ref=e2112]
+            - button "网格 14,14" [ref=e2113]
+            - button "网格 15,14" [ref=e2114]
+            - button "网格 16,14" [ref=e2115]
+            - button "网格 17,14" [ref=e2116]
+            - button "网格 18,14" [ref=e2117]
+            - button "网格 19,14" [ref=e2118]
+            - button "网格 20,14" [ref=e2119]
+            - button "网格 21,14" [ref=e2120]
+            - button "网格 22,14" [ref=e2121]
+            - button "网格 23,14" [ref=e2122]
+            - button "网格 24,14" [ref=e2123]
+            - button "网格 0,15" [ref=e2124]
+            - button "网格 1,15" [ref=e2125]
+            - button "网格 2,15" [ref=e2126]
+            - button "网格 3,15" [ref=e2127]
+            - button "网格 4,15" [ref=e2128]
+            - button "网格 5,15" [ref=e2129]
+            - button "网格 6,15" [ref=e2130]
+            - button "网格 7,15" [ref=e2131]
+            - button "网格 8,15" [ref=e2132]
+            - button "网格 9,15" [ref=e2133]
+            - button "网格 10,15" [ref=e2134]
+            - button "网格 11,15" [ref=e2135]
+            - button "网格 12,15" [ref=e2136]
+            - button "网格 13,15" [ref=e2137]
+            - button "网格 14,15" [ref=e2138]
+            - button "网格 15,15" [ref=e2139]
+            - button "网格 16,15" [ref=e2140]
+            - button "网格 17,15" [ref=e2141]
+            - button "网格 18,15" [ref=e2142]
+            - button "网格 19,15" [ref=e2143]
+            - button "网格 20,15" [ref=e2144]
+            - button "网格 21,15" [ref=e2145]
+            - button "网格 22,15" [ref=e2146]
+            - button "网格 23,15" [ref=e2147]
+            - button "网格 24,15" [ref=e2148]
+            - button "网格 0,16" [ref=e2149]
+            - button "网格 1,16" [ref=e2150]
+            - button "网格 2,16" [ref=e2151]
+            - button "网格 3,16" [ref=e2152]
+            - button "网格 4,16" [ref=e2153]
+            - button "网格 5,16" [ref=e2154]
+            - button "网格 6,16" [ref=e2155]
+            - button "网格 7,16" [ref=e2156]
+            - button "网格 8,16" [ref=e2157]
+            - button "网格 9,16" [ref=e2158]
+            - button "网格 10,16" [ref=e2159]
+            - button "网格 11,16" [ref=e2160]
+            - button "网格 12,16" [ref=e2161]
+            - button "网格 13,16" [ref=e2162]
+            - button "网格 14,16" [ref=e2163]
+            - button "网格 15,16" [ref=e2164]
+            - button "网格 16,16" [ref=e2165]
+            - button "网格 17,16" [ref=e2166]
+            - button "网格 18,16" [ref=e2167]
+            - button "网格 19,16" [ref=e2168]
+            - button "网格 20,16" [ref=e2169]
+            - button "网格 21,16" [ref=e2170]
+            - button "网格 22,16" [ref=e2171]
+            - button "网格 23,16" [ref=e2172]
+            - button "网格 24,16" [ref=e2173]
+        - generic:
+          - generic: 入口
+          - generic: 出口
+          - generic: 信号灯
+          - generic: ━━ 1 格
+      - generic [ref=e729]:
+        - button "开始模拟" [ref=e730] [cursor=pointer]
+        - button "重置模拟" [ref=e734] [cursor=pointer]
+        - generic "模拟速度" [ref=e737]:
+          - button "1×" [pressed] [ref=e738] [cursor=pointer]
+          - button "2×" [ref=e739] [cursor=pointer]
+          - button "4×" [ref=e740] [cursor=pointer]
+        - generic [ref=e741]:
+          - generic [ref=e742]: 00:00
+          - generic [ref=e743]: 模拟时间
+        - generic [ref=e744]: 准备就绪
+    - complementary [ref=e745]:
+      - generic [ref=e746]:
+        - text: 运行概览
+        - generic [ref=e747]: LIVE DATA
+      - generic [ref=e748]:
+        - heading "路网脉搏" [level=2] [ref=e749]
+        - generic [ref=e750]: 待运行
+      - generic [ref=e751]:
+        - text: 累计到达
+        - generic [ref=e752]:
+          - strong [ref=e753]: "0"
+          - generic [ref=e754]: 辆
+        - text: 每一次顺畅到达，都是好设计。
+      - generic [ref=e757]:
+        - generic [ref=e758]:
+          - strong [ref=e761]: "0"
+          - generic [ref=e762]: 在途车辆
+        - generic [ref=e763]:
+          - generic [ref=e764]: ≋
+          - strong [ref=e765]: "0"
+          - generic [ref=e766]: 排队车辆
+        - generic [ref=e767]:
+          - generic [ref=e768]: ◷
+          - strong [ref=e769]: —
+          - generic [ref=e770]: 平均用时 / 秒
+        - generic [ref=e771]:
+          - strong [ref=e774]: "20"
+          - generic [ref=e775]: 道路段数
+      - generic [ref=e776]:
+        - heading "交通需求" [level=3] [ref=e777]
+        - generic [ref=e778]: DEMAND
+      - generic [ref=e779]:
+        - text: 每个入口流量
+        - strong [ref=e780]:
+          - status [ref=e781]: "18"
+          - text: 辆/分
+      - slider "每个入口流量 辆/分" [ref=e782] [cursor=pointer]: "18"
+      - generic [ref=e783]:
+        - generic [ref=e784]: 轻松
+        - generic [ref=e785]: 繁忙
+      - paragraph [ref=e786]: 增加流量，检验路口的通行能力。
+      - generic [ref=e787]:
+        - heading "设施设置" [level=3] [ref=e788]
+        - generic [ref=e789]: ENTRY
+      - generic [ref=e790]:
+        - heading "入口 A ↗" [level=4] [ref=e2177]:
+          - text: 入口 A
+          - generic [ref=e2178]: ↗
+        - paragraph [ref=e2179]: 坐标 (2,8) · 暂无可达出口
+        - generic [ref=e2180]: 这股车流开往哪里？
+        - combobox "这股车流开往哪里？" [ref=e2181] [cursor=pointer]:
+          - option "自动 · 最近可达出口" [selected]
+        - paragraph [ref=e2182]: 虚线显示规划路线
+      - generic [ref=e795]: 再设置出口，就能开始模拟。
+      - generic [ref=e796]:
+        - button "导出方案" [ref=e797] [cursor=pointer]
+        - button "导入方案 ↗" [ref=e800] [cursor=pointer]
+  - contentinfo [ref=e801]:
+    - generic [ref=e802]: 本地沙盒 · 你的设计保存在此设备
+    - generic [ref=e804]: 连接道路 → 设置车流 → 观察城市
+  - status: 已设置入口，可在设施设置中指定出口

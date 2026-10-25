@@ -1,0 +1,1077 @@
+- generic [active]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e7] [cursor=pointer]: Settings
+          - generic [ref=e11] [cursor=pointer]: File
+          - generic [ref=e15] [cursor=pointer]: Edit
+          - generic [ref=e19] [cursor=pointer]: Addons
+          - generic [ref=e22] [cursor=pointer]: Advanced
+        - textbox "Project title here" [ref=e27]: Project
+        - button "See Project Page" [ref=e29] [cursor=pointer]
+        - link [ref=e33] [cursor=pointer]:
+          - /url: https://scratch.mit.edu/users/GarboMuffin/#comments
+          - button "TurboWarp Feedback" [ref=e34]
+      - generic [ref=e502]: Save to your computer
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - tablist [ref=e40]:
+            - tab "Code" [selected] [ref=e41] [cursor=pointer]
+            - tab "Costumes" [ref=e44] [cursor=pointer]
+            - tab "Sounds" [ref=e47] [cursor=pointer]
+            - searchbox [ref=e53]
+          - tabpanel "Code" [ref=e54]:
+            - generic [ref=e57]:
+              - generic [ref=e3004]:
+                - generic [ref=e3005]: Motion
+                - generic [ref=e3009]: Looks
+                - generic [ref=e3013]: Sound
+                - generic [ref=e3017]: Events
+                - generic [ref=e3021]: Control
+                - generic [ref=e3025]: Sensing
+                - generic [ref=e3029]: Operators
+                - generic [ref=e3033]: Variables
+                - generic [ref=e3037]: My Blocks
+              - img [ref=e96]:
+                - generic [ref=e542]:
+                  - generic [ref=e3041]:
+                    - generic [ref=e3043]: 初始化权重
+                    - generic [ref=e3046]:
+                      - generic [ref=e3048]:
+                        - generic [ref=e3050]:
+                          - generic [ref=e3052]:
+                            - generic [ref=e3054]:
+                              - generic [ref=e3056]: "0"
+                              - generic [ref=e3060]:
+                                - generic [ref=e3062]: "1"
+                                - generic [ref=e3066]:
+                                  - generic [ref=e3068]: "6"
+                                  - generic [ref=e3072]:
+                                    - generic [ref=e3074]:
+                                      - generic [ref=e3076]:
+                                        - generic [ref=e3078]:
+                                          - generic [ref=e3080]:
+                                            - generic [ref=e3082]: j
+                                            - generic [ref=e3086]: "37"
+                                            - generic [ref=e3090]: "*"
+                                          - generic [ref=e3091]: "101"
+                                          - generic [ref=e3095]: mod
+                                        - generic [ref=e3096]: "50"
+                                        - generic [ref=e3100]: "-"
+                                      - generic [ref=e3101]: "50"
+                                      - generic [ref=e3105]: /
+                                    - generic [ref=e3106]:
+                                      - generic [ref=e3108]:
+                                        - generic [ref=e3110]:
+                                          - generic [ref=e3112]:
+                                            - generic [ref=e3114]:
+                                              - generic [ref=e3116]: j
+                                              - generic [ref=e3120]: "19"
+                                              - generic [ref=e3124]: "*"
+                                            - generic [ref=e3125]: "31"
+                                            - generic [ref=e3129]: mod
+                                          - generic [ref=e3130]: "15"
+                                          - generic [ref=e3134]: "-"
+                                        - generic [ref=e3135]: "100"
+                                        - generic [ref=e3139]: /
+                                      - generic [ref=e3140]:
+                                        - generic [ref=e3142]:
+                                          - generic [ref=e3144]:
+                                            - generic [ref=e3146]:
+                                              - generic [ref=e3148]:
+                                                - generic [ref=e3150]: j
+                                                - generic [ref=e3154]: "17"
+                                                - generic [ref=e3158]: "*"
+                                              - generic [ref=e3159]: "47"
+                                              - generic [ref=e3163]: mod
+                                            - generic [ref=e3164]: "23"
+                                            - generic [ref=e3168]: "-"
+                                          - generic [ref=e3169]: "100"
+                                          - generic [ref=e3173]: /
+                                        - generic [ref=e3174]:
+                                          - generic [ref=e3176]: "0"
+                                          - generic [ref=e3180]:
+                                            - generic [ref=e3182]: "1"
+                                            - generic [ref=e3186]: change
+                                            - generic [ref=e3187]: j
+                                            - generic [ref=e3191]: by
+                                          - generic [ref=e3192]: add
+                                          - generic [ref=e3193]: to
+                                          - generic [ref=e3194]: H
+                                        - generic [ref=e3198]: add
+                                        - generic [ref=e3199]: to
+                                        - generic [ref=e3200]: W2
+                                      - generic [ref=e3204]: add
+                                      - generic [ref=e3205]: to
+                                      - generic [ref=e3206]: B1
+                                    - generic [ref=e3210]: add
+                                    - generic [ref=e3211]: to
+                                    - generic [ref=e3212]: W1
+                                  - generic [ref=e3216]: repeat
+                                - generic [ref=e3219]: set
+                                - generic [ref=e3220]: j
+                                - generic [ref=e3224]: to
+                              - generic [ref=e3225]: set
+                              - generic [ref=e3226]: B2
+                              - generic [ref=e3230]: to
+                            - generic [ref=e3231]: delete all of
+                            - generic [ref=e3232]: H
+                          - generic [ref=e3236]: delete all of
+                          - generic [ref=e3237]: W2
+                        - generic [ref=e3241]: delete all of
+                        - generic [ref=e3242]: B1
+                      - generic [ref=e3246]: delete all of
+                      - generic [ref=e3247]: W1
+                    - generic [ref=e3251]: define
+                  - generic [ref=e3252]:
+                    - generic [ref=e3254]:
+                      - generic [ref=e3256]: 前向计算
+                      - generic [ref=e3257]: x
+                    - generic [ref=e3260]:
+                      - generic [ref=e3262]: B2
+                      - generic [ref=e3266]:
+                        - generic [ref=e3268]: "1"
+                        - generic [ref=e3272]:
+                          - generic [ref=e3274]: "6"
+                          - generic [ref=e3278]:
+                            - generic [ref=e3280]:
+                              - generic [ref=e3282]:
+                                - generic [ref=e3284]:
+                                  - generic [ref=e3286]: j
+                                  - generic [ref=e3290]: item
+                                  - generic [ref=e3291]: of
+                                  - generic [ref=e3292]: W1
+                                - generic [ref=e3296]: x
+                                - generic [ref=e3299]: "*"
+                              - generic [ref=e3300]:
+                                - generic [ref=e3302]: j
+                                - generic [ref=e3306]: item
+                                - generic [ref=e3307]: of
+                                - generic [ref=e3308]: B1
+                              - generic [ref=e3312]: +
+                            - generic [ref=e3313]:
+                              - generic [ref=e3315]:
+                                - generic [ref=e3317]: z
+                                - generic [ref=e3321]: "10"
+                                - generic [ref=e3325]: ">"
+                              - generic [ref=e3326]:
+                                - generic [ref=e3328]: "10"
+                                - generic [ref=e3332]: set
+                                - generic [ref=e3333]: z
+                                - generic [ref=e3337]: to
+                              - generic [ref=e3338]:
+                                - generic [ref=e3340]:
+                                  - generic [ref=e3342]: "-10"
+                                  - generic [ref=e3346]: z
+                                  - generic [ref=e3350]: ">"
+                                - generic [ref=e3351]:
+                                  - generic [ref=e3353]: "-10"
+                                  - generic [ref=e3357]: set
+                                  - generic [ref=e3358]: z
+                                  - generic [ref=e3362]: to
+                                - generic [ref=e3363]:
+                                  - generic [ref=e3365]:
+                                    - generic [ref=e3367]:
+                                      - generic [ref=e3369]: "2"
+                                      - generic [ref=e3373]: z
+                                      - generic [ref=e3377]: "*"
+                                    - generic [ref=e3378]: e ^
+                                    - generic [ref=e3382]: of
+                                  - generic [ref=e3383]:
+                                    - generic [ref=e3385]: j
+                                    - generic [ref=e3389]:
+                                      - generic [ref=e3391]:
+                                        - generic [ref=e3393]: exp2z
+                                        - generic [ref=e3397]: "1"
+                                        - generic [ref=e3401]: "-"
+                                      - generic [ref=e3402]:
+                                        - generic [ref=e3404]: exp2z
+                                        - generic [ref=e3408]: "1"
+                                        - generic [ref=e3412]: +
+                                      - generic [ref=e3413]: /
+                                    - generic [ref=e3414]:
+                                      - generic [ref=e3416]:
+                                        - generic [ref=e3418]:
+                                          - generic [ref=e3420]: j
+                                          - generic [ref=e3424]: item
+                                          - generic [ref=e3425]: of
+                                          - generic [ref=e3426]: H
+                                        - generic [ref=e3430]:
+                                          - generic [ref=e3432]: j
+                                          - generic [ref=e3436]: item
+                                          - generic [ref=e3437]: of
+                                          - generic [ref=e3438]: W2
+                                        - generic [ref=e3442]: "*"
+                                      - generic [ref=e3443]:
+                                        - generic [ref=e3445]: "1"
+                                        - generic [ref=e3449]: change
+                                        - generic [ref=e3450]: j
+                                        - generic [ref=e3454]: by
+                                      - generic [ref=e3455]: change
+                                      - generic [ref=e3456]: pred
+                                      - generic [ref=e3460]: by
+                                    - generic [ref=e3461]: replace item
+                                    - generic [ref=e3462]: of
+                                    - generic [ref=e3463]: H
+                                    - generic [ref=e3467]: with
+                                  - generic [ref=e3468]: set
+                                  - generic [ref=e3469]: exp2z
+                                  - generic [ref=e3473]: to
+                                - generic [ref=e3474]: if
+                                - generic [ref=e3475]: then
+                              - generic [ref=e3476]: if
+                              - generic [ref=e3477]: then
+                            - generic [ref=e3478]: set
+                            - generic [ref=e3479]: z
+                            - generic [ref=e3483]: to
+                          - generic [ref=e3484]: repeat
+                        - generic [ref=e3487]: set
+                        - generic [ref=e3488]: j
+                        - generic [ref=e3492]: to
+                      - generic [ref=e3493]: set
+                      - generic [ref=e3494]: pred
+                      - generic [ref=e3498]: to
+                    - generic [ref=e3499]: define
+                  - generic [ref=e3500]:
+                    - generic [ref=e3502]:
+                      - generic [ref=e3504]: 训练一批
+                      - generic [ref=e3505]: 轮数
+                    - generic [ref=e3508]:
+                      - generic [ref=e3510]: 轮数
+                      - generic [ref=e3513]:
+                        - generic [ref=e3515]: "1"
+                        - generic [ref=e3519]:
+                          - generic [ref=e3521]:
+                            - generic [ref=e3523]: length of
+                            - generic [ref=e3524]: 样本X
+                          - generic [ref=e3528]:
+                            - generic [ref=e3530]:
+                              - generic [ref=e3532]:
+                                - generic [ref=e3534]: k
+                                - generic [ref=e3538]: item
+                                - generic [ref=e3539]: of
+                                - generic [ref=e3540]: 样本X
+                              - generic [ref=e3544]: scaleX
+                              - generic [ref=e3548]: /
+                            - generic [ref=e3549]:
+                              - generic [ref=e3551]:
+                                - generic [ref=e3553]:
+                                  - generic [ref=e3555]: k
+                                  - generic [ref=e3559]: item
+                                  - generic [ref=e3560]: of
+                                  - generic [ref=e3561]: 样本Y
+                                - generic [ref=e3565]: scaleY
+                                - generic [ref=e3569]: /
+                              - generic [ref=e3570]:
+                                - generic [ref=e3572]: 前向计算
+                                - generic [ref=e3573]: normalizedX
+                                - generic [ref=e3577]:
+                                  - generic [ref=e3579]:
+                                    - generic [ref=e3581]: "2"
+                                    - generic [ref=e3585]:
+                                      - generic [ref=e3587]: pred
+                                      - generic [ref=e3591]: normalizedY
+                                      - generic [ref=e3595]: "-"
+                                    - generic [ref=e3596]: "*"
+                                  - generic [ref=e3597]:
+                                    - generic [ref=e3599]: "1"
+                                    - generic [ref=e3603]:
+                                      - generic [ref=e3605]: "6"
+                                      - generic [ref=e3609]:
+                                        - generic [ref=e3611]:
+                                          - generic [ref=e3613]:
+                                            - generic [ref=e3615]: dOut
+                                            - generic [ref=e3619]:
+                                              - generic [ref=e3621]: j
+                                              - generic [ref=e3625]: item
+                                              - generic [ref=e3626]: of
+                                              - generic [ref=e3627]: W2
+                                            - generic [ref=e3631]: "*"
+                                          - generic [ref=e3632]:
+                                            - generic [ref=e3634]: "1"
+                                            - generic [ref=e3638]:
+                                              - generic [ref=e3640]:
+                                                - generic [ref=e3642]: j
+                                                - generic [ref=e3646]: item
+                                                - generic [ref=e3647]: of
+                                                - generic [ref=e3648]: H
+                                              - generic [ref=e3652]:
+                                                - generic [ref=e3654]: j
+                                                - generic [ref=e3658]: item
+                                                - generic [ref=e3659]: of
+                                                - generic [ref=e3660]: H
+                                              - generic [ref=e3664]: "*"
+                                            - generic [ref=e3665]: "-"
+                                          - generic [ref=e3666]: "*"
+                                        - generic [ref=e3667]:
+                                          - generic [ref=e3669]: j
+                                          - generic [ref=e3673]:
+                                            - generic [ref=e3675]:
+                                              - generic [ref=e3677]: j
+                                              - generic [ref=e3681]: item
+                                              - generic [ref=e3682]: of
+                                              - generic [ref=e3683]: W1
+                                            - generic [ref=e3687]:
+                                              - generic [ref=e3689]:
+                                                - generic [ref=e3691]: "0.08"
+                                                - generic [ref=e3695]: dHidden
+                                                - generic [ref=e3699]: "*"
+                                              - generic [ref=e3700]: normalizedX
+                                              - generic [ref=e3704]: "*"
+                                            - generic [ref=e3705]: "-"
+                                          - generic [ref=e3706]:
+                                            - generic [ref=e3708]: j
+                                            - generic [ref=e3712]:
+                                              - generic [ref=e3714]:
+                                                - generic [ref=e3716]: j
+                                                - generic [ref=e3720]: item
+                                                - generic [ref=e3721]: of
+                                                - generic [ref=e3722]: B1
+                                              - generic [ref=e3726]:
+                                                - generic [ref=e3728]: "0.08"
+                                                - generic [ref=e3732]: dHidden
+                                                - generic [ref=e3736]: "*"
+                                              - generic [ref=e3737]: "-"
+                                            - generic [ref=e3738]:
+                                              - generic [ref=e3740]: j
+                                              - generic [ref=e3744]:
+                                                - generic [ref=e3746]:
+                                                  - generic [ref=e3748]: j
+                                                  - generic [ref=e3752]: item
+                                                  - generic [ref=e3753]: of
+                                                  - generic [ref=e3754]: W2
+                                                - generic [ref=e3758]:
+                                                  - generic [ref=e3760]:
+                                                    - generic [ref=e3762]: "0.08"
+                                                    - generic [ref=e3766]: dOut
+                                                    - generic [ref=e3770]: "*"
+                                                  - generic [ref=e3771]:
+                                                    - generic [ref=e3773]: j
+                                                    - generic [ref=e3777]: item
+                                                    - generic [ref=e3778]: of
+                                                    - generic [ref=e3779]: H
+                                                  - generic [ref=e3783]: "*"
+                                                - generic [ref=e3784]: "-"
+                                              - generic [ref=e3785]:
+                                                - generic [ref=e3787]: "1"
+                                                - generic [ref=e3791]: change
+                                                - generic [ref=e3792]: j
+                                                - generic [ref=e3796]: by
+                                              - generic [ref=e3797]: replace item
+                                              - generic [ref=e3798]: of
+                                              - generic [ref=e3799]: W2
+                                              - generic [ref=e3803]: with
+                                            - generic [ref=e3804]: replace item
+                                            - generic [ref=e3805]: of
+                                            - generic [ref=e3806]: B1
+                                            - generic [ref=e3810]: with
+                                          - generic [ref=e3811]: replace item
+                                          - generic [ref=e3812]: of
+                                          - generic [ref=e3813]: W1
+                                          - generic [ref=e3817]: with
+                                        - generic [ref=e3818]: set
+                                        - generic [ref=e3819]: dHidden
+                                        - generic [ref=e3823]: to
+                                      - generic [ref=e3824]:
+                                        - generic [ref=e3826]:
+                                          - generic [ref=e3828]: "-0.08"
+                                          - generic [ref=e3832]: dOut
+                                          - generic [ref=e3836]: "*"
+                                        - generic [ref=e3837]:
+                                          - generic [ref=e3839]: "1"
+                                          - generic [ref=e3843]: change
+                                          - generic [ref=e3844]: k
+                                          - generic [ref=e3848]: by
+                                        - generic [ref=e3849]: change
+                                        - generic [ref=e3850]: B2
+                                        - generic [ref=e3854]: by
+                                      - generic [ref=e3855]: repeat
+                                    - generic [ref=e3858]: set
+                                    - generic [ref=e3859]: j
+                                    - generic [ref=e3863]: to
+                                  - generic [ref=e3864]: set
+                                  - generic [ref=e3865]: dOut
+                                  - generic [ref=e3869]: to
+                              - generic [ref=e3870]: set
+                              - generic [ref=e3871]: normalizedY
+                              - generic [ref=e3875]: to
+                            - generic [ref=e3876]: set
+                            - generic [ref=e3877]: normalizedX
+                            - generic [ref=e3881]: to
+                          - generic [ref=e3882]: repeat
+                        - generic [ref=e3885]: set
+                        - generic [ref=e3886]: k
+                        - generic [ref=e3890]: to
+                      - generic [ref=e3891]: repeat
+                    - generic [ref=e3894]: define
+                  - generic [ref=e3895]:
+                    - generic [ref=e3897]:
+                      - generic [ref=e3899]: 检查数字
+                      - generic [ref=e3900]: 数值
+                    - generic [ref=e3903]:
+                      - generic [ref=e3905]: "0"
+                      - generic [ref=e3909]:
+                        - generic [ref=e3911]:
+                          - generic [ref=e3913]:
+                            - generic [ref=e3915]:
+                              - generic [ref=e3917]: 数值
+                              - generic [ref=e3920]: length of
+                            - generic [ref=e3921]: "0"
+                            - generic [ref=e3925]: ">"
+                          - generic [ref=e3926]:
+                            - generic [ref=e3928]:
+                              - generic [ref=e3930]:
+                                - generic [ref=e3932]: 数值
+                                - generic [ref=e3935]: "0"
+                                - generic [ref=e3939]: +
+                              - generic [ref=e3940]: 数值
+                              - generic [ref=e3943]: =
+                            - generic [ref=e3944]:
+                              - generic [ref=e3946]:
+                                - generic [ref=e3948]:
+                                  - generic [ref=e3950]:
+                                    - generic [ref=e3952]: 数值
+                                    - generic [ref=e3955]: "0"
+                                    - generic [ref=e3959]: +
+                                  - generic [ref=e3960]: abs
+                                  - generic [ref=e3964]: of
+                                - generic [ref=e3965]: "1000"
+                                - generic [ref=e3969]: ">"
+                              - generic [ref=e3970]: not
+                            - generic [ref=e3971]: and
+                          - generic [ref=e3972]: and
+                        - generic [ref=e3973]:
+                          - generic [ref=e3975]: "1"
+                          - generic [ref=e3979]: set
+                          - generic [ref=e3980]: valid
+                          - generic [ref=e3984]: to
+                        - generic [ref=e3985]: if
+                        - generic [ref=e3986]: then
+                      - generic [ref=e3987]: set
+                      - generic [ref=e3988]: valid
+                      - generic [ref=e3992]: to
+                    - generic [ref=e3993]: define
+                  - generic [ref=e3994]:
+                    - generic [ref=e3996]: 清空并重置
+                    - generic [ref=e3999]:
+                      - generic [ref=e4001]:
+                        - generic [ref=e4003]:
+                          - generic [ref=e4005]: 初始化权重
+                          - generic [ref=e4006]:
+                            - generic [ref=e4008]: "0"
+                            - generic [ref=e4012]:
+                              - generic [ref=e4014]: "0"
+                              - generic [ref=e4018]:
+                                - generic [ref=e4020]: —
+                                - generic [ref=e4024]:
+                                  - generic [ref=e4026]: —
+                                  - generic [ref=e4030]:
+                                    - generic [ref=e4032]: —
+                                    - generic [ref=e4036]:
+                                      - generic [ref=e4038]: —
+                                      - generic [ref=e4042]:
+                                        - generic [ref=e4044]: "1"
+                                        - generic [ref=e4048]:
+                                          - generic [ref=e4050]: "1"
+                                          - generic [ref=e4054]:
+                                            - generic [ref=e4056]: 已重置，请点击训练添加样本
+                                            - generic [ref=e4060]: set
+                                            - generic [ref=e4061]: 状态
+                                            - generic [ref=e4065]: to
+                                          - generic [ref=e4066]: set
+                                          - generic [ref=e4067]: scaleY
+                                          - generic [ref=e4071]: to
+                                        - generic [ref=e4072]: set
+                                        - generic [ref=e4073]: scaleX
+                                        - generic [ref=e4077]: to
+                                      - generic [ref=e4078]: set
+                                      - generic [ref=e4079]: 最近样本
+                                      - generic [ref=e4083]: to
+                                    - generic [ref=e4084]: set
+                                    - generic [ref=e4085]: 预测输出
+                                    - generic [ref=e4089]: to
+                                  - generic [ref=e4090]: set
+                                  - generic [ref=e4091]: 测试输入
+                                  - generic [ref=e4095]: to
+                                - generic [ref=e4096]: set
+                                - generic [ref=e4097]: 均方误差
+                                - generic [ref=e4101]: to
+                              - generic [ref=e4102]: set
+                              - generic [ref=e4103]: 训练轮次
+                              - generic [ref=e4107]: to
+                            - generic [ref=e4108]: set
+                            - generic [ref=e4109]: 样本数
+                            - generic [ref=e4113]: to
+                        - generic [ref=e4114]: delete all of
+                        - generic [ref=e4115]: 样本Y
+                      - generic [ref=e4119]: delete all of
+                      - generic [ref=e4120]: 样本X
+                    - generic [ref=e4124]: define
+                  - generic [ref=e4125]:
+                    - generic [ref=e4127]:
+                      - generic [ref=e4129]: "0"
+                      - generic [ref=e4133]: 清空并重置
+                      - generic [ref=e4136]: set
+                      - generic [ref=e4137]: 忙碌
+                      - generic [ref=e4141]: to
+                    - generic [ref=e4142]: when
+                    - generic [ref=e4145]: clicked
+                  - generic [ref=e4146]:
+                    - generic [ref=e4148]:
+                      - generic [ref=e4150]:
+                        - generic [ref=e4152]: 忙碌
+                        - generic [ref=e4156]: "0"
+                        - generic [ref=e4160]: =
+                      - generic [ref=e4161]:
+                        - generic [ref=e4163]: "1"
+                        - generic [ref=e4167]:
+                          - generic [ref=e4169]: 清空并重置
+                          - generic [ref=e4170]:
+                            - generic [ref=e4172]: "0"
+                            - generic [ref=e4176]: set
+                            - generic [ref=e4177]: 忙碌
+                            - generic [ref=e4181]: to
+                        - generic [ref=e4182]: set
+                        - generic [ref=e4183]: 忙碌
+                        - generic [ref=e4187]: to
+                      - generic [ref=e4188]: if
+                      - generic [ref=e4189]: then
+                    - generic [ref=e4190]: when I receive
+                    - generic [ref=e4191]: 重置
+                  - generic [ref=e4195]:
+                    - generic [ref=e4197]:
+                      - generic [ref=e4199]:
+                        - generic [ref=e4201]: 忙碌
+                        - generic [ref=e4205]: "0"
+                        - generic [ref=e4209]: =
+                      - generic [ref=e4210]:
+                        - generic [ref=e4212]: "1"
+                        - generic [ref=e4216]:
+                          - generic [ref=e4218]: 训练：请输入样本的输入值
+                          - generic [ref=e4222]:
+                            - generic [ref=e4224]: 训练输入 x 是多少？（-1000 到 1000）
+                            - generic [ref=e4228]:
+                              - generic [ref=e4230]: 检查数字
+                              - generic [ref=e4231]: answer
+                              - generic [ref=e4234]:
+                                - generic [ref=e4236]:
+                                  - generic [ref=e4238]: valid
+                                  - generic [ref=e4242]: "0"
+                                  - generic [ref=e4246]: =
+                                - generic [ref=e4247]:
+                                  - generic [ref=e4249]: 输入无效，请使用 -1000 到 1000 的数字
+                                  - generic [ref=e4253]:
+                                    - generic [ref=e4255]: "0"
+                                    - generic [ref=e4259]:
+                                      - generic [ref=e4261]: stop
+                                      - generic [ref=e4262]: this script
+                                    - generic [ref=e4266]: set
+                                    - generic [ref=e4267]: 忙碌
+                                    - generic [ref=e4271]: to
+                                  - generic [ref=e4272]: set
+                                  - generic [ref=e4273]: 状态
+                                  - generic [ref=e4277]: to
+                                - generic [ref=e4278]:
+                                  - generic [ref=e4280]:
+                                    - generic [ref=e4282]: answer
+                                    - generic [ref=e4285]: "0"
+                                    - generic [ref=e4289]: +
+                                  - generic [ref=e4290]:
+                                    - generic [ref=e4292]: 训练：请输入你希望得到的输出值
+                                    - generic [ref=e4296]:
+                                      - generic [ref=e4298]: 对应的目标输出 y 是多少？（-1000 到 1000）
+                                      - generic [ref=e4302]:
+                                        - generic [ref=e4304]: 检查数字
+                                        - generic [ref=e4305]: answer
+                                        - generic [ref=e4308]:
+                                          - generic [ref=e4310]:
+                                            - generic [ref=e4312]: valid
+                                            - generic [ref=e4316]: "0"
+                                            - generic [ref=e4320]: =
+                                          - generic [ref=e4321]:
+                                            - generic [ref=e4323]: 目标无效，本次样本未添加
+                                            - generic [ref=e4327]:
+                                              - generic [ref=e4329]: "0"
+                                              - generic [ref=e4333]:
+                                                - generic [ref=e4335]: stop
+                                                - generic [ref=e4336]: this script
+                                              - generic [ref=e4340]: set
+                                              - generic [ref=e4341]: 忙碌
+                                              - generic [ref=e4345]: to
+                                            - generic [ref=e4346]: set
+                                            - generic [ref=e4347]: 状态
+                                            - generic [ref=e4351]: to
+                                          - generic [ref=e4352]:
+                                            - generic [ref=e4354]:
+                                              - generic [ref=e4356]: answer
+                                              - generic [ref=e4359]: "0"
+                                              - generic [ref=e4363]: +
+                                            - generic [ref=e4364]:
+                                              - generic [ref=e4366]:
+                                                - generic [ref=e4368]: tmpX
+                                                - generic [ref=e4372]: "item # of"
+                                                - generic [ref=e4373]: in
+                                                - generic [ref=e4374]: 样本X
+                                              - generic [ref=e4378]:
+                                                - generic [ref=e4380]:
+                                                  - generic [ref=e4382]:
+                                                    - generic [ref=e4384]: sampleIndex
+                                                    - generic [ref=e4388]: "0"
+                                                    - generic [ref=e4392]: =
+                                                  - generic [ref=e4393]:
+                                                    - generic [ref=e4395]:
+                                                      - generic [ref=e4397]: length of
+                                                      - generic [ref=e4398]: 样本X
+                                                    - generic [ref=e4402]: "31"
+                                                    - generic [ref=e4406]: ">"
+                                                  - generic [ref=e4407]: and
+                                                - generic [ref=e4408]:
+                                                  - generic [ref=e4410]: 已有 32 个样本，请重置或更新相同输入
+                                                  - generic [ref=e4414]:
+                                                    - generic [ref=e4416]: "0"
+                                                    - generic [ref=e4420]:
+                                                      - generic [ref=e4422]: stop
+                                                      - generic [ref=e4423]: this script
+                                                    - generic [ref=e4427]: set
+                                                    - generic [ref=e4428]: 忙碌
+                                                    - generic [ref=e4432]: to
+                                                  - generic [ref=e4433]: set
+                                                  - generic [ref=e4434]: 状态
+                                                  - generic [ref=e4438]: to
+                                                - generic [ref=e4439]:
+                                                  - generic [ref=e4441]:
+                                                    - generic [ref=e4443]: sampleIndex
+                                                    - generic [ref=e4447]: "0"
+                                                    - generic [ref=e4451]: ">"
+                                                  - generic [ref=e4452]:
+                                                    - generic [ref=e4454]: sampleIndex
+                                                    - generic [ref=e4458]: tmpY
+                                                    - generic [ref=e4462]: replace item
+                                                    - generic [ref=e4463]: of
+                                                    - generic [ref=e4464]: 样本Y
+                                                    - generic [ref=e4468]: with
+                                                  - generic [ref=e4469]:
+                                                    - generic [ref=e4471]: tmpX
+                                                    - generic [ref=e4475]:
+                                                      - generic [ref=e4477]: tmpY
+                                                      - generic [ref=e4481]: add
+                                                      - generic [ref=e4482]: to
+                                                      - generic [ref=e4483]: 样本Y
+                                                    - generic [ref=e4487]: add
+                                                    - generic [ref=e4488]: to
+                                                    - generic [ref=e4489]: 样本X
+                                                  - generic [ref=e4493]:
+                                                    - generic [ref=e4495]:
+                                                      - generic [ref=e4497]: length of
+                                                      - generic [ref=e4498]: 样本X
+                                                    - generic [ref=e4502]:
+                                                      - generic [ref=e4504]:
+                                                        - generic [ref=e4506]: tmpX
+                                                        - generic [ref=e4510]:
+                                                          - generic [ref=e4512]: →
+                                                          - generic [ref=e4516]: tmpY
+                                                          - generic [ref=e4520]: join
+                                                        - generic [ref=e4521]: join
+                                                      - generic [ref=e4522]:
+                                                        - generic [ref=e4524]: —
+                                                        - generic [ref=e4528]:
+                                                          - generic [ref=e4530]: —
+                                                          - generic [ref=e4534]:
+                                                            - generic [ref=e4536]: "3"
+                                                            - generic [ref=e4540]:
+                                                              - generic [ref=e4542]: 正在学习全部样本，请稍候…
+                                                              - generic [ref=e4546]:
+                                                                - generic [ref=e4548]: …
+                                                                - generic [ref=e4552]:
+                                                                  - generic [ref=e4554]: "1"
+                                                                  - generic [ref=e4558]:
+                                                                    - generic [ref=e4560]: "1"
+                                                                    - generic [ref=e4564]:
+                                                                      - generic [ref=e4566]: "1"
+                                                                      - generic [ref=e4570]:
+                                                                        - generic [ref=e4572]:
+                                                                          - generic [ref=e4574]: length of
+                                                                          - generic [ref=e4575]: 样本X
+                                                                        - generic [ref=e4579]:
+                                                                          - generic [ref=e4581]:
+                                                                            - generic [ref=e4583]:
+                                                                              - generic [ref=e4585]:
+                                                                                - generic [ref=e4587]: k
+                                                                                - generic [ref=e4591]: item
+                                                                                - generic [ref=e4592]: of
+                                                                                - generic [ref=e4593]: 样本X
+                                                                              - generic [ref=e4597]: abs
+                                                                              - generic [ref=e4601]: of
+                                                                            - generic [ref=e4602]: scaleX
+                                                                            - generic [ref=e4606]: ">"
+                                                                          - generic [ref=e4607]:
+                                                                            - generic [ref=e4609]:
+                                                                              - generic [ref=e4611]:
+                                                                                - generic [ref=e4613]: k
+                                                                                - generic [ref=e4617]: item
+                                                                                - generic [ref=e4618]: of
+                                                                                - generic [ref=e4619]: 样本X
+                                                                              - generic [ref=e4623]: abs
+                                                                              - generic [ref=e4627]: of
+                                                                            - generic [ref=e4628]: set
+                                                                            - generic [ref=e4629]: scaleX
+                                                                            - generic [ref=e4633]: to
+                                                                          - generic [ref=e4634]:
+                                                                            - generic [ref=e4636]:
+                                                                              - generic [ref=e4638]:
+                                                                                - generic [ref=e4640]:
+                                                                                  - generic [ref=e4642]: k
+                                                                                  - generic [ref=e4646]: item
+                                                                                  - generic [ref=e4647]: of
+                                                                                  - generic [ref=e4648]: 样本Y
+                                                                                - generic [ref=e4652]: abs
+                                                                                - generic [ref=e4656]: of
+                                                                              - generic [ref=e4657]: scaleY
+                                                                              - generic [ref=e4661]: ">"
+                                                                            - generic [ref=e4662]:
+                                                                              - generic [ref=e4664]:
+                                                                                - generic [ref=e4666]:
+                                                                                  - generic [ref=e4668]: k
+                                                                                  - generic [ref=e4672]: item
+                                                                                  - generic [ref=e4673]: of
+                                                                                  - generic [ref=e4674]: 样本Y
+                                                                                - generic [ref=e4678]: abs
+                                                                                - generic [ref=e4682]: of
+                                                                              - generic [ref=e4683]: set
+                                                                              - generic [ref=e4684]: scaleY
+                                                                              - generic [ref=e4688]: to
+                                                                            - generic [ref=e4689]:
+                                                                              - generic [ref=e4691]: "1"
+                                                                              - generic [ref=e4695]: change
+                                                                              - generic [ref=e4696]: k
+                                                                              - generic [ref=e4700]: by
+                                                                            - generic [ref=e4701]: if
+                                                                            - generic [ref=e4702]: then
+                                                                          - generic [ref=e4703]: if
+                                                                          - generic [ref=e4704]: then
+                                                                        - generic [ref=e4705]:
+                                                                          - generic [ref=e4707]: 初始化权重
+                                                                          - generic [ref=e4708]:
+                                                                            - generic [ref=e4710]: "24"
+                                                                            - generic [ref=e4714]:
+                                                                              - generic [ref=e4716]: 训练一批
+                                                                              - generic [ref=e4717]: "25"
+                                                                              - generic [ref=e4721]:
+                                                                                - generic [ref=e4723]: "25"
+                                                                                - generic [ref=e4727]:
+                                                                                  - generic [ref=e4729]: "0"
+                                                                                  - generic [ref=e4733]: wait
+                                                                                  - generic [ref=e4734]: seconds
+                                                                                - generic [ref=e4735]: change
+                                                                                - generic [ref=e4736]: 训练轮次
+                                                                                - generic [ref=e4740]: by
+                                                                            - generic [ref=e4741]:
+                                                                              - generic [ref=e4743]: 计算误差
+                                                                              - generic [ref=e4744]:
+                                                                                - generic [ref=e4746]: 训练完成：继续添加样本，或点击测试
+                                                                                - generic [ref=e4750]:
+                                                                                  - generic [ref=e4752]: "0"
+                                                                                  - generic [ref=e4756]: set
+                                                                                  - generic [ref=e4757]: 忙碌
+                                                                                  - generic [ref=e4761]: to
+                                                                                - generic [ref=e4762]: set
+                                                                                - generic [ref=e4763]: 状态
+                                                                                - generic [ref=e4767]: to
+                                                                            - generic [ref=e4768]: repeat
+                                                                        - generic [ref=e4771]: repeat
+                                                                      - generic [ref=e4774]: set
+                                                                      - generic [ref=e4775]: k
+                                                                      - generic [ref=e4779]: to
+                                                                    - generic [ref=e4780]: set
+                                                                    - generic [ref=e4781]: scaleY
+                                                                    - generic [ref=e4785]: to
+                                                                  - generic [ref=e4786]: set
+                                                                  - generic [ref=e4787]: scaleX
+                                                                  - generic [ref=e4791]: to
+                                                                - generic [ref=e4792]: set
+                                                                - generic [ref=e4793]: 均方误差
+                                                                - generic [ref=e4797]: to
+                                                              - generic [ref=e4798]: set
+                                                              - generic [ref=e4799]: 状态
+                                                              - generic [ref=e4803]: to
+                                                            - generic [ref=e4804]: set
+                                                            - generic [ref=e4805]: 忙碌
+                                                            - generic [ref=e4809]: to
+                                                          - generic [ref=e4810]: set
+                                                          - generic [ref=e4811]: 预测输出
+                                                          - generic [ref=e4815]: to
+                                                        - generic [ref=e4816]: set
+                                                        - generic [ref=e4817]: 测试输入
+                                                        - generic [ref=e4821]: to
+                                                      - generic [ref=e4822]: set
+                                                      - generic [ref=e4823]: 最近样本
+                                                      - generic [ref=e4827]: to
+                                                    - generic [ref=e4828]: set
+                                                    - generic [ref=e4829]: 样本数
+                                                    - generic [ref=e4833]: to
+                                                  - generic [ref=e4834]: if
+                                                  - generic [ref=e4835]: then
+                                                  - generic [ref=e4836]: else
+                                                - generic [ref=e4837]: if
+                                                - generic [ref=e4838]: then
+                                              - generic [ref=e4839]: set
+                                              - generic [ref=e4840]: sampleIndex
+                                              - generic [ref=e4844]: to
+                                            - generic [ref=e4845]: set
+                                            - generic [ref=e4846]: tmpY
+                                            - generic [ref=e4850]: to
+                                          - generic [ref=e4851]: if
+                                          - generic [ref=e4852]: then
+                                      - generic [ref=e4853]: ask
+                                      - generic [ref=e4854]: and wait
+                                    - generic [ref=e4855]: set
+                                    - generic [ref=e4856]: 状态
+                                    - generic [ref=e4860]: to
+                                  - generic [ref=e4861]: set
+                                  - generic [ref=e4862]: tmpX
+                                  - generic [ref=e4866]: to
+                                - generic [ref=e4867]: if
+                                - generic [ref=e4868]: then
+                            - generic [ref=e4869]: ask
+                            - generic [ref=e4870]: and wait
+                          - generic [ref=e4871]: set
+                          - generic [ref=e4872]: 状态
+                          - generic [ref=e4876]: to
+                        - generic [ref=e4877]: set
+                        - generic [ref=e4878]: 忙碌
+                        - generic [ref=e4882]: to
+                      - generic [ref=e4883]: if
+                      - generic [ref=e4884]: then
+                    - generic [ref=e4885]: when I receive
+                    - generic [ref=e4886]: 训练
+              - img [ref=e112]:
+                - generic [ref=e115]:
+                  - generic [ref=e4897] [cursor=pointer]
+                  - generic [ref=e4919] [cursor=pointer]
+                  - generic [ref=e4925] [cursor=pointer]
+                  - generic [ref=e4930] [cursor=pointer]
+                  - generic [ref=e4935] [cursor=pointer]
+                  - generic [ref=e4940] [cursor=pointer]
+                  - generic [ref=e4945] [cursor=pointer]
+                  - generic [ref=e4951] [cursor=pointer]
+                  - generic [ref=e4956] [cursor=pointer]
+                  - generic [ref=e4961] [cursor=pointer]
+                  - generic [ref=e4966] [cursor=pointer]
+                  - generic [ref=e2485]:
+                    - generic [ref=e2487]: "10"
+                    - generic [ref=e2491]: move
+                    - generic [ref=e2492]: steps
+                  - generic [ref=e2494]:
+                    - generic [ref=e2496]: "15"
+                    - generic [ref=e2500]: turn
+                    - generic [ref=e2503]: degrees
+                  - generic [ref=e2505]:
+                    - generic [ref=e2507]: "15"
+                    - generic [ref=e2511]: turn
+                    - generic [ref=e2514]: degrees
+                  - generic [ref=e2516]:
+                    - generic [ref=e2518]: "0"
+                    - generic [ref=e2522]: "0"
+                    - generic [ref=e2526]: "go to x:"
+                    - generic [ref=e2527]: "y:"
+                  - generic [ref=e2529]:
+                    - generic [ref=e2531]: "1"
+                    - generic [ref=e2535]: "0"
+                    - generic [ref=e2539]: "0"
+                    - generic [ref=e2543]: glide
+                    - generic [ref=e2544]: "secs to x:"
+                    - generic [ref=e2545]: "y:"
+                  - generic [ref=e2547]:
+                    - generic [ref=e2549]: "90"
+                    - generic [ref=e2553]: point in direction
+                  - generic [ref=e2555]:
+                    - generic [ref=e2557]: "10"
+                    - generic [ref=e2561]: change x by
+                  - generic [ref=e2563]:
+                    - generic [ref=e2565]: "0"
+                    - generic [ref=e2569]: set x to
+                  - generic [ref=e2571]:
+                    - generic [ref=e2573]: "10"
+                    - generic [ref=e2577]: change y by
+                  - generic [ref=e2579]:
+                    - generic [ref=e2581]: "0"
+                    - generic [ref=e2585]: set y to
+                  - generic [ref=e2587]: if on edge, bounce
+                  - generic [ref=e2591]:
+                    - generic [ref=e2593]: set rotation style
+                    - generic [ref=e2594]: left-right
+                  - generic [ref=e5017]:
+                    - generic [ref=e5019]: random position
+                    - generic [ref=e5024]: go to
+                  - generic [ref=e5026]:
+                    - generic [ref=e5028]: "1"
+                    - generic [ref=e5032]: random position
+                    - generic [ref=e5037]: glide
+                    - generic [ref=e5038]: secs to
+                  - generic [ref=e5040]:
+                    - generic [ref=e5042]: mouse-pointer
+                    - generic [ref=e5047]: point towards
+                  - generic [ref=e5051] [cursor=pointer]
+                  - generic [ref=e5053]: x position
+                  - generic [ref=e5059] [cursor=pointer]
+                  - generic [ref=e5061]: y position
+                  - generic [ref=e5067] [cursor=pointer]
+                  - generic [ref=e5074] [cursor=pointer]
+                  - generic [ref=e5079] [cursor=pointer]
+                  - generic [ref=e5086] [cursor=pointer]
+                  - generic [ref=e5100] [cursor=pointer]
+                  - generic [ref=e5105] [cursor=pointer]
+                  - generic [ref=e5110] [cursor=pointer]
+                  - generic [ref=e5115] [cursor=pointer]
+                  - generic [ref=e5120] [cursor=pointer]
+                  - generic [ref=e5125] [cursor=pointer]
+                  - generic [ref=e5130] [cursor=pointer]
+                  - generic [ref=e5135] [cursor=pointer]
+                  - generic [ref=e5140] [cursor=pointer]
+                  - generic [ref=e5145] [cursor=pointer]
+                  - generic [ref=e5150] [cursor=pointer]
+                  - generic [ref=e5155] [cursor=pointer]
+                  - generic [ref=e5160] [cursor=pointer]
+                  - generic [ref=e5165] [cursor=pointer]
+                  - generic [ref=e5170] [cursor=pointer]
+                  - generic [ref=e5175] [cursor=pointer]
+                  - generic [ref=e5180] [cursor=pointer]
+                  - generic [ref=e5185] [cursor=pointer]
+                  - generic [ref=e5190] [cursor=pointer]
+                  - generic [ref=e5195] [cursor=pointer]
+                  - generic [ref=e5200] [cursor=pointer]
+                  - generic [ref=e5205] [cursor=pointer]
+                  - generic [ref=e5210] [cursor=pointer]
+                  - generic [ref=e5215] [cursor=pointer]
+                  - generic [ref=e5220] [cursor=pointer]
+                  - generic [ref=e5229] [cursor=pointer]
+                  - generic [ref=e5234] [cursor=pointer]
+                  - generic [ref=e5239] [cursor=pointer]
+                  - generic [ref=e5244] [cursor=pointer]
+                  - generic [ref=e5249] [cursor=pointer]
+                  - generic [ref=e5254] [cursor=pointer]
+                  - generic [ref=e5273]: Motion
+                  - generic [ref=e5276]: Looks
+                  - generic [ref=e5279]: Sound
+                  - generic [ref=e5282]: Events
+                  - generic [ref=e5285]: Control
+                  - generic [ref=e5288]: Sensing
+                  - generic [ref=e5291]: Operators
+                  - generic [ref=e5294]: Variables
+                  - generic [ref=e5297]: Make a Variable
+                  - generic [ref=e5301]: Make a List
+                  - generic [ref=e5305]: My Blocks
+                  - generic [ref=e5308]: Make a Block
+            - button "Add Extension" [ref=e388] [cursor=pointer]
+        - generic [ref=e390]: Backpack
+      - generic [ref=e392]:
+        - generic [ref=e393]:
+          - generic [ref=e395]:
+            - generic [ref=e396]:
+              - img "Go" [ref=e397] [cursor=pointer]
+              - img "Pause" [ref=e398] [cursor=pointer]
+              - img "Stop" [ref=e399] [cursor=pointer]
+            - button [ref=e5314] [cursor=pointer]:
+              - img "Exit full screen mode" [ref=e5316]
+          - generic [ref=e413]:
+            - generic:
+              - generic:
+                - generic [ref=e5319]:
+                  - generic [ref=e5320]: 样本数
+                  - generic [ref=e5321]: "3"
+                - generic [ref=e5324]:
+                  - generic [ref=e5325]: 训练轮次
+                  - generic [ref=e5326]: "1800"
+                - generic [ref=e5329]:
+                  - generic [ref=e5330]: 均方误差
+                  - generic [ref=e5331]: "0.002103"
+                - generic: "1.5"
+                - generic: "3.0692"
+                - generic [ref=e5340]:
+                  - generic [ref=e5341]: 最近样本
+                  - generic [ref=e5342]: 2 → 4
+                - generic [ref=e5345]:
+                  - generic [ref=e5346]: 状态
+                  - generic [ref=e5347]: 预测完成；测试不会修改训练结果
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - generic [ref=e419]:
+              - generic [ref=e420]:
+                - generic [ref=e422]:
+                  - generic [ref=e423]: Sprite
+                  - textbox "Sprite" [ref=e424]:
+                    - /placeholder: Name
+                    - text: 神经网络
+                - generic [ref=e427]:
+                  - generic [ref=e428]: x
+                  - spinbutton "x" [ref=e429]: "0"
+                - generic [ref=e432]:
+                  - generic [ref=e433]: "y"
+                  - spinbutton "y" [ref=e434]: "0"
+              - generic [ref=e435]:
+                - generic [ref=e436]:
+                  - generic [ref=e437]: Show
+                  - generic [ref=e439]:
+                    - button "Show sprite" [ref=e440] [cursor=pointer]
+                    - button "Hide sprite" [pressed] [ref=e442] [cursor=pointer]
+                - generic [ref=e445]:
+                  - generic [ref=e446]: Size
+                  - spinbutton "Size" [ref=e447]: "100"
+                - generic [ref=e449]:
+                  - generic [ref=e450]: Direction
+                  - spinbutton "Direction" [ref=e451]: "90"
+            - generic [ref=e453]:
+              - generic [ref=e5349] [cursor=pointer]:
+                - generic [ref=e5352]: 神经网络
+                - button "Delete" [ref=e5354]
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e5358] [cursor=pointer]:
+                - generic [ref=e5361]: 重置按钮
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e5364] [cursor=pointer]:
+                - generic [ref=e5367]: 训练按钮
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e5370] [cursor=pointer]:
+                - generic [ref=e5373]: 测试按钮
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+            - generic [ref=e463]:
+              - button "Choose a Sprite" [ref=e464] [cursor=pointer]
+              - generic [ref=e466]:
+                - generic:
+                  - button "Upload Sprite" [ref=e468] [cursor=pointer]
+                  - button "Surprise" [ref=e471] [cursor=pointer]
+                  - button "Paint" [ref=e474] [cursor=pointer]
+                  - button "Choose a Sprite" [ref=e477] [cursor=pointer]
+          - generic [ref=e5375] [cursor=pointer]:
+            - generic [ref=e5376]: Stage
+            - generic [ref=e5379]: Backdrops
+            - generic [ref=e5380]: "1"
+            - generic [ref=e5381]:
+              - button "Choose a Backdrop" [ref=e5382]
+              - generic [ref=e5384]:
+                - generic:
+                  - button "Upload Backdrop" [ref=e5386]
+                  - button "Surprise" [ref=e5389]
+                  - button "Paint" [ref=e5392]
+                  - button "Choose a Backdrop" [ref=e5395]
+  - menu
+  - menu
+  - menu
+  - menu
+  - menu
+  - menu
+  - menu
