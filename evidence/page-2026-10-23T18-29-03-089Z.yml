@@ -1,0 +1,1792 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: TM
+      - generic [ref=e7]:
+        - heading "图灵机实验台" [level=1] [ref=e8]
+        - paragraph [ref=e9]: 单纸带 · 确定性 · 可编程
+    - generic [ref=e10]:
+      - link "进入关卡" [ref=e11] [cursor=pointer]:
+        - /url: ./campaign.html
+      - button "导出项目" [ref=e12] [cursor=pointer]
+      - button "导入项目" [ref=e13] [cursor=pointer]
+      - button "导出记录" [ref=e14] [cursor=pointer]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: 运行状态
+          - strong [ref=e20]: 已停机
+        - generic [ref=e21]:
+          - generic [ref=e22]: 当前状态
+          - strong [ref=e23]: G.HALT
+        - generic [ref=e24]:
+          - generic [ref=e25]: 读取符号
+          - strong [ref=e26]: "3"
+        - generic [ref=e27]:
+          - generic [ref=e28]: 读写头位置
+          - strong [ref=e29]: "8"
+        - generic [ref=e30]:
+          - generic [ref=e31]: 已执行步数
+          - strong [ref=e32]: "733"
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e2172]:
+            - generic [ref=e2173]: "0"
+            - generic [ref=e2174]: "1"
+          - generic [ref=e2175]:
+            - generic [ref=e2176]: "1"
+            - generic [ref=e2177]: "1"
+          - generic [ref=e2178]:
+            - generic [ref=e2179]: "2"
+            - generic [ref=e2180]: "2"
+          - generic [ref=e2181]:
+            - generic [ref=e2182]: "3"
+            - generic [ref=e2183]: "1"
+          - generic [ref=e2184]:
+            - generic [ref=e2185]: "4"
+            - generic [ref=e2186]: "1"
+          - generic [ref=e2187]:
+            - generic [ref=e2188]: "5"
+            - generic [ref=e2189]: "2"
+          - generic [ref=e2190]:
+            - generic [ref=e2191]: "6"
+            - generic [ref=e2192]: "2"
+          - generic [ref=e2193]:
+            - generic [ref=e2194]: "7"
+            - generic [ref=e2195]: "2"
+          - generic [ref=e2196]:
+            - generic [ref=e2197]: "8"
+            - generic [ref=e2198]: "3"
+            - text: ▲
+          - generic [ref=e2199]:
+            - generic [ref=e2200]: "9"
+            - generic [ref=e2201]: "0"
+          - generic [ref=e2202]:
+            - generic [ref=e2203]: "10"
+            - generic [ref=e2204]: "0"
+          - generic [ref=e2205]:
+            - generic [ref=e2206]: "11"
+            - generic [ref=e2207]: "0"
+          - generic [ref=e2208]:
+            - generic [ref=e2209]: "12"
+            - generic [ref=e2210]: "0"
+          - generic [ref=e2211]:
+            - generic [ref=e2212]: "13"
+            - generic [ref=e2213]: "0"
+          - generic [ref=e2214]:
+            - generic [ref=e2215]: "14"
+            - generic [ref=e2216]: "0"
+          - generic [ref=e2217]:
+            - generic [ref=e2218]: "15"
+            - generic [ref=e2219]: "0"
+          - generic [ref=e2220]:
+            - generic [ref=e2221]: "16"
+            - generic [ref=e2222]: "0"
+        - generic [ref=e86]: 读写头 · G.HALT
+      - generic [ref=e87]:
+        - button "单步" [ref=e88] [cursor=pointer]
+        - button "运行" [ref=e89] [cursor=pointer]
+        - button "暂停" [ref=e90] [cursor=pointer]
+        - button "重置" [ref=e91] [cursor=pointer]
+        - generic [ref=e92]:
+          - text: 纸带视角
+          - combobox "纸带视角" [ref=e93]:
+            - option "跟随读写头" [selected]
+            - option "固定在 0"
+            - option "随意拖动"
+        - generic [ref=e94]:
+          - generic [ref=e95]: 目标速度
+          - slider [ref=e96]: "1000"
+          - spinbutton "手动输入目标速度（步/秒）" [ref=e97]: "1000"
+          - generic [ref=e98]: 1000 步/秒
+          - strong [ref=e99]: 实际 995 步/秒
+    - region [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - heading "吉斯维杰特数列 → 图灵机" [level=2] [ref=e103]
+          - paragraph [ref=e104]: 输入阈值，转换后的规则会显示在下方。点击上方“运行”开始计算；新项严格超过阈值时写出并停机，等于时继续。
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - text: 整数阈值（0–16）
+            - spinbutton "整数阈值（0–16）" [ref=e107]: "2"
+          - button "开始转换" [ref=e108] [cursor=pointer]
+      - paragraph [ref=e109]: 0 表示未写入；数字表示数列项。计算时 |O、S、A、B 为比较标记，#数字记录本轮最大重复次数，停机时会清除。建议先试 2；阈值越大，运行可能极长。
+      - status [ref=e110]: 转换完成，共 1099 条规则。已开启 Max 步数；点击上方“运行”开始。
+      - generic [ref=e544]:
+        - generic [ref=e545]: 已写入的数列（直接读取纸带）
+        - textbox "已写入的数列（直接读取纸带）" [ref=e546]: 1, 1, 2, 1, 1, 2, 2, 2, 3
+        - paragraph [ref=e547]: 已停机：第 9 项为 3，严格大于阈值 2。
+    - generic [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - heading "机器定义" [level=2] [ref=e114]
+          - generic [ref=e115]: 每行一条规则：状态,符号 → 状态,符号,方向
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - text: 初始输入
+            - textbox "初始输入" [ref=e118]
+          - generic [ref=e119]:
+            - text: 空白符
+            - textbox "空白符" [ref=e120]: "0"
+          - generic [ref=e121]:
+            - text: 初始状态
+            - textbox "初始状态" [ref=e122]: G.seed
+          - generic [ref=e123]:
+            - generic [ref=e124]: 最大步数
+            - generic [ref=e125]:
+              - spinbutton "最大步数" [disabled] [ref=e126]: "10000"
+              - generic [ref=e127] [cursor=pointer]:
+                - checkbox "Max" [checked] [ref=e128]
+                - text: Max
+          - generic [ref=e129]:
+            - text: 接受状态
+            - textbox "接受状态" [ref=e130]:
+              - /placeholder: 逗号分隔
+          - generic [ref=e131]:
+            - text: 拒绝状态
+            - textbox "拒绝状态" [ref=e132]:
+              - /placeholder: 逗号分隔
+          - generic [ref=e133]:
+            - text: 普通停机状态
+            - textbox "普通停机状态" [ref=e134]:
+              - /placeholder: 逗号分隔
+              - text: G.HALT
+        - generic [ref=e135]:
+          - text: 转移规则
+          - textbox "转移规则" [ref=e136]: "# Gijswijt threshold=2 # 0=未写入；数字=数列项；|O/S/A/B=计算标记；#数字=本轮最大重复次数 # 转换仅展开规则；数列项由图灵机运行时比较后缀计算。 G.seed,0 -> G.fence,1,L G.fence,0 -> G.end,#1,R G.end,1 -> G.end,1,R G.end,1|O -> G.end,1|O,R G.end,1|S -> G.end,1|S,R G.end,1|OS -> G.end,1|OS,R G.end,1|A -> G.end,1|A,R G.end,1|OA -> G.end,1|OA,R G.end,1|SA -> G.end,1|SA,R G.end,1|OSA -> G.end,1|OSA,R G.end,1|B -> G.end,1|B,R G.end,1|OB -> G.end,1|OB,R G.end,1|SB -> G.end,1|SB,R G.end,1|OSB -> G.end,1|OSB,R G.end,1|AB -> G.end,1|AB,R G.end,1|OAB -> G.end,1|OAB,R G.end,1|SAB -> G.end,1|SAB,R G.end,1|OSAB -> G.end,1|OSAB,R G.end,2 -> G.end,2,R G.end,2|O -> G.end,2|O,R G.end,2|S -> G.end,2|S,R G.end,2|OS -> G.end,2|OS,R G.end,2|A -> G.end,2|A,R G.end,2|OA -> G.end,2|OA,R G.end,2|SA -> G.end,2|SA,R G.end,2|OSA -> G.end,2|OSA,R G.end,2|B -> G.end,2|B,R G.end,2|OB -> G.end,2|OB,R G.end,2|SB -> G.end,2|SB,R G.end,2|OSB -> G.end,2|OSB,R G.end,2|AB -> G.end,2|AB,R G.end,2|OAB -> G.end,2|OAB,R G.end,2|SAB -> G.end,2|SAB,R G.end,2|OSAB -> G.end,2|OSAB,R G.end,0 -> G.origin,0,L G.next,0 -> G.origin,0,L G.origin,1 -> G.trial,1|O,N G.origin,1|O -> G.trial,1|O,N G.origin,1|S -> G.trial,1|OS,N G.origin,1|OS -> G.trial,1|OS,N G.origin,1|A -> G.trial,1|OA,N G.origin,1|OA -> G.trial,1|OA,N G.origin,1|SA -> G.trial,1|OSA,N G.origin,1|OSA -> G.trial,1|OSA,N G.origin,1|B -> G.trial,1|OB,N G.origin,1|OB -> G.trial,1|OB,N G.origin,1|SB -> G.trial,1|OSB,N G.origin,1|OSB -> G.trial,1|OSB,N G.origin,1|AB -> G.trial,1|OAB,N G.origin,1|OAB -> G.trial,1|OAB,N G.origin,1|SAB -> G.trial,1|OSAB,N G.origin,1|OSAB -> G.trial,1|OSAB,N G.origin,2 -> G.trial,2|O,N G.origin,2|O -> G.trial,2|O,N G.origin,2|S -> G.trial,2|OS,N G.origin,2|OS -> G.trial,2|OS,N G.origin,2|A -> G.trial,2|OA,N G.origin,2|OA -> G.trial,2|OA,N G.origin,2|SA -> G.trial,2|OSA,N G.origin,2|OSA -> G.trial,2|OSA,N G.origin,2|B -> G.trial,2|OB,N G.origin,2|OB -> G.trial,2|OB,N G.origin,2|SB -> G.trial,2|OSB,N G.origin,2|OSB -> G.trial,2|OSB,N G.origin,2|AB -> G.trial,2|OAB,N G.origin,2|OAB -> G.trial,2|OAB,N G.origin,2|SAB -> G.trial,2|OSAB,N G.origin,2|OSAB -> G.trial,2|OSAB,N G.trial,1|O -> G.markB,1|OS,L G.trial,1|OS -> G.markB,1|OS,L G.trial,1|OA -> G.markB,1|OSA,L G.trial,1|OSA -> G.markB,1|OSA,L G.trial,1|OB -> G.markB,1|OSB,L G.trial,1|OSB -> G.markB,1|OSB,L G.trial,1|OAB -> G.markB,1|OSAB,L G.trial,1|OSAB -> G.markB,1|OSAB,L G.trial,2|O -> G.markB,2|OS,L G.trial,2|OS -> G.markB,2|OS,L G.trial,2|OA -> G.markB,2|OSA,L G.trial,2|OSA -> G.markB,2|OSA,L G.trial,2|OB -> G.markB,2|OSB,L G.trial,2|OSB -> G.markB,2|OSB,L G.trial,2|OAB -> G.markB,2|OSAB,L G.trial,2|OSAB -> G.markB,2|OSAB,L G.markB,1 -> G.endA,1|B,R G.markB,1|O -> G.endA,1|OB,R G.markB,1|S -> G.endA,1|SB,R G.markB,1|OS -> G.endA,1|OSB,R G.markB,1|A -> G.endA,1|AB,R G.markB,1|OA -> G.endA,1|OAB,R G.markB,1|SA -> G.endA,1|SAB,R G.markB,1|OSA -> G.endA,1|OSAB,R G.markB,1|B -> G.endA,1|B,R G.markB,1|OB -> G.endA,1|OB,R G.markB,1|SB -> G.endA,1|SB,R G.markB,1|OSB -> G.endA,1|OSB,R G.markB,1|AB -> G.endA,1|AB,R G.markB,1|OAB -> G.endA,1|OAB,R G.markB,1|SAB -> G.endA,1|SAB,R G.markB,1|OSAB -> G.endA,1|OSAB,R G.markB,2 -> G.endA,2|B,R G.markB,2|O -> G.endA,2|OB,R G.markB,2|S -> G.endA,2|SB,R G.markB,2|OS -> G.endA,2|OSB,R G.markB,2|A -> G.endA,2|AB,R G.markB,2|OA -> G.endA,2|OAB,R G.markB,2|SA -> G.endA,2|SAB,R G.markB,2|OSA -> G.endA,2|OSAB,R G.markB,2|B -> G.endA,2|B,R G.markB,2|OB -> G.endA,2|OB,R G.markB,2|SB -> G.endA,2|SB,R G.markB,2|OSB -> G.endA,2|OSB,R G.markB,2|AB -> G.endA,2|AB,R G.markB,2|OAB -> G.endA,2|OAB,R G.markB,2|SAB -> G.endA,2|SAB,R G.markB,2|OSAB -> G.endA,2|OSAB,R G.markB,#1 -> G.cleanL.1,#1,N G.markB,#2 -> G.cleanL.1,#2,N G.endA,1 -> G.endA,1,R G.endA,1|O -> G.endA,1|O,R G.endA,1|S -> G.endA,1|S,R G.endA,1|OS -> G.endA,1|OS,R G.endA,1|A -> G.endA,1|A,R G.endA,1|OA -> G.endA,1|OA,R G.endA,1|SA -> G.endA,1|SA,R G.endA,1|OSA -> G.endA,1|OSA,R G.endA,1|B -> G.endA,1|B,R G.endA,1|OB -> G.endA,1|OB,R G.endA,1|SB -> G.endA,1|SB,R G.endA,1|OSB -> G.endA,1|OSB,R G.endA,1|AB -> G.endA,1|AB,R G.endA,1|OAB -> G.endA,1|OAB,R G.endA,1|SAB -> G.endA,1|SAB,R G.endA,1|OSAB -> G.endA,1|OSAB,R G.endA,2 -> G.endA,2,R G.endA,2|O -> G.endA,2|O,R G.endA,2|S -> G.endA,2|S,R G.endA,2|OS -> G.endA,2|OS,R G.endA,2|A -> G.endA,2|A,R G.endA,2|OA -> G.endA,2|OA,R G.endA,2|SA -> G.endA,2|SA,R G.endA,2|OSA -> G.endA,2|OSA,R G.endA,2|B -> G.endA,2|B,R G.endA,2|OB -> G.endA,2|OB,R G.endA,2|SB -> G.endA,2|SB,R G.endA,2|OSB -> G.endA,2|OSB,R G.endA,2|AB -> G.endA,2|AB,R G.endA,2|OAB -> G.endA,2|OAB,R G.endA,2|SAB -> G.endA,2|SAB,R G.endA,2|OSAB -> G.endA,2|OSAB,R G.endA,0 -> G.markA,0,L G.markA,1 -> G.compare.1,1|A,N G.markA,1|O -> G.compare.1,1|OA,N G.markA,1|S -> G.compare.1,1|SA,N G.markA,1|OS -> G.compare.1,1|OSA,N G.markA,1|A -> G.compare.1,1|A,N G.markA,1|OA -> G.compare.1,1|OA,N G.markA,1|SA -> G.compare.1,1|SA,N G.markA,1|OSA -> G.compare.1,1|OSA,N G.markA,1|B -> G.compare.1,1|AB,N G.markA,1|OB -> G.compare.1,1|OAB,N G.markA,1|SB -> G.compare.1,1|SAB,N G.markA,1|OSB -> G.compare.1,1|OSAB,N G.markA,1|AB -> G.compare.1,1|AB,N G.markA,1|OAB -> G.compare.1,1|OAB,N G.markA,1|SAB -> G.compare.1,1|SAB,N G.markA,1|OSAB -> G.compare.1,1|OSAB,N G.markA,2 -> G.compare.1,2|A,N G.markA,2|O -> G.compare.1,2|OA,N G.markA,2|S -> G.compare.1,2|SA,N G.markA,2|OS -> G.compare.1,2|OSA,N G.markA,2|A -> G.compare.1,2|A,N G.markA,2|OA -> G.compare.1,2|OA,N G.markA,2|SA -> G.compare.1,2|SA,N G.markA,2|OSA -> G.compare.1,2|OSA,N G.markA,2|B -> G.compare.1,2|AB,N G.markA,2|OB -> G.compare.1,2|OAB,N G.markA,2|SB -> G.compare.1,2|SAB,N G.markA,2|OSB -> G.compare.1,2|OSAB,N G.markA,2|AB -> G.compare.1,2|AB,N G.markA,2|OAB -> G.compare.1,2|OAB,N G.markA,2|SAB -> G.compare.1,2|SAB,N G.markA,2|OSAB -> G.compare.1,2|OSAB,N G.compare.1,1|A -> G.findB.1.1.0,1|A,L G.compare.1,1|OA -> G.findB.1.1.0,1|OA,L G.compare.1,1|SA -> G.findB.1.1.1,1|SA,L G.compare.1,1|OSA -> G.findB.1.1.1,1|OSA,L G.compare.1,1|AB -> G.findB.1.1.0,1|AB,L G.compare.1,1|OAB -> G.findB.1.1.0,1|OAB,L G.compare.1,1|SAB -> G.findB.1.1.1,1|SAB,L G.compare.1,1|OSAB -> G.findB.1.1.1,1|OSAB,L G.compare.1,2|A -> G.findB.1.2.0,2|A,L G.compare.1,2|OA -> G.findB.1.2.0,2|OA,L G.compare.1,2|SA -> G.findB.1.2.1,2|SA,L G.compare.1,2|OSA -> G.findB.1.2.1,2|OSA,L G.compare.1,2|AB -> G.findB.1.2.0,2|AB,L G.compare.1,2|OAB -> G.findB.1.2.0,2|OAB,L G.compare.1,2|SAB -> G.findB.1.2.1,2|SAB,L G.compare.1,2|OSAB -> G.findB.1.2.1,2|OSAB,L G.findB.1.1.0,1 -> G.findB.1.1.0,1,L G.findB.1.1.0,1|O -> G.findB.1.1.0,1|O,L G.findB.1.1.0,1|S -> G.findB.1.1.0,1|S,L G.findB.1.1.0,1|OS -> G.findB.1.1.0,1|OS,L G.findB.1.1.0,1|A -> G.findB.1.1.0,1|A,L G.findB.1.1.0,1|OA -> G.findB.1.1.0,1|OA,L G.findB.1.1.0,1|SA -> G.findB.1.1.0,1|SA,L G.findB.1.1.0,1|OSA -> G.findB.1.1.0,1|OSA,L G.findB.1.1.0,1|B -> G.moveB.1.0,1,L G.findB.1.1.0,1|OB -> G.moveB.1.0,1|O,L G.findB.1.1.0,1|SB -> G.moveB.1.0,1|S,L G.findB.1.1.0,1|OSB -> G.moveB.1.0,1|OS,L G.findB.1.1.0,1|AB -> G.moveB.1.0,1|A,L G.findB.1.1.0,1|OAB -> G.moveB.1.0,1|OA,L G.findB.1.1.0,1|SAB -> G.moveB.1.0,1|SA,L G.findB.1.1.0,1|OSAB -> G.moveB.1.0,1|OSA,L G.findB.1.1.0,2 -> G.findB.1.1.0,2,L G.findB.1.1.0,2|O -> G.findB.1.1.0,2|O,L G.findB.1.1.0,2|S -> G.findB.1.1.0,2|S,L G.findB.1.1.0,2|OS -> G.findB.1.1.0,2|OS,L G.findB.1.1.0,2|A -> G.findB.1.1.0,2|A,L G.findB.1.1.0,2|OA -> G.findB.1.1.0,2|OA,L G.findB.1.1.0,2|SA -> G.findB.1.1.0,2|SA,L G.findB.1.1.0,2|OSA -> G.findB.1.1.0,2|OSA,L G.findB.1.1.0,2|B -> G.cleanL.1,2|B,N G.findB.1.1.0,2|OB -> G.cleanL.1,2|OB,N G.findB.1.1.0,2|SB -> G.cleanL.1,2|SB,N G.findB.1.1.0,2|OSB -> G.cleanL.1,2|OSB,N G.findB.1.1.0,2|AB -> G.cleanL.1,2|AB,N G.findB.1.1.0,2|OAB -> G.cleanL.1,2|OAB,N G.findB.1.1.0,2|SAB -> G.cleanL.1,2|SAB,N G.findB.1.1.0,2|OSAB -> G.cleanL.1,2|OSAB,N G.findB.1.1.1,1 -> G.findB.1.1.1,1,L G.findB.1.1.1,1|O -> G.findB.1.1.1,1|O,L G.findB.1.1.1,1|S -> G.findB.1.1.1,1|S,L G.findB.1.1.1,1|OS -> G.findB.1.1.1,1|OS,L G.findB.1.1.1,1|A -> G.findB.1.1.1,1|A,L G.findB.1.1.1,1|OA -> G.findB.1.1.1,1|OA,L G.findB.1.1.1,1|SA -> G.findB.1.1.1,1|SA,L G.findB.1.1.1,1|OSA -> G.findB.1.1.1,1|OSA,L G.findB.1.1.1,1|B -> G.moveB.2.1,1|S,L G.findB.1.1.1,1|OB -> G.moveB.2.1,1|OS,L G.findB.1.1.1,1|SB -> G.moveB.2.1,1|S,L G.findB.1.1.1,1|OSB -> G.moveB.2.1,1|OS,L G.findB.1.1.1,1|AB -> G.moveB.2.1,1|SA,L G.findB.1.1.1,1|OAB -> G.moveB.2.1,1|OSA,L G.findB.1.1.1,1|SAB -> G.moveB.2.1,1|SA,L G.findB.1.1.1,1|OSAB -> G.moveB.2.1,1|OSA,L G.findB.1.1.1,2 -> G.findB.1.1.1,2,L G.findB.1.1.1,2|O -> G.findB.1.1.1,2|O,L G.findB.1.1.1,2|S -> G.findB.1.1.1,2|S,L G.findB.1.1.1,2|OS -> G.findB.1.1.1,2|OS,L G.findB.1.1.1,2|A -> G.findB.1.1.1,2|A,L G.findB.1.1.1,2|OA -> G.findB.1.1.1,2|OA,L G.findB.1.1.1,2|SA -> G.findB.1.1.1,2|SA,L G.findB.1.1.1,2|OSA -> G.findB.1.1.1,2|OSA,L G.findB.1.1.1,2|B -> G.cleanL.1,2|B,N G.findB.1.1.1,2|OB -> G.cleanL.1,2|OB,N G.findB.1.1.1,2|SB -> G.cleanL.1,2|SB,N G.findB.1.1.1,2|OSB -> G.cleanL.1,2|OSB,N G.findB.1.1.1,2|AB -> G.cleanL.1,2|AB,N G.findB.1.1.1,2|OAB -> G.cleanL.1,2|OAB,N G.findB.1.1.1,2|SAB -> G.cleanL.1,2|SAB,N G.findB.1.1.1,2|OSAB -> G.cleanL.1,2|OSAB,N G.findB.1.2.0,1 -> G.findB.1.2.0,1,L G.findB.1.2.0,1|O -> G.findB.1.2.0,1|O,L G.findB.1.2.0,1|S -> G.findB.1.2.0,1|S,L G.findB.1.2.0,1|OS -> G.findB.1.2.0,1|OS,L G.findB.1.2.0,1|A -> G.findB.1.2.0,1|A,L G.findB.1.2.0,1|OA -> G.findB.1.2.0,1|OA,L G.findB.1.2.0,1|SA -> G.findB.1.2.0,1|SA,L G.findB.1.2.0,1|OSA -> G.findB.1.2.0,1|OSA,L G.findB.1.2.0,1|B -> G.cleanL.1,1|B,N G.findB.1.2.0,1|OB -> G.cleanL.1,1|OB,N G.findB.1.2.0,1|SB -> G.cleanL.1,1|SB,N G.findB.1.2.0,1|OSB -> G.cleanL.1,1|OSB,N G.findB.1.2.0,1|AB -> G.cleanL.1,1|AB,N G.findB.1.2.0,1|OAB -> G.cleanL.1,1|OAB,N G.findB.1.2.0,1|SAB -> G.cleanL.1,1|SAB,N G.findB.1.2.0,1|OSAB -> G.cleanL.1,1|OSAB,N G.findB.1.2.0,2 -> G.findB.1.2.0,2,L G.findB.1.2.0,2|O -> G.findB.1.2.0,2|O,L G.findB.1.2.0,2|S -> G.findB.1.2.0,2|S,L G.findB.1.2.0,2|OS -> G.findB.1.2.0,2|OS,L G.findB.1.2.0,2|A -> G.findB.1.2.0,2|A,L G.findB.1.2.0,2|OA -> G.findB.1.2.0,2|OA,L G.findB.1.2.0,2|SA -> G.findB.1.2.0,2|SA,L G.findB.1.2.0,2|OSA -> G.findB.1.2.0,2|OSA,L G.findB.1.2.0,2|B -> G.moveB.1.0,2,L G.findB.1.2.0,2|OB -> G.moveB.1.0,2|O,L G.findB.1.2.0,2|SB -> G.moveB.1.0,2|S,L G.findB.1.2.0,2|OSB -> G.moveB.1.0,2|OS,L G.findB.1.2.0,2|AB -> G.moveB.1.0,2|A,L G.findB.1.2.0,2|OAB -> G.moveB.1.0,2|OA,L G.findB.1.2.0,2|SAB -> G.moveB.1.0,2|SA,L G.findB.1.2.0,2|OSAB -> G.moveB.1.0,2|OSA,L G.findB.1.2.1,1 -> G.findB.1.2.1,1,L G.findB.1.2.1,1|O -> G.findB.1.2.1,1|O,L G.findB.1.2.1,1|S -> G.findB.1.2.1,1|S,L G.findB.1.2.1,1|OS -> G.findB.1.2.1,1|OS,L G.findB.1.2.1,1|A -> G.findB.1.2.1,1|A,L G.findB.1.2.1,1|OA -> G.findB.1.2.1,1|OA,L G.findB.1.2.1,1|SA -> G.findB.1.2.1,1|SA,L G.findB.1.2.1,1|OSA -> G.findB.1.2.1,1|OSA,L G.findB.1.2.1,1|B -> G.cleanL.1,1|B,N G.findB.1.2.1,1|OB -> G.cleanL.1,1|OB,N G.findB.1.2.1,1|SB -> G.cleanL.1,1|SB,N G.findB.1.2.1,1|OSB -> G.cleanL.1,1|OSB,N G.findB.1.2.1,1|AB -> G.cleanL.1,1|AB,N G.findB.1.2.1,1|OAB -> G.cleanL.1,1|OAB,N G.findB.1.2.1,1|SAB -> G.cleanL.1,1|SAB,N G.findB.1.2.1,1|OSAB -> G.cleanL.1,1|OSAB,N G.findB.1.2.1,2 -> G.findB.1.2.1,2,L G.findB.1.2.1,2|O -> G.findB.1.2.1,2|O,L G.findB.1.2.1,2|S -> G.findB.1.2.1,2|S,L G.findB.1.2.1,2|OS -> G.findB.1.2.1,2|OS,L G.findB.1.2.1,2|A -> G.findB.1.2.1,2|A,L G.findB.1.2.1,2|OA -> G.findB.1.2.1,2|OA,L G.findB.1.2.1,2|SA -> G.findB.1.2.1,2|SA,L G.findB.1.2.1,2|OSA -> G.findB.1.2.1,2|OSA,L G.findB.1.2.1,2|B -> G.moveB.2.1,2|S,L G.findB.1.2.1,2|OB -> G.moveB.2.1,2|OS,L G.findB.1.2.1,2|SB -> G.moveB.2.1,2|S,L G.findB.1.2.1,2|OSB -> G.moveB.2.1,2|OS,L G.findB.1.2.1,2|AB -> G.moveB.2.1,2|SA,L G.findB.1.2.1,2|OAB -> G.moveB.2.1,2|OSA,L G.findB.1.2.1,2|SAB -> G.moveB.2.1,2|SA,L G.findB.1.2.1,2|OSAB -> G.moveB.2.1,2|OSA,L G.moveB.1.0,1 -> G.returnA.1.0,1|B,R G.moveB.1.0,1|O -> G.returnA.1.0,1|OB,R G.moveB.1.0,1|S -> G.returnA.1.0,1|SB,R G.moveB.1.0,1|OS -> G.returnA.1.0,1|OSB,R G.moveB.1.0,1|A -> G.returnA.1.0,1|AB,R G.moveB.1.0,1|OA -> G.returnA.1.0,1|OAB,R G.moveB.1.0,1|SA -> G.returnA.1.0,1|SAB,R G.moveB.1.0,1|OSA -> G.returnA.1.0,1|OSAB,R G.moveB.1.0,1|B -> G.returnA.1.0,1|B,R G.moveB.1.0,1|OB -> G.returnA.1.0,1|OB,R G.moveB.1.0,1|SB -> G.returnA.1.0,1|SB,R G.moveB.1.0,1|OSB -> G.returnA.1.0,1|OSB,R G.moveB.1.0,1|AB -> G.returnA.1.0,1|AB,R G.moveB.1.0,1|OAB -> G.returnA.1.0,1|OAB,R G.moveB.1.0,1|SAB -> G.returnA.1.0,1|SAB,R G.moveB.1.0,1|OSAB -> G.returnA.1.0,1|OSAB,R G.moveB.1.0,2 -> G.returnA.1.0,2|B,R G.moveB.1.0,2|O -> G.returnA.1.0,2|OB,R G.moveB.1.0,2|S -> G.returnA.1.0,2|SB,R G.moveB.1.0,2|OS -> G.returnA.1.0,2|OSB,R G.moveB.1.0,2|A -> G.returnA.1.0,2|AB,R G.moveB.1.0,2|OA -> G.returnA.1.0,2|OAB,R G.moveB.1.0,2|SA -> G.returnA.1.0,2|SAB,R G.moveB.1.0,2|OSA -> G.returnA.1.0,2|OSAB,R G.moveB.1.0,2|B -> G.returnA.1.0,2|B,R G.moveB.1.0,2|OB -> G.returnA.1.0,2|OB,R G.moveB.1.0,2|SB -> G.returnA.1.0,2|SB,R G.moveB.1.0,2|OSB -> G.returnA.1.0,2|OSB,R G.moveB.1.0,2|AB -> G.returnA.1.0,2|AB,R G.moveB.1.0,2|OAB -> G.returnA.1.0,2|OAB,R G.moveB.1.0,2|SAB -> G.returnA.1.0,2|SAB,R G.moveB.1.0,2|OSAB -> G.returnA.1.0,2|OSAB,R G.moveB.1.0,#1 -> G.cleanL.1,#1,N G.moveB.1.0,#2 -> G.cleanL.1,#2,N G.returnA.1.0,1 -> G.returnA.1.0,1,R G.returnA.1.0,1|O -> G.returnA.1.0,1|O,R G.returnA.1.0,1|S -> G.returnA.1.0,1|S,R G.returnA.1.0,1|OS -> G.returnA.1.0,1|OS,R G.returnA.1.0,1|A -> G.moveA.1,1,L G.returnA.1.0,1|OA -> G.moveA.1,1|O,L G.returnA.1.0,1|SA -> G.moveA.1,1|S,L G.returnA.1.0,1|OSA -> G.moveA.1,1|OS,L G.returnA.1.0,1|B -> G.returnA.1.0,1|B,R G.returnA.1.0,1|OB -> G.returnA.1.0,1|OB,R G.returnA.1.0,1|SB -> G.returnA.1.0,1|SB,R G.returnA.1.0,1|OSB -> G.returnA.1.0,1|OSB,R G.returnA.1.0,1|AB -> G.moveA.1,1|B,L G.returnA.1.0,1|OAB -> G.moveA.1,1|OB,L G.returnA.1.0,1|SAB -> G.moveA.1,1|SB,L G.returnA.1.0,1|OSAB -> G.moveA.1,1|OSB,L G.returnA.1.0,2 -> G.returnA.1.0,2,R G.returnA.1.0,2|O -> G.returnA.1.0,2|O,R G.returnA.1.0,2|S -> G.returnA.1.0,2|S,R G.returnA.1.0,2|OS -> G.returnA.1.0,2|OS,R G.returnA.1.0,2|A -> G.moveA.1,2,L G.returnA.1.0,2|OA -> G.moveA.1,2|O,L G.returnA.1.0,2|SA -> G.moveA.1,2|S,L G.returnA.1.0,2|OSA -> G.moveA.1,2|OS,L G.returnA.1.0,2|B -> G.returnA.1.0,2|B,R G.returnA.1.0,2|OB -> G.returnA.1.0,2|OB,R G.returnA.1.0,2|SB -> G.returnA.1.0,2|SB,R G.returnA.1.0,2|OSB -> G.returnA.1.0,2|OSB,R G.returnA.1.0,2|AB -> G.moveA.1,2|B,L G.returnA.1.0,2|OAB -> G.moveA.1,2|OB,L G.returnA.1.0,2|SAB -> G.moveA.1,2|SB,L G.returnA.1.0,2|OSAB -> G.moveA.1,2|OSB,L G.moveB.1.1,1 -> G.returnA.1.1,1|B,R G.moveB.1.1,1|O -> G.returnA.1.1,1|OB,R G.moveB.1.1,1|S -> G.returnA.1.1,1|SB,R G.moveB.1.1,1|OS -> G.returnA.1.1,1|OSB,R G.moveB.1.1,1|A -> G.returnA.1.1,1|AB,R G.moveB.1.1,1|OA -> G.returnA.1.1,1|OAB,R G.moveB.1.1,1|SA -> G.returnA.1.1,1|SAB,R G.moveB.1.1,1|OSA -> G.returnA.1.1,1|OSAB,R G.moveB.1.1,1|B -> G.returnA.1.1,1|B,R G.moveB.1.1,1|OB -> G.returnA.1.1,1|OB,R G.moveB.1.1,1|SB -> G.returnA.1.1,1|SB,R G.moveB.1.1,1|OSB -> G.returnA.1.1,1|OSB,R G.moveB.1.1,1|AB -> G.returnA.1.1,1|AB,R G.moveB.1.1,1|OAB -> G.returnA.1.1,1|OAB,R G.moveB.1.1,1|SAB -> G.returnA.1.1,1|SAB,R G.moveB.1.1,1|OSAB -> G.returnA.1.1,1|OSAB,R G.moveB.1.1,2 -> G.returnA.1.1,2|B,R G.moveB.1.1,2|O -> G.returnA.1.1,2|OB,R G.moveB.1.1,2|S -> G.returnA.1.1,2|SB,R G.moveB.1.1,2|OS -> G.returnA.1.1,2|OSB,R G.moveB.1.1,2|A -> G.returnA.1.1,2|AB,R G.moveB.1.1,2|OA -> G.returnA.1.1,2|OAB,R G.moveB.1.1,2|SA -> G.returnA.1.1,2|SAB,R G.moveB.1.1,2|OSA -> G.returnA.1.1,2|OSAB,R G.moveB.1.1,2|B -> G.returnA.1.1,2|B,R G.moveB.1.1,2|OB -> G.returnA.1.1,2|OB,R G.moveB.1.1,2|SB -> G.returnA.1.1,2|SB,R G.moveB.1.1,2|OSB -> G.returnA.1.1,2|OSB,R G.moveB.1.1,2|AB -> G.returnA.1.1,2|AB,R G.moveB.1.1,2|OAB -> G.returnA.1.1,2|OAB,R G.moveB.1.1,2|SAB -> G.returnA.1.1,2|SAB,R G.moveB.1.1,2|OSAB -> G.returnA.1.1,2|OSAB,R G.moveB.1.1,#1 -> G.cleanL.1,#1,N G.moveB.1.1,#2 -> G.cleanL.1,#2,N G.returnA.1.1,1 -> G.returnA.1.1,1,R G.returnA.1.1,1|O -> G.returnA.1.1,1|O,R G.returnA.1.1,1|S -> G.returnA.1.1,1|S,R G.returnA.1.1,1|OS -> G.returnA.1.1,1|OS,R G.returnA.1.1,1|A -> G.moveA.1,1,L G.returnA.1.1,1|OA -> G.moveA.1,1|O,L G.returnA.1.1,1|SA -> G.moveA.1,1,L G.returnA.1.1,1|OSA -> G.moveA.1,1|O,L G.returnA.1.1,1|B -> G.returnA.1.1,1|B,R G.returnA.1.1,1|OB -> G.returnA.1.1,1|OB,R G.returnA.1.1,1|SB -> G.returnA.1.1,1|SB,R G.returnA.1.1,1|OSB -> G.returnA.1.1,1|OSB,R G.returnA.1.1,1|AB -> G.moveA.1,1|B,L G.returnA.1.1,1|OAB -> G.moveA.1,1|OB,L G.returnA.1.1,1|SAB -> G.moveA.1,1|B,L G.returnA.1.1,1|OSAB -> G.moveA.1,1|OB,L G.returnA.1.1,2 -> G.returnA.1.1,2,R G.returnA.1.1,2|O -> G.returnA.1.1,2|O,R G.returnA.1.1,2|S -> G.returnA.1.1,2|S,R G.returnA.1.1,2|OS -> G.returnA.1.1,2|OS,R G.returnA.1.1,2|A -> G.moveA.1,2,L G.returnA.1.1,2|OA -> G.moveA.1,2|O,L G.returnA.1.1,2|SA -> G.moveA.1,2,L G.returnA.1.1,2|OSA -> G.moveA.1,2|O,L G.returnA.1.1,2|B -> G.returnA.1.1,2|B,R G.returnA.1.1,2|OB -> G.returnA.1.1,2|OB,R G.returnA.1.1,2|SB -> G.returnA.1.1,2|SB,R G.returnA.1.1,2|OSB -> G.returnA.1.1,2|OSB,R G.returnA.1.1,2|AB -> G.moveA.1,2|B,L G.returnA.1.1,2|OAB -> G.moveA.1,2|OB,L G.returnA.1.1,2|SAB -> G.moveA.1,2|B,L G.returnA.1.1,2|OSAB -> G.moveA.1,2|OB,L G.moveA.1,1 -> G.compare.1,1|A,N G.moveA.1,1|O -> G.compare.1,1|OA,N G.moveA.1,1|S -> G.compare.1,1|SA,N G.moveA.1,1|OS -> G.compare.1,1|OSA,N G.moveA.1,1|A -> G.compare.1,1|A,N G.moveA.1,1|OA -> G.compare.1,1|OA,N G.moveA.1,1|SA -> G.compare.1,1|SA,N G.moveA.1,1|OSA -> G.compare.1,1|OSA,N G.moveA.1,1|B -> G.compare.1,1|AB,N G.moveA.1,1|OB -> G.compare.1,1|OAB,N G.moveA.1,1|SB -> G.compare.1,1|SAB,N G.moveA.1,1|OSB -> G.compare.1,1|OSAB,N G.moveA.1,1|AB -> G.compare.1,1|AB,N G.moveA.1,1|OAB -> G.compare.1,1|OAB,N G.moveA.1,1|SAB -> G.compare.1,1|SAB,N G.moveA.1,1|OSAB -> G.compare.1,1|OSAB,N G.moveA.1,2 -> G.compare.1,2|A,N G.moveA.1,2|O -> G.compare.1,2|OA,N G.moveA.1,2|S -> G.compare.1,2|SA,N G.moveA.1,2|OS -> G.compare.1,2|OSA,N G.moveA.1,2|A -> G.compare.1,2|A,N G.moveA.1,2|OA -> G.compare.1,2|OA,N G.moveA.1,2|SA -> G.compare.1,2|SA,N G.moveA.1,2|OSA -> G.compare.1,2|OSA,N G.moveA.1,2|B -> G.compare.1,2|AB,N G.moveA.1,2|OB -> G.compare.1,2|OAB,N G.moveA.1,2|SB -> G.compare.1,2|SAB,N G.moveA.1,2|OSB -> G.compare.1,2|OSAB,N G.moveA.1,2|AB -> G.compare.1,2|AB,N G.moveA.1,2|OAB -> G.compare.1,2|OAB,N G.moveA.1,2|SAB -> G.compare.1,2|SAB,N G.moveA.1,2|OSAB -> G.compare.1,2|OSAB,N G.cleanL.1,1 -> G.cleanL.1,1,L G.cleanL.1,1|O -> G.cleanL.1,1|O,L G.cleanL.1,1|S -> G.cleanL.1,1|S,L G.cleanL.1,1|OS -> G.cleanL.1,1|OS,L G.cleanL.1,1|A -> G.cleanL.1,1|A,L G.cleanL.1,1|OA -> G.cleanL.1,1|OA,L G.cleanL.1,1|SA -> G.cleanL.1,1|SA,L G.cleanL.1,1|OSA -> G.cleanL.1,1|OSA,L G.cleanL.1,1|B -> G.cleanL.1,1|B,L G.cleanL.1,1|OB -> G.cleanL.1,1|OB,L G.cleanL.1,1|SB -> G.cleanL.1,1|SB,L G.cleanL.1,1|OSB -> G.cleanL.1,1|OSB,L G.cleanL.1,1|AB -> G.cleanL.1,1|AB,L G.cleanL.1,1|OAB -> G.cleanL.1,1|OAB,L G.cleanL.1,1|SAB -> G.cleanL.1,1|SAB,L G.cleanL.1,1|OSAB -> G.cleanL.1,1|OSAB,L G.cleanL.1,2 -> G.cleanL.1,2,L G.cleanL.1,2|O -> G.cleanL.1,2|O,L G.cleanL.1,2|S -> G.cleanL.1,2|S,L G.cleanL.1,2|OS -> G.cleanL.1,2|OS,L G.cleanL.1,2|A -> G.cleanL.1,2|A,L G.cleanL.1,2|OA -> G.cleanL.1,2|OA,L G.cleanL.1,2|SA -> G.cleanL.1,2|SA,L G.cleanL.1,2|OSA -> G.cleanL.1,2|OSA,L G.cleanL.1,2|B -> G.cleanL.1,2|B,L G.cleanL.1,2|OB -> G.cleanL.1,2|OB,L G.cleanL.1,2|SB -> G.cleanL.1,2|SB,L G.cleanL.1,2|OSB -> G.cleanL.1,2|OSB,L G.cleanL.1,2|AB -> G.cleanL.1,2|AB,L G.cleanL.1,2|OAB -> G.cleanL.1,2|OAB,L G.cleanL.1,2|SAB -> G.cleanL.1,2|SAB,L G.cleanL.1,2|OSAB -> G.cleanL.1,2|OSAB,L G.cleanL.1,#1 -> G.cleanR,#1,R G.cleanL.1,#2 -> G.cleanR,#2,R G.compare.2,1|A -> G.findB.2.1.0,1|A,L G.compare.2,1|OA -> G.findB.2.1.0,1|OA,L G.compare.2,1|SA -> G.findB.2.1.1,1|SA,L G.compare.2,1|OSA -> G.findB.2.1.1,1|OSA,L G.compare.2,1|AB -> G.findB.2.1.0,1|AB,L G.compare.2,1|OAB -> G.findB.2.1.0,1|OAB,L G.compare.2,1|SAB -> G.findB.2.1.1,1|SAB,L G.compare.2,1|OSAB -> G.findB.2.1.1,1|OSAB,L G.compare.2,2|A -> G.findB.2.2.0,2|A,L G.compare.2,2|OA -> G.findB.2.2.0,2|OA,L G.compare.2,2|SA -> G.findB.2.2.1,2|SA,L G.compare.2,2|OSA -> G.findB.2.2.1,2|OSA,L G.compare.2,2|AB -> G.findB.2.2.0,2|AB,L G.compare.2,2|OAB -> G.findB.2.2.0,2|OAB,L G.compare.2,2|SAB -> G.findB.2.2.1,2|SAB,L G.compare.2,2|OSAB -> G.findB.2.2.1,2|OSAB,L G.findB.2.1.0,1 -> G.findB.2.1.0,1,L G.findB.2.1.0,1|O -> G.findB.2.1.0,1|O,L G.findB.2.1.0,1|S -> G.findB.2.1.0,1|S,L G.findB.2.1.0,1|OS -> G.findB.2.1.0,1|OS,L G.findB.2.1.0,1|A -> G.findB.2.1.0,1|A,L G.findB.2.1.0,1|OA -> G.findB.2.1.0,1|OA,L G.findB.2.1.0,1|SA -> G.findB.2.1.0,1|SA,L G.findB.2.1.0,1|OSA -> G.findB.2.1.0,1|OSA,L G.findB.2.1.0,1|B -> G.moveB.2.0,1,L G.findB.2.1.0,1|OB -> G.moveB.2.0,1|O,L G.findB.2.1.0,1|SB -> G.moveB.2.0,1|S,L G.findB.2.1.0,1|OSB -> G.moveB.2.0,1|OS,L G.findB.2.1.0,1|AB -> G.moveB.2.0,1|A,L G.findB.2.1.0,1|OAB -> G.moveB.2.0,1|OA,L G.findB.2.1.0,1|SAB -> G.moveB.2.0,1|SA,L G.findB.2.1.0,1|OSAB -> G.moveB.2.0,1|OSA,L G.findB.2.1.0,2 -> G.findB.2.1.0,2,L G.findB.2.1.0,2|O -> G.findB.2.1.0,2|O,L G.findB.2.1.0,2|S -> G.findB.2.1.0,2|S,L G.findB.2.1.0,2|OS -> G.findB.2.1.0,2|OS,L G.findB.2.1.0,2|A -> G.findB.2.1.0,2|A,L G.findB.2.1.0,2|OA -> G.findB.2.1.0,2|OA,L G.findB.2.1.0,2|SA -> G.findB.2.1.0,2|SA,L G.findB.2.1.0,2|OSA -> G.findB.2.1.0,2|OSA,L G.findB.2.1.0,2|B -> G.cleanL.2,2|B,N G.findB.2.1.0,2|OB -> G.cleanL.2,2|OB,N G.findB.2.1.0,2|SB -> G.cleanL.2,2|SB,N G.findB.2.1.0,2|OSB -> G.cleanL.2,2|OSB,N G.findB.2.1.0,2|AB -> G.cleanL.2,2|AB,N G.findB.2.1.0,2|OAB -> G.cleanL.2,2|OAB,N G.findB.2.1.0,2|SAB -> G.cleanL.2,2|SAB,N G.findB.2.1.0,2|OSAB -> G.cleanL.2,2|OSAB,N G.findB.2.1.1,1 -> G.findB.2.1.1,1,L G.findB.2.1.1,1|O -> G.findB.2.1.1,1|O,L G.findB.2.1.1,1|S -> G.findB.2.1.1,1|S,L G.findB.2.1.1,1|OS -> G.findB.2.1.1,1|OS,L G.findB.2.1.1,1|A -> G.findB.2.1.1,1|A,L G.findB.2.1.1,1|OA -> G.findB.2.1.1,1|OA,L G.findB.2.1.1,1|SA -> G.findB.2.1.1,1|SA,L G.findB.2.1.1,1|OSA -> G.findB.2.1.1,1|OSA,L G.findB.2.1.1,1|B -> G.stopL,1|B,N G.findB.2.1.1,1|OB -> G.stopL,1|OB,N G.findB.2.1.1,1|SB -> G.stopL,1|SB,N G.findB.2.1.1,1|OSB -> G.stopL,1|OSB,N G.findB.2.1.1,1|AB -> G.stopL,1|AB,N G.findB.2.1.1,1|OAB -> G.stopL,1|OAB,N G.findB.2.1.1,1|SAB -> G.stopL,1|SAB,N G.findB.2.1.1,1|OSAB -> G.stopL,1|OSAB,N G.findB.2.1.1,2 -> G.findB.2.1.1,2,L G.findB.2.1.1,2|O -> G.findB.2.1.1,2|O,L G.findB.2.1.1,2|S -> G.findB.2.1.1,2|S,L G.findB.2.1.1,2|OS -> G.findB.2.1.1,2|OS,L G.findB.2.1.1,2|A -> G.findB.2.1.1,2|A,L G.findB.2.1.1,2|OA -> G.findB.2.1.1,2|OA,L G.findB.2.1.1,2|SA -> G.findB.2.1.1,2|SA,L G.findB.2.1.1,2|OSA -> G.findB.2.1.1,2|OSA,L G.findB.2.1.1,2|B -> G.cleanL.2,2|B,N G.findB.2.1.1,2|OB -> G.cleanL.2,2|OB,N G.findB.2.1.1,2|SB -> G.cleanL.2,2|SB,N G.findB.2.1.1,2|OSB -> G.cleanL.2,2|OSB,N G.findB.2.1.1,2|AB -> G.cleanL.2,2|AB,N G.findB.2.1.1,2|OAB -> G.cleanL.2,2|OAB,N G.findB.2.1.1,2|SAB -> G.cleanL.2,2|SAB,N G.findB.2.1.1,2|OSAB -> G.cleanL.2,2|OSAB,N G.findB.2.2.0,1 -> G.findB.2.2.0,1,L G.findB.2.2.0,1|O -> G.findB.2.2.0,1|O,L G.findB.2.2.0,1|S -> G.findB.2.2.0,1|S,L G.findB.2.2.0,1|OS -> G.findB.2.2.0,1|OS,L G.findB.2.2.0,1|A -> G.findB.2.2.0,1|A,L G.findB.2.2.0,1|OA -> G.findB.2.2.0,1|OA,L G.findB.2.2.0,1|SA -> G.findB.2.2.0,1|SA,L G.findB.2.2.0,1|OSA -> G.findB.2.2.0,1|OSA,L G.findB.2.2.0,1|B -> G.cleanL.2,1|B,N G.findB.2.2.0,1|OB -> G.cleanL.2,1|OB,N G.findB.2.2.0,1|SB -> G.cleanL.2,1|SB,N G.findB.2.2.0,1|OSB -> G.cleanL.2,1|OSB,N G.findB.2.2.0,1|AB -> G.cleanL.2,1|AB,N G.findB.2.2.0,1|OAB -> G.cleanL.2,1|OAB,N G.findB.2.2.0,1|SAB -> G.cleanL.2,1|SAB,N G.findB.2.2.0,1|OSAB -> G.cleanL.2,1|OSAB,N G.findB.2.2.0,2 -> G.findB.2.2.0,2,L G.findB.2.2.0,2|O -> G.findB.2.2.0,2|O,L G.findB.2.2.0,2|S -> G.findB.2.2.0,2|S,L G.findB.2.2.0,2|OS -> G.findB.2.2.0,2|OS,L G.findB.2.2.0,2|A -> G.findB.2.2.0,2|A,L G.findB.2.2.0,2|OA -> G.findB.2.2.0,2|OA,L G.findB.2.2.0,2|SA -> G.findB.2.2.0,2|SA,L G.findB.2.2.0,2|OSA -> G.findB.2.2.0,2|OSA,L G.findB.2.2.0,2|B -> G.moveB.2.0,2,L G.findB.2.2.0,2|OB -> G.moveB.2.0,2|O,L G.findB.2.2.0,2|SB -> G.moveB.2.0,2|S,L G.findB.2.2.0,2|OSB -> G.moveB.2.0,2|OS,L G.findB.2.2.0,2|AB -> G.moveB.2.0,2|A,L G.findB.2.2.0,2|OAB -> G.moveB.2.0,2|OA,L G.findB.2.2.0,2|SAB -> G.moveB.2.0,2|SA,L G.findB.2.2.0,2|OSAB -> G.moveB.2.0,2|OSA,L G.findB.2.2.1,1 -> G.findB.2.2.1,1,L G.findB.2.2.1,1|O -> G.findB.2.2.1,1|O,L G.findB.2.2.1,1|S -> G.findB.2.2.1,1|S,L G.findB.2.2.1,1|OS -> G.findB.2.2.1,1|OS,L G.findB.2.2.1,1|A -> G.findB.2.2.1,1|A,L G.findB.2.2.1,1|OA -> G.findB.2.2.1,1|OA,L G.findB.2.2.1,1|SA -> G.findB.2.2.1,1|SA,L G.findB.2.2.1,1|OSA -> G.findB.2.2.1,1|OSA,L G.findB.2.2.1,1|B -> G.cleanL.2,1|B,N G.findB.2.2.1,1|OB -> G.cleanL.2,1|OB,N G.findB.2.2.1,1|SB -> G.cleanL.2,1|SB,N G.findB.2.2.1,1|OSB -> G.cleanL.2,1|OSB,N G.findB.2.2.1,1|AB -> G.cleanL.2,1|AB,N G.findB.2.2.1,1|OAB -> G.cleanL.2,1|OAB,N G.findB.2.2.1,1|SAB -> G.cleanL.2,1|SAB,N G.findB.2.2.1,1|OSAB -> G.cleanL.2,1|OSAB,N G.findB.2.2.1,2 -> G.findB.2.2.1,2,L G.findB.2.2.1,2|O -> G.findB.2.2.1,2|O,L G.findB.2.2.1,2|S -> G.findB.2.2.1,2|S,L G.findB.2.2.1,2|OS -> G.findB.2.2.1,2|OS,L G.findB.2.2.1,2|A -> G.findB.2.2.1,2|A,L G.findB.2.2.1,2|OA -> G.findB.2.2.1,2|OA,L G.findB.2.2.1,2|SA -> G.findB.2.2.1,2|SA,L G.findB.2.2.1,2|OSA -> G.findB.2.2.1,2|OSA,L G.findB.2.2.1,2|B -> G.stopL,2|B,N G.findB.2.2.1,2|OB -> G.stopL,2|OB,N G.findB.2.2.1,2|SB -> G.stopL,2|SB,N G.findB.2.2.1,2|OSB -> G.stopL,2|OSB,N G.findB.2.2.1,2|AB -> G.stopL,2|AB,N G.findB.2.2.1,2|OAB -> G.stopL,2|OAB,N G.findB.2.2.1,2|SAB -> G.stopL,2|SAB,N G.findB.2.2.1,2|OSAB -> G.stopL,2|OSAB,N G.moveB.2.0,1 -> G.returnA.2.0,1|B,R G.moveB.2.0,1|O -> G.returnA.2.0,1|OB,R G.moveB.2.0,1|S -> G.returnA.2.0,1|SB,R G.moveB.2.0,1|OS -> G.returnA.2.0,1|OSB,R G.moveB.2.0,1|A -> G.returnA.2.0,1|AB,R G.moveB.2.0,1|OA -> G.returnA.2.0,1|OAB,R G.moveB.2.0,1|SA -> G.returnA.2.0,1|SAB,R G.moveB.2.0,1|OSA -> G.returnA.2.0,1|OSAB,R G.moveB.2.0,1|B -> G.returnA.2.0,1|B,R G.moveB.2.0,1|OB -> G.returnA.2.0,1|OB,R G.moveB.2.0,1|SB -> G.returnA.2.0,1|SB,R G.moveB.2.0,1|OSB -> G.returnA.2.0,1|OSB,R G.moveB.2.0,1|AB -> G.returnA.2.0,1|AB,R G.moveB.2.0,1|OAB -> G.returnA.2.0,1|OAB,R G.moveB.2.0,1|SAB -> G.returnA.2.0,1|SAB,R G.moveB.2.0,1|OSAB -> G.returnA.2.0,1|OSAB,R G.moveB.2.0,2 -> G.returnA.2.0,2|B,R G.moveB.2.0,2|O -> G.returnA.2.0,2|OB,R G.moveB.2.0,2|S -> G.returnA.2.0,2|SB,R G.moveB.2.0,2|OS -> G.returnA.2.0,2|OSB,R G.moveB.2.0,2|A -> G.returnA.2.0,2|AB,R G.moveB.2.0,2|OA -> G.returnA.2.0,2|OAB,R G.moveB.2.0,2|SA -> G.returnA.2.0,2|SAB,R G.moveB.2.0,2|OSA -> G.returnA.2.0,2|OSAB,R G.moveB.2.0,2|B -> G.returnA.2.0,2|B,R G.moveB.2.0,2|OB -> G.returnA.2.0,2|OB,R G.moveB.2.0,2|SB -> G.returnA.2.0,2|SB,R G.moveB.2.0,2|OSB -> G.returnA.2.0,2|OSB,R G.moveB.2.0,2|AB -> G.returnA.2.0,2|AB,R G.moveB.2.0,2|OAB -> G.returnA.2.0,2|OAB,R G.moveB.2.0,2|SAB -> G.returnA.2.0,2|SAB,R G.moveB.2.0,2|OSAB -> G.returnA.2.0,2|OSAB,R G.moveB.2.0,#1 -> G.cleanL.2,#1,N G.moveB.2.0,#2 -> G.cleanL.2,#2,N G.returnA.2.0,1 -> G.returnA.2.0,1,R G.returnA.2.0,1|O -> G.returnA.2.0,1|O,R G.returnA.2.0,1|S -> G.returnA.2.0,1|S,R G.returnA.2.0,1|OS -> G.returnA.2.0,1|OS,R G.returnA.2.0,1|A -> G.moveA.2,1,L G.returnA.2.0,1|OA -> G.moveA.2,1|O,L G.returnA.2.0,1|SA -> G.moveA.2,1|S,L G.returnA.2.0,1|OSA -> G.moveA.2,1|OS,L G.returnA.2.0,1|B -> G.returnA.2.0,1|B,R G.returnA.2.0,1|OB -> G.returnA.2.0,1|OB,R G.returnA.2.0,1|SB -> G.returnA.2.0,1|SB,R G.returnA.2.0,1|OSB -> G.returnA.2.0,1|OSB,R G.returnA.2.0,1|AB -> G.moveA.2,1|B,L G.returnA.2.0,1|OAB -> G.moveA.2,1|OB,L G.returnA.2.0,1|SAB -> G.moveA.2,1|SB,L G.returnA.2.0,1|OSAB -> G.moveA.2,1|OSB,L G.returnA.2.0,2 -> G.returnA.2.0,2,R G.returnA.2.0,2|O -> G.returnA.2.0,2|O,R G.returnA.2.0,2|S -> G.returnA.2.0,2|S,R G.returnA.2.0,2|OS -> G.returnA.2.0,2|OS,R G.returnA.2.0,2|A -> G.moveA.2,2,L G.returnA.2.0,2|OA -> G.moveA.2,2|O,L G.returnA.2.0,2|SA -> G.moveA.2,2|S,L G.returnA.2.0,2|OSA -> G.moveA.2,2|OS,L G.returnA.2.0,2|B -> G.returnA.2.0,2|B,R G.returnA.2.0,2|OB -> G.returnA.2.0,2|OB,R G.returnA.2.0,2|SB -> G.returnA.2.0,2|SB,R G.returnA.2.0,2|OSB -> G.returnA.2.0,2|OSB,R G.returnA.2.0,2|AB -> G.moveA.2,2|B,L G.returnA.2.0,2|OAB -> G.moveA.2,2|OB,L G.returnA.2.0,2|SAB -> G.moveA.2,2|SB,L G.returnA.2.0,2|OSAB -> G.moveA.2,2|OSB,L G.moveB.2.1,1 -> G.returnA.2.1,1|B,R G.moveB.2.1,1|O -> G.returnA.2.1,1|OB,R G.moveB.2.1,1|S -> G.returnA.2.1,1|SB,R G.moveB.2.1,1|OS -> G.returnA.2.1,1|OSB,R G.moveB.2.1,1|A -> G.returnA.2.1,1|AB,R G.moveB.2.1,1|OA -> G.returnA.2.1,1|OAB,R G.moveB.2.1,1|SA -> G.returnA.2.1,1|SAB,R G.moveB.2.1,1|OSA -> G.returnA.2.1,1|OSAB,R G.moveB.2.1,1|B -> G.returnA.2.1,1|B,R G.moveB.2.1,1|OB -> G.returnA.2.1,1|OB,R G.moveB.2.1,1|SB -> G.returnA.2.1,1|SB,R G.moveB.2.1,1|OSB -> G.returnA.2.1,1|OSB,R G.moveB.2.1,1|AB -> G.returnA.2.1,1|AB,R G.moveB.2.1,1|OAB -> G.returnA.2.1,1|OAB,R G.moveB.2.1,1|SAB -> G.returnA.2.1,1|SAB,R G.moveB.2.1,1|OSAB -> G.returnA.2.1,1|OSAB,R G.moveB.2.1,2 -> G.returnA.2.1,2|B,R G.moveB.2.1,2|O -> G.returnA.2.1,2|OB,R G.moveB.2.1,2|S -> G.returnA.2.1,2|SB,R G.moveB.2.1,2|OS -> G.returnA.2.1,2|OSB,R G.moveB.2.1,2|A -> G.returnA.2.1,2|AB,R G.moveB.2.1,2|OA -> G.returnA.2.1,2|OAB,R G.moveB.2.1,2|SA -> G.returnA.2.1,2|SAB,R G.moveB.2.1,2|OSA -> G.returnA.2.1,2|OSAB,R G.moveB.2.1,2|B -> G.returnA.2.1,2|B,R G.moveB.2.1,2|OB -> G.returnA.2.1,2|OB,R G.moveB.2.1,2|SB -> G.returnA.2.1,2|SB,R G.moveB.2.1,2|OSB -> G.returnA.2.1,2|OSB,R G.moveB.2.1,2|AB -> G.returnA.2.1,2|AB,R G.moveB.2.1,2|OAB -> G.returnA.2.1,2|OAB,R G.moveB.2.1,2|SAB -> G.returnA.2.1,2|SAB,R G.moveB.2.1,2|OSAB -> G.returnA.2.1,2|OSAB,R G.moveB.2.1,#1 -> G.cleanL.2,#1,N G.moveB.2.1,#2 -> G.cleanL.2,#2,N G.returnA.2.1,1 -> G.returnA.2.1,1,R G.returnA.2.1,1|O -> G.returnA.2.1,1|O,R G.returnA.2.1,1|S -> G.returnA.2.1,1|S,R G.returnA.2.1,1|OS -> G.returnA.2.1,1|OS,R G.returnA.2.1,1|A -> G.moveA.2,1,L G.returnA.2.1,1|OA -> G.moveA.2,1|O,L G.returnA.2.1,1|SA -> G.moveA.2,1,L G.returnA.2.1,1|OSA -> G.moveA.2,1|O,L G.returnA.2.1,1|B -> G.returnA.2.1,1|B,R G.returnA.2.1,1|OB -> G.returnA.2.1,1|OB,R G.returnA.2.1,1|SB -> G.returnA.2.1,1|SB,R G.returnA.2.1,1|OSB -> G.returnA.2.1,1|OSB,R G.returnA.2.1,1|AB -> G.moveA.2,1|B,L G.returnA.2.1,1|OAB -> G.moveA.2,1|OB,L G.returnA.2.1,1|SAB -> G.moveA.2,1|B,L G.returnA.2.1,1|OSAB -> G.moveA.2,1|OB,L G.returnA.2.1,2 -> G.returnA.2.1,2,R G.returnA.2.1,2|O -> G.returnA.2.1,2|O,R G.returnA.2.1,2|S -> G.returnA.2.1,2|S,R G.returnA.2.1,2|OS -> G.returnA.2.1,2|OS,R G.returnA.2.1,2|A -> G.moveA.2,2,L G.returnA.2.1,2|OA -> G.moveA.2,2|O,L G.returnA.2.1,2|SA -> G.moveA.2,2,L G.returnA.2.1,2|OSA -> G.moveA.2,2|O,L G.returnA.2.1,2|B -> G.returnA.2.1,2|B,R G.returnA.2.1,2|OB -> G.returnA.2.1,2|OB,R G.returnA.2.1,2|SB -> G.returnA.2.1,2|SB,R G.returnA.2.1,2|OSB -> G.returnA.2.1,2|OSB,R G.returnA.2.1,2|AB -> G.moveA.2,2|B,L G.returnA.2.1,2|OAB -> G.moveA.2,2|OB,L G.returnA.2.1,2|SAB -> G.moveA.2,2|B,L G.returnA.2.1,2|OSAB -> G.moveA.2,2|OB,L G.moveA.2,1 -> G.compare.2,1|A,N G.moveA.2,1|O -> G.compare.2,1|OA,N G.moveA.2,1|S -> G.compare.2,1|SA,N G.moveA.2,1|OS -> G.compare.2,1|OSA,N G.moveA.2,1|A -> G.compare.2,1|A,N G.moveA.2,1|OA -> G.compare.2,1|OA,N G.moveA.2,1|SA -> G.compare.2,1|SA,N G.moveA.2,1|OSA -> G.compare.2,1|OSA,N G.moveA.2,1|B -> G.compare.2,1|AB,N G.moveA.2,1|OB -> G.compare.2,1|OAB,N G.moveA.2,1|SB -> G.compare.2,1|SAB,N G.moveA.2,1|OSB -> G.compare.2,1|OSAB,N G.moveA.2,1|AB -> G.compare.2,1|AB,N G.moveA.2,1|OAB -> G.compare.2,1|OAB,N G.moveA.2,1|SAB -> G.compare.2,1|SAB,N G.moveA.2,1|OSAB -> G.compare.2,1|OSAB,N G.moveA.2,2 -> G.compare.2,2|A,N G.moveA.2,2|O -> G.compare.2,2|OA,N G.moveA.2,2|S -> G.compare.2,2|SA,N G.moveA.2,2|OS -> G.compare.2,2|OSA,N G.moveA.2,2|A -> G.compare.2,2|A,N G.moveA.2,2|OA -> G.compare.2,2|OA,N G.moveA.2,2|SA -> G.compare.2,2|SA,N G.moveA.2,2|OSA -> G.compare.2,2|OSA,N G.moveA.2,2|B -> G.compare.2,2|AB,N G.moveA.2,2|OB -> G.compare.2,2|OAB,N G.moveA.2,2|SB -> G.compare.2,2|SAB,N G.moveA.2,2|OSB -> G.compare.2,2|OSAB,N G.moveA.2,2|AB -> G.compare.2,2|AB,N G.moveA.2,2|OAB -> G.compare.2,2|OAB,N G.moveA.2,2|SAB -> G.compare.2,2|SAB,N G.moveA.2,2|OSAB -> G.compare.2,2|OSAB,N G.cleanL.2,1 -> G.cleanL.2,1,L G.cleanL.2,1|O -> G.cleanL.2,1|O,L G.cleanL.2,1|S -> G.cleanL.2,1|S,L G.cleanL.2,1|OS -> G.cleanL.2,1|OS,L G.cleanL.2,1|A -> G.cleanL.2,1|A,L G.cleanL.2,1|OA -> G.cleanL.2,1|OA,L G.cleanL.2,1|SA -> G.cleanL.2,1|SA,L G.cleanL.2,1|OSA -> G.cleanL.2,1|OSA,L G.cleanL.2,1|B -> G.cleanL.2,1|B,L G.cleanL.2,1|OB -> G.cleanL.2,1|OB,L G.cleanL.2,1|SB -> G.cleanL.2,1|SB,L G.cleanL.2,1|OSB -> G.cleanL.2,1|OSB,L G.cleanL.2,1|AB -> G.cleanL.2,1|AB,L G.cleanL.2,1|OAB -> G.cleanL.2,1|OAB,L G.cleanL.2,1|SAB -> G.cleanL.2,1|SAB,L G.cleanL.2,1|OSAB -> G.cleanL.2,1|OSAB,L G.cleanL.2,2 -> G.cleanL.2,2,L G.cleanL.2,2|O -> G.cleanL.2,2|O,L G.cleanL.2,2|S -> G.cleanL.2,2|S,L G.cleanL.2,2|OS -> G.cleanL.2,2|OS,L G.cleanL.2,2|A -> G.cleanL.2,2|A,L G.cleanL.2,2|OA -> G.cleanL.2,2|OA,L G.cleanL.2,2|SA -> G.cleanL.2,2|SA,L G.cleanL.2,2|OSA -> G.cleanL.2,2|OSA,L G.cleanL.2,2|B -> G.cleanL.2,2|B,L G.cleanL.2,2|OB -> G.cleanL.2,2|OB,L G.cleanL.2,2|SB -> G.cleanL.2,2|SB,L G.cleanL.2,2|OSB -> G.cleanL.2,2|OSB,L G.cleanL.2,2|AB -> G.cleanL.2,2|AB,L G.cleanL.2,2|OAB -> G.cleanL.2,2|OAB,L G.cleanL.2,2|SAB -> G.cleanL.2,2|SAB,L G.cleanL.2,2|OSAB -> G.cleanL.2,2|OSAB,L G.cleanL.2,#1 -> G.cleanR,#2,R G.cleanL.2,#2 -> G.cleanR,#2,R G.cleanR,1 -> G.cleanR,1,R G.cleanR,1|O -> G.cleanR,1|O,R G.cleanR,1|S -> G.cleanR,1,R G.cleanR,1|OS -> G.cleanR,1|O,R G.cleanR,1|A -> G.cleanR,1,R G.cleanR,1|OA -> G.cleanR,1|O,R G.cleanR,1|SA -> G.cleanR,1,R G.cleanR,1|OSA -> G.cleanR,1|O,R G.cleanR,1|B -> G.cleanR,1,R G.cleanR,1|OB -> G.cleanR,1|O,R G.cleanR,1|SB -> G.cleanR,1,R G.cleanR,1|OSB -> G.cleanR,1|O,R G.cleanR,1|AB -> G.cleanR,1,R G.cleanR,1|OAB -> G.cleanR,1|O,R G.cleanR,1|SAB -> G.cleanR,1,R G.cleanR,1|OSAB -> G.cleanR,1|O,R G.cleanR,2 -> G.cleanR,2,R G.cleanR,2|O -> G.cleanR,2|O,R G.cleanR,2|S -> G.cleanR,2,R G.cleanR,2|OS -> G.cleanR,2|O,R G.cleanR,2|A -> G.cleanR,2,R G.cleanR,2|OA -> G.cleanR,2|O,R G.cleanR,2|SA -> G.cleanR,2,R G.cleanR,2|OSA -> G.cleanR,2|O,R G.cleanR,2|B -> G.cleanR,2,R G.cleanR,2|OB -> G.cleanR,2|O,R G.cleanR,2|SB -> G.cleanR,2,R G.cleanR,2|OSB -> G.cleanR,2|O,R G.cleanR,2|AB -> G.cleanR,2,R G.cleanR,2|OAB -> G.cleanR,2|O,R G.cleanR,2|SAB -> G.cleanR,2,R G.cleanR,2|OSAB -> G.cleanR,2|O,R G.cleanR,0 -> G.findO,0,L G.findO,1 -> G.findO,1,L G.findO,1|O -> G.shiftO,1,L G.findO,1|S -> G.findO,1|S,L G.findO,1|OS -> G.shiftO,1,L G.findO,1|A -> G.findO,1|A,L G.findO,1|OA -> G.shiftO,1,L G.findO,1|SA -> G.findO,1|SA,L G.findO,1|OSA -> G.shiftO,1,L G.findO,1|B -> G.findO,1|B,L G.findO,1|OB -> G.shiftO,1,L G.findO,1|SB -> G.findO,1|SB,L G.findO,1|OSB -> G.shiftO,1,L G.findO,1|AB -> G.findO,1|AB,L G.findO,1|OAB -> G.shiftO,1,L G.findO,1|SAB -> G.findO,1|SAB,L G.findO,1|OSAB -> G.shiftO,1,L G.findO,2 -> G.findO,2,L G.findO,2|O -> G.shiftO,2,L G.findO,2|S -> G.findO,2|S,L G.findO,2|OS -> G.shiftO,2,L G.findO,2|A -> G.findO,2|A,L G.findO,2|OA -> G.shiftO,2,L G.findO,2|SA -> G.findO,2|SA,L G.findO,2|OSA -> G.shiftO,2,L G.findO,2|B -> G.findO,2|B,L G.findO,2|OB -> G.shiftO,2,L G.findO,2|SB -> G.findO,2|SB,L G.findO,2|OSB -> G.shiftO,2,L G.findO,2|AB -> G.findO,2|AB,L G.findO,2|OAB -> G.shiftO,2,L G.findO,2|SAB -> G.findO,2|SAB,L G.findO,2|OSAB -> G.shiftO,2,L G.shiftO,1 -> G.trial,1|O,N G.shiftO,1|O -> G.trial,1|O,N G.shiftO,1|S -> G.trial,1|O,N G.shiftO,1|OS -> G.trial,1|O,N G.shiftO,1|A -> G.trial,1|O,N G.shiftO,1|OA -> G.trial,1|O,N G.shiftO,1|SA -> G.trial,1|O,N G.shiftO,1|OSA -> G.trial,1|O,N G.shiftO,1|B -> G.trial,1|O,N G.shiftO,1|OB -> G.trial,1|O,N G.shiftO,1|SB -> G.trial,1|O,N G.shiftO,1|OSB -> G.trial,1|O,N G.shiftO,1|AB -> G.trial,1|O,N G.shiftO,1|OAB -> G.trial,1|O,N G.shiftO,1|SAB -> G.trial,1|O,N G.shiftO,1|OSAB -> G.trial,1|O,N G.shiftO,2 -> G.trial,2|O,N G.shiftO,2|O -> G.trial,2|O,N G.shiftO,2|S -> G.trial,2|O,N G.shiftO,2|OS -> G.trial,2|O,N G.shiftO,2|A -> G.trial,2|O,N G.shiftO,2|OA -> G.trial,2|O,N G.shiftO,2|SA -> G.trial,2|O,N G.shiftO,2|OSA -> G.trial,2|O,N G.shiftO,2|B -> G.trial,2|O,N G.shiftO,2|OB -> G.trial,2|O,N G.shiftO,2|SB -> G.trial,2|O,N G.shiftO,2|OSB -> G.trial,2|O,N G.shiftO,2|AB -> G.trial,2|O,N G.shiftO,2|OAB -> G.trial,2|O,N G.shiftO,2|SAB -> G.trial,2|O,N G.shiftO,2|OSAB -> G.trial,2|O,N G.shiftO,#1 -> G.append.1,#1,R G.append.1,1 -> G.append.1,1,R G.append.1,1|O -> G.append.1,1|O,R G.append.1,1|S -> G.append.1,1|S,R G.append.1,1|OS -> G.append.1,1|OS,R G.append.1,1|A -> G.append.1,1|A,R G.append.1,1|OA -> G.append.1,1|OA,R G.append.1,1|SA -> G.append.1,1|SA,R G.append.1,1|OSA -> G.append.1,1|OSA,R G.append.1,1|B -> G.append.1,1|B,R G.append.1,1|OB -> G.append.1,1|OB,R G.append.1,1|SB -> G.append.1,1|SB,R G.append.1,1|OSB -> G.append.1,1|OSB,R G.append.1,1|AB -> G.append.1,1|AB,R G.append.1,1|OAB -> G.append.1,1|OAB,R G.append.1,1|SAB -> G.append.1,1|SAB,R G.append.1,1|OSAB -> G.append.1,1|OSAB,R G.append.1,2 -> G.append.1,2,R G.append.1,2|O -> G.append.1,2|O,R G.append.1,2|S -> G.append.1,2|S,R G.append.1,2|OS -> G.append.1,2|OS,R G.append.1,2|A -> G.append.1,2|A,R G.append.1,2|OA -> G.append.1,2|OA,R G.append.1,2|SA -> G.append.1,2|SA,R G.append.1,2|OSA -> G.append.1,2|OSA,R G.append.1,2|B -> G.append.1,2|B,R G.append.1,2|OB -> G.append.1,2|OB,R G.append.1,2|SB -> G.append.1,2|SB,R G.append.1,2|OSB -> G.append.1,2|OSB,R G.append.1,2|AB -> G.append.1,2|AB,R G.append.1,2|OAB -> G.append.1,2|OAB,R G.append.1,2|SAB -> G.append.1,2|SAB,R G.append.1,2|OSAB -> G.append.1,2|OSAB,R G.append.1,0 -> G.next,1,R G.stopL,#1 -> G.stopR,0,R G.shiftO,#2 -> G.append.2,#1,R G.append.2,1 -> G.append.2,1,R G.append.2,1|O -> G.append.2,1|O,R G.append.2,1|S -> G.append.2,1|S,R G.append.2,1|OS -> G.append.2,1|OS,R G.append.2,1|A -> G.append.2,1|A,R G.append.2,1|OA -> G.append.2,1|OA,R G.append.2,1|SA -> G.append.2,1|SA,R G.append.2,1|OSA -> G.append.2,1|OSA,R G.append.2,1|B -> G.append.2,1|B,R G.append.2,1|OB -> G.append.2,1|OB,R G.append.2,1|SB -> G.append.2,1|SB,R G.append.2,1|OSB -> G.append.2,1|OSB,R G.append.2,1|AB -> G.append.2,1|AB,R G.append.2,1|OAB -> G.append.2,1|OAB,R G.append.2,1|SAB -> G.append.2,1|SAB,R G.append.2,1|OSAB -> G.append.2,1|OSAB,R G.append.2,2 -> G.append.2,2,R G.append.2,2|O -> G.append.2,2|O,R G.append.2,2|S -> G.append.2,2|S,R G.append.2,2|OS -> G.append.2,2|OS,R G.append.2,2|A -> G.append.2,2|A,R G.append.2,2|OA -> G.append.2,2|OA,R G.append.2,2|SA -> G.append.2,2|SA,R G.append.2,2|OSA -> G.append.2,2|OSA,R G.append.2,2|B -> G.append.2,2|B,R G.append.2,2|OB -> G.append.2,2|OB,R G.append.2,2|SB -> G.append.2,2|SB,R G.append.2,2|OSB -> G.append.2,2|OSB,R G.append.2,2|AB -> G.append.2,2|AB,R G.append.2,2|OAB -> G.append.2,2|OAB,R G.append.2,2|SAB -> G.append.2,2|SAB,R G.append.2,2|OSAB -> G.append.2,2|OSAB,R G.append.2,0 -> G.next,2,R G.stopL,#2 -> G.stopR,0,R G.stopL,1 -> G.stopL,1,L G.stopL,1|O -> G.stopL,1|O,L G.stopL,1|S -> G.stopL,1|S,L G.stopL,1|OS -> G.stopL,1|OS,L G.stopL,1|A -> G.stopL,1|A,L G.stopL,1|OA -> G.stopL,1|OA,L G.stopL,1|SA -> G.stopL,1|SA,L G.stopL,1|OSA -> G.stopL,1|OSA,L G.stopL,1|B -> G.stopL,1|B,L G.stopL,1|OB -> G.stopL,1|OB,L G.stopL,1|SB -> G.stopL,1|SB,L G.stopL,1|OSB -> G.stopL,1|OSB,L G.stopL,1|AB -> G.stopL,1|AB,L G.stopL,1|OAB -> G.stopL,1|OAB,L G.stopL,1|SAB -> G.stopL,1|SAB,L G.stopL,1|OSAB -> G.stopL,1|OSAB,L G.stopL,2 -> G.stopL,2,L G.stopL,2|O -> G.stopL,2|O,L G.stopL,2|S -> G.stopL,2|S,L G.stopL,2|OS -> G.stopL,2|OS,L G.stopL,2|A -> G.stopL,2|A,L G.stopL,2|OA -> G.stopL,2|OA,L G.stopL,2|SA -> G.stopL,2|SA,L G.stopL,2|OSA -> G.stopL,2|OSA,L G.stopL,2|B -> G.stopL,2|B,L G.stopL,2|OB -> G.stopL,2|OB,L G.stopL,2|SB -> G.stopL,2|SB,L G.stopL,2|OSB -> G.stopL,2|OSB,L G.stopL,2|AB -> G.stopL,2|AB,L G.stopL,2|OAB -> G.stopL,2|OAB,L G.stopL,2|SAB -> G.stopL,2|SAB,L G.stopL,2|OSAB -> G.stopL,2|OSAB,L G.stopR,1 -> G.stopR,1,R G.stopR,1|O -> G.stopR,1,R G.stopR,1|S -> G.stopR,1,R G.stopR,1|OS -> G.stopR,1,R G.stopR,1|A -> G.stopR,1,R G.stopR,1|OA -> G.stopR,1,R G.stopR,1|SA -> G.stopR,1,R G.stopR,1|OSA -> G.stopR,1,R G.stopR,1|B -> G.stopR,1,R G.stopR,1|OB -> G.stopR,1,R G.stopR,1|SB -> G.stopR,1,R G.stopR,1|OSB -> G.stopR,1,R G.stopR,1|AB -> G.stopR,1,R G.stopR,1|OAB -> G.stopR,1,R G.stopR,1|SAB -> G.stopR,1,R G.stopR,1|OSAB -> G.stopR,1,R G.stopR,2 -> G.stopR,2,R G.stopR,2|O -> G.stopR,2,R G.stopR,2|S -> G.stopR,2,R G.stopR,2|OS -> G.stopR,2,R G.stopR,2|A -> G.stopR,2,R G.stopR,2|OA -> G.stopR,2,R G.stopR,2|SA -> G.stopR,2,R G.stopR,2|OSA -> G.stopR,2,R G.stopR,2|B -> G.stopR,2,R G.stopR,2|OB -> G.stopR,2,R G.stopR,2|SB -> G.stopR,2,R G.stopR,2|OSB -> G.stopR,2,R G.stopR,2|AB -> G.stopR,2,R G.stopR,2|OAB -> G.stopR,2,R G.stopR,2|SAB -> G.stopR,2,R G.stopR,2|OSAB -> G.stopR,2,R G.stopR,0 -> G.HALT,3,N"
+        - generic [ref=e137]:
+          - strong [ref=e138]: 结构化规则表
+          - button "＋ 新增规则" [ref=e139] [cursor=pointer]
+        - generic [ref=e140]:
+          - generic [ref=e2223]:
+            - generic [ref=e2224]: 当前状态
+            - generic [ref=e2225]: 读取
+            - generic [ref=e2226]: 下一状态
+            - generic [ref=e2227]: 写入
+            - generic [ref=e2228]: 移动
+          - generic [ref=e2229]:
+            - textbox "规则 101 当前状态" [ref=e2230]: G.markB
+            - textbox "规则 101 读取符号" [ref=e2231]: "2"
+            - textbox "规则 101 下一状态" [ref=e2232]: G.endA
+            - textbox "规则 101 写入符号" [ref=e2233]: 2|B
+            - combobox "规则 101 移动方向" [ref=e2234]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 101" [ref=e2235] [cursor=pointer]: ×
+          - generic [ref=e2236]:
+            - textbox "规则 102 当前状态" [ref=e2237]: G.markB
+            - textbox "规则 102 读取符号" [ref=e2238]: 2|O
+            - textbox "规则 102 下一状态" [ref=e2239]: G.endA
+            - textbox "规则 102 写入符号" [ref=e2240]: 2|OB
+            - combobox "规则 102 移动方向" [ref=e2241]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 102" [ref=e2242] [cursor=pointer]: ×
+          - generic [ref=e2243]:
+            - textbox "规则 103 当前状态" [ref=e2244]: G.markB
+            - textbox "规则 103 读取符号" [ref=e2245]: 2|S
+            - textbox "规则 103 下一状态" [ref=e2246]: G.endA
+            - textbox "规则 103 写入符号" [ref=e2247]: 2|SB
+            - combobox "规则 103 移动方向" [ref=e2248]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 103" [ref=e2249] [cursor=pointer]: ×
+          - generic [ref=e2250]:
+            - textbox "规则 104 当前状态" [ref=e2251]: G.markB
+            - textbox "规则 104 读取符号" [ref=e2252]: 2|OS
+            - textbox "规则 104 下一状态" [ref=e2253]: G.endA
+            - textbox "规则 104 写入符号" [ref=e2254]: 2|OSB
+            - combobox "规则 104 移动方向" [ref=e2255]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 104" [ref=e2256] [cursor=pointer]: ×
+          - generic [ref=e2257]:
+            - textbox "规则 105 当前状态" [ref=e2258]: G.markB
+            - textbox "规则 105 读取符号" [ref=e2259]: 2|A
+            - textbox "规则 105 下一状态" [ref=e2260]: G.endA
+            - textbox "规则 105 写入符号" [ref=e2261]: 2|AB
+            - combobox "规则 105 移动方向" [ref=e2262]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 105" [ref=e2263] [cursor=pointer]: ×
+          - generic [ref=e2264]:
+            - textbox "规则 106 当前状态" [ref=e2265]: G.markB
+            - textbox "规则 106 读取符号" [ref=e2266]: 2|OA
+            - textbox "规则 106 下一状态" [ref=e2267]: G.endA
+            - textbox "规则 106 写入符号" [ref=e2268]: 2|OAB
+            - combobox "规则 106 移动方向" [ref=e2269]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 106" [ref=e2270] [cursor=pointer]: ×
+          - generic [ref=e2271]:
+            - textbox "规则 107 当前状态" [ref=e2272]: G.markB
+            - textbox "规则 107 读取符号" [ref=e2273]: 2|SA
+            - textbox "规则 107 下一状态" [ref=e2274]: G.endA
+            - textbox "规则 107 写入符号" [ref=e2275]: 2|SAB
+            - combobox "规则 107 移动方向" [ref=e2276]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 107" [ref=e2277] [cursor=pointer]: ×
+          - generic [ref=e2278]:
+            - textbox "规则 108 当前状态" [ref=e2279]: G.markB
+            - textbox "规则 108 读取符号" [ref=e2280]: 2|OSA
+            - textbox "规则 108 下一状态" [ref=e2281]: G.endA
+            - textbox "规则 108 写入符号" [ref=e2282]: 2|OSAB
+            - combobox "规则 108 移动方向" [ref=e2283]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 108" [ref=e2284] [cursor=pointer]: ×
+          - generic [ref=e2285]:
+            - textbox "规则 109 当前状态" [ref=e2286]: G.markB
+            - textbox "规则 109 读取符号" [ref=e2287]: 2|B
+            - textbox "规则 109 下一状态" [ref=e2288]: G.endA
+            - textbox "规则 109 写入符号" [ref=e2289]: 2|B
+            - combobox "规则 109 移动方向" [ref=e2290]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 109" [ref=e2291] [cursor=pointer]: ×
+          - generic [ref=e2292]:
+            - textbox "规则 110 当前状态" [ref=e2293]: G.markB
+            - textbox "规则 110 读取符号" [ref=e2294]: 2|OB
+            - textbox "规则 110 下一状态" [ref=e2295]: G.endA
+            - textbox "规则 110 写入符号" [ref=e2296]: 2|OB
+            - combobox "规则 110 移动方向" [ref=e2297]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 110" [ref=e2298] [cursor=pointer]: ×
+          - generic [ref=e2299]:
+            - textbox "规则 111 当前状态" [ref=e2300]: G.markB
+            - textbox "规则 111 读取符号" [ref=e2301]: 2|SB
+            - textbox "规则 111 下一状态" [ref=e2302]: G.endA
+            - textbox "规则 111 写入符号" [ref=e2303]: 2|SB
+            - combobox "规则 111 移动方向" [ref=e2304]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 111" [ref=e2305] [cursor=pointer]: ×
+          - generic [ref=e2306]:
+            - textbox "规则 112 当前状态" [ref=e2307]: G.markB
+            - textbox "规则 112 读取符号" [ref=e2308]: 2|OSB
+            - textbox "规则 112 下一状态" [ref=e2309]: G.endA
+            - textbox "规则 112 写入符号" [ref=e2310]: 2|OSB
+            - combobox "规则 112 移动方向" [ref=e2311]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 112" [ref=e2312] [cursor=pointer]: ×
+          - generic [ref=e2313]:
+            - textbox "规则 113 当前状态" [ref=e2314]: G.markB
+            - textbox "规则 113 读取符号" [ref=e2315]: 2|AB
+            - textbox "规则 113 下一状态" [ref=e2316]: G.endA
+            - textbox "规则 113 写入符号" [ref=e2317]: 2|AB
+            - combobox "规则 113 移动方向" [ref=e2318]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 113" [ref=e2319] [cursor=pointer]: ×
+          - generic [ref=e2320]:
+            - textbox "规则 114 当前状态" [ref=e2321]: G.markB
+            - textbox "规则 114 读取符号" [ref=e2322]: 2|OAB
+            - textbox "规则 114 下一状态" [ref=e2323]: G.endA
+            - textbox "规则 114 写入符号" [ref=e2324]: 2|OAB
+            - combobox "规则 114 移动方向" [ref=e2325]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 114" [ref=e2326] [cursor=pointer]: ×
+          - generic [ref=e2327]:
+            - textbox "规则 115 当前状态" [ref=e2328]: G.markB
+            - textbox "规则 115 读取符号" [ref=e2329]: 2|SAB
+            - textbox "规则 115 下一状态" [ref=e2330]: G.endA
+            - textbox "规则 115 写入符号" [ref=e2331]: 2|SAB
+            - combobox "规则 115 移动方向" [ref=e2332]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 115" [ref=e2333] [cursor=pointer]: ×
+          - generic [ref=e2334]:
+            - textbox "规则 116 当前状态" [ref=e2335]: G.markB
+            - textbox "规则 116 读取符号" [ref=e2336]: 2|OSAB
+            - textbox "规则 116 下一状态" [ref=e2337]: G.endA
+            - textbox "规则 116 写入符号" [ref=e2338]: 2|OSAB
+            - combobox "规则 116 移动方向" [ref=e2339]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 116" [ref=e2340] [cursor=pointer]: ×
+          - generic [ref=e2341]:
+            - textbox "规则 117 当前状态" [ref=e2342]: G.markB
+            - textbox "规则 117 读取符号" [ref=e2343]: "#1"
+            - textbox "规则 117 下一状态" [ref=e2344]: G.cleanL.1
+            - textbox "规则 117 写入符号" [ref=e2345]: "#1"
+            - combobox "规则 117 移动方向" [ref=e2346]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 117" [ref=e2347] [cursor=pointer]: ×
+          - generic [ref=e2348]:
+            - textbox "规则 118 当前状态" [ref=e2349]: G.markB
+            - textbox "规则 118 读取符号" [ref=e2350]: "#2"
+            - textbox "规则 118 下一状态" [ref=e2351]: G.cleanL.1
+            - textbox "规则 118 写入符号" [ref=e2352]: "#2"
+            - combobox "规则 118 移动方向" [ref=e2353]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 118" [ref=e2354] [cursor=pointer]: ×
+          - generic [ref=e2355]:
+            - textbox "规则 119 当前状态" [ref=e2356]: G.endA
+            - textbox "规则 119 读取符号" [ref=e2357]: "1"
+            - textbox "规则 119 下一状态" [ref=e2358]: G.endA
+            - textbox "规则 119 写入符号" [ref=e2359]: "1"
+            - combobox "规则 119 移动方向" [ref=e2360]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 119" [ref=e2361] [cursor=pointer]: ×
+          - generic [ref=e2362]:
+            - textbox "规则 120 当前状态" [ref=e2363]: G.endA
+            - textbox "规则 120 读取符号" [ref=e2364]: 1|O
+            - textbox "规则 120 下一状态" [ref=e2365]: G.endA
+            - textbox "规则 120 写入符号" [ref=e2366]: 1|O
+            - combobox "规则 120 移动方向" [ref=e2367]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 120" [ref=e2368] [cursor=pointer]: ×
+          - generic [ref=e2369]:
+            - textbox "规则 121 当前状态" [ref=e2370]: G.endA
+            - textbox "规则 121 读取符号" [ref=e2371]: 1|S
+            - textbox "规则 121 下一状态" [ref=e2372]: G.endA
+            - textbox "规则 121 写入符号" [ref=e2373]: 1|S
+            - combobox "规则 121 移动方向" [ref=e2374]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 121" [ref=e2375] [cursor=pointer]: ×
+          - generic [ref=e2376]:
+            - textbox "规则 122 当前状态" [ref=e2377]: G.endA
+            - textbox "规则 122 读取符号" [ref=e2378]: 1|OS
+            - textbox "规则 122 下一状态" [ref=e2379]: G.endA
+            - textbox "规则 122 写入符号" [ref=e2380]: 1|OS
+            - combobox "规则 122 移动方向" [ref=e2381]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 122" [ref=e2382] [cursor=pointer]: ×
+          - generic [ref=e2383]:
+            - textbox "规则 123 当前状态" [ref=e2384]: G.endA
+            - textbox "规则 123 读取符号" [ref=e2385]: 1|A
+            - textbox "规则 123 下一状态" [ref=e2386]: G.endA
+            - textbox "规则 123 写入符号" [ref=e2387]: 1|A
+            - combobox "规则 123 移动方向" [ref=e2388]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 123" [ref=e2389] [cursor=pointer]: ×
+          - generic [ref=e2390]:
+            - textbox "规则 124 当前状态" [ref=e2391]: G.endA
+            - textbox "规则 124 读取符号" [ref=e2392]: 1|OA
+            - textbox "规则 124 下一状态" [ref=e2393]: G.endA
+            - textbox "规则 124 写入符号" [ref=e2394]: 1|OA
+            - combobox "规则 124 移动方向" [ref=e2395]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 124" [ref=e2396] [cursor=pointer]: ×
+          - generic [ref=e2397]:
+            - textbox "规则 125 当前状态" [ref=e2398]: G.endA
+            - textbox "规则 125 读取符号" [ref=e2399]: 1|SA
+            - textbox "规则 125 下一状态" [ref=e2400]: G.endA
+            - textbox "规则 125 写入符号" [ref=e2401]: 1|SA
+            - combobox "规则 125 移动方向" [ref=e2402]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 125" [ref=e2403] [cursor=pointer]: ×
+          - generic [ref=e2404]:
+            - textbox "规则 126 当前状态" [ref=e2405]: G.endA
+            - textbox "规则 126 读取符号" [ref=e2406]: 1|OSA
+            - textbox "规则 126 下一状态" [ref=e2407]: G.endA
+            - textbox "规则 126 写入符号" [ref=e2408]: 1|OSA
+            - combobox "规则 126 移动方向" [ref=e2409]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 126" [ref=e2410] [cursor=pointer]: ×
+          - generic [ref=e2411]:
+            - textbox "规则 127 当前状态" [ref=e2412]: G.endA
+            - textbox "规则 127 读取符号" [ref=e2413]: 1|B
+            - textbox "规则 127 下一状态" [ref=e2414]: G.endA
+            - textbox "规则 127 写入符号" [ref=e2415]: 1|B
+            - combobox "规则 127 移动方向" [ref=e2416]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 127" [ref=e2417] [cursor=pointer]: ×
+          - generic [ref=e2418]:
+            - textbox "规则 128 当前状态" [ref=e2419]: G.endA
+            - textbox "规则 128 读取符号" [ref=e2420]: 1|OB
+            - textbox "规则 128 下一状态" [ref=e2421]: G.endA
+            - textbox "规则 128 写入符号" [ref=e2422]: 1|OB
+            - combobox "规则 128 移动方向" [ref=e2423]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 128" [ref=e2424] [cursor=pointer]: ×
+          - generic [ref=e2425]:
+            - textbox "规则 129 当前状态" [ref=e2426]: G.endA
+            - textbox "规则 129 读取符号" [ref=e2427]: 1|SB
+            - textbox "规则 129 下一状态" [ref=e2428]: G.endA
+            - textbox "规则 129 写入符号" [ref=e2429]: 1|SB
+            - combobox "规则 129 移动方向" [ref=e2430]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 129" [ref=e2431] [cursor=pointer]: ×
+          - generic [ref=e2432]:
+            - textbox "规则 130 当前状态" [ref=e2433]: G.endA
+            - textbox "规则 130 读取符号" [ref=e2434]: 1|OSB
+            - textbox "规则 130 下一状态" [ref=e2435]: G.endA
+            - textbox "规则 130 写入符号" [ref=e2436]: 1|OSB
+            - combobox "规则 130 移动方向" [ref=e2437]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 130" [ref=e2438] [cursor=pointer]: ×
+          - generic [ref=e2439]:
+            - textbox "规则 131 当前状态" [ref=e2440]: G.endA
+            - textbox "规则 131 读取符号" [ref=e2441]: 1|AB
+            - textbox "规则 131 下一状态" [ref=e2442]: G.endA
+            - textbox "规则 131 写入符号" [ref=e2443]: 1|AB
+            - combobox "规则 131 移动方向" [ref=e2444]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 131" [ref=e2445] [cursor=pointer]: ×
+          - generic [ref=e2446]:
+            - textbox "规则 132 当前状态" [ref=e2447]: G.endA
+            - textbox "规则 132 读取符号" [ref=e2448]: 1|OAB
+            - textbox "规则 132 下一状态" [ref=e2449]: G.endA
+            - textbox "规则 132 写入符号" [ref=e2450]: 1|OAB
+            - combobox "规则 132 移动方向" [ref=e2451]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 132" [ref=e2452] [cursor=pointer]: ×
+          - generic [ref=e2453]:
+            - textbox "规则 133 当前状态" [ref=e2454]: G.endA
+            - textbox "规则 133 读取符号" [ref=e2455]: 1|SAB
+            - textbox "规则 133 下一状态" [ref=e2456]: G.endA
+            - textbox "规则 133 写入符号" [ref=e2457]: 1|SAB
+            - combobox "规则 133 移动方向" [ref=e2458]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 133" [ref=e2459] [cursor=pointer]: ×
+          - generic [ref=e2460]:
+            - textbox "规则 134 当前状态" [ref=e2461]: G.endA
+            - textbox "规则 134 读取符号" [ref=e2462]: 1|OSAB
+            - textbox "规则 134 下一状态" [ref=e2463]: G.endA
+            - textbox "规则 134 写入符号" [ref=e2464]: 1|OSAB
+            - combobox "规则 134 移动方向" [ref=e2465]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 134" [ref=e2466] [cursor=pointer]: ×
+          - generic [ref=e2467]:
+            - textbox "规则 135 当前状态" [ref=e2468]: G.endA
+            - textbox "规则 135 读取符号" [ref=e2469]: "2"
+            - textbox "规则 135 下一状态" [ref=e2470]: G.endA
+            - textbox "规则 135 写入符号" [ref=e2471]: "2"
+            - combobox "规则 135 移动方向" [ref=e2472]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 135" [ref=e2473] [cursor=pointer]: ×
+          - generic [ref=e2474]:
+            - textbox "规则 136 当前状态" [ref=e2475]: G.endA
+            - textbox "规则 136 读取符号" [ref=e2476]: 2|O
+            - textbox "规则 136 下一状态" [ref=e2477]: G.endA
+            - textbox "规则 136 写入符号" [ref=e2478]: 2|O
+            - combobox "规则 136 移动方向" [ref=e2479]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 136" [ref=e2480] [cursor=pointer]: ×
+          - generic [ref=e2481]:
+            - textbox "规则 137 当前状态" [ref=e2482]: G.endA
+            - textbox "规则 137 读取符号" [ref=e2483]: 2|S
+            - textbox "规则 137 下一状态" [ref=e2484]: G.endA
+            - textbox "规则 137 写入符号" [ref=e2485]: 2|S
+            - combobox "规则 137 移动方向" [ref=e2486]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 137" [ref=e2487] [cursor=pointer]: ×
+          - generic [ref=e2488]:
+            - textbox "规则 138 当前状态" [ref=e2489]: G.endA
+            - textbox "规则 138 读取符号" [ref=e2490]: 2|OS
+            - textbox "规则 138 下一状态" [ref=e2491]: G.endA
+            - textbox "规则 138 写入符号" [ref=e2492]: 2|OS
+            - combobox "规则 138 移动方向" [ref=e2493]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 138" [ref=e2494] [cursor=pointer]: ×
+          - generic [ref=e2495]:
+            - textbox "规则 139 当前状态" [ref=e2496]: G.endA
+            - textbox "规则 139 读取符号" [ref=e2497]: 2|A
+            - textbox "规则 139 下一状态" [ref=e2498]: G.endA
+            - textbox "规则 139 写入符号" [ref=e2499]: 2|A
+            - combobox "规则 139 移动方向" [ref=e2500]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 139" [ref=e2501] [cursor=pointer]: ×
+          - generic [ref=e2502]:
+            - textbox "规则 140 当前状态" [ref=e2503]: G.endA
+            - textbox "规则 140 读取符号" [ref=e2504]: 2|OA
+            - textbox "规则 140 下一状态" [ref=e2505]: G.endA
+            - textbox "规则 140 写入符号" [ref=e2506]: 2|OA
+            - combobox "规则 140 移动方向" [ref=e2507]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 140" [ref=e2508] [cursor=pointer]: ×
+          - generic [ref=e2509]:
+            - textbox "规则 141 当前状态" [ref=e2510]: G.endA
+            - textbox "规则 141 读取符号" [ref=e2511]: 2|SA
+            - textbox "规则 141 下一状态" [ref=e2512]: G.endA
+            - textbox "规则 141 写入符号" [ref=e2513]: 2|SA
+            - combobox "规则 141 移动方向" [ref=e2514]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 141" [ref=e2515] [cursor=pointer]: ×
+          - generic [ref=e2516]:
+            - textbox "规则 142 当前状态" [ref=e2517]: G.endA
+            - textbox "规则 142 读取符号" [ref=e2518]: 2|OSA
+            - textbox "规则 142 下一状态" [ref=e2519]: G.endA
+            - textbox "规则 142 写入符号" [ref=e2520]: 2|OSA
+            - combobox "规则 142 移动方向" [ref=e2521]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 142" [ref=e2522] [cursor=pointer]: ×
+          - generic [ref=e2523]:
+            - textbox "规则 143 当前状态" [ref=e2524]: G.endA
+            - textbox "规则 143 读取符号" [ref=e2525]: 2|B
+            - textbox "规则 143 下一状态" [ref=e2526]: G.endA
+            - textbox "规则 143 写入符号" [ref=e2527]: 2|B
+            - combobox "规则 143 移动方向" [ref=e2528]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 143" [ref=e2529] [cursor=pointer]: ×
+          - generic [ref=e2530]:
+            - textbox "规则 144 当前状态" [ref=e2531]: G.endA
+            - textbox "规则 144 读取符号" [ref=e2532]: 2|OB
+            - textbox "规则 144 下一状态" [ref=e2533]: G.endA
+            - textbox "规则 144 写入符号" [ref=e2534]: 2|OB
+            - combobox "规则 144 移动方向" [ref=e2535]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 144" [ref=e2536] [cursor=pointer]: ×
+          - generic [ref=e2537]:
+            - textbox "规则 145 当前状态" [ref=e2538]: G.endA
+            - textbox "规则 145 读取符号" [ref=e2539]: 2|SB
+            - textbox "规则 145 下一状态" [ref=e2540]: G.endA
+            - textbox "规则 145 写入符号" [ref=e2541]: 2|SB
+            - combobox "规则 145 移动方向" [ref=e2542]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 145" [ref=e2543] [cursor=pointer]: ×
+          - generic [ref=e2544]:
+            - textbox "规则 146 当前状态" [ref=e2545]: G.endA
+            - textbox "规则 146 读取符号" [ref=e2546]: 2|OSB
+            - textbox "规则 146 下一状态" [ref=e2547]: G.endA
+            - textbox "规则 146 写入符号" [ref=e2548]: 2|OSB
+            - combobox "规则 146 移动方向" [ref=e2549]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 146" [ref=e2550] [cursor=pointer]: ×
+          - generic [ref=e2551]:
+            - textbox "规则 147 当前状态" [ref=e2552]: G.endA
+            - textbox "规则 147 读取符号" [ref=e2553]: 2|AB
+            - textbox "规则 147 下一状态" [ref=e2554]: G.endA
+            - textbox "规则 147 写入符号" [ref=e2555]: 2|AB
+            - combobox "规则 147 移动方向" [ref=e2556]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 147" [ref=e2557] [cursor=pointer]: ×
+          - generic [ref=e2558]:
+            - textbox "规则 148 当前状态" [ref=e2559]: G.endA
+            - textbox "规则 148 读取符号" [ref=e2560]: 2|OAB
+            - textbox "规则 148 下一状态" [ref=e2561]: G.endA
+            - textbox "规则 148 写入符号" [ref=e2562]: 2|OAB
+            - combobox "规则 148 移动方向" [ref=e2563]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 148" [ref=e2564] [cursor=pointer]: ×
+          - generic [ref=e2565]:
+            - textbox "规则 149 当前状态" [ref=e2566]: G.endA
+            - textbox "规则 149 读取符号" [ref=e2567]: 2|SAB
+            - textbox "规则 149 下一状态" [ref=e2568]: G.endA
+            - textbox "规则 149 写入符号" [ref=e2569]: 2|SAB
+            - combobox "规则 149 移动方向" [ref=e2570]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 149" [ref=e2571] [cursor=pointer]: ×
+          - generic [ref=e2572]:
+            - textbox "规则 150 当前状态" [ref=e2573]: G.endA
+            - textbox "规则 150 读取符号" [ref=e2574]: 2|OSAB
+            - textbox "规则 150 下一状态" [ref=e2575]: G.endA
+            - textbox "规则 150 写入符号" [ref=e2576]: 2|OSAB
+            - combobox "规则 150 移动方向" [ref=e2577]:
+              - option "L"
+              - option "R" [selected]
+              - option "N"
+            - button "删除规则 150" [ref=e2578] [cursor=pointer]: ×
+          - generic [ref=e2579]:
+            - textbox "规则 151 当前状态" [ref=e2580]: G.endA
+            - textbox "规则 151 读取符号" [ref=e2581]: "0"
+            - textbox "规则 151 下一状态" [ref=e2582]: G.markA
+            - textbox "规则 151 写入符号" [ref=e2583]: "0"
+            - combobox "规则 151 移动方向" [ref=e2584]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 151" [ref=e2585] [cursor=pointer]: ×
+          - generic [ref=e2586]:
+            - textbox "规则 152 当前状态" [ref=e2587]: G.markA
+            - textbox "规则 152 读取符号" [ref=e2588]: "1"
+            - textbox "规则 152 下一状态" [ref=e2589]: G.compare.1
+            - textbox "规则 152 写入符号" [ref=e2590]: 1|A
+            - combobox "规则 152 移动方向" [ref=e2591]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 152" [ref=e2592] [cursor=pointer]: ×
+          - generic [ref=e2593]:
+            - textbox "规则 153 当前状态" [ref=e2594]: G.markA
+            - textbox "规则 153 读取符号" [ref=e2595]: 1|O
+            - textbox "规则 153 下一状态" [ref=e2596]: G.compare.1
+            - textbox "规则 153 写入符号" [ref=e2597]: 1|OA
+            - combobox "规则 153 移动方向" [ref=e2598]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 153" [ref=e2599] [cursor=pointer]: ×
+          - generic [ref=e2600]:
+            - textbox "规则 154 当前状态" [ref=e2601]: G.markA
+            - textbox "规则 154 读取符号" [ref=e2602]: 1|S
+            - textbox "规则 154 下一状态" [ref=e2603]: G.compare.1
+            - textbox "规则 154 写入符号" [ref=e2604]: 1|SA
+            - combobox "规则 154 移动方向" [ref=e2605]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 154" [ref=e2606] [cursor=pointer]: ×
+          - generic [ref=e2607]:
+            - textbox "规则 155 当前状态" [ref=e2608]: G.markA
+            - textbox "规则 155 读取符号" [ref=e2609]: 1|OS
+            - textbox "规则 155 下一状态" [ref=e2610]: G.compare.1
+            - textbox "规则 155 写入符号" [ref=e2611]: 1|OSA
+            - combobox "规则 155 移动方向" [ref=e2612]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 155" [ref=e2613] [cursor=pointer]: ×
+          - generic [ref=e2614]:
+            - textbox "规则 156 当前状态" [ref=e2615]: G.markA
+            - textbox "规则 156 读取符号" [ref=e2616]: 1|A
+            - textbox "规则 156 下一状态" [ref=e2617]: G.compare.1
+            - textbox "规则 156 写入符号" [ref=e2618]: 1|A
+            - combobox "规则 156 移动方向" [ref=e2619]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 156" [ref=e2620] [cursor=pointer]: ×
+          - generic [ref=e2621]:
+            - textbox "规则 157 当前状态" [ref=e2622]: G.markA
+            - textbox "规则 157 读取符号" [ref=e2623]: 1|OA
+            - textbox "规则 157 下一状态" [ref=e2624]: G.compare.1
+            - textbox "规则 157 写入符号" [ref=e2625]: 1|OA
+            - combobox "规则 157 移动方向" [ref=e2626]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 157" [ref=e2627] [cursor=pointer]: ×
+          - generic [ref=e2628]:
+            - textbox "规则 158 当前状态" [ref=e2629]: G.markA
+            - textbox "规则 158 读取符号" [ref=e2630]: 1|SA
+            - textbox "规则 158 下一状态" [ref=e2631]: G.compare.1
+            - textbox "规则 158 写入符号" [ref=e2632]: 1|SA
+            - combobox "规则 158 移动方向" [ref=e2633]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 158" [ref=e2634] [cursor=pointer]: ×
+          - generic [ref=e2635]:
+            - textbox "规则 159 当前状态" [ref=e2636]: G.markA
+            - textbox "规则 159 读取符号" [ref=e2637]: 1|OSA
+            - textbox "规则 159 下一状态" [ref=e2638]: G.compare.1
+            - textbox "规则 159 写入符号" [ref=e2639]: 1|OSA
+            - combobox "规则 159 移动方向" [ref=e2640]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 159" [ref=e2641] [cursor=pointer]: ×
+          - generic [ref=e2642]:
+            - textbox "规则 160 当前状态" [ref=e2643]: G.markA
+            - textbox "规则 160 读取符号" [ref=e2644]: 1|B
+            - textbox "规则 160 下一状态" [ref=e2645]: G.compare.1
+            - textbox "规则 160 写入符号" [ref=e2646]: 1|AB
+            - combobox "规则 160 移动方向" [ref=e2647]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 160" [ref=e2648] [cursor=pointer]: ×
+          - generic [ref=e2649]:
+            - textbox "规则 161 当前状态" [ref=e2650]: G.markA
+            - textbox "规则 161 读取符号" [ref=e2651]: 1|OB
+            - textbox "规则 161 下一状态" [ref=e2652]: G.compare.1
+            - textbox "规则 161 写入符号" [ref=e2653]: 1|OAB
+            - combobox "规则 161 移动方向" [ref=e2654]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 161" [ref=e2655] [cursor=pointer]: ×
+          - generic [ref=e2656]:
+            - textbox "规则 162 当前状态" [ref=e2657]: G.markA
+            - textbox "规则 162 读取符号" [ref=e2658]: 1|SB
+            - textbox "规则 162 下一状态" [ref=e2659]: G.compare.1
+            - textbox "规则 162 写入符号" [ref=e2660]: 1|SAB
+            - combobox "规则 162 移动方向" [ref=e2661]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 162" [ref=e2662] [cursor=pointer]: ×
+          - generic [ref=e2663]:
+            - textbox "规则 163 当前状态" [ref=e2664]: G.markA
+            - textbox "规则 163 读取符号" [ref=e2665]: 1|OSB
+            - textbox "规则 163 下一状态" [ref=e2666]: G.compare.1
+            - textbox "规则 163 写入符号" [ref=e2667]: 1|OSAB
+            - combobox "规则 163 移动方向" [ref=e2668]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 163" [ref=e2669] [cursor=pointer]: ×
+          - generic [ref=e2670]:
+            - textbox "规则 164 当前状态" [ref=e2671]: G.markA
+            - textbox "规则 164 读取符号" [ref=e2672]: 1|AB
+            - textbox "规则 164 下一状态" [ref=e2673]: G.compare.1
+            - textbox "规则 164 写入符号" [ref=e2674]: 1|AB
+            - combobox "规则 164 移动方向" [ref=e2675]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 164" [ref=e2676] [cursor=pointer]: ×
+          - generic [ref=e2677]:
+            - textbox "规则 165 当前状态" [ref=e2678]: G.markA
+            - textbox "规则 165 读取符号" [ref=e2679]: 1|OAB
+            - textbox "规则 165 下一状态" [ref=e2680]: G.compare.1
+            - textbox "规则 165 写入符号" [ref=e2681]: 1|OAB
+            - combobox "规则 165 移动方向" [ref=e2682]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 165" [ref=e2683] [cursor=pointer]: ×
+          - generic [ref=e2684]:
+            - textbox "规则 166 当前状态" [ref=e2685]: G.markA
+            - textbox "规则 166 读取符号" [ref=e2686]: 1|SAB
+            - textbox "规则 166 下一状态" [ref=e2687]: G.compare.1
+            - textbox "规则 166 写入符号" [ref=e2688]: 1|SAB
+            - combobox "规则 166 移动方向" [ref=e2689]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 166" [ref=e2690] [cursor=pointer]: ×
+          - generic [ref=e2691]:
+            - textbox "规则 167 当前状态" [ref=e2692]: G.markA
+            - textbox "规则 167 读取符号" [ref=e2693]: 1|OSAB
+            - textbox "规则 167 下一状态" [ref=e2694]: G.compare.1
+            - textbox "规则 167 写入符号" [ref=e2695]: 1|OSAB
+            - combobox "规则 167 移动方向" [ref=e2696]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 167" [ref=e2697] [cursor=pointer]: ×
+          - generic [ref=e2698]:
+            - textbox "规则 168 当前状态" [ref=e2699]: G.markA
+            - textbox "规则 168 读取符号" [ref=e2700]: "2"
+            - textbox "规则 168 下一状态" [ref=e2701]: G.compare.1
+            - textbox "规则 168 写入符号" [ref=e2702]: 2|A
+            - combobox "规则 168 移动方向" [ref=e2703]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 168" [ref=e2704] [cursor=pointer]: ×
+          - generic [ref=e2705]:
+            - textbox "规则 169 当前状态" [ref=e2706]: G.markA
+            - textbox "规则 169 读取符号" [ref=e2707]: 2|O
+            - textbox "规则 169 下一状态" [ref=e2708]: G.compare.1
+            - textbox "规则 169 写入符号" [ref=e2709]: 2|OA
+            - combobox "规则 169 移动方向" [ref=e2710]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 169" [ref=e2711] [cursor=pointer]: ×
+          - generic [ref=e2712]:
+            - textbox "规则 170 当前状态" [ref=e2713]: G.markA
+            - textbox "规则 170 读取符号" [ref=e2714]: 2|S
+            - textbox "规则 170 下一状态" [ref=e2715]: G.compare.1
+            - textbox "规则 170 写入符号" [ref=e2716]: 2|SA
+            - combobox "规则 170 移动方向" [ref=e2717]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 170" [ref=e2718] [cursor=pointer]: ×
+          - generic [ref=e2719]:
+            - textbox "规则 171 当前状态" [ref=e2720]: G.markA
+            - textbox "规则 171 读取符号" [ref=e2721]: 2|OS
+            - textbox "规则 171 下一状态" [ref=e2722]: G.compare.1
+            - textbox "规则 171 写入符号" [ref=e2723]: 2|OSA
+            - combobox "规则 171 移动方向" [ref=e2724]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 171" [ref=e2725] [cursor=pointer]: ×
+          - generic [ref=e2726]:
+            - textbox "规则 172 当前状态" [ref=e2727]: G.markA
+            - textbox "规则 172 读取符号" [ref=e2728]: 2|A
+            - textbox "规则 172 下一状态" [ref=e2729]: G.compare.1
+            - textbox "规则 172 写入符号" [ref=e2730]: 2|A
+            - combobox "规则 172 移动方向" [ref=e2731]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 172" [ref=e2732] [cursor=pointer]: ×
+          - generic [ref=e2733]:
+            - textbox "规则 173 当前状态" [ref=e2734]: G.markA
+            - textbox "规则 173 读取符号" [ref=e2735]: 2|OA
+            - textbox "规则 173 下一状态" [ref=e2736]: G.compare.1
+            - textbox "规则 173 写入符号" [ref=e2737]: 2|OA
+            - combobox "规则 173 移动方向" [ref=e2738]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 173" [ref=e2739] [cursor=pointer]: ×
+          - generic [ref=e2740]:
+            - textbox "规则 174 当前状态" [ref=e2741]: G.markA
+            - textbox "规则 174 读取符号" [ref=e2742]: 2|SA
+            - textbox "规则 174 下一状态" [ref=e2743]: G.compare.1
+            - textbox "规则 174 写入符号" [ref=e2744]: 2|SA
+            - combobox "规则 174 移动方向" [ref=e2745]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 174" [ref=e2746] [cursor=pointer]: ×
+          - generic [ref=e2747]:
+            - textbox "规则 175 当前状态" [ref=e2748]: G.markA
+            - textbox "规则 175 读取符号" [ref=e2749]: 2|OSA
+            - textbox "规则 175 下一状态" [ref=e2750]: G.compare.1
+            - textbox "规则 175 写入符号" [ref=e2751]: 2|OSA
+            - combobox "规则 175 移动方向" [ref=e2752]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 175" [ref=e2753] [cursor=pointer]: ×
+          - generic [ref=e2754]:
+            - textbox "规则 176 当前状态" [ref=e2755]: G.markA
+            - textbox "规则 176 读取符号" [ref=e2756]: 2|B
+            - textbox "规则 176 下一状态" [ref=e2757]: G.compare.1
+            - textbox "规则 176 写入符号" [ref=e2758]: 2|AB
+            - combobox "规则 176 移动方向" [ref=e2759]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 176" [ref=e2760] [cursor=pointer]: ×
+          - generic [ref=e2761]:
+            - textbox "规则 177 当前状态" [ref=e2762]: G.markA
+            - textbox "规则 177 读取符号" [ref=e2763]: 2|OB
+            - textbox "规则 177 下一状态" [ref=e2764]: G.compare.1
+            - textbox "规则 177 写入符号" [ref=e2765]: 2|OAB
+            - combobox "规则 177 移动方向" [ref=e2766]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 177" [ref=e2767] [cursor=pointer]: ×
+          - generic [ref=e2768]:
+            - textbox "规则 178 当前状态" [ref=e2769]: G.markA
+            - textbox "规则 178 读取符号" [ref=e2770]: 2|SB
+            - textbox "规则 178 下一状态" [ref=e2771]: G.compare.1
+            - textbox "规则 178 写入符号" [ref=e2772]: 2|SAB
+            - combobox "规则 178 移动方向" [ref=e2773]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 178" [ref=e2774] [cursor=pointer]: ×
+          - generic [ref=e2775]:
+            - textbox "规则 179 当前状态" [ref=e2776]: G.markA
+            - textbox "规则 179 读取符号" [ref=e2777]: 2|OSB
+            - textbox "规则 179 下一状态" [ref=e2778]: G.compare.1
+            - textbox "规则 179 写入符号" [ref=e2779]: 2|OSAB
+            - combobox "规则 179 移动方向" [ref=e2780]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 179" [ref=e2781] [cursor=pointer]: ×
+          - generic [ref=e2782]:
+            - textbox "规则 180 当前状态" [ref=e2783]: G.markA
+            - textbox "规则 180 读取符号" [ref=e2784]: 2|AB
+            - textbox "规则 180 下一状态" [ref=e2785]: G.compare.1
+            - textbox "规则 180 写入符号" [ref=e2786]: 2|AB
+            - combobox "规则 180 移动方向" [ref=e2787]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 180" [ref=e2788] [cursor=pointer]: ×
+          - generic [ref=e2789]:
+            - textbox "规则 181 当前状态" [ref=e2790]: G.markA
+            - textbox "规则 181 读取符号" [ref=e2791]: 2|OAB
+            - textbox "规则 181 下一状态" [ref=e2792]: G.compare.1
+            - textbox "规则 181 写入符号" [ref=e2793]: 2|OAB
+            - combobox "规则 181 移动方向" [ref=e2794]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 181" [ref=e2795] [cursor=pointer]: ×
+          - generic [ref=e2796]:
+            - textbox "规则 182 当前状态" [ref=e2797]: G.markA
+            - textbox "规则 182 读取符号" [ref=e2798]: 2|SAB
+            - textbox "规则 182 下一状态" [ref=e2799]: G.compare.1
+            - textbox "规则 182 写入符号" [ref=e2800]: 2|SAB
+            - combobox "规则 182 移动方向" [ref=e2801]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 182" [ref=e2802] [cursor=pointer]: ×
+          - generic [ref=e2803]:
+            - textbox "规则 183 当前状态" [ref=e2804]: G.markA
+            - textbox "规则 183 读取符号" [ref=e2805]: 2|OSAB
+            - textbox "规则 183 下一状态" [ref=e2806]: G.compare.1
+            - textbox "规则 183 写入符号" [ref=e2807]: 2|OSAB
+            - combobox "规则 183 移动方向" [ref=e2808]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 183" [ref=e2809] [cursor=pointer]: ×
+          - generic [ref=e2810]:
+            - textbox "规则 184 当前状态" [ref=e2811]: G.compare.1
+            - textbox "规则 184 读取符号" [ref=e2812]: 1|A
+            - textbox "规则 184 下一状态" [ref=e2813]: G.findB.1.1.0
+            - textbox "规则 184 写入符号" [ref=e2814]: 1|A
+            - combobox "规则 184 移动方向" [ref=e2815]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 184" [ref=e2816] [cursor=pointer]: ×
+          - generic [ref=e2817]:
+            - textbox "规则 185 当前状态" [ref=e2818]: G.compare.1
+            - textbox "规则 185 读取符号" [ref=e2819]: 1|OA
+            - textbox "规则 185 下一状态" [ref=e2820]: G.findB.1.1.0
+            - textbox "规则 185 写入符号" [ref=e2821]: 1|OA
+            - combobox "规则 185 移动方向" [ref=e2822]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 185" [ref=e2823] [cursor=pointer]: ×
+          - generic [ref=e2824]:
+            - textbox "规则 186 当前状态" [ref=e2825]: G.compare.1
+            - textbox "规则 186 读取符号" [ref=e2826]: 1|SA
+            - textbox "规则 186 下一状态" [ref=e2827]: G.findB.1.1.1
+            - textbox "规则 186 写入符号" [ref=e2828]: 1|SA
+            - combobox "规则 186 移动方向" [ref=e2829]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 186" [ref=e2830] [cursor=pointer]: ×
+          - generic [ref=e2831]:
+            - textbox "规则 187 当前状态" [ref=e2832]: G.compare.1
+            - textbox "规则 187 读取符号" [ref=e2833]: 1|OSA
+            - textbox "规则 187 下一状态" [ref=e2834]: G.findB.1.1.1
+            - textbox "规则 187 写入符号" [ref=e2835]: 1|OSA
+            - combobox "规则 187 移动方向" [ref=e2836]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 187" [ref=e2837] [cursor=pointer]: ×
+          - generic [ref=e2838]:
+            - textbox "规则 188 当前状态" [ref=e2839]: G.compare.1
+            - textbox "规则 188 读取符号" [ref=e2840]: 1|AB
+            - textbox "规则 188 下一状态" [ref=e2841]: G.findB.1.1.0
+            - textbox "规则 188 写入符号" [ref=e2842]: 1|AB
+            - combobox "规则 188 移动方向" [ref=e2843]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 188" [ref=e2844] [cursor=pointer]: ×
+          - generic [ref=e2845]:
+            - textbox "规则 189 当前状态" [ref=e2846]: G.compare.1
+            - textbox "规则 189 读取符号" [ref=e2847]: 1|OAB
+            - textbox "规则 189 下一状态" [ref=e2848]: G.findB.1.1.0
+            - textbox "规则 189 写入符号" [ref=e2849]: 1|OAB
+            - combobox "规则 189 移动方向" [ref=e2850]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 189" [ref=e2851] [cursor=pointer]: ×
+          - generic [ref=e2852]:
+            - textbox "规则 190 当前状态" [ref=e2853]: G.compare.1
+            - textbox "规则 190 读取符号" [ref=e2854]: 1|SAB
+            - textbox "规则 190 下一状态" [ref=e2855]: G.findB.1.1.1
+            - textbox "规则 190 写入符号" [ref=e2856]: 1|SAB
+            - combobox "规则 190 移动方向" [ref=e2857]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 190" [ref=e2858] [cursor=pointer]: ×
+          - generic [ref=e2859]:
+            - textbox "规则 191 当前状态" [ref=e2860]: G.compare.1
+            - textbox "规则 191 读取符号" [ref=e2861]: 1|OSAB
+            - textbox "规则 191 下一状态" [ref=e2862]: G.findB.1.1.1
+            - textbox "规则 191 写入符号" [ref=e2863]: 1|OSAB
+            - combobox "规则 191 移动方向" [ref=e2864]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 191" [ref=e2865] [cursor=pointer]: ×
+          - generic [ref=e2866]:
+            - textbox "规则 192 当前状态" [ref=e2867]: G.compare.1
+            - textbox "规则 192 读取符号" [ref=e2868]: 2|A
+            - textbox "规则 192 下一状态" [ref=e2869]: G.findB.1.2.0
+            - textbox "规则 192 写入符号" [ref=e2870]: 2|A
+            - combobox "规则 192 移动方向" [ref=e2871]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 192" [ref=e2872] [cursor=pointer]: ×
+          - generic [ref=e2873]:
+            - textbox "规则 193 当前状态" [ref=e2874]: G.compare.1
+            - textbox "规则 193 读取符号" [ref=e2875]: 2|OA
+            - textbox "规则 193 下一状态" [ref=e2876]: G.findB.1.2.0
+            - textbox "规则 193 写入符号" [ref=e2877]: 2|OA
+            - combobox "规则 193 移动方向" [ref=e2878]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 193" [ref=e2879] [cursor=pointer]: ×
+          - generic [ref=e2880]:
+            - textbox "规则 194 当前状态" [ref=e2881]: G.compare.1
+            - textbox "规则 194 读取符号" [ref=e2882]: 2|SA
+            - textbox "规则 194 下一状态" [ref=e2883]: G.findB.1.2.1
+            - textbox "规则 194 写入符号" [ref=e2884]: 2|SA
+            - combobox "规则 194 移动方向" [ref=e2885]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 194" [ref=e2886] [cursor=pointer]: ×
+          - generic [ref=e2887]:
+            - textbox "规则 195 当前状态" [ref=e2888]: G.compare.1
+            - textbox "规则 195 读取符号" [ref=e2889]: 2|OSA
+            - textbox "规则 195 下一状态" [ref=e2890]: G.findB.1.2.1
+            - textbox "规则 195 写入符号" [ref=e2891]: 2|OSA
+            - combobox "规则 195 移动方向" [ref=e2892]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 195" [ref=e2893] [cursor=pointer]: ×
+          - generic [ref=e2894]:
+            - textbox "规则 196 当前状态" [ref=e2895]: G.compare.1
+            - textbox "规则 196 读取符号" [ref=e2896]: 2|AB
+            - textbox "规则 196 下一状态" [ref=e2897]: G.findB.1.2.0
+            - textbox "规则 196 写入符号" [ref=e2898]: 2|AB
+            - combobox "规则 196 移动方向" [ref=e2899]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 196" [ref=e2900] [cursor=pointer]: ×
+          - generic [ref=e2901]:
+            - textbox "规则 197 当前状态" [ref=e2902]: G.compare.1
+            - textbox "规则 197 读取符号" [ref=e2903]: 2|OAB
+            - textbox "规则 197 下一状态" [ref=e2904]: G.findB.1.2.0
+            - textbox "规则 197 写入符号" [ref=e2905]: 2|OAB
+            - combobox "规则 197 移动方向" [ref=e2906]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 197" [ref=e2907] [cursor=pointer]: ×
+          - generic [ref=e2908]:
+            - textbox "规则 198 当前状态" [ref=e2909]: G.compare.1
+            - textbox "规则 198 读取符号" [ref=e2910]: 2|SAB
+            - textbox "规则 198 下一状态" [ref=e2911]: G.findB.1.2.1
+            - textbox "规则 198 写入符号" [ref=e2912]: 2|SAB
+            - combobox "规则 198 移动方向" [ref=e2913]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 198" [ref=e2914] [cursor=pointer]: ×
+          - generic [ref=e2915]:
+            - textbox "规则 199 当前状态" [ref=e2916]: G.compare.1
+            - textbox "规则 199 读取符号" [ref=e2917]: 2|OSAB
+            - textbox "规则 199 下一状态" [ref=e2918]: G.findB.1.2.1
+            - textbox "规则 199 写入符号" [ref=e2919]: 2|OSAB
+            - combobox "规则 199 移动方向" [ref=e2920]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 199" [ref=e2921] [cursor=pointer]: ×
+          - generic [ref=e2922]:
+            - textbox "规则 200 当前状态" [ref=e2923]: G.findB.1.1.0
+            - textbox "规则 200 读取符号" [ref=e2924]: "1"
+            - textbox "规则 200 下一状态" [ref=e2925]: G.findB.1.1.0
+            - textbox "规则 200 写入符号" [ref=e2926]: "1"
+            - combobox "规则 200 移动方向" [ref=e2927]:
+              - option "L" [selected]
+              - option "R"
+              - option "N"
+            - button "删除规则 200" [ref=e2928] [cursor=pointer]: ×
+        - generic [ref=e161]:
+          - generic [ref=e162]: 共 1099 条 · 第 2/11 页
+          - button "上一页" [ref=e163] [cursor=pointer]
+          - button "下一页" [active] [ref=e164] [cursor=pointer]
+        - generic [ref=e165]:
+          - button "应用并重置" [ref=e166] [cursor=pointer]
+          - button "清空规则" [ref=e167] [cursor=pointer]
+        - generic [ref=e168]: 快捷键：空格运行/暂停，Alt + → 单步，Ctrl + R 重置（输入框聚焦时不触发）。
+      - complementary [ref=e169]:
+        - generic [ref=e170]:
+          - heading "示例程序" [level=2] [ref=e172]
+          - combobox [ref=e173]:
+            - option "一进制加一" [selected]
+            - option "二进制加一"
+            - option "二进制回文判断"
+            - option "2 状态忙碌海狸"
+          - paragraph [ref=e174]: 越过所有 1，在末尾写入一个 1。
+          - button "加载此示例" [ref=e175] [cursor=pointer]
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - heading "执行记录" [level=2] [ref=e178]
+            - generic [ref=e2929]: 已停机
+          - generic [ref=e179]:
+            - generic [ref=e2930]:
+              - generic [ref=e2931]: "#733"
+              - generic [ref=e2932]: G.stopR,0 → G.HALT,3,N [8→8]
+            - generic [ref=e2933]:
+              - generic [ref=e2934]: "#732"
+              - generic [ref=e2935]: G.stopR,2|O → G.stopR,2,R [7→8]
+            - generic [ref=e2936]:
+              - generic [ref=e2937]: "#731"
+              - generic [ref=e2938]: G.stopR,2|SA → G.stopR,2,R [6→7]
+            - generic [ref=e2939]:
+              - generic [ref=e2940]: "#730"
+              - generic [ref=e2941]: G.stopR,2|B → G.stopR,2,R [5→6]
+            - generic [ref=e2942]:
+              - generic [ref=e2943]: "#729"
+              - generic [ref=e2944]: G.stopR,1 → G.stopR,1,R [4→5]
+            - generic [ref=e2945]:
+              - generic [ref=e2946]: "#728"
+              - generic [ref=e2947]: G.stopR,1 → G.stopR,1,R [3→4]
+            - generic [ref=e2948]:
+              - generic [ref=e2949]: "#727"
+              - generic [ref=e2950]: G.stopR,2 → G.stopR,2,R [2→3]
+            - generic [ref=e2951]:
+              - generic [ref=e2952]: "#726"
+              - generic [ref=e2953]: G.stopR,1 → G.stopR,1,R [1→2]
+            - generic [ref=e2954]:
+              - generic [ref=e2955]: "#725"
+              - generic [ref=e2956]: G.stopR,1 → G.stopR,1,R [0→1]
+            - generic [ref=e2957]:
+              - generic [ref=e2958]: "#724"
+              - generic [ref=e2959]: G.stopL,#1 → G.stopR,0,R [-1→0]
+            - generic [ref=e2960]:
+              - generic [ref=e2961]: "#723"
+              - generic [ref=e2962]: G.stopL,1 → G.stopL,1,L [0→-1]
+            - generic [ref=e2963]:
+              - generic [ref=e2964]: "#722"
+              - generic [ref=e2965]: G.stopL,1 → G.stopL,1,L [1→0]
+            - generic [ref=e2966]:
+              - generic [ref=e2967]: "#721"
+              - generic [ref=e2968]: G.stopL,2 → G.stopL,2,L [2→1]
+            - generic [ref=e2969]:
+              - generic [ref=e2970]: "#720"
+              - generic [ref=e2971]: G.stopL,1 → G.stopL,1,L [3→2]
+            - generic [ref=e2972]:
+              - generic [ref=e2973]: "#719"
+              - generic [ref=e2974]: G.stopL,1 → G.stopL,1,L [4→3]
+            - generic [ref=e2975]:
+              - generic [ref=e2976]: "#718"
+              - generic [ref=e2977]: G.stopL,2|B → G.stopL,2|B,L [5→4]
+            - generic [ref=e2978]:
+              - generic [ref=e2979]: "#717"
+              - generic [ref=e2980]: G.findB.2.2.1,2|B → G.stopL,2|B,N [5→5]
+            - generic [ref=e2981]:
+              - generic [ref=e2982]: "#716"
+              - generic [ref=e2983]: G.compare.2,2|SA → G.findB.2.2.1,2|SA,L [6→5]
+            - generic [ref=e2984]:
+              - generic [ref=e2985]: "#715"
+              - generic [ref=e2986]: G.moveA.2,2|S → G.compare.2,2|SA,N [6→6]
+            - generic [ref=e2987]:
+              - generic [ref=e2988]: "#714"
+              - generic [ref=e2989]: G.returnA.2.1,2|OSA → G.moveA.2,2|O,L [7→6]
+            - generic [ref=e2990]:
+              - generic [ref=e2991]: "#713"
+              - generic [ref=e2992]: G.returnA.2.1,2|S → G.returnA.2.1,2|S,R [6→7]
+            - generic [ref=e2993]:
+              - generic [ref=e2994]: "#712"
+              - generic [ref=e2995]: G.moveB.2.1,2 → G.returnA.2.1,2|B,R [5→6]
+            - generic [ref=e2996]:
+              - generic [ref=e2997]: "#711"
+              - generic [ref=e2998]: G.findB.1.2.1,2|B → G.moveB.2.1,2|S,L [6→5]
+            - generic [ref=e2999]:
+              - generic [ref=e3000]: "#710"
+              - generic [ref=e3001]: G.compare.1,2|OSA → G.findB.1.2.1,2|OSA,L [7→6]
+            - generic [ref=e3002]:
+              - generic [ref=e3003]: "#709"
+              - generic [ref=e3004]: G.markA,2|OS → G.compare.1,2|OSA,N [7→7]
+            - generic [ref=e3005]:
+              - generic [ref=e3006]: "#708"
+              - generic [ref=e3007]: G.endA,0 → G.markA,0,L [8→7]
+            - generic [ref=e3008]:
+              - generic [ref=e3009]: "#707"
+              - generic [ref=e3010]: G.endA,2|OS → G.endA,2|OS,R [7→8]
+            - generic [ref=e3011]:
+              - generic [ref=e3012]: "#706"
+              - generic [ref=e3013]: G.markB,2 → G.endA,2|B,R [6→7]
+            - generic [ref=e3014]:
+              - generic [ref=e3015]: "#705"
+              - generic [ref=e3016]: G.trial,2|O → G.markB,2|OS,L [7→6]
+            - generic [ref=e3017]:
+              - generic [ref=e3018]: "#704"
+              - generic [ref=e3019]: G.origin,2 → G.trial,2|O,N [7→7]
+            - generic [ref=e3020]:
+              - generic [ref=e3021]: "#703"
+              - generic [ref=e3022]: G.next,0 → G.origin,0,L [8→7]
+            - generic [ref=e3023]:
+              - generic [ref=e3024]: "#702"
+              - generic [ref=e3025]: G.append.2,0 → G.next,2,R [7→8]
+            - generic [ref=e3026]:
+              - generic [ref=e3027]: "#701"
+              - generic [ref=e3028]: G.append.2,2 → G.append.2,2,R [6→7]
+            - generic [ref=e3029]:
+              - generic [ref=e3030]: "#700"
+              - generic [ref=e3031]: G.append.2,2 → G.append.2,2,R [5→6]
+            - generic [ref=e3032]:
+              - generic [ref=e3033]: "#699"
+              - generic [ref=e3034]: G.append.2,1 → G.append.2,1,R [4→5]
+            - generic [ref=e3035]:
+              - generic [ref=e3036]: "#698"
+              - generic [ref=e3037]: G.append.2,1 → G.append.2,1,R [3→4]
+            - generic [ref=e3038]:
+              - generic [ref=e3039]: "#697"
+              - generic [ref=e3040]: G.append.2,2 → G.append.2,2,R [2→3]
+            - generic [ref=e3041]:
+              - generic [ref=e3042]: "#696"
+              - generic [ref=e3043]: G.append.2,1 → G.append.2,1,R [1→2]
+            - generic [ref=e3044]:
+              - generic [ref=e3045]: "#695"
+              - generic [ref=e3046]: G.append.2,1 → G.append.2,1,R [0→1]
+            - generic [ref=e3047]:
+              - generic [ref=e3048]: "#694"
+              - generic [ref=e3049]: G.shiftO,#2 → G.append.2,#1,R [-1→0]
+            - generic [ref=e3050]:
+              - generic [ref=e3051]: "#693"
+              - generic [ref=e3052]: G.findO,1|O → G.shiftO,1,L [0→-1]
+            - generic [ref=e3053]:
+              - generic [ref=e3054]: "#692"
+              - generic [ref=e3055]: G.findO,1 → G.findO,1,L [1→0]
+            - generic [ref=e3056]:
+              - generic [ref=e3057]: "#691"
+              - generic [ref=e3058]: G.findO,2 → G.findO,2,L [2→1]
+            - generic [ref=e3059]:
+              - generic [ref=e3060]: "#690"
+              - generic [ref=e3061]: G.findO,1 → G.findO,1,L [3→2]
+            - generic [ref=e3062]:
+              - generic [ref=e3063]: "#689"
+              - generic [ref=e3064]: G.findO,1 → G.findO,1,L [4→3]
+            - generic [ref=e3065]:
+              - generic [ref=e3066]: "#688"
+              - generic [ref=e3067]: G.findO,2 → G.findO,2,L [5→4]
+            - generic [ref=e3068]:
+              - generic [ref=e3069]: "#687"
+              - generic [ref=e3070]: G.findO,2 → G.findO,2,L [6→5]
+            - generic [ref=e3071]:
+              - generic [ref=e3072]: "#686"
+              - generic [ref=e3073]: G.cleanR,0 → G.findO,0,L [7→6]
+            - generic [ref=e3074]:
+              - generic [ref=e3075]: "#685"
+              - generic [ref=e3076]: G.cleanR,2 → G.cleanR,2,R [6→7]
+            - generic [ref=e3077]:
+              - generic [ref=e3078]: "#684"
+              - generic [ref=e3079]: G.cleanR,2 → G.cleanR,2,R [5→6]
+            - generic [ref=e3080]:
+              - generic [ref=e3081]: "#683"
+              - generic [ref=e3082]: G.cleanR,1 → G.cleanR,1,R [4→5]
+            - generic [ref=e3083]:
+              - generic [ref=e3084]: "#682"
+              - generic [ref=e3085]: G.cleanR,1 → G.cleanR,1,R [3→4]
+            - generic [ref=e3086]:
+              - generic [ref=e3087]: "#681"
+              - generic [ref=e3088]: G.cleanR,2 → G.cleanR,2,R [2→3]
+            - generic [ref=e3089]:
+              - generic [ref=e3090]: "#680"
+              - generic [ref=e3091]: G.cleanR,1 → G.cleanR,1,R [1→2]
+            - generic [ref=e3092]:
+              - generic [ref=e3093]: "#679"
+              - generic [ref=e3094]: G.cleanR,1|OS → G.cleanR,1|O,R [0→1]
+            - generic [ref=e3095]:
+              - generic [ref=e3096]: "#678"
+              - generic [ref=e3097]: G.cleanL.1,#2 → G.cleanR,#2,R [-1→0]
+            - generic [ref=e3098]:
+              - generic [ref=e3099]: "#677"
+              - generic [ref=e3100]: G.markB,#2 → G.cleanL.1,#2,N [-1→-1]
+            - generic [ref=e3101]:
+              - generic [ref=e3102]: "#676"
+              - generic [ref=e3103]: G.trial,1|O → G.markB,1|OS,L [0→-1]
+            - generic [ref=e3104]:
+              - generic [ref=e3105]: "#675"
+              - generic [ref=e3106]: G.shiftO,1 → G.trial,1|O,N [0→0]
+            - generic [ref=e3107]:
+              - generic [ref=e3108]: "#674"
+              - generic [ref=e3109]: G.findO,1|O → G.shiftO,1,L [1→0]
+            - generic [ref=e3110]:
+              - generic [ref=e3111]: "#673"
+              - generic [ref=e3112]: G.findO,2 → G.findO,2,L [2→1]
+            - generic [ref=e3113]:
+              - generic [ref=e3114]: "#672"
+              - generic [ref=e3115]: G.findO,1 → G.findO,1,L [3→2]
+            - generic [ref=e3116]:
+              - generic [ref=e3117]: "#671"
+              - generic [ref=e3118]: G.findO,1 → G.findO,1,L [4→3]
+            - generic [ref=e3119]:
+              - generic [ref=e3120]: "#670"
+              - generic [ref=e3121]: G.findO,2 → G.findO,2,L [5→4]
+            - generic [ref=e3122]:
+              - generic [ref=e3123]: "#669"
+              - generic [ref=e3124]: G.findO,2 → G.findO,2,L [6→5]
+            - generic [ref=e3125]:
+              - generic [ref=e3126]: "#668"
+              - generic [ref=e3127]: G.cleanR,0 → G.findO,0,L [7→6]
+            - generic [ref=e3128]:
+              - generic [ref=e3129]: "#667"
+              - generic [ref=e3130]: G.cleanR,2|A → G.cleanR,2,R [6→7]
+            - generic [ref=e3131]:
+              - generic [ref=e3132]: "#666"
+              - generic [ref=e3133]: G.cleanR,2 → G.cleanR,2,R [5→6]
+            - generic [ref=e3134]:
+              - generic [ref=e3135]: "#665"
+              - generic [ref=e3136]: G.cleanR,1 → G.cleanR,1,R [4→5]
+            - generic [ref=e3137]:
+              - generic [ref=e3138]: "#664"
+              - generic [ref=e3139]: G.cleanR,1 → G.cleanR,1,R [3→4]
+            - generic [ref=e3140]:
+              - generic [ref=e3141]: "#663"
+              - generic [ref=e3142]: G.cleanR,2 → G.cleanR,2,R [2→3]
+            - generic [ref=e3143]:
+              - generic [ref=e3144]: "#662"
+              - generic [ref=e3145]: G.cleanR,1|OS → G.cleanR,1|O,R [1→2]
+            - generic [ref=e3146]:
+              - generic [ref=e3147]: "#661"
+              - generic [ref=e3148]: G.cleanR,1|B → G.cleanR,1,R [0→1]
+            - generic [ref=e3149]:
+              - generic [ref=e3150]: "#660"
+              - generic [ref=e3151]: G.cleanL.1,#2 → G.cleanR,#2,R [-1→0]
+            - generic [ref=e3152]:
+              - generic [ref=e3153]: "#659"
+              - generic [ref=e3154]: G.cleanL.1,1|B → G.cleanL.1,1|B,L [0→-1]
+            - generic [ref=e3155]:
+              - generic [ref=e3156]: "#658"
+              - generic [ref=e3157]: G.findB.1.2.0,1|B → G.cleanL.1,1|B,N [0→0]
+            - generic [ref=e3158]:
+              - generic [ref=e3159]: "#657"
+              - generic [ref=e3160]: G.findB.1.2.0,1|OS → G.findB.1.2.0,1|OS,L [1→0]
+            - generic [ref=e3161]:
+              - generic [ref=e3162]: "#656"
+              - generic [ref=e3163]: G.findB.1.2.0,2 → G.findB.1.2.0,2,L [2→1]
+            - generic [ref=e3164]:
+              - generic [ref=e3165]: "#655"
+              - generic [ref=e3166]: G.findB.1.2.0,1 → G.findB.1.2.0,1,L [3→2]
+            - generic [ref=e3167]:
+              - generic [ref=e3168]: "#654"
+              - generic [ref=e3169]: G.findB.1.2.0,1 → G.findB.1.2.0,1,L [4→3]
+            - generic [ref=e3170]:
+              - generic [ref=e3171]: "#653"
+              - generic [ref=e3172]: G.findB.1.2.0,2 → G.findB.1.2.0,2,L [5→4]
+            - generic [ref=e3173]:
+              - generic [ref=e3174]: "#652"
+              - generic [ref=e3175]: G.compare.1,2|A → G.findB.1.2.0,2|A,L [6→5]
+            - generic [ref=e3176]:
+              - generic [ref=e3177]: "#651"
+              - generic [ref=e3178]: G.markA,2 → G.compare.1,2|A,N [6→6]
+            - generic [ref=e3179]:
+              - generic [ref=e3180]: "#650"
+              - generic [ref=e3181]: G.endA,0 → G.markA,0,L [7→6]
+            - generic [ref=e3182]:
+              - generic [ref=e3183]: "#649"
+              - generic [ref=e3184]: G.endA,2 → G.endA,2,R [6→7]
+            - generic [ref=e3185]:
+              - generic [ref=e3186]: "#648"
+              - generic [ref=e3187]: G.endA,2 → G.endA,2,R [5→6]
+            - generic [ref=e3188]:
+              - generic [ref=e3189]: "#647"
+              - generic [ref=e3190]: G.endA,1 → G.endA,1,R [4→5]
+            - generic [ref=e3191]:
+              - generic [ref=e3192]: "#646"
+              - generic [ref=e3193]: G.endA,1 → G.endA,1,R [3→4]
+            - generic [ref=e3194]:
+              - generic [ref=e3195]: "#645"
+              - generic [ref=e3196]: G.endA,2 → G.endA,2,R [2→3]
+            - generic [ref=e3197]:
+              - generic [ref=e3198]: "#644"
+              - generic [ref=e3199]: G.endA,1|OS → G.endA,1|OS,R [1→2]
+            - generic [ref=e3200]:
+              - generic [ref=e3201]: "#643"
+              - generic [ref=e3202]: G.markB,1 → G.endA,1|B,R [0→1]
+            - generic [ref=e3203]:
+              - generic [ref=e3204]: "#642"
+              - generic [ref=e3205]: G.trial,1|O → G.markB,1|OS,L [1→0]
+            - generic [ref=e3206]:
+              - generic [ref=e3207]: "#641"
+              - generic [ref=e3208]: G.shiftO,1 → G.trial,1|O,N [1→1]
+            - generic [ref=e3209]:
+              - generic [ref=e3210]: "#640"
+              - generic [ref=e3211]: G.findO,2|O → G.shiftO,2,L [2→1]
+            - generic [ref=e3212]:
+              - generic [ref=e3213]: "#639"
+              - generic [ref=e3214]: G.findO,1 → G.findO,1,L [3→2]
+            - generic [ref=e3215]:
+              - generic [ref=e3216]: "#638"
+              - generic [ref=e3217]: G.findO,1 → G.findO,1,L [4→3]
+            - generic [ref=e3218]:
+              - generic [ref=e3219]: "#637"
+              - generic [ref=e3220]: G.findO,2 → G.findO,2,L [5→4]
+            - generic [ref=e3221]:
+              - generic [ref=e3222]: "#636"
+              - generic [ref=e3223]: G.findO,2 → G.findO,2,L [6→5]
+            - generic [ref=e3224]:
+              - generic [ref=e3225]: "#635"
+              - generic [ref=e3226]: G.cleanR,0 → G.findO,0,L [7→6]
+            - generic [ref=e3227]:
+              - generic [ref=e3228]: "#634"
+              - generic [ref=e3229]: G.cleanR,2|A → G.cleanR,2,R [6→7]
+            - generic [ref=e3230]:
+              - generic [ref=e3231]: "#633"
+              - generic [ref=e3232]: G.cleanR,2 → G.cleanR,2,R [5→6]
+            - generic [ref=e3233]:
+              - generic [ref=e3234]: "#632"
+              - generic [ref=e3235]: G.cleanR,1 → G.cleanR,1,R [4→5]
+            - generic [ref=e3236]:
+              - generic [ref=e3237]: "#631"
+              - generic [ref=e3238]: G.cleanR,1 → G.cleanR,1,R [3→4]
+            - generic [ref=e3239]:
+              - generic [ref=e3240]: "#630"
+              - generic [ref=e3241]: G.cleanR,2|OS → G.cleanR,2|O,R [2→3]
+            - generic [ref=e3242]:
+              - generic [ref=e3243]: "#629"
+              - generic [ref=e3244]: G.cleanR,1|B → G.cleanR,1,R [1→2]
+            - generic [ref=e3245]:
+              - generic [ref=e3246]: "#628"
+              - generic [ref=e3247]: G.cleanR,1 → G.cleanR,1,R [0→1]
+            - generic [ref=e3248]:
+              - generic [ref=e3249]: "#627"
+              - generic [ref=e3250]: G.cleanL.1,#2 → G.cleanR,#2,R [-1→0]
+            - generic [ref=e3251]:
+              - generic [ref=e3252]: "#626"
+              - generic [ref=e3253]: G.cleanL.1,1 → G.cleanL.1,1,L [0→-1]
+            - generic [ref=e3254]:
+              - generic [ref=e3255]: "#625"
+              - generic [ref=e3256]: G.cleanL.1,1|B → G.cleanL.1,1|B,L [1→0]
+            - generic [ref=e3257]:
+              - generic [ref=e3258]: "#624"
+              - generic [ref=e3259]: G.findB.1.2.0,1|B → G.cleanL.1,1|B,N [1→1]
+            - generic [ref=e3260]:
+              - generic [ref=e3261]: "#623"
+              - generic [ref=e3262]: G.findB.1.2.0,2|OS → G.findB.1.2.0,2|OS,L [2→1]
+            - generic [ref=e3263]:
+              - generic [ref=e3264]: "#622"
+              - generic [ref=e3265]: G.findB.1.2.0,1 → G.findB.1.2.0,1,L [3→2]
+            - generic [ref=e3266]:
+              - generic [ref=e3267]: "#621"
+              - generic [ref=e3268]: G.findB.1.2.0,1 → G.findB.1.2.0,1,L [4→3]
+            - generic [ref=e3269]:
+              - generic [ref=e3270]: "#620"
+              - generic [ref=e3271]: G.findB.1.2.0,2 → G.findB.1.2.0,2,L [5→4]
+            - generic [ref=e3272]:
+              - generic [ref=e3273]: "#619"
+              - generic [ref=e3274]: G.compare.1,2|A → G.findB.1.2.0,2|A,L [6→5]
+            - generic [ref=e3275]:
+              - generic [ref=e3276]: "#618"
+              - generic [ref=e3277]: G.markA,2 → G.compare.1,2|A,N [6→6]
+            - generic [ref=e3278]:
+              - generic [ref=e3279]: "#617"
+              - generic [ref=e3280]: G.endA,0 → G.markA,0,L [7→6]
+            - generic [ref=e3281]:
+              - generic [ref=e3282]: "#616"
+              - generic [ref=e3283]: G.endA,2 → G.endA,2,R [6→7]
+            - generic [ref=e3284]:
+              - generic [ref=e3285]: "#615"
+              - generic [ref=e3286]: G.endA,2 → G.endA,2,R [5→6]
+            - generic [ref=e3287]:
+              - generic [ref=e3288]: "#614"
+              - generic [ref=e3289]: G.endA,1 → G.endA,1,R [4→5]
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - heading "全路线总览" [level=2] [ref=e184]
+          - paragraph [ref=e185]: 后台计算整段运行轨迹并压缩成一张时空图；生成时仍可继续使用上面的模拟器和瓷砖游戏。
+        - generic [ref=e186]:
+          - generic [ref=e187]:
+            - text: 运行步数
+            - spinbutton "运行步数" [ref=e188]: "10000"
+          - button "后台生成" [ref=e189] [cursor=pointer]
+          - button "取消" [disabled] [ref=e190] [cursor=pointer]
+      - generic [ref=e191]:
+        - progressbar [ref=e192]
+        - generic [ref=e193]: 等待生成
+      - generic [ref=e194]: 读写头 非空纸带 空白；纵向为时间，横向为纸带位置
+      - generic [ref=e198]: 输入步数后点击“后台生成”
+    - generic [ref=e201]:
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - heading "计算瓷砖拼图" [level=2] [ref=e204]
+          - paragraph [ref=e205]: 每一行是一个时刻；相邻边必须同色。点击或拖动瓷砖，把它放入上方空格。
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - text: 生成步数
+            - spinbutton "生成步数" [ref=e208]: "10"
+          - button "生成瓷砖" [ref=e209] [cursor=pointer]
+          - button "检查拼法" [ref=e210] [cursor=pointer]
+          - button "查看正确拼法" [ref=e211] [cursor=pointer]
+      - generic [ref=e212]: 未发现循环；计算结果：到达 10 步上限。 棋盘 11 × 5，共 55 块。
+      - generic [ref=e214]:
+        - button "第 1 行第 1 列" [ref=e1255] [cursor=pointer]:
+          - generic [ref=e1256]: "-2"
+        - button "第 1 行第 2 列" [ref=e1257] [cursor=pointer]:
+          - generic [ref=e1258]: "-1"
+        - button "第 1 行第 3 列" [ref=e1259] [cursor=pointer]:
+          - generic [ref=e1260]: "0"
+        - button "第 1 行第 4 列" [ref=e1261] [cursor=pointer]:
+          - generic [ref=e1262]: "1"
+        - button "第 1 行第 5 列" [ref=e1263] [cursor=pointer]:
+          - generic [ref=e1264]: "2"
+        - button "第 2 行第 1 列" [ref=e1265] [cursor=pointer]:
+          - generic [ref=e1266]: "-2"
+        - button "第 2 行第 2 列" [ref=e1267] [cursor=pointer]:
+          - generic [ref=e1268]: "-1"
+        - button "第 2 行第 3 列" [ref=e1269] [cursor=pointer]:
+          - generic [ref=e1270]: "0"
+        - button "第 2 行第 4 列" [ref=e1271] [cursor=pointer]:
+          - generic [ref=e1272]: "1"
+        - button "第 2 行第 5 列" [ref=e1273] [cursor=pointer]:
+          - generic [ref=e1274]: "2"
+        - button "第 3 行第 1 列" [ref=e1275] [cursor=pointer]:
+          - generic [ref=e1276]: "-2"
+        - button "第 3 行第 2 列" [ref=e1277] [cursor=pointer]:
+          - generic [ref=e1278]: "-1"
+        - button "第 3 行第 3 列" [ref=e1279] [cursor=pointer]:
+          - generic [ref=e1280]: "0"
+        - button "第 3 行第 4 列" [ref=e1281] [cursor=pointer]:
+          - generic [ref=e1282]: "1"
+        - button "第 3 行第 5 列" [ref=e1283] [cursor=pointer]:
+          - generic [ref=e1284]: "2"
+        - button "第 4 行第 1 列" [ref=e1285] [cursor=pointer]:
+          - generic [ref=e1286]: "-2"
+        - button "第 4 行第 2 列" [ref=e1287] [cursor=pointer]:
+          - generic [ref=e1288]: "-1"
+        - button "第 4 行第 3 列" [ref=e1289] [cursor=pointer]:
+          - generic [ref=e1290]: "0"
+        - button "第 4 行第 4 列" [ref=e1291] [cursor=pointer]:
+          - generic [ref=e1292]: "1"
+        - button "第 4 行第 5 列" [ref=e1293] [cursor=pointer]:
+          - generic [ref=e1294]: "2"
+        - button "第 5 行第 1 列" [ref=e1295] [cursor=pointer]:
+          - generic [ref=e1296]: "-2"
+        - button "第 5 行第 2 列" [ref=e1297] [cursor=pointer]:
+          - generic [ref=e1298]: "-1"
+        - button "第 5 行第 3 列" [ref=e1299] [cursor=pointer]:
+          - generic [ref=e1300]: "0"
+        - button "第 5 行第 4 列" [ref=e1301] [cursor=pointer]:
+          - generic [ref=e1302]: "1"
+        - button "第 5 行第 5 列" [ref=e1303] [cursor=pointer]:
+          - generic [ref=e1304]: "2"
+        - button "第 6 行第 1 列" [ref=e1305] [cursor=pointer]:
+          - generic [ref=e1306]: "-2"
+        - button "第 6 行第 2 列" [ref=e1307] [cursor=pointer]:
+          - generic [ref=e1308]: "-1"
+        - button "第 6 行第 3 列" [ref=e1309] [cursor=pointer]:
+          - generic [ref=e1310]: "0"
+        - button "第 6 行第 4 列" [ref=e1311] [cursor=pointer]:
+          - generic [ref=e1312]: "1"
+        - button "第 6 行第 5 列" [ref=e1313] [cursor=pointer]:
+          - generic [ref=e1314]: "2"
+        - button "第 7 行第 1 列" [ref=e1315] [cursor=pointer]:
+          - generic [ref=e1316]: "-2"
+        - button "第 7 行第 2 列" [ref=e1317] [cursor=pointer]:
+          - generic [ref=e1318]: "-1"
+        - button "第 7 行第 3 列" [ref=e1319] [cursor=pointer]:
+          - generic [ref=e1320]: "0"
+        - button "第 7 行第 4 列" [ref=e1321] [cursor=pointer]:
+          - generic [ref=e1322]: "1"
+        - button "第 7 行第 5 列" [ref=e1323] [cursor=pointer]:
+          - generic [ref=e1324]: "2"
+        - button "第 8 行第 1 列" [ref=e1325] [cursor=pointer]:
+          - generic [ref=e1326]: "-2"
+        - button "第 8 行第 2 列" [ref=e1327] [cursor=pointer]:
+          - generic [ref=e1328]: "-1"
+        - button "第 8 行第 3 列" [ref=e1329] [cursor=pointer]:
+          - generic [ref=e1330]: "0"
+        - button "第 8 行第 4 列" [ref=e1331] [cursor=pointer]:
+          - generic [ref=e1332]: "1"
+        - button "第 8 行第 5 列" [ref=e1333] [cursor=pointer]:
+          - generic [ref=e1334]: "2"
+        - button "第 9 行第 1 列" [ref=e1335] [cursor=pointer]:
+          - generic [ref=e1336]: "-2"
+        - button "第 9 行第 2 列" [ref=e1337] [cursor=pointer]:
+          - generic [ref=e1338]: "-1"
+        - button "第 9 行第 3 列" [ref=e1339] [cursor=pointer]:
+          - generic [ref=e1340]: "0"
+        - button "第 9 行第 4 列" [ref=e1341] [cursor=pointer]:
+          - generic [ref=e1342]: "1"
+        - button "第 9 行第 5 列" [ref=e1343] [cursor=pointer]:
+          - generic [ref=e1344]: "2"
+        - button "第 10 行第 1 列" [ref=e1345] [cursor=pointer]:
+          - generic [ref=e1346]: "-2"
+        - button "第 10 行第 2 列" [ref=e1347] [cursor=pointer]:
+          - generic [ref=e1348]: "-1"
+        - button "第 10 行第 3 列" [ref=e1349] [cursor=pointer]:
+          - generic [ref=e1350]: "0"
+        - button "第 10 行第 4 列" [ref=e1351] [cursor=pointer]:
+          - generic [ref=e1352]: "1"
+        - button "第 10 行第 5 列" [ref=e1353] [cursor=pointer]:
+          - generic [ref=e1354]: "2"
+        - button "第 11 行第 1 列" [ref=e1355] [cursor=pointer]:
+          - generic [ref=e1356]: "-2"
+        - button "第 11 行第 2 列" [ref=e1357] [cursor=pointer]:
+          - generic [ref=e1358]: "-1"
+        - button "第 11 行第 3 列" [ref=e1359] [cursor=pointer]:
+          - generic [ref=e1360]: "0"
+        - button "第 11 行第 4 列" [ref=e1361] [cursor=pointer]:
+          - generic [ref=e1362]: "1"
+        - button "第 11 行第 5 列" [ref=e1363] [cursor=pointer]:
+          - generic [ref=e1364]: "2"
+      - heading "待拼瓷砖 点击一块，再点击空格；也支持拖放" [level=3] [ref=e275]
+      - generic [ref=e276]:
+        - button "#1" [ref=e1365] [cursor=pointer]
+        - button "0" [ref=e1372] [cursor=pointer]
+        - button "0" [ref=e1379] [cursor=pointer]
+        - button "0" [ref=e1386] [cursor=pointer]
+        - button "G.end 0" [ref=e1393] [cursor=pointer]:
+          - generic "G.end · 0" [ref=e1394]:
+            - generic [ref=e1399]:
+              - generic [ref=e1400]: G.end
+              - text: "0"
+        - button "#1" [ref=e1401] [cursor=pointer]
+        - button "G.cleanR 0" [ref=e1408] [cursor=pointer]:
+          - generic "G.cleanR · 0" [ref=e1409]:
+            - generic [ref=e1414]:
+              - generic [ref=e1415]: G.cleanR
+              - text: "0"
+        - button "0" [ref=e1416] [cursor=pointer]
+        - button "G.origin 1" [ref=e1423] [cursor=pointer]:
+          - generic "G.origin · 1" [ref=e1424]:
+            - generic [ref=e1429]:
+              - generic [ref=e1430]: G.origin
+              - text: "1"
+        - button "1" [ref=e1431] [cursor=pointer]
+        - button "0" [ref=e1438] [cursor=pointer]
+        - button "0" [ref=e1445] [cursor=pointer]
+        - button "0" [ref=e1452] [cursor=pointer]
+        - button "0" [ref=e1459] [cursor=pointer]
+        - button "0" [ref=e1466] [cursor=pointer]
+        - button "G.cleanR 1|OS" [ref=e1473] [cursor=pointer]:
+          - generic "G.cleanR · 1|OS" [ref=e1474]:
+            - generic [ref=e1479]:
+              - generic [ref=e1480]: G.cleanR
+              - text: 1|OS
+        - button "1|OS" [ref=e1481] [cursor=pointer]
+        - button "0" [ref=e1488] [cursor=pointer]
+        - button "0" [ref=e1495] [cursor=pointer]
+        - button "1" [ref=e1502] [cursor=pointer]
+        - button "0" [ref=e1509] [cursor=pointer]
+        - button "0" [ref=e1516] [cursor=pointer]
+        - button "0" [ref=e1523] [cursor=pointer]
+        - button "0" [ref=e1530] [cursor=pointer]
+        - button "G.findO 1|O" [ref=e1537] [cursor=pointer]:
+          - generic "G.findO · 1|O" [ref=e1538]:
+            - generic [ref=e1543]:
+              - generic [ref=e1544]: G.findO
+              - text: 1|O
+        - button "G.seed 0" [ref=e1545] [cursor=pointer]:
+          - generic "G.seed · 0" [ref=e1546]:
+            - generic [ref=e1551]:
+              - generic [ref=e1552]: G.seed
+              - text: "0"
+        - button "0" [ref=e1553] [cursor=pointer]
+        - button "G.end 1" [ref=e1560] [cursor=pointer]:
+          - generic "G.end · 1" [ref=e1561]:
+            - generic [ref=e1566]:
+              - generic [ref=e1567]: G.end
+              - text: "1"
+        - button "0" [ref=e1568] [cursor=pointer]
+        - 'button "G.cleanL.1 #1" [ref=e1575] [cursor=pointer]':
+          - 'generic "G.cleanL.1 · #1" [ref=e1576]':
+            - generic [ref=e1581]:
+              - generic [ref=e1582]: G.cleanL.1
+              - text: "#1"
+        - button "G.trial 1|O" [ref=e1583] [cursor=pointer]:
+          - generic "G.trial · 1|O" [ref=e1584]:
+            - generic [ref=e1589]:
+              - generic [ref=e1590]: G.trial
+              - text: 1|O
+        - button "#1" [ref=e1591] [cursor=pointer]
+        - button "#1" [ref=e1598] [cursor=pointer]
+        - button "0" [ref=e1605] [cursor=pointer]
+        - button "#1" [ref=e1612] [cursor=pointer]
+        - button "0" [ref=e1619] [cursor=pointer]
+        - button "0" [ref=e1626] [cursor=pointer]
+        - button "#1" [ref=e1633] [cursor=pointer]
+        - button "0" [ref=e1640] [cursor=pointer]
+        - button "G.fence 0" [ref=e1647] [cursor=pointer]:
+          - generic "G.fence · 0" [ref=e1648]:
+            - generic [ref=e1653]:
+              - generic [ref=e1654]: G.fence
+              - text: "0"
+        - button "1|O" [ref=e1655] [cursor=pointer]
+        - button "0" [ref=e1662] [cursor=pointer]
+        - button "0" [ref=e1669] [cursor=pointer]
+        - button "0" [ref=e1676] [cursor=pointer]
+        - button "0" [ref=e1683] [cursor=pointer]
+        - button "#1" [ref=e1690] [cursor=pointer]
+        - button "0" [ref=e1697] [cursor=pointer]
+        - button "0" [ref=e1704] [cursor=pointer]
+        - button "0" [ref=e1711] [cursor=pointer]
+        - button "1|OS" [ref=e1718] [cursor=pointer]
+        - button "0" [ref=e1725] [cursor=pointer]
+        - 'button "G.markB #1" [ref=e1732] [cursor=pointer]':
+          - 'generic "G.markB · #1" [ref=e1733]':
+            - generic [ref=e1738]:
+              - generic [ref=e1739]: G.markB
+              - text: "#1"
+        - button "0" [ref=e1740] [cursor=pointer]
+        - button "0" [ref=e1747] [cursor=pointer]
+        - button "0" [ref=e1754] [cursor=pointer]
+      - generic [ref=e492]: 瓷砖已打乱。先找带状态名的读写头瓷砖。

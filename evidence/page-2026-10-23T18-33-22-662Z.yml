@@ -1,0 +1,255 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - generic [ref=f2e5]:
+      - generic [ref=f2e6]: TM
+      - heading "图灵机实验台" [level=1] [ref=f2e8]
+    - generic [ref=f2e9]:
+      - link "进入关卡" [ref=f2e10] [cursor=pointer]:
+        - /url: ./campaign.html
+      - button "导出项目" [ref=f2e11] [cursor=pointer]
+      - button "导入项目" [ref=f2e12] [cursor=pointer]
+      - button "导出记录" [ref=f2e13] [cursor=pointer]
+  - main [ref=f2e14]:
+    - generic [ref=f2e15]:
+      - generic [ref=f2e16]:
+        - generic [ref=f2e17]:
+          - generic [ref=f2e18]: 运行状态
+          - strong [ref=f2e19]: 就绪
+        - generic [ref=f2e20]:
+          - generic [ref=f2e21]: 当前状态
+          - strong [ref=f2e22]: G.seed
+        - generic [ref=f2e23]:
+          - generic [ref=f2e24]: 读取符号
+          - strong [ref=f2e25]: "0"
+        - generic [ref=f2e26]:
+          - generic [ref=f2e27]: 读写头位置
+          - strong [ref=f2e28]: "0"
+        - generic [ref=f2e29]:
+          - generic [ref=f2e30]: 已执行步数
+          - strong [ref=f2e31]: "0"
+      - generic [ref=f2e32]:
+        - generic [ref=f2e33]:
+          - generic [ref=f2e34]:
+            - generic [ref=f2e35]: "-8"
+            - generic [ref=f2e36]: "0"
+          - generic [ref=f2e37]:
+            - generic [ref=f2e38]: "-7"
+            - generic [ref=f2e39]: "0"
+          - generic [ref=f2e40]:
+            - generic [ref=f2e41]: "-6"
+            - generic [ref=f2e42]: "0"
+          - generic [ref=f2e43]:
+            - generic [ref=f2e44]: "-5"
+            - generic [ref=f2e45]: "0"
+          - generic [ref=f2e46]:
+            - generic [ref=f2e47]: "-4"
+            - generic [ref=f2e48]: "0"
+          - generic [ref=f2e49]:
+            - generic [ref=f2e50]: "-3"
+            - generic [ref=f2e51]: "0"
+          - generic [ref=f2e52]:
+            - generic [ref=f2e53]: "-2"
+            - generic [ref=f2e54]: "0"
+          - generic [ref=f2e55]:
+            - generic [ref=f2e56]: "-1"
+            - generic [ref=f2e57]: "0"
+          - generic [ref=f2e58]:
+            - generic [ref=f2e59]: "0"
+            - generic [ref=f2e60]: "0"
+            - text: ▲
+          - generic [ref=f2e61]:
+            - generic [ref=f2e62]: "1"
+            - generic [ref=f2e63]: "0"
+          - generic [ref=f2e64]:
+            - generic [ref=f2e65]: "2"
+            - generic [ref=f2e66]: "0"
+          - generic [ref=f2e67]:
+            - generic [ref=f2e68]: "3"
+            - generic [ref=f2e69]: "0"
+          - generic [ref=f2e70]:
+            - generic [ref=f2e71]: "4"
+            - generic [ref=f2e72]: "0"
+          - generic [ref=f2e73]:
+            - generic [ref=f2e74]: "5"
+            - generic [ref=f2e75]: "0"
+          - generic [ref=f2e76]:
+            - generic [ref=f2e77]: "6"
+            - generic [ref=f2e78]: "0"
+          - generic [ref=f2e79]:
+            - generic [ref=f2e80]: "7"
+            - generic [ref=f2e81]: "0"
+          - generic [ref=f2e82]:
+            - generic [ref=f2e83]: "8"
+            - generic [ref=f2e84]: "0"
+        - generic [ref=f2e85]: 读写头 · G.seed
+      - generic [ref=f2e86]:
+        - button "单步" [ref=f2e87] [cursor=pointer]
+        - button "运行" [ref=f2e88] [cursor=pointer]
+        - button "暂停" [ref=f2e89] [cursor=pointer]
+        - button "重置" [ref=f2e90] [cursor=pointer]
+        - generic [ref=f2e91]:
+          - text: 纸带视角
+          - combobox "纸带视角" [ref=f2e92]:
+            - option "跟随读写头" [selected]
+            - option "固定在 0"
+            - option "随意拖动"
+        - generic [ref=f2e93]:
+          - generic [ref=f2e94]: 目标速度
+          - slider [ref=f2e95]: "1000"
+          - spinbutton "手动输入目标速度（步/秒）" [ref=f2e96]: "1000"
+          - generic [ref=f2e97]: 1000 步/秒
+          - strong [ref=f2e98]: 实际 0 步/秒
+    - region [ref=f2e99]:
+      - generic [ref=f2e100]:
+        - generic [ref=f2e101]:
+          - heading "吉斯维杰特数列 → 图灵机" [level=2] [ref=f2e102]
+          - paragraph [ref=f2e103]: 输入阈值，转换后的规则会显示在下方。点击上方“运行”开始计算；新项严格超过阈值时写出并停机，等于时继续。
+        - generic [ref=f2e104]:
+          - generic [ref=f2e105]:
+            - text: 整数阈值（0–16）
+            - spinbutton "整数阈值（0–16）" [ref=f2e106]: "0"
+          - button "开始转换" [active] [ref=f2e107] [cursor=pointer]
+      - paragraph [ref=f2e108]: 0 表示未写入；数字表示数列项。计算时 |O、S、A、B 为比较标记，#数字记录本轮最大重复次数，停机时会清除。建议先试 2；阈值越大，运行可能极长。
+      - status [ref=f2e109]: 转换完成，共 1 条规则。已开启 Max 步数；点击上方“运行”开始。
+      - generic [ref=f2e110]:
+        - generic [ref=f2e111]: 已写入的数列（直接读取纸带）
+        - textbox "已写入的数列（直接读取纸带）" [ref=f2e112]
+        - paragraph [ref=f2e113]: 已写入 0 项；点击运行或单步写入首项。
+    - generic [ref=f2e114]:
+      - generic [ref=f2e115]:
+        - generic [ref=f2e116]:
+          - heading "机器定义" [level=2] [ref=f2e117]
+          - generic [ref=f2e118]: 每行一条规则：状态,符号 → 状态,符号,方向
+        - generic [ref=f2e119]:
+          - generic [ref=f2e120]:
+            - text: 初始输入
+            - textbox "初始输入" [ref=f2e121]
+          - generic [ref=f2e122]:
+            - text: 空白符
+            - textbox "空白符" [ref=f2e123]: "0"
+          - generic [ref=f2e124]:
+            - text: 初始状态
+            - textbox "初始状态" [ref=f2e125]: G.seed
+          - generic [ref=f2e126]:
+            - generic [ref=f2e127]: 最大步数
+            - generic [ref=f2e128]:
+              - spinbutton "最大步数" [disabled] [ref=f2e129]: "10000"
+              - generic [ref=f2e130] [cursor=pointer]:
+                - checkbox "Max" [checked] [ref=f2e131]
+                - text: Max
+          - generic [ref=f2e132]:
+            - text: 接受状态
+            - textbox "接受状态" [ref=f2e133]:
+              - /placeholder: 逗号分隔
+          - generic [ref=f2e134]:
+            - text: 拒绝状态
+            - textbox "拒绝状态" [ref=f2e135]:
+              - /placeholder: 逗号分隔
+          - generic [ref=f2e136]:
+            - text: 普通停机状态
+            - textbox "普通停机状态" [ref=f2e137]:
+              - /placeholder: 逗号分隔
+              - text: G.HALT
+        - generic [ref=f2e138]:
+          - text: 转移规则
+          - textbox "转移规则" [ref=f2e139]: "# Gijswijt threshold=0 # 0=未写入；数字=数列项；|O/S/A/B=计算标记；#数字=本轮最大重复次数 # 转换仅展开规则；数列项由图灵机运行时比较后缀计算。 G.seed,0 -> G.HALT,1,N"
+        - generic [ref=f2e140]:
+          - strong [ref=f2e141]: 结构化规则表
+          - button "＋ 新增规则" [ref=f2e142] [cursor=pointer]
+        - generic [ref=f2e143]:
+          - generic [ref=f2e144]:
+            - generic [ref=f2e145]: 当前状态
+            - generic [ref=f2e146]: 读取
+            - generic [ref=f2e147]: 下一状态
+            - generic [ref=f2e148]: 写入
+            - generic [ref=f2e149]: 移动
+          - generic [ref=f2e150]:
+            - textbox "规则 1 当前状态" [ref=f2e151]: G.seed
+            - textbox "规则 1 读取符号" [ref=f2e152]: "0"
+            - textbox "规则 1 下一状态" [ref=f2e153]: G.HALT
+            - textbox "规则 1 写入符号" [ref=f2e154]: "1"
+            - combobox "规则 1 移动方向" [ref=f2e155]:
+              - option "L"
+              - option "R"
+              - option "N" [selected]
+            - button "删除规则 1" [ref=f2e156] [cursor=pointer]: ×
+        - generic [ref=f2e157]:
+          - generic [ref=f2e158]: 共 1 条 · 第 1/1 页
+          - button "上一页" [disabled] [ref=f2e159] [cursor=pointer]
+          - button "下一页" [disabled] [ref=f2e160] [cursor=pointer]
+        - generic [ref=f2e161]:
+          - button "应用并重置" [ref=f2e162] [cursor=pointer]
+          - button "清空规则" [ref=f2e163] [cursor=pointer]
+        - generic [ref=f2e164]: 快捷键：空格运行/暂停，Alt + → 单步，Ctrl + R 重置（输入框聚焦时不触发）。
+      - complementary [ref=f2e165]:
+        - generic [ref=f2e166]:
+          - heading "示例程序" [level=2] [ref=f2e168]
+          - combobox [ref=f2e169]:
+            - option "一进制加一" [selected]
+            - option "二进制加一"
+            - option "二进制回文判断"
+            - option "2 状态忙碌海狸"
+          - paragraph [ref=f2e170]: 越过所有 1，在末尾写入一个 1。
+          - button "加载此示例" [ref=f2e171] [cursor=pointer]
+        - generic [ref=f2e172]:
+          - heading "执行记录" [level=2] [ref=f2e174]
+          - generic [ref=f2e175]: 单步或运行后，这里会显示执行过程
+    - generic [ref=f2e177]:
+      - generic [ref=f2e178]:
+        - generic [ref=f2e179]:
+          - heading "全路线总览" [level=2] [ref=f2e180]
+          - paragraph [ref=f2e181]: 后台计算整段运行轨迹并压缩成一张时空图；生成时仍可继续使用上面的模拟器和瓷砖游戏。
+        - generic [ref=f2e182]:
+          - generic [ref=f2e183]:
+            - text: 运行步数
+            - spinbutton "运行步数" [ref=f2e184]: "10000"
+          - button "后台生成" [ref=f2e185] [cursor=pointer]
+          - button "取消" [disabled] [ref=f2e186] [cursor=pointer]
+      - generic [ref=f2e187]:
+        - progressbar
+        - generic [ref=f2e188]: 等待生成
+      - generic [ref=f2e189]: 读写头 非空纸带 空白；纵向为时间，横向为纸带位置
+      - generic [ref=f2e193]: 输入步数后点击“后台生成”
+    - generic [ref=f2e196]:
+      - generic [ref=f2e197]:
+        - generic [ref=f2e198]:
+          - heading "计算瓷砖拼图" [level=2] [ref=f2e199]
+          - paragraph [ref=f2e200]: 每一行是一个时刻；相邻边必须同色。点击或拖动瓷砖，把它放入上方空格。
+        - generic [ref=f2e201]:
+          - generic [ref=f2e202]:
+            - text: 生成步数
+            - spinbutton "生成步数" [ref=f2e203]: "10"
+          - button "生成瓷砖" [ref=f2e204] [cursor=pointer]
+          - button "检查拼法" [ref=f2e205] [cursor=pointer]
+          - button "查看正确拼法" [ref=f2e206] [cursor=pointer]
+      - generic [ref=f2e207]: 未发现循环；计算结果：已停机。 棋盘 2 × 3，共 6 块。
+      - generic [ref=f2e209]:
+        - button "第 1 行第 1 列" [ref=f2e210] [cursor=pointer]:
+          - generic [ref=f2e211]: "-1"
+        - button "第 1 行第 2 列" [ref=f2e212] [cursor=pointer]:
+          - generic [ref=f2e213]: "0"
+        - button "第 1 行第 3 列" [ref=f2e214] [cursor=pointer]:
+          - generic [ref=f2e215]: "1"
+        - button "第 2 行第 1 列" [ref=f2e216] [cursor=pointer]:
+          - generic [ref=f2e217]: "-1"
+        - button "第 2 行第 2 列" [ref=f2e218] [cursor=pointer]:
+          - generic [ref=f2e219]: "0"
+        - button "第 2 行第 3 列" [ref=f2e220] [cursor=pointer]:
+          - generic [ref=f2e221]: "1"
+      - heading "待拼瓷砖 点击一块，再点击空格；也支持拖放" [level=3] [ref=f2e222]
+      - generic [ref=f2e223]:
+        - button "0" [ref=f2e224] [cursor=pointer]
+        - button "0" [ref=f2e231] [cursor=pointer]
+        - button "0" [ref=f2e238] [cursor=pointer]
+        - button "0" [ref=f2e245] [cursor=pointer]
+        - button "G.HALT 1" [ref=f2e252] [cursor=pointer]:
+          - generic "G.HALT · 1" [ref=f2e253]:
+            - generic [ref=f2e258]:
+              - generic [ref=f2e259]: G.HALT
+              - text: "1"
+        - button "G.seed 0" [ref=f2e260] [cursor=pointer]:
+          - generic "G.seed · 0" [ref=f2e261]:
+            - generic [ref=f2e266]:
+              - generic [ref=f2e267]: G.seed
+              - text: "0"
+      - generic [ref=f2e268]: 瓷砖已打乱。先找带状态名的读写头瓷砖。

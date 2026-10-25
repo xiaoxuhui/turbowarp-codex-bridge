@@ -1,0 +1,1409 @@
+- generic [active]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e7] [cursor=pointer]: Settings
+          - generic [ref=e11] [cursor=pointer]: File
+          - generic [ref=e15] [cursor=pointer]: Edit
+          - generic [ref=e19] [cursor=pointer]: Addons
+          - generic [ref=e22] [cursor=pointer]: Advanced
+        - textbox "Project title here" [ref=e27]: Project
+        - button "See Project Page" [ref=e29] [cursor=pointer]
+        - link [ref=e33] [cursor=pointer]:
+          - /url: https://scratch.mit.edu/users/GarboMuffin/#comments
+          - button "TurboWarp Feedback" [ref=e34]
+      - generic [ref=e502]: Save to your computer
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - tablist [ref=e40]:
+            - tab "Code" [selected] [ref=e41] [cursor=pointer]
+            - tab "Costumes" [ref=e44] [cursor=pointer]
+            - tab "Sounds" [ref=e47] [cursor=pointer]
+            - searchbox [ref=e53]
+          - tabpanel "Code" [ref=e54]:
+            - generic [ref=e57]:
+              - generic [ref=e505]:
+                - generic [ref=e506]: Motion
+                - generic [ref=e510]: Looks
+                - generic [ref=e514]: Sound
+                - generic [ref=e518]: Events
+                - generic [ref=e522]: Control
+                - generic [ref=e526]: Sensing
+                - generic [ref=e530]: Operators
+                - generic [ref=e534]: Variables
+                - generic [ref=e538]: My Blocks
+                - generic [ref=e542]: Pen
+              - img [ref=e96]:
+                - generic [ref=e97]:
+                  - generic [ref=e546]:
+                    - generic [ref=e547]:
+                      - generic [ref=e549]: 备份编辑
+                      - generic [ref=e552]:
+                        - generic [ref=e554]:
+                          - generic [ref=e556]: "1"
+                          - generic [ref=e560]:
+                            - generic [ref=e562]: "24"
+                            - generic [ref=e566]:
+                              - generic [ref=e568]:
+                                - generic [ref=e570]: i
+                                - generic [ref=e574]: item
+                                - generic [ref=e575]: of
+                                - generic [ref=e576]: T
+                              - generic [ref=e580]:
+                                - generic [ref=e582]: "1"
+                                - generic [ref=e586]: change
+                                - generic [ref=e587]: i
+                                - generic [ref=e591]: by
+                              - generic [ref=e592]: add
+                              - generic [ref=e593]: to
+                              - generic [ref=e594]: U_T
+                            - generic [ref=e598]:
+                              - generic [ref=e600]:
+                                - generic [ref=e602]: "1"
+                                - generic [ref=e606]:
+                                  - generic [ref=e608]: "24"
+                                  - generic [ref=e612]:
+                                    - generic [ref=e614]:
+                                      - generic [ref=e616]: i
+                                      - generic [ref=e620]: item
+                                      - generic [ref=e621]: of
+                                      - generic [ref=e622]: A
+                                    - generic [ref=e626]:
+                                      - generic [ref=e628]: "1"
+                                      - generic [ref=e632]: change
+                                      - generic [ref=e633]: i
+                                      - generic [ref=e637]: by
+                                    - generic [ref=e638]: add
+                                    - generic [ref=e639]: to
+                                    - generic [ref=e640]: U_A
+                                  - generic [ref=e644]:
+                                    - generic [ref=e646]:
+                                      - generic [ref=e648]: "1"
+                                      - generic [ref=e652]:
+                                        - generic [ref=e654]: "24"
+                                        - generic [ref=e658]:
+                                          - generic [ref=e660]:
+                                            - generic [ref=e662]: i
+                                            - generic [ref=e666]: item
+                                            - generic [ref=e667]: of
+                                            - generic [ref=e668]: B
+                                          - generic [ref=e672]:
+                                            - generic [ref=e674]: "1"
+                                            - generic [ref=e678]: change
+                                            - generic [ref=e679]: i
+                                            - generic [ref=e683]: by
+                                          - generic [ref=e684]: add
+                                          - generic [ref=e685]: to
+                                          - generic [ref=e686]: U_B
+                                        - generic [ref=e690]:
+                                          - generic [ref=e692]:
+                                            - generic [ref=e694]: "1"
+                                            - generic [ref=e698]:
+                                              - generic [ref=e700]: "24"
+                                              - generic [ref=e704]:
+                                                - generic [ref=e706]:
+                                                  - generic [ref=e708]: i
+                                                  - generic [ref=e712]: item
+                                                  - generic [ref=e713]: of
+                                                  - generic [ref=e714]: Q
+                                                - generic [ref=e718]:
+                                                  - generic [ref=e720]: "1"
+                                                  - generic [ref=e724]: change
+                                                  - generic [ref=e725]: i
+                                                  - generic [ref=e729]: by
+                                                - generic [ref=e730]: add
+                                                - generic [ref=e731]: to
+                                                - generic [ref=e732]: U_Q
+                                              - generic [ref=e736]:
+                                                - generic [ref=e738]: "1"
+                                                - generic [ref=e742]: set
+                                                - generic [ref=e743]: 可撤销
+                                                - generic [ref=e747]: to
+                                              - generic [ref=e748]: repeat
+                                            - generic [ref=e751]: set
+                                            - generic [ref=e752]: i
+                                            - generic [ref=e756]: to
+                                          - generic [ref=e757]: delete all of
+                                          - generic [ref=e758]: U_Q
+                                        - generic [ref=e762]: repeat
+                                      - generic [ref=e765]: set
+                                      - generic [ref=e766]: i
+                                      - generic [ref=e770]: to
+                                    - generic [ref=e771]: delete all of
+                                    - generic [ref=e772]: U_B
+                                  - generic [ref=e776]: repeat
+                                - generic [ref=e779]: set
+                                - generic [ref=e780]: i
+                                - generic [ref=e784]: to
+                              - generic [ref=e785]: delete all of
+                              - generic [ref=e786]: U_A
+                            - generic [ref=e790]: repeat
+                          - generic [ref=e793]: set
+                          - generic [ref=e794]: i
+                          - generic [ref=e798]: to
+                        - generic [ref=e799]: delete all of
+                        - generic [ref=e800]: U_T
+                      - generic [ref=e804]: define
+                    - generic [ref=e805]:
+                      - generic [ref=e807]: 清空电路
+                      - generic [ref=e810]:
+                        - generic [ref=e812]:
+                          - generic [ref=e814]: "24"
+                          - generic [ref=e818]:
+                            - generic [ref=e820]: "0"
+                            - generic [ref=e824]: add
+                            - generic [ref=e825]: to
+                            - generic [ref=e826]: T
+                          - generic [ref=e830]:
+                            - generic [ref=e832]:
+                              - generic [ref=e834]: "24"
+                              - generic [ref=e838]:
+                                - generic [ref=e840]: "0"
+                                - generic [ref=e844]: add
+                                - generic [ref=e845]: to
+                                - generic [ref=e846]: A
+                              - generic [ref=e850]:
+                                - generic [ref=e852]:
+                                  - generic [ref=e854]: "24"
+                                  - generic [ref=e858]:
+                                    - generic [ref=e860]: "0"
+                                    - generic [ref=e864]: add
+                                    - generic [ref=e865]: to
+                                    - generic [ref=e866]: B
+                                  - generic [ref=e870]:
+                                    - generic [ref=e872]:
+                                      - generic [ref=e874]: "24"
+                                      - generic [ref=e878]:
+                                        - generic [ref=e880]: "0"
+                                        - generic [ref=e884]: add
+                                        - generic [ref=e885]: to
+                                        - generic [ref=e886]: Q
+                                      - generic [ref=e890]: repeat
+                                    - generic [ref=e893]: delete all of
+                                    - generic [ref=e894]: Q
+                                  - generic [ref=e898]: repeat
+                                - generic [ref=e901]: delete all of
+                                - generic [ref=e902]: B
+                              - generic [ref=e906]: repeat
+                            - generic [ref=e909]: delete all of
+                            - generic [ref=e910]: A
+                          - generic [ref=e914]: repeat
+                        - generic [ref=e917]: delete all of
+                        - generic [ref=e918]: T
+                      - generic [ref=e922]: define
+                    - generic [ref=e923]:
+                      - generic [ref=e925]: 示例电路
+                      - generic [ref=e928]:
+                        - generic [ref=e930]: 清空电路
+                        - generic [ref=e931]:
+                          - generic [ref=e933]: "7"
+                          - generic [ref=e937]: "1"
+                          - generic [ref=e941]:
+                            - generic [ref=e943]: "19"
+                            - generic [ref=e947]: "1"
+                            - generic [ref=e951]:
+                              - generic [ref=e953]: "10"
+                              - generic [ref=e957]: "2"
+                              - generic [ref=e961]:
+                                - generic [ref=e963]: "12"
+                                - generic [ref=e967]: "6"
+                                - generic [ref=e971]:
+                                  - generic [ref=e973]: "10"
+                                  - generic [ref=e977]: "7"
+                                  - generic [ref=e981]:
+                                    - generic [ref=e983]: "10"
+                                    - generic [ref=e987]: "19"
+                                    - generic [ref=e991]:
+                                      - generic [ref=e993]: "12"
+                                      - generic [ref=e997]: "10"
+                                      - generic [ref=e1001]: replace item
+                                      - generic [ref=e1002]: of
+                                      - generic [ref=e1003]: A
+                                      - generic [ref=e1007]: with
+                                    - generic [ref=e1008]: replace item
+                                    - generic [ref=e1009]: of
+                                    - generic [ref=e1010]: B
+                                    - generic [ref=e1014]: with
+                                  - generic [ref=e1015]: replace item
+                                  - generic [ref=e1016]: of
+                                  - generic [ref=e1017]: A
+                                  - generic [ref=e1021]: with
+                                - generic [ref=e1022]: replace item
+                                - generic [ref=e1023]: of
+                                - generic [ref=e1024]: T
+                                - generic [ref=e1028]: with
+                              - generic [ref=e1029]: replace item
+                              - generic [ref=e1030]: of
+                              - generic [ref=e1031]: T
+                              - generic [ref=e1035]: with
+                            - generic [ref=e1036]: replace item
+                            - generic [ref=e1037]: of
+                            - generic [ref=e1038]: T
+                            - generic [ref=e1042]: with
+                          - generic [ref=e1043]: replace item
+                          - generic [ref=e1044]: of
+                          - generic [ref=e1045]: T
+                          - generic [ref=e1049]: with
+                      - generic [ref=e1050]: define
+                    - generic [ref=e1051]:
+                      - generic [ref=e1053]: 处理格子
+                      - generic [ref=e1056]:
+                        - generic [ref=e1058]: "-10"
+                        - generic [ref=e1062]:
+                          - generic [ref=e1064]:
+                            - generic [ref=e1066]: 模式
+                            - generic [ref=e1070]: 搭建
+                            - generic [ref=e1074]: =
+                          - generic [ref=e1075]:
+                            - generic [ref=e1077]:
+                              - generic [ref=e1079]:
+                                - generic [ref=e1081]: 点击
+                                - generic [ref=e1085]: item
+                                - generic [ref=e1086]: of
+                                - generic [ref=e1087]: T
+                              - generic [ref=e1091]: "0"
+                              - generic [ref=e1095]: =
+                            - generic [ref=e1096]:
+                              - generic [ref=e1098]: 备份编辑
+                              - generic [ref=e1099]:
+                                - generic [ref=e1101]: 点击
+                                - generic [ref=e1105]: 工具
+                                - generic [ref=e1109]:
+                                  - generic [ref=e1111]: 已放置；选连线工具连接电路
+                                  - generic [ref=e1115]: set
+                                  - generic [ref=e1116]: 状态
+                                  - generic [ref=e1120]: to
+                                - generic [ref=e1121]: replace item
+                                - generic [ref=e1122]: of
+                                - generic [ref=e1123]: T
+                                - generic [ref=e1127]: with
+                            - generic [ref=e1128]:
+                              - generic [ref=e1130]:
+                                - generic [ref=e1132]:
+                                  - generic [ref=e1134]: 点击
+                                  - generic [ref=e1138]: item
+                                  - generic [ref=e1139]: of
+                                  - generic [ref=e1140]: T
+                                - generic [ref=e1144]: "1"
+                                - generic [ref=e1148]: =
+                              - generic [ref=e1149]:
+                                - generic [ref=e1151]: 备份编辑
+                                - generic [ref=e1152]:
+                                  - generic [ref=e1154]: 点击
+                                  - generic [ref=e1158]:
+                                    - generic [ref=e1160]: "1"
+                                    - generic [ref=e1164]:
+                                      - generic [ref=e1166]: 点击
+                                      - generic [ref=e1170]: item
+                                      - generic [ref=e1171]: of
+                                      - generic [ref=e1172]: Q
+                                    - generic [ref=e1176]: "-"
+                                  - generic [ref=e1177]:
+                                    - generic [ref=e1179]: 输入已切换；亮线为 1，暗线为 0
+                                    - generic [ref=e1183]: set
+                                    - generic [ref=e1184]: 状态
+                                    - generic [ref=e1188]: to
+                                  - generic [ref=e1189]: replace item
+                                  - generic [ref=e1190]: of
+                                  - generic [ref=e1191]: Q
+                                  - generic [ref=e1195]: with
+                              - generic [ref=e1196]:
+                                - generic [ref=e1198]: 格子已占用；可用移动或删除工具
+                                - generic [ref=e1202]: set
+                                - generic [ref=e1203]: 状态
+                                - generic [ref=e1207]: to
+                              - generic [ref=e1208]: if
+                              - generic [ref=e1209]: then
+                              - generic [ref=e1210]: else
+                            - generic [ref=e1211]: if
+                            - generic [ref=e1212]: then
+                            - generic [ref=e1213]: else
+                          - generic [ref=e1214]:
+                            - generic [ref=e1216]:
+                              - generic [ref=e1218]: 模式
+                              - generic [ref=e1222]: 连线
+                              - generic [ref=e1226]: =
+                            - generic [ref=e1227]:
+                              - generic [ref=e1229]:
+                                - generic [ref=e1231]: 来源
+                                - generic [ref=e1235]: "0"
+                                - generic [ref=e1239]: =
+                              - generic [ref=e1240]:
+                                - generic [ref=e1242]:
+                                  - generic [ref=e1244]:
+                                    - generic [ref=e1246]:
+                                      - generic [ref=e1248]: 点击
+                                      - generic [ref=e1252]: item
+                                      - generic [ref=e1253]: of
+                                      - generic [ref=e1254]: T
+                                    - generic [ref=e1258]: "0"
+                                    - generic [ref=e1262]: ">"
+                                  - generic [ref=e1263]:
+                                    - generic [ref=e1265]:
+                                      - generic [ref=e1267]:
+                                        - generic [ref=e1269]: 点击
+                                        - generic [ref=e1273]: item
+                                        - generic [ref=e1274]: of
+                                        - generic [ref=e1275]: T
+                                      - generic [ref=e1279]: "6"
+                                      - generic [ref=e1283]: =
+                                    - generic [ref=e1284]: not
+                                  - generic [ref=e1285]: and
+                                - generic [ref=e1286]:
+                                  - generic [ref=e1288]: 点击
+                                  - generic [ref=e1292]:
+                                    - generic [ref=e1294]: 已选来源；点目标上半格 A / 下半格 B
+                                    - generic [ref=e1298]: set
+                                    - generic [ref=e1299]: 状态
+                                    - generic [ref=e1303]: to
+                                  - generic [ref=e1304]: set
+                                  - generic [ref=e1305]: 来源
+                                  - generic [ref=e1309]: to
+                                - generic [ref=e1310]:
+                                  - generic [ref=e1312]: 请选择输入或逻辑门作为来源
+                                  - generic [ref=e1316]: set
+                                  - generic [ref=e1317]: 状态
+                                  - generic [ref=e1321]: to
+                                - generic [ref=e1322]: if
+                                - generic [ref=e1323]: then
+                                - generic [ref=e1324]: else
+                              - generic [ref=e1325]:
+                                - generic [ref=e1327]:
+                                  - generic [ref=e1329]: 来源
+                                  - generic [ref=e1333]: 点击
+                                  - generic [ref=e1337]: =
+                                - generic [ref=e1338]:
+                                  - generic [ref=e1340]: "0"
+                                  - generic [ref=e1344]:
+                                    - generic [ref=e1346]: 已取消连线；重新选择来源
+                                    - generic [ref=e1350]: set
+                                    - generic [ref=e1351]: 状态
+                                    - generic [ref=e1355]: to
+                                  - generic [ref=e1356]: set
+                                  - generic [ref=e1357]: 来源
+                                  - generic [ref=e1361]: to
+                                - generic [ref=e1362]:
+                                  - generic [ref=e1364]:
+                                    - generic [ref=e1366]:
+                                      - generic [ref=e1368]:
+                                        - generic [ref=e1370]: 点击
+                                        - generic [ref=e1374]: item
+                                        - generic [ref=e1375]: of
+                                        - generic [ref=e1376]: T
+                                      - generic [ref=e1380]: "0"
+                                      - generic [ref=e1384]: =
+                                    - generic [ref=e1385]:
+                                      - generic [ref=e1387]:
+                                        - generic [ref=e1389]: 点击
+                                        - generic [ref=e1393]: item
+                                        - generic [ref=e1394]: of
+                                        - generic [ref=e1395]: T
+                                      - generic [ref=e1399]: "1"
+                                      - generic [ref=e1403]: =
+                                    - generic [ref=e1404]: or
+                                  - generic [ref=e1405]:
+                                    - generic [ref=e1407]: 目标必须是逻辑门或输出灯
+                                    - generic [ref=e1411]: set
+                                    - generic [ref=e1412]: 状态
+                                    - generic [ref=e1416]: to
+                                  - generic [ref=e1417]:
+                                    - generic [ref=e1419]: 检查反馈
+                                    - generic [ref=e1420]:
+                                      - generic [ref=e1422]:
+                                        - generic [ref=e1424]: 拒绝
+                                        - generic [ref=e1428]: "1"
+                                        - generic [ref=e1432]: =
+                                      - generic [ref=e1433]:
+                                        - generic [ref=e1435]: 拒绝组合反馈；请连接到下游元件
+                                        - generic [ref=e1439]: set
+                                        - generic [ref=e1440]: 状态
+                                        - generic [ref=e1444]: to
+                                      - generic [ref=e1445]:
+                                        - generic [ref=e1447]: A
+                                        - generic [ref=e1451]:
+                                          - generic [ref=e1453]:
+                                            - generic [ref=e1455]:
+                                              - generic [ref=e1457]:
+                                                - generic [ref=e1459]:
+                                                  - generic [ref=e1461]: 点击
+                                                  - generic [ref=e1465]: item
+                                                  - generic [ref=e1466]: of
+                                                  - generic [ref=e1467]: T
+                                                - generic [ref=e1471]: "2"
+                                                - generic [ref=e1475]: =
+                                              - generic [ref=e1476]:
+                                                - generic [ref=e1478]:
+                                                  - generic [ref=e1480]:
+                                                    - generic [ref=e1482]: 点击
+                                                    - generic [ref=e1486]: item
+                                                    - generic [ref=e1487]: of
+                                                    - generic [ref=e1488]: T
+                                                  - generic [ref=e1492]: "4"
+                                                  - generic [ref=e1496]: =
+                                                - generic [ref=e1497]:
+                                                  - generic [ref=e1499]:
+                                                    - generic [ref=e1501]: 点击
+                                                    - generic [ref=e1505]: item
+                                                    - generic [ref=e1506]: of
+                                                    - generic [ref=e1507]: T
+                                                  - generic [ref=e1511]: "5"
+                                                  - generic [ref=e1515]: =
+                                                - generic [ref=e1516]: or
+                                              - generic [ref=e1517]: or
+                                            - generic [ref=e1518]:
+                                              - generic [ref=e1520]:
+                                                - generic [ref=e1522]: "90"
+                                                - generic [ref=e1526]:
+                                                  - generic [ref=e1528]:
+                                                    - generic [ref=e1530]:
+                                                      - generic [ref=e1532]:
+                                                        - generic [ref=e1534]: 点击
+                                                        - generic [ref=e1538]: "1"
+                                                        - generic [ref=e1542]: "-"
+                                                      - generic [ref=e1543]: "6"
+                                                      - generic [ref=e1547]: /
+                                                    - generic [ref=e1548]: floor
+                                                    - generic [ref=e1552]: of
+                                                  - generic [ref=e1553]: "60"
+                                                  - generic [ref=e1557]: "*"
+                                                - generic [ref=e1558]: "-"
+                                              - generic [ref=e1559]: 点击Y
+                                              - generic [ref=e1563]: ">"
+                                            - generic [ref=e1564]: and
+                                          - generic [ref=e1565]:
+                                            - generic [ref=e1567]: B
+                                            - generic [ref=e1571]: set
+                                            - generic [ref=e1572]: 引脚
+                                            - generic [ref=e1576]: to
+                                          - generic [ref=e1577]:
+                                            - generic [ref=e1579]: 备份编辑
+                                            - generic [ref=e1580]:
+                                              - generic [ref=e1582]:
+                                                - generic [ref=e1584]: 引脚
+                                                - generic [ref=e1588]: A
+                                                - generic [ref=e1592]: =
+                                              - generic [ref=e1593]:
+                                                - generic [ref=e1595]: 点击
+                                                - generic [ref=e1599]: 来源
+                                                - generic [ref=e1603]: replace item
+                                                - generic [ref=e1604]: of
+                                                - generic [ref=e1605]: A
+                                                - generic [ref=e1609]: with
+                                              - generic [ref=e1610]:
+                                                - generic [ref=e1612]: 点击
+                                                - generic [ref=e1616]: 来源
+                                                - generic [ref=e1620]: replace item
+                                                - generic [ref=e1621]: of
+                                                - generic [ref=e1622]: B
+                                                - generic [ref=e1626]: with
+                                              - generic [ref=e1627]:
+                                                - generic [ref=e1629]: "0"
+                                                - generic [ref=e1633]:
+                                                  - generic [ref=e1635]: 接线完成；可继续选择下一个来源
+                                                  - generic [ref=e1639]: set
+                                                  - generic [ref=e1640]: 状态
+                                                  - generic [ref=e1644]: to
+                                                - generic [ref=e1645]: set
+                                                - generic [ref=e1646]: 来源
+                                                - generic [ref=e1650]: to
+                                              - generic [ref=e1651]: if
+                                              - generic [ref=e1652]: then
+                                              - generic [ref=e1653]: else
+                                          - generic [ref=e1654]: if
+                                          - generic [ref=e1655]: then
+                                        - generic [ref=e1656]: set
+                                        - generic [ref=e1657]: 引脚
+                                        - generic [ref=e1661]: to
+                                      - generic [ref=e1662]: if
+                                      - generic [ref=e1663]: then
+                                      - generic [ref=e1664]: else
+                                  - generic [ref=e1665]: if
+                                  - generic [ref=e1666]: then
+                                  - generic [ref=e1667]: else
+                                - generic [ref=e1668]: if
+                                - generic [ref=e1669]: then
+                                - generic [ref=e1670]: else
+                              - generic [ref=e1671]: if
+                              - generic [ref=e1672]: then
+                              - generic [ref=e1673]: else
+                            - generic [ref=e1674]:
+                              - generic [ref=e1676]:
+                                - generic [ref=e1678]: 模式
+                                - generic [ref=e1682]: 移动
+                                - generic [ref=e1686]: =
+                              - generic [ref=e1687]:
+                                - generic [ref=e1689]:
+                                  - generic [ref=e1691]: 来源
+                                  - generic [ref=e1695]: "0"
+                                  - generic [ref=e1699]: =
+                                - generic [ref=e1700]:
+                                  - generic [ref=e1702]:
+                                    - generic [ref=e1704]:
+                                      - generic [ref=e1706]: 点击
+                                      - generic [ref=e1710]: item
+                                      - generic [ref=e1711]: of
+                                      - generic [ref=e1712]: T
+                                    - generic [ref=e1716]: "0"
+                                    - generic [ref=e1720]: ">"
+                                  - generic [ref=e1721]:
+                                    - generic [ref=e1723]: 点击
+                                    - generic [ref=e1727]:
+                                      - generic [ref=e1729]: 已选元件；点空格移动，接线一起迁移
+                                      - generic [ref=e1733]: set
+                                      - generic [ref=e1734]: 状态
+                                      - generic [ref=e1738]: to
+                                    - generic [ref=e1739]: set
+                                    - generic [ref=e1740]: 来源
+                                    - generic [ref=e1744]: to
+                                  - generic [ref=e1745]:
+                                    - generic [ref=e1747]: 先选择要移动的元件
+                                    - generic [ref=e1751]: set
+                                    - generic [ref=e1752]: 状态
+                                    - generic [ref=e1756]: to
+                                  - generic [ref=e1757]: if
+                                  - generic [ref=e1758]: then
+                                  - generic [ref=e1759]: else
+                                - generic [ref=e1760]:
+                                  - generic [ref=e1762]:
+                                    - generic [ref=e1764]: 来源
+                                    - generic [ref=e1768]: 点击
+                                    - generic [ref=e1772]: =
+                                  - generic [ref=e1773]:
+                                    - generic [ref=e1775]: "0"
+                                    - generic [ref=e1779]:
+                                      - generic [ref=e1781]: 已取消移动
+                                      - generic [ref=e1785]: set
+                                      - generic [ref=e1786]: 状态
+                                      - generic [ref=e1790]: to
+                                    - generic [ref=e1791]: set
+                                    - generic [ref=e1792]: 来源
+                                    - generic [ref=e1796]: to
+                                  - generic [ref=e1797]:
+                                    - generic [ref=e1799]:
+                                      - generic [ref=e1801]:
+                                        - generic [ref=e1803]: 点击
+                                        - generic [ref=e1807]: item
+                                        - generic [ref=e1808]: of
+                                        - generic [ref=e1809]: T
+                                      - generic [ref=e1813]: "0"
+                                      - generic [ref=e1817]: =
+                                    - generic [ref=e1818]:
+                                      - generic [ref=e1820]: 备份编辑
+                                      - generic [ref=e1821]:
+                                        - generic [ref=e1823]: 点击
+                                        - generic [ref=e1827]:
+                                          - generic [ref=e1829]: 来源
+                                          - generic [ref=e1833]: item
+                                          - generic [ref=e1834]: of
+                                          - generic [ref=e1835]: T
+                                        - generic [ref=e1839]:
+                                          - generic [ref=e1841]: 来源
+                                          - generic [ref=e1845]: "0"
+                                          - generic [ref=e1849]:
+                                            - generic [ref=e1851]: 点击
+                                            - generic [ref=e1855]:
+                                              - generic [ref=e1857]: 来源
+                                              - generic [ref=e1861]: item
+                                              - generic [ref=e1862]: of
+                                              - generic [ref=e1863]: A
+                                            - generic [ref=e1867]:
+                                              - generic [ref=e1869]: 来源
+                                              - generic [ref=e1873]: "0"
+                                              - generic [ref=e1877]:
+                                                - generic [ref=e1879]: 点击
+                                                - generic [ref=e1883]:
+                                                  - generic [ref=e1885]: 来源
+                                                  - generic [ref=e1889]: item
+                                                  - generic [ref=e1890]: of
+                                                  - generic [ref=e1891]: B
+                                                - generic [ref=e1895]:
+                                                  - generic [ref=e1897]: 来源
+                                                  - generic [ref=e1901]: "0"
+                                                  - generic [ref=e1905]:
+                                                    - generic [ref=e1907]: 点击
+                                                    - generic [ref=e1911]:
+                                                      - generic [ref=e1913]: 来源
+                                                      - generic [ref=e1917]: item
+                                                      - generic [ref=e1918]: of
+                                                      - generic [ref=e1919]: Q
+                                                    - generic [ref=e1923]:
+                                                      - generic [ref=e1925]: 来源
+                                                      - generic [ref=e1929]: "0"
+                                                      - generic [ref=e1933]:
+                                                        - generic [ref=e1935]: "1"
+                                                        - generic [ref=e1939]:
+                                                          - generic [ref=e1941]: "24"
+                                                          - generic [ref=e1945]:
+                                                            - generic [ref=e1947]:
+                                                              - generic [ref=e1949]:
+                                                                - generic [ref=e1951]: i
+                                                                - generic [ref=e1955]: item
+                                                                - generic [ref=e1956]: of
+                                                                - generic [ref=e1957]: A
+                                                              - generic [ref=e1961]: 来源
+                                                              - generic [ref=e1965]: =
+                                                            - generic [ref=e1966]:
+                                                              - generic [ref=e1968]: i
+                                                              - generic [ref=e1972]: 点击
+                                                              - generic [ref=e1976]: replace item
+                                                              - generic [ref=e1977]: of
+                                                              - generic [ref=e1978]: A
+                                                              - generic [ref=e1982]: with
+                                                            - generic [ref=e1983]:
+                                                              - generic [ref=e1985]:
+                                                                - generic [ref=e1987]:
+                                                                  - generic [ref=e1989]: i
+                                                                  - generic [ref=e1993]: item
+                                                                  - generic [ref=e1994]: of
+                                                                  - generic [ref=e1995]: B
+                                                                - generic [ref=e1999]: 来源
+                                                                - generic [ref=e2003]: =
+                                                              - generic [ref=e2004]:
+                                                                - generic [ref=e2006]: i
+                                                                - generic [ref=e2010]: 点击
+                                                                - generic [ref=e2014]: replace item
+                                                                - generic [ref=e2015]: of
+                                                                - generic [ref=e2016]: B
+                                                                - generic [ref=e2020]: with
+                                                              - generic [ref=e2021]:
+                                                                - generic [ref=e2023]: "1"
+                                                                - generic [ref=e2027]: change
+                                                                - generic [ref=e2028]: i
+                                                                - generic [ref=e2032]: by
+                                                              - generic [ref=e2033]: if
+                                                              - generic [ref=e2034]: then
+                                                            - generic [ref=e2035]: if
+                                                            - generic [ref=e2036]: then
+                                                          - generic [ref=e2037]:
+                                                            - generic [ref=e2039]: "0"
+                                                            - generic [ref=e2043]:
+                                                              - generic [ref=e2045]: 已移动，所有接线保持
+                                                              - generic [ref=e2049]: set
+                                                              - generic [ref=e2050]: 状态
+                                                              - generic [ref=e2054]: to
+                                                            - generic [ref=e2055]: set
+                                                            - generic [ref=e2056]: 来源
+                                                            - generic [ref=e2060]: to
+                                                          - generic [ref=e2061]: repeat
+                                                        - generic [ref=e2064]: set
+                                                        - generic [ref=e2065]: i
+                                                        - generic [ref=e2069]: to
+                                                      - generic [ref=e2070]: replace item
+                                                      - generic [ref=e2071]: of
+                                                      - generic [ref=e2072]: Q
+                                                      - generic [ref=e2076]: with
+                                                    - generic [ref=e2077]: replace item
+                                                    - generic [ref=e2078]: of
+                                                    - generic [ref=e2079]: Q
+                                                    - generic [ref=e2083]: with
+                                                  - generic [ref=e2084]: replace item
+                                                  - generic [ref=e2085]: of
+                                                  - generic [ref=e2086]: B
+                                                  - generic [ref=e2090]: with
+                                                - generic [ref=e2091]: replace item
+                                                - generic [ref=e2092]: of
+                                                - generic [ref=e2093]: B
+                                                - generic [ref=e2097]: with
+                                              - generic [ref=e2098]: replace item
+                                              - generic [ref=e2099]: of
+                                              - generic [ref=e2100]: A
+                                              - generic [ref=e2104]: with
+                                            - generic [ref=e2105]: replace item
+                                            - generic [ref=e2106]: of
+                                            - generic [ref=e2107]: A
+                                            - generic [ref=e2111]: with
+                                          - generic [ref=e2112]: replace item
+                                          - generic [ref=e2113]: of
+                                          - generic [ref=e2114]: T
+                                          - generic [ref=e2118]: with
+                                        - generic [ref=e2119]: replace item
+                                        - generic [ref=e2120]: of
+                                        - generic [ref=e2121]: T
+                                        - generic [ref=e2125]: with
+                                    - generic [ref=e2126]:
+                                      - generic [ref=e2128]: 目标被占用；请选择空格
+                                      - generic [ref=e2132]: set
+                                      - generic [ref=e2133]: 状态
+                                      - generic [ref=e2137]: to
+                                    - generic [ref=e2138]: if
+                                    - generic [ref=e2139]: then
+                                    - generic [ref=e2140]: else
+                                  - generic [ref=e2141]: if
+                                  - generic [ref=e2142]: then
+                                  - generic [ref=e2143]: else
+                                - generic [ref=e2144]: if
+                                - generic [ref=e2145]: then
+                                - generic [ref=e2146]: else
+                              - generic [ref=e2147]:
+                                - generic [ref=e2149]:
+                                  - generic [ref=e2151]: 模式
+                                  - generic [ref=e2155]: 删除
+                                  - generic [ref=e2159]: =
+                                - generic [ref=e2160]:
+                                  - generic [ref=e2162]:
+                                    - generic [ref=e2164]:
+                                      - generic [ref=e2166]: 点击
+                                      - generic [ref=e2170]: item
+                                      - generic [ref=e2171]: of
+                                      - generic [ref=e2172]: T
+                                    - generic [ref=e2176]: "0"
+                                    - generic [ref=e2180]: ">"
+                                  - generic [ref=e2181]:
+                                    - generic [ref=e2183]: 备份编辑
+                                    - generic [ref=e2184]:
+                                      - generic [ref=e2186]: 点击
+                                      - generic [ref=e2190]: "0"
+                                      - generic [ref=e2194]:
+                                        - generic [ref=e2196]: 点击
+                                        - generic [ref=e2200]: "0"
+                                        - generic [ref=e2204]:
+                                          - generic [ref=e2206]: 点击
+                                          - generic [ref=e2210]: "0"
+                                          - generic [ref=e2214]:
+                                            - generic [ref=e2216]: 点击
+                                            - generic [ref=e2220]: "0"
+                                            - generic [ref=e2224]:
+                                              - generic [ref=e2226]: "1"
+                                              - generic [ref=e2230]:
+                                                - generic [ref=e2232]: "24"
+                                                - generic [ref=e2236]:
+                                                  - generic [ref=e2238]:
+                                                    - generic [ref=e2240]:
+                                                      - generic [ref=e2242]: i
+                                                      - generic [ref=e2246]: item
+                                                      - generic [ref=e2247]: of
+                                                      - generic [ref=e2248]: A
+                                                    - generic [ref=e2252]: 点击
+                                                    - generic [ref=e2256]: =
+                                                  - generic [ref=e2257]:
+                                                    - generic [ref=e2259]: i
+                                                    - generic [ref=e2263]: "0"
+                                                    - generic [ref=e2267]: replace item
+                                                    - generic [ref=e2268]: of
+                                                    - generic [ref=e2269]: A
+                                                    - generic [ref=e2273]: with
+                                                  - generic [ref=e2274]:
+                                                    - generic [ref=e2276]:
+                                                      - generic [ref=e2278]:
+                                                        - generic [ref=e2280]: i
+                                                        - generic [ref=e2284]: item
+                                                        - generic [ref=e2285]: of
+                                                        - generic [ref=e2286]: B
+                                                      - generic [ref=e2290]: 点击
+                                                      - generic [ref=e2294]: =
+                                                    - generic [ref=e2295]:
+                                                      - generic [ref=e2297]: i
+                                                      - generic [ref=e2301]: "0"
+                                                      - generic [ref=e2305]: replace item
+                                                      - generic [ref=e2306]: of
+                                                      - generic [ref=e2307]: B
+                                                      - generic [ref=e2311]: with
+                                                    - generic [ref=e2312]:
+                                                      - generic [ref=e2314]: "1"
+                                                      - generic [ref=e2318]: change
+                                                      - generic [ref=e2319]: i
+                                                      - generic [ref=e2323]: by
+                                                    - generic [ref=e2324]: if
+                                                    - generic [ref=e2325]: then
+                                                  - generic [ref=e2326]: if
+                                                  - generic [ref=e2327]: then
+                                                - generic [ref=e2328]:
+                                                  - generic [ref=e2330]: 元件和相关连线已删除；可撤销
+                                                  - generic [ref=e2334]: set
+                                                  - generic [ref=e2335]: 状态
+                                                  - generic [ref=e2339]: to
+                                                - generic [ref=e2340]: repeat
+                                              - generic [ref=e2343]: set
+                                              - generic [ref=e2344]: i
+                                              - generic [ref=e2348]: to
+                                            - generic [ref=e2349]: replace item
+                                            - generic [ref=e2350]: of
+                                            - generic [ref=e2351]: Q
+                                            - generic [ref=e2355]: with
+                                          - generic [ref=e2356]: replace item
+                                          - generic [ref=e2357]: of
+                                          - generic [ref=e2358]: B
+                                          - generic [ref=e2362]: with
+                                        - generic [ref=e2363]: replace item
+                                        - generic [ref=e2364]: of
+                                        - generic [ref=e2365]: A
+                                        - generic [ref=e2369]: with
+                                      - generic [ref=e2370]: replace item
+                                      - generic [ref=e2371]: of
+                                      - generic [ref=e2372]: T
+                                      - generic [ref=e2376]: with
+                                  - generic [ref=e2377]:
+                                    - generic [ref=e2379]: 此处为空，无需删除
+                                    - generic [ref=e2383]: set
+                                    - generic [ref=e2384]: 状态
+                                    - generic [ref=e2388]: to
+                                  - generic [ref=e2389]: if
+                                  - generic [ref=e2390]: then
+                                  - generic [ref=e2391]: else
+                                - generic [ref=e2392]: if
+                                - generic [ref=e2393]: then
+                              - generic [ref=e2394]: if
+                              - generic [ref=e2395]: then
+                            - generic [ref=e2396]: if
+                            - generic [ref=e2397]: then
+                          - generic [ref=e2398]: if
+                          - generic [ref=e2399]: then
+                        - generic [ref=e2400]: set
+                        - generic [ref=e2401]: 清空时刻
+                        - generic [ref=e2405]: to
+                      - generic [ref=e2406]: define
+                    - generic [ref=e2407]:
+                      - generic [ref=e2409]: 处理工具
+                      - generic [ref=e2412]:
+                        - generic [ref=e2414]: "0"
+                        - generic [ref=e2418]:
+                          - generic [ref=e2420]:
+                            - generic [ref=e2422]: "7"
+                            - generic [ref=e2426]: 动作
+                            - generic [ref=e2430]: ">"
+                          - generic [ref=e2431]:
+                            - generic [ref=e2433]: 动作
+                            - generic [ref=e2437]:
+                              - generic [ref=e2439]: 搭建
+                              - generic [ref=e2443]:
+                                - generic [ref=e2445]: 搭建：点空格放置；点输入开关切换 0/1
+                                - generic [ref=e2449]: set
+                                - generic [ref=e2450]: 状态
+                                - generic [ref=e2454]: to
+                              - generic [ref=e2455]: set
+                              - generic [ref=e2456]: 模式
+                              - generic [ref=e2460]: to
+                            - generic [ref=e2461]: set
+                            - generic [ref=e2462]: 工具
+                            - generic [ref=e2466]: to
+                          - generic [ref=e2467]:
+                            - generic [ref=e2469]:
+                              - generic [ref=e2471]: 动作
+                              - generic [ref=e2475]: "7"
+                              - generic [ref=e2479]: =
+                            - generic [ref=e2480]:
+                              - generic [ref=e2482]: 连线
+                              - generic [ref=e2486]:
+                                - generic [ref=e2488]: 连线：先点来源，再点目标（上 A / 下 B）
+                                - generic [ref=e2492]: set
+                                - generic [ref=e2493]: 状态
+                                - generic [ref=e2497]: to
+                              - generic [ref=e2498]: set
+                              - generic [ref=e2499]: 模式
+                              - generic [ref=e2503]: to
+                            - generic [ref=e2504]:
+                              - generic [ref=e2506]:
+                                - generic [ref=e2508]: 动作
+                                - generic [ref=e2512]: "8"
+                                - generic [ref=e2516]: =
+                              - generic [ref=e2517]:
+                                - generic [ref=e2519]: 移动
+                                - generic [ref=e2523]:
+                                  - generic [ref=e2525]: 移动：先点元件，再点空格
+                                  - generic [ref=e2529]: set
+                                  - generic [ref=e2530]: 状态
+                                  - generic [ref=e2534]: to
+                                - generic [ref=e2535]: set
+                                - generic [ref=e2536]: 模式
+                                - generic [ref=e2540]: to
+                              - generic [ref=e2541]:
+                                - generic [ref=e2543]:
+                                  - generic [ref=e2545]: 动作
+                                  - generic [ref=e2549]: "9"
+                                  - generic [ref=e2553]: =
+                                - generic [ref=e2554]:
+                                  - generic [ref=e2556]: 删除
+                                  - generic [ref=e2560]:
+                                    - generic [ref=e2562]: 删除：点元件移除，支持单步撤销
+                                    - generic [ref=e2566]: set
+                                    - generic [ref=e2567]: 状态
+                                    - generic [ref=e2571]: to
+                                  - generic [ref=e2572]: set
+                                  - generic [ref=e2573]: 模式
+                                  - generic [ref=e2577]: to
+                                - generic [ref=e2578]:
+                                  - generic [ref=e2580]:
+                                    - generic [ref=e2582]: 动作
+                                    - generic [ref=e2586]: "10"
+                                    - generic [ref=e2590]: =
+                                  - generic [ref=e2591]:
+                                    - generic [ref=e2593]:
+                                      - generic [ref=e2595]: 可撤销
+                                      - generic [ref=e2599]: "1"
+                                      - generic [ref=e2603]: =
+                                    - generic [ref=e2604]:
+                                      - generic [ref=e2606]:
+                                        - generic [ref=e2608]: "1"
+                                        - generic [ref=e2612]:
+                                          - generic [ref=e2614]: "24"
+                                          - generic [ref=e2618]:
+                                            - generic [ref=e2620]:
+                                              - generic [ref=e2622]: i
+                                              - generic [ref=e2626]: item
+                                              - generic [ref=e2627]: of
+                                              - generic [ref=e2628]: U_T
+                                            - generic [ref=e2632]:
+                                              - generic [ref=e2634]: "1"
+                                              - generic [ref=e2638]: change
+                                              - generic [ref=e2639]: i
+                                              - generic [ref=e2643]: by
+                                            - generic [ref=e2644]: add
+                                            - generic [ref=e2645]: to
+                                            - generic [ref=e2646]: T
+                                          - generic [ref=e2650]:
+                                            - generic [ref=e2652]:
+                                              - generic [ref=e2654]: "1"
+                                              - generic [ref=e2658]:
+                                                - generic [ref=e2660]: "24"
+                                                - generic [ref=e2664]:
+                                                  - generic [ref=e2666]:
+                                                    - generic [ref=e2668]: i
+                                                    - generic [ref=e2672]: item
+                                                    - generic [ref=e2673]: of
+                                                    - generic [ref=e2674]: U_A
+                                                  - generic [ref=e2678]:
+                                                    - generic [ref=e2680]: "1"
+                                                    - generic [ref=e2684]: change
+                                                    - generic [ref=e2685]: i
+                                                    - generic [ref=e2689]: by
+                                                  - generic [ref=e2690]: add
+                                                  - generic [ref=e2691]: to
+                                                  - generic [ref=e2692]: A
+                                                - generic [ref=e2696]:
+                                                  - generic [ref=e2698]:
+                                                    - generic [ref=e2700]: "1"
+                                                    - generic [ref=e2704]:
+                                                      - generic [ref=e2706]: "24"
+                                                      - generic [ref=e2710]:
+                                                        - generic [ref=e2712]:
+                                                          - generic [ref=e2714]: i
+                                                          - generic [ref=e2718]: item
+                                                          - generic [ref=e2719]: of
+                                                          - generic [ref=e2720]: U_B
+                                                        - generic [ref=e2724]:
+                                                          - generic [ref=e2726]: "1"
+                                                          - generic [ref=e2730]: change
+                                                          - generic [ref=e2731]: i
+                                                          - generic [ref=e2735]: by
+                                                        - generic [ref=e2736]: add
+                                                        - generic [ref=e2737]: to
+                                                        - generic [ref=e2738]: B
+                                                      - generic [ref=e2742]:
+                                                        - generic [ref=e2744]:
+                                                          - generic [ref=e2746]: "1"
+                                                          - generic [ref=e2750]:
+                                                            - generic [ref=e2752]: "24"
+                                                            - generic [ref=e2756]:
+                                                              - generic [ref=e2758]:
+                                                                - generic [ref=e2760]: i
+                                                                - generic [ref=e2764]: item
+                                                                - generic [ref=e2765]: of
+                                                                - generic [ref=e2766]: U_Q
+                                                              - generic [ref=e2770]:
+                                                                - generic [ref=e2772]: "1"
+                                                                - generic [ref=e2776]: change
+                                                                - generic [ref=e2777]: i
+                                                                - generic [ref=e2781]: by
+                                                              - generic [ref=e2782]: add
+                                                              - generic [ref=e2783]: to
+                                                              - generic [ref=e2784]: Q
+                                                            - generic [ref=e2788]:
+                                                              - generic [ref=e2790]: "0"
+                                                              - generic [ref=e2794]:
+                                                                - generic [ref=e2796]: 已撤销最近一次编辑
+                                                                - generic [ref=e2800]: set
+                                                                - generic [ref=e2801]: 状态
+                                                                - generic [ref=e2805]: to
+                                                              - generic [ref=e2806]: set
+                                                              - generic [ref=e2807]: 可撤销
+                                                              - generic [ref=e2811]: to
+                                                            - generic [ref=e2812]: repeat
+                                                          - generic [ref=e2815]: set
+                                                          - generic [ref=e2816]: i
+                                                          - generic [ref=e2820]: to
+                                                        - generic [ref=e2821]: delete all of
+                                                        - generic [ref=e2822]: Q
+                                                      - generic [ref=e2826]: repeat
+                                                    - generic [ref=e2829]: set
+                                                    - generic [ref=e2830]: i
+                                                    - generic [ref=e2834]: to
+                                                  - generic [ref=e2835]: delete all of
+                                                  - generic [ref=e2836]: B
+                                                - generic [ref=e2840]: repeat
+                                              - generic [ref=e2843]: set
+                                              - generic [ref=e2844]: i
+                                              - generic [ref=e2848]: to
+                                            - generic [ref=e2849]: delete all of
+                                            - generic [ref=e2850]: A
+                                          - generic [ref=e2854]: repeat
+                                        - generic [ref=e2857]: set
+                                        - generic [ref=e2858]: i
+                                        - generic [ref=e2862]: to
+                                      - generic [ref=e2863]: delete all of
+                                      - generic [ref=e2864]: T
+                                    - generic [ref=e2868]:
+                                      - generic [ref=e2870]: 还没有可以撤销的编辑
+                                      - generic [ref=e2874]: set
+                                      - generic [ref=e2875]: 状态
+                                      - generic [ref=e2879]: to
+                                    - generic [ref=e2880]: if
+                                    - generic [ref=e2881]: then
+                                    - generic [ref=e2882]: else
+                                  - generic [ref=e2883]:
+                                    - generic [ref=e2885]:
+                                      - generic [ref=e2887]: 动作
+                                      - generic [ref=e2891]: "11"
+                                      - generic [ref=e2895]: =
+                                    - generic [ref=e2896]:
+                                      - generic [ref=e2898]: 备份编辑
+                                      - generic [ref=e2899]:
+                                        - generic [ref=e2901]: 示例电路
+                                        - generic [ref=e2902]:
+                                          - generic [ref=e2904]: 搭建
+                                          - generic [ref=e2908]:
+                                            - generic [ref=e2910]: "2"
+                                            - generic [ref=e2914]:
+                                              - generic [ref=e2916]: NAND 示例：只有两个输入都为 1 时，输出为 0
+                                              - generic [ref=e2920]: set
+                                              - generic [ref=e2921]: 状态
+                                              - generic [ref=e2925]: to
+                                            - generic [ref=e2926]: set
+                                            - generic [ref=e2927]: 工具
+                                            - generic [ref=e2931]: to
+                                          - generic [ref=e2932]: set
+                                          - generic [ref=e2933]: 模式
+                                          - generic [ref=e2937]: to
+                                    - generic [ref=e2938]:
+                                      - generic [ref=e2940]:
+                                        - generic [ref=e2942]: 动作
+                                        - generic [ref=e2946]: "12"
+                                        - generic [ref=e2950]: =
+                                      - generic [ref=e2951]:
+                                        - generic [ref=e2953]:
+                                          - generic [ref=e2955]: "3"
+                                          - generic [ref=e2959]:
+                                            - generic [ref=e2961]: timer
+                                            - generic [ref=e2964]: 清空时刻
+                                            - generic [ref=e2968]: "-"
+                                          - generic [ref=e2969]: ">"
+                                        - generic [ref=e2970]:
+                                          - generic [ref=e2972]: 备份编辑
+                                          - generic [ref=e2973]:
+                                            - generic [ref=e2975]: 清空电路
+                                            - generic [ref=e2976]:
+                                              - generic [ref=e2978]: "-10"
+                                              - generic [ref=e2982]:
+                                                - generic [ref=e2984]: 已清空；选左侧元件开始搭建，可撤销
+                                                - generic [ref=e2988]: set
+                                                - generic [ref=e2989]: 状态
+                                                - generic [ref=e2993]: to
+                                              - generic [ref=e2994]: set
+                                              - generic [ref=e2995]: 清空时刻
+                                              - generic [ref=e2999]: to
+                                        - generic [ref=e3000]:
+                                          - generic [ref=e3002]: timer
+                                          - generic [ref=e3005]:
+                                            - generic [ref=e3007]: 3 秒内再点一次清空确认；点其他工具可取消
+                                            - generic [ref=e3011]: set
+                                            - generic [ref=e3012]: 状态
+                                            - generic [ref=e3016]: to
+                                          - generic [ref=e3017]: set
+                                          - generic [ref=e3018]: 清空时刻
+                                          - generic [ref=e3022]: to
+                                        - generic [ref=e3023]: if
+                                        - generic [ref=e3024]: then
+                                        - generic [ref=e3025]: else
+                                      - generic [ref=e3026]:
+                                        - generic [ref=e3028]: "-10"
+                                        - generic [ref=e3032]: set
+                                        - generic [ref=e3033]: 清空时刻
+                                        - generic [ref=e3037]: to
+                                      - generic [ref=e3038]: if
+                                      - generic [ref=e3039]: then
+                                      - generic [ref=e3040]: else
+                                    - generic [ref=e3041]: if
+                                    - generic [ref=e3042]: then
+                                  - generic [ref=e3043]: if
+                                  - generic [ref=e3044]: then
+                                - generic [ref=e3045]: if
+                                - generic [ref=e3046]: then
+                              - generic [ref=e3047]: if
+                              - generic [ref=e3048]: then
+                            - generic [ref=e3049]: if
+                            - generic [ref=e3050]: then
+                          - generic [ref=e3051]: if
+                          - generic [ref=e3052]: then
+                        - generic [ref=e3053]: set
+                        - generic [ref=e3054]: 来源
+                        - generic [ref=e3058]: to
+                      - generic [ref=e3059]: define
+                  - textbox "Say something..." [ref=e3065]: 逻辑小实验室 v0.1.0 T 类型 / A B 来源格号 / Q 输出。24 遍扫描求值 DAG。检查反馈在写入前执行。U_ 列表保存最近一次编辑。全部运算均为原生积木。
+              - img [ref=e112]:
+                - generic [ref=e115]:
+                  - generic [ref=e3080] [cursor=pointer]
+                  - generic [ref=e3102] [cursor=pointer]
+                  - generic [ref=e3108] [cursor=pointer]
+                  - generic [ref=e3113] [cursor=pointer]
+                  - generic [ref=e3118] [cursor=pointer]
+                  - generic [ref=e3123] [cursor=pointer]
+                  - generic [ref=e3128] [cursor=pointer]
+                  - generic [ref=e3134] [cursor=pointer]
+                  - generic [ref=e3139] [cursor=pointer]
+                  - generic [ref=e3144] [cursor=pointer]
+                  - generic [ref=e3149] [cursor=pointer]
+                  - generic [ref=e3166]:
+                    - generic [ref=e3168]: "10"
+                    - generic [ref=e3172]: move
+                    - generic [ref=e3173]: steps
+                  - generic [ref=e3175]:
+                    - generic [ref=e3177]: "15"
+                    - generic [ref=e3181]: turn
+                    - generic [ref=e3184]: degrees
+                  - generic [ref=e3186]:
+                    - generic [ref=e3188]: "15"
+                    - generic [ref=e3192]: turn
+                    - generic [ref=e3195]: degrees
+                  - generic [ref=e3197]:
+                    - generic [ref=e3199]: "154"
+                    - generic [ref=e3203]: "38"
+                    - generic [ref=e3207]: "go to x:"
+                    - generic [ref=e3208]: "y:"
+                  - generic [ref=e3210]:
+                    - generic [ref=e3212]: "1"
+                    - generic [ref=e3216]: "154"
+                    - generic [ref=e3220]: "38"
+                    - generic [ref=e3224]: glide
+                    - generic [ref=e3225]: "secs to x:"
+                    - generic [ref=e3226]: "y:"
+                  - generic [ref=e3228]:
+                    - generic [ref=e3230]: "90"
+                    - generic [ref=e3234]: point in direction
+                  - generic [ref=e3236]:
+                    - generic [ref=e3238]: "10"
+                    - generic [ref=e3242]: change x by
+                  - generic [ref=e3244]:
+                    - generic [ref=e3246]: "154"
+                    - generic [ref=e3250]: set x to
+                  - generic [ref=e3252]:
+                    - generic [ref=e3254]: "10"
+                    - generic [ref=e3258]: change y by
+                  - generic [ref=e3260]:
+                    - generic [ref=e3262]: "38"
+                    - generic [ref=e3266]: set y to
+                  - generic [ref=e3268]: if on edge, bounce
+                  - generic [ref=e3272]:
+                    - generic [ref=e3274]: set rotation style
+                    - generic [ref=e3275]: left-right
+                  - generic [ref=e3302]:
+                    - generic [ref=e3304]: random position
+                    - generic [ref=e3309]: go to
+                  - generic [ref=e3311]:
+                    - generic [ref=e3313]: "1"
+                    - generic [ref=e3317]: random position
+                    - generic [ref=e3322]: glide
+                    - generic [ref=e3323]: secs to
+                  - generic [ref=e3325]:
+                    - generic [ref=e3327]: mouse-pointer
+                    - generic [ref=e3332]: point towards
+                  - generic [ref=e3336] [cursor=pointer]
+                  - generic [ref=e3338]: x position
+                  - generic [ref=e3344] [cursor=pointer]
+                  - generic [ref=e3346]: y position
+                  - generic [ref=e3352] [cursor=pointer]
+                  - generic [ref=e3359] [cursor=pointer]
+                  - generic [ref=e3364] [cursor=pointer]
+                  - generic [ref=e3371] [cursor=pointer]
+                  - generic [ref=e3385] [cursor=pointer]
+                  - generic [ref=e3390] [cursor=pointer]
+                  - generic [ref=e3395] [cursor=pointer]
+                  - generic [ref=e3400] [cursor=pointer]
+                  - generic [ref=e3405] [cursor=pointer]
+                  - generic [ref=e3410] [cursor=pointer]
+                  - generic [ref=e3415] [cursor=pointer]
+                  - generic [ref=e3420] [cursor=pointer]
+                  - generic [ref=e3425] [cursor=pointer]
+                  - generic [ref=e3430] [cursor=pointer]
+                  - generic [ref=e3435] [cursor=pointer]
+                  - generic [ref=e3440] [cursor=pointer]
+                  - generic [ref=e3445] [cursor=pointer]
+                  - generic [ref=e3450] [cursor=pointer]
+                  - generic [ref=e3455] [cursor=pointer]
+                  - generic [ref=e3460] [cursor=pointer]
+                  - generic [ref=e3465] [cursor=pointer]
+                  - generic [ref=e3470] [cursor=pointer]
+                  - generic [ref=e3475] [cursor=pointer]
+                  - generic [ref=e3480] [cursor=pointer]
+                  - generic [ref=e3485] [cursor=pointer]
+                  - generic [ref=e3490] [cursor=pointer]
+                  - generic [ref=e3499] [cursor=pointer]
+                  - generic [ref=e3504] [cursor=pointer]
+                  - generic [ref=e3509] [cursor=pointer]
+                  - generic [ref=e3514] [cursor=pointer]
+                  - generic [ref=e3519] [cursor=pointer]
+                  - generic [ref=e3524] [cursor=pointer]
+                  - generic [ref=e3529] [cursor=pointer]
+                  - generic [ref=e3534] [cursor=pointer]
+                  - generic [ref=e3539] [cursor=pointer]
+                  - generic [ref=e3570]: Motion
+                  - generic [ref=e3573]: Looks
+                  - generic [ref=e3576]: Sound
+                  - generic [ref=e3579]: Events
+                  - generic [ref=e3582]: Control
+                  - generic [ref=e3585]: Sensing
+                  - generic [ref=e3588]: Operators
+                  - generic [ref=e3591]: Variables
+                  - generic [ref=e3594]: Make a Variable
+                  - generic [ref=e3598]: Make a List
+                  - generic [ref=e3602]: My Blocks
+                  - generic [ref=e3605]: Make a Block
+                  - generic [ref=e3609]: Pen
+            - button "Add Extension" [ref=e388] [cursor=pointer]
+        - generic [ref=e390]: Backpack
+      - generic [ref=e392]:
+        - generic [ref=e393]:
+          - generic [ref=e395]:
+            - generic [ref=e396]:
+              - img "Go" [ref=e397] [cursor=pointer]
+              - img "Pause" [ref=e398] [cursor=pointer]
+              - img "Stop" [ref=e399] [cursor=pointer]
+            - button [ref=e3728] [cursor=pointer]:
+              - img "Exit full screen mode" [ref=e3730]
+          - generic [ref=e3614]:
+            - generic [ref=e3615]: 状态
+            - generic [ref=e3616]: 搭建：选左侧元件，点空格；点输入开关切换 0/1
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - generic [ref=e419]:
+              - generic [ref=e420]:
+                - generic [ref=e422]:
+                  - generic [ref=e423]: Sprite
+                  - textbox "Sprite" [ref=e424]:
+                    - /placeholder: Name
+                    - text: 电路控制器
+                - generic [ref=e427]:
+                  - generic [ref=e428]: x
+                  - spinbutton "x" [ref=e429]: "154"
+                - generic [ref=e432]:
+                  - generic [ref=e433]: "y"
+                  - spinbutton "y" [ref=e434]: "38"
+              - generic [ref=e435]:
+                - generic [ref=e436]:
+                  - generic [ref=e437]: Show
+                  - generic [ref=e439]:
+                    - button "Show sprite" [ref=e440] [cursor=pointer]
+                    - button "Hide sprite" [pressed] [ref=e442] [cursor=pointer]
+                - generic [ref=e445]:
+                  - generic [ref=e446]: Size
+                  - spinbutton "Size" [ref=e447]: "100"
+                - generic [ref=e449]:
+                  - generic [ref=e450]: Direction
+                  - spinbutton "Direction" [ref=e451]: "90"
+            - generic [ref=e453]:
+              - generic [ref=e3618] [cursor=pointer]:
+                - generic [ref=e3621]: 电路控制器
+                - button "Delete" [ref=e3623]
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3627] [cursor=pointer]:
+                - generic [ref=e3630]: 网格元件
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3633] [cursor=pointer]:
+                - generic [ref=e3636]: 输入工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3639] [cursor=pointer]:
+                - generic [ref=e3642]: NAND工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3645] [cursor=pointer]:
+                - generic [ref=e3648]: NOT工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3651] [cursor=pointer]:
+                - generic [ref=e3654]: AND工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3657] [cursor=pointer]:
+                - generic [ref=e3660]: OR工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3663] [cursor=pointer]:
+                - generic [ref=e3666]: 输出工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3669] [cursor=pointer]:
+                - generic [ref=e3672]: 连线工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3675] [cursor=pointer]:
+                - generic [ref=e3678]: 移动工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3681] [cursor=pointer]:
+                - generic [ref=e3684]: 删除工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3687] [cursor=pointer]:
+                - generic [ref=e3690]: 撤销工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3693] [cursor=pointer]:
+                - generic [ref=e3696]: 示例工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+              - generic [ref=e3699] [cursor=pointer]:
+                - generic [ref=e3702]: 清空工具
+                - menu:
+                  - menuitem "duplicate"
+                  - menuitem "export"
+                  - menuitem "delete"
+            - generic [ref=e463]:
+              - button "Choose a Sprite" [ref=e464] [cursor=pointer]
+              - generic [ref=e466]:
+                - generic:
+                  - button "Upload Sprite" [ref=e468] [cursor=pointer]
+                  - button "Surprise" [ref=e471] [cursor=pointer]
+                  - button "Paint" [ref=e474] [cursor=pointer]
+                  - button "Choose a Sprite" [ref=e477] [cursor=pointer]
+          - generic [ref=e3704] [cursor=pointer]:
+            - generic [ref=e3705]: Stage
+            - generic [ref=e3708]: Backdrops
+            - generic [ref=e3709]: "1"
+            - generic [ref=e3710]:
+              - button "Choose a Backdrop" [ref=e3711]
+              - generic [ref=e3713]:
+                - generic:
+                  - button "Upload Backdrop" [ref=e3715]
+                  - button "Surprise" [ref=e3718]
+                  - button "Paint" [ref=e3721]
+                  - button "Choose a Backdrop" [ref=e3724]
+  - menu
