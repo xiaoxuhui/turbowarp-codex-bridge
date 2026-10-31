@@ -2,6 +2,8 @@
 
 独立工作区：`D:\soft\turbowarp-codex-bridge`。已安装 Microsoft Playwright MCP，建立生成 SB3 → MCP 加载 TurboWarp → 真实键鼠输入 → VM 断言 → 保存重载 → 故障检测与最小修复的有限样例闭环。
 
+仓库现已在 [GitHub](https://github.com/xiaoxuhui/turbowarp-codex-bridge) 公开。此处记录的是本机验证环境，文中的绝对路径和 Codex 配置仅作本机复现示例；迁移到其他机器时需按实际安装位置调整。`package.json` 中的 `private: true` 只用于阻止误发布到 npm，不影响 GitHub 仓库的公开可见性。
+
 完整验收见 [最终报告](reports/final-report.md) 和 [逐项状态](reports/acceptance.json)。**Desktop 原生 Playwright MCP 调用现已验证 PASS**，证据见 [原生调用报告](reports/desktop-native-test.json)。完整专用 Bridge 仅有 [架构设计](docs/bridge-architecture.md)，原生接入不代表已实现通用 Bridge。
 
 ## 运行

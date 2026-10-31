@@ -2,6 +2,7 @@
   "name": "turbowarp-codex-bridge-feasibility",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/xiaoxuhui/turbowarp-codex-bridge",
   "type": "module",
   "description": "Local Playwright MCP integration and TurboWarp feasibility tests; not a full custom bridge",
   "engines": { "node": ">=24 <25" },
