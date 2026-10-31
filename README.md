@@ -4,6 +4,8 @@
 
 仓库现已在 [GitHub](https://github.com/xiaoxuhui/turbowarp-codex-bridge) 公开。此处记录的是本机验证环境，文中的绝对路径和 Codex 配置仅作本机复现示例；迁移到其他机器时需按实际安装位置调整。`package.json` 中的 `private: true` 只用于阻止误发布到 npm，不影响 GitHub 仓库的公开可见性。
 
+仓库目前只开放查看，暂未为本仓库自写内容提供复用许可证。`docs/` 中保存的 TurboWarp VM/GUI 源码和 Playwright MCP 等第三方资料快照归各自原作者所有，适用各自上游的许可；本仓库不对这些资料重新授权。引用或复用前请核对对应上游项目。
+
 完整验收见 [最终报告](reports/final-report.md) 和 [逐项状态](reports/acceptance.json)。**Desktop 原生 Playwright MCP 调用现已验证 PASS**，证据见 [原生调用报告](reports/desktop-native-test.json)。完整专用 Bridge 仅有 [架构设计](docs/bridge-architecture.md)，原生接入不代表已实现通用 Bridge。
 
 ## 运行
